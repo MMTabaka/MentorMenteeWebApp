@@ -21,22 +21,42 @@
   <form method="post">
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control" name="email" required>
+      <input type="email" class="form-control <%= @validation['errors']['email'] ? 'is-invalid': '' %>" name="email" required>
+      <% unless @validation['errors']['email'].nil? %>
+        <div class="invalid-feedback">
+          <%= @validation['errors']['email'] %>
+        </div>
+      <% end %>
     </div>
     <div class="mb-3">
       <label for="pass" class="form-label">Password</label>
-      <input type="password" class="form-control" name="pass" required>
+      <input type="password" class="form-control <%= @validation['errors']['pass'] ? 'is-invalid': '' %>" name="pass" required>
+      <% unless @validation['errors']['pass'].nil? %>
+        <div class="invalid-feedback">
+          <%= @validation['errors']['pass'] %>
+        </div>
+      <% end %>
     </div>
     <div class="mb-3">
       <label for="re-pass" class="form-label">Confirm Password</label>
-      <input type="password" class="form-control" name="re-pass" required>
+      <input type="password" class="form-control <%= @validation['errors']['re-pass'] ? 'is-invalid': '' %>" name="re-pass" required>
+      <% unless @validation['errors']['re-pass'].nil? %>
+        <div class="invalid-feedback">
+          <%= @validation['errors']['re-pass'] %>
+        </div>
+      <% end %>
     </div>
     <div class="mb-3">
       <label for="user-type" class="form-label">Who you are?</label>
-      <select name="user-type" class="form-select" required>
+      <select name="user-type" class="form-select <%= @validation['errors']['user-type'] ? 'is-invalid': '' %>" required>
         <option value="1" selected>Mentor</option>
         <option value="2">Mentee</option>
       </select>
+      <% unless @validation['errors']['user-type'].nil? %>
+        <div class="invalid-feedback">
+          <%= @validation['errors']['user-type'] %>
+        </div>
+      <% end %>
     </div>
     <button type="submit" class="btn btn-primary">Create an account</button>
   </form>

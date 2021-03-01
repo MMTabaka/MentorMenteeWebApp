@@ -1,4 +1,5 @@
 source 'https://rubygems.org' do
+  gem 'logger'
   gem 'require_all'
   gem 'rspec'
   gem 'rubocop', require: false

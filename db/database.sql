@@ -1,5 +1,5 @@
-
-CREATE TABLE mentors (
+CREATE TABLE m_users (
+    user_type TEXT,
     ucard INTEGER,
     email TEXT,
     password TEXT,
@@ -8,21 +8,7 @@ CREATE TABLE mentors (
     request TEXT,
     acceptance INTEGER,
     suspension INTEGER,
-    fields
-);
-
-CREATE TABLE admins (
-    ucard INTEGER,
-    email TEXT,
-    password TEXT,
-    request TEXT,
-    acceptance INTEGER,
-    suspension INTEGER,
-    fields
-);
-
-CREATE TABLE fields (
-    
+    fields TEXT,
 );
 
 CREATE TABLE admins (

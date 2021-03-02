@@ -1,3 +1,3 @@
-class Test < Sequel::Model
+class M_user < Sequel::Model
+    
 end
-

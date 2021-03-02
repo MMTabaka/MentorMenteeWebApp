@@ -8,10 +8,13 @@ CREATE TABLE m_users (
     request TEXT,
     acceptance INTEGER,
     suspension INTEGER,
-    fields TEXT,
+    fields TEXT
 );
 
 CREATE TABLE admins (
     login TEXT,
-    password TEXT,
-)
+    password TEXT
+);
+
+INSERT INTO m_users VALUES ("Mentor", 23456, "email@email.com", "password", "description", "explanation", "request",
+                           0, 0, "field, field, field");

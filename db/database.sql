@@ -1,8 +1,8 @@
 CREATE TABLE m_users (
-    user_type TEXT,
-    ucard INTEGER,
-    email TEXT,
-    password TEXT,
+    user_type TEXT NOT NULL,
+    ucard INTEGER NOT NULL,
+    email TEXT NOT NULL,
+    password TEXT NOT NULL,
     description TEXT,
     explanation TEXT,
     request TEXT,

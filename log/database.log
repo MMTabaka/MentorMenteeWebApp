@@ -1,3 +1,28 @@
 # Logfile created on 2021-03-02 15:21:08 +0000 by logger.rb/66358
 I, [2021-03-02T15:21:08.463269 #261]  INFO -- : (0.005413s) PRAGMA foreign_keys = 1
 I, [2021-03-02T15:21:08.463393 #261]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2021-03-02T15:28:35.501801 #337]  INFO -- : (0.000237s) PRAGMA foreign_keys = 1
+I, [2021-03-02T15:28:35.502155 #337]  INFO -- : (0.000029s) PRAGMA case_sensitive_like = 1
+I, [2021-03-02T15:28:35.502953 #337]  INFO -- : (0.000108s) SELECT sqlite_version()
+I, [2021-03-02T15:28:35.503247 #337]  INFO -- : (0.000048s) PRAGMA table_info('users')
+E, [2021-03-02T15:28:35.503517 #337] ERROR -- : SQLite3::SQLException: no such table: users: SELECT * FROM `users` LIMIT 1
+I, [2021-03-02T15:29:04.293009 #380]  INFO -- : (0.000207s) PRAGMA foreign_keys = 1
+I, [2021-03-02T15:29:04.293142 #380]  INFO -- : (0.000023s) PRAGMA case_sensitive_like = 1
+I, [2021-03-02T15:29:04.293904 #380]  INFO -- : (0.000090s) SELECT sqlite_version()
+I, [2021-03-02T15:29:04.294188 #380]  INFO -- : (0.000051s) PRAGMA table_info('users')
+E, [2021-03-02T15:29:04.294450 #380] ERROR -- : SQLite3::SQLException: no such table: users: SELECT * FROM `users` LIMIT 1
+I, [2021-03-02T15:35:00.359315 #395]  INFO -- : (0.000288s) PRAGMA foreign_keys = 1
+I, [2021-03-02T15:35:00.359470 #395]  INFO -- : (0.000024s) PRAGMA case_sensitive_like = 1
+I, [2021-03-02T15:35:00.360184 #395]  INFO -- : (0.000098s) SELECT sqlite_version()
+I, [2021-03-02T15:35:00.360450 #395]  INFO -- : (0.000047s) PRAGMA table_info('users')
+E, [2021-03-02T15:35:00.360696 #395] ERROR -- : SQLite3::SQLException: no such table: users: SELECT * FROM `users` LIMIT 1
+I, [2021-03-02T15:38:19.292193 #399]  INFO -- : (0.000252s) PRAGMA foreign_keys = 1
+I, [2021-03-02T15:38:19.292329 #399]  INFO -- : (0.000025s) PRAGMA case_sensitive_like = 1
+I, [2021-03-02T15:38:19.292976 #399]  INFO -- : (0.000085s) SELECT sqlite_version()
+I, [2021-03-02T15:38:19.293234 #399]  INFO -- : (0.000045s) PRAGMA table_info('tests')
+E, [2021-03-02T15:38:19.293472 #399] ERROR -- : SQLite3::SQLException: no such table: tests: SELECT * FROM `tests` LIMIT 1
+I, [2021-03-02T15:40:06.595486 #400]  INFO -- : (0.000264s) PRAGMA foreign_keys = 1
+I, [2021-03-02T15:40:06.595751 #400]  INFO -- : (0.000029s) PRAGMA case_sensitive_like = 1
+I, [2021-03-02T15:40:06.596676 #400]  INFO -- : (0.000177s) SELECT sqlite_version()
+I, [2021-03-02T15:40:06.597016 #400]  INFO -- : (0.000059s) PRAGMA table_info('tests')
+E, [2021-03-02T15:40:06.597322 #400] ERROR -- : SQLite3::SQLException: no such table: tests: SELECT * FROM `tests` LIMIT 1

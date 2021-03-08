@@ -1,7 +1,8 @@
 class M_user < Sequel::Model
-    def self.email_exists?(email)
-        return false if email.nil?
-        return false if M_user[email].nil?
-        true
+    
+    def self.login(email, password)
+        return true if self[email: email][:password] == password
+        return false
     end
+    
 end

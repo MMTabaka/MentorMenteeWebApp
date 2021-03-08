@@ -14,5 +14,3 @@ require_relative 'db/db'
 require_all 'models'
 require_all 'controllers'
 
-puts M_user.email_exists?("email@email.com")
-

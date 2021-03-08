@@ -1,4 +1,5 @@
 CREATE TABLE m_users (
+    
     id INTEGER PRIMARY KEY,
     user_type TEXT NOT NULL,
     ucard INTEGER NOT NULL,
@@ -10,6 +11,7 @@ CREATE TABLE m_users (
     acceptance INTEGER,
     suspension INTEGER,
     fields TEXT
+    
 );
 
 CREATE TABLE admins (
@@ -18,4 +20,6 @@ CREATE TABLE admins (
 );
 
 INSERT INTO m_users VALUES (1, "Mentor", 23456, "email@email.com", "password", "description", "explanation", "request",
+                           0, 0, "field, field, field");
+INSERT INTO m_users VALUES (2, "Mentor2", 65432, "email2@email.com", "password", "description", "explanation", "request",
                            0, 0, "field, field, field");

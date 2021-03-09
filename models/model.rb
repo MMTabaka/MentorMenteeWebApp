@@ -1,14 +1,18 @@
 require 'sequel'
 
 class M_user < Sequel::Model
+    # Checks if the user exists and then checks if the password is correct
     
     def self.login(email, password)
         return false if email.nil?
         return false if password.nil?
-        #return false if self[:email].nil?
-        #return false if self[:password].nil?
-        return false if self[email: email][:password].nil?
-        return true if self[email: email][:password] == password
+        
+        if self.where(email: email).single_record.nil?
+            return false
+        else
+            return true if self[email: email][:password] == password
+            return false if self[email: email][:password].nil?
+        end
         return false
     end
     

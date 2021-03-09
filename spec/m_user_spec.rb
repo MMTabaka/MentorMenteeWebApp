@@ -1,5 +1,6 @@
-require_relative '../models/model'
 require_relative '../db/db'
+require_relative '../models/model'
+
 
 RSpec.describe M_user do
   # TODO: Also check whether actual table is created

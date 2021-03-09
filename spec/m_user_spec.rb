@@ -1,5 +1,5 @@
+require_relative '../db/test'
 require_relative '../models/model'
-require_relative '../db/db'
 
 RSpec.describe M_user do
   # TODO: Also check whether actual table is created
@@ -9,7 +9,9 @@ RSpec.describe M_user do
     end
   end
   context "when you call register with existing user's email" do
+
     it 'return nil and does not make any changes to DB' do
+      M_user.register('existing@test.com', 'SecurePass123', 0)
       expect(M_user.register('existing@test.com', 'SecurePass123', 0)).to be_nil
     end
   end

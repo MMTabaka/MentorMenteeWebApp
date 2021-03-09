@@ -1,4 +1,22 @@
 require 'sequel'
+require_relative '../db/db.rb'
+
+class User
+  attr_accessor :id, :user_type, :email, :password, :description, :explanation, :request, :acceptance, :suspension, :fields
+
+  def initialize()
+    @id = id
+    @user_type = user_type
+    @email = email
+    @password = password
+    @description = description
+    @explanation = explanation
+    @request = request
+    @acceptance = acceptance
+    @suspension = suspension
+    @fields = fields
+  end
+end
 
 class M_user < Sequel::Model
 
@@ -40,5 +58,26 @@ class M_user < Sequel::Model
     end
 
     nil
+  end
+
+  # Retrieves and returns user information
+  # @param DB Sequel database instance
+  def self.retrieveUsers(DB)
+    users = Hash.new
+    DB[:m_users].all.each do |item|
+      user = User.new
+      user.id = item[:id]
+      user.user_type = item[:user_type]
+      user.email = item[:email]
+      user.password = item[:password]
+      user.description = item[:description]
+      user.explanation = item[:explanation]
+      user.request = item[:request]
+      user.acceptance = item[:acceptance]
+      user.suspension = item[:suspension]
+      user.fields = item[:fields]
+      users[user.id] = user
+    end
+    return users
   end
 end

@@ -3,7 +3,6 @@ require "sequel"
 
 # what mode are we in?
 type = ENV.fetch("APP_ENV", "database")
-
 # find the path to the database file
 db_path = File.dirname(__FILE__)
 db = "#{db_path}/#{type}.sqlite3"

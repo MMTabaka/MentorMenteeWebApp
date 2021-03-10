@@ -1,22 +1,4 @@
 require 'sequel'
-require_relative '../db/db.rb'
-
-class User
-  attr_accessor :id, :user_type, :email, :password, :description, :explanation, :request, :acceptance, :suspension, :fields
-
-  def initialize()
-    @id = id
-    @user_type = user_type
-    @email = email
-    @password = password
-    @description = description
-    @explanation = explanation
-    @request = request
-    @acceptance = acceptance
-    @suspension = suspension
-    @fields = fields
-  end
-end
 
 class M_user < Sequel::Model
 

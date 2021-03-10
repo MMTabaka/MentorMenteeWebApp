@@ -60,24 +60,9 @@ class M_user < Sequel::Model
     nil
   end
 
-  # Retrieves and returns user information
-  # @param DB Sequel database instance
-  def self.retrieveUsers(DB)
-    users = Hash.new
-    DB[:m_users].all.each do |item|
-      user = User.new
-      user.id = item[:id]
-      user.user_type = item[:user_type]
-      user.email = item[:email]
-      user.password = item[:password]
-      user.description = item[:description]
-      user.explanation = item[:explanation]
-      user.request = item[:request]
-      user.acceptance = item[:acceptance]
-      user.suspension = item[:suspension]
-      user.fields = item[:fields]
-      users[user.id] = user
-    end
-    return users
+  # Returns all user information for a given user_type
+  # @param user_type An integer representation of the user's role
+  def self.retrieveUsers(user_type)
+    return  M_user.where(user_type: user_type).all
   end
 end

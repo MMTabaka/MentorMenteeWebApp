@@ -62,6 +62,9 @@ get '/registration' do
   @userType = "Mentee";
   @requesting = false;
   @userPic = "img/" + pic;
+  @activedM = ""
+  @activedRH = "active"
+  @activedLI = ""
   erb :registration
 end
 

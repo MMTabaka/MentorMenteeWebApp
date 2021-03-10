@@ -3,19 +3,19 @@
     <ul class="nav justify-content-end nav-pills">
       <li class="nav-item">
         <% if @loggedIn == false %>
-          <a class="nav-link text-body active" href="#">Mentor List</a>
+          <a class="nav-link text-body <%= @activedM %>" href="#">Mentor List</a>
         <% else %>
           <% if @userType == "Mentor" %>
-            <a class="nav-link text-body active" href="#">My Mentee</a>
+            <a class="nav-link text-body <%= @activedM %>" href="#">My Mentee</a>
           <% elsif @userType == "Mentee" && @requesting == true %>
-            <a class="nav-link text-body active" href="#">My Mentor</a>
+            <a class="nav-link text-body <%= @activedM %>" href="#">My Mentor</a>
           <% else %>
-            <a class="nav-link text-body active" href="#">Mentor List</a>
+            <a class="nav-link text-body <%= @activedM %>" href="#">Mentor List</a>
           <% end %>
         <% end %>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-body" href="#">Request History</a>
+        <a class="nav-link text-body <%= @activedRH %>" href="#">Request History</a>
       </li>
       <% if @loggedIn == true %>
         <li class="nav-item navPic">  
@@ -25,7 +25,7 @@
         </li>
       <% else %>
         <li class="nav-item">  
-          <a class="nav-link text-body" href="login.erb">Log In</a>
+          <a class="nav-link text-body <%= @activedLI %>" href="login.erb">Log In</a>
         </li>
       <% end %>
     </ul>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <title>Registration Additional Information</title>
+</head>
+
+<body>
+<%= erb :"common/nav" %>
+<div class="containerSmall">
+  <div class="contentSmall">
+    <h1 class="text-center  pb-3">Welcome!</h1>
+    <p class="text-center  pb-3">Provide additional information</p>
+    <form method="post">
+      <div class="mb-3">
+        <img src="img/defaultPic.jpg" class="picSignup mx-auto d-block" alt="user picture">
+        <br/>
+        <label for="pic" class="form-label">Your Picture</label>
+        <% if @userType == "Mentor" %>
+          <input id="pic" type="file" accept="image/gif,image/jpeg,image/jpg,image/png" class="form-control" name="pic" required>
+        <% else %>
+          <input id="pic" class="form-control" type="file" accept="image/gif,image/jpeg,image/jpg,image/png" name="pic">
+        <% end %>
+      </div>
+      <div class="mb-3">
+        <label for="username" class="form-label">Your Name</label>
+        <% if @userType == "Mentor" %>
+          <input id="username" type="text" class="form-control" name="username" required>
+        <% else %>
+          <input id="username" type="text" class="form-control" name="username">
+        <% end %>
+      </div>
+      <div class="mb-3">
+        <label for="department" class="form-label">Department</label>
+        <% if @userType == "Mentor" %>
+          <input id="department" type="text" class="form-control" name="department" required>
+        <% else %>
+          <input id="department" type="text" class="form-control" name="department">
+        <% end %>
+      </div>
+      <div class="mb-3">
+        <label for="area" class="form-label">Area of Interst</label>
+        <% if @userType == "Mentor" %>
+          <input id="area" type="text" class="form-control" name="area" required>
+        <% else %>
+          <input id="area" type="text" class="form-control" name="area">
+        <% end %>
+      </div>
+      <div class="mb-3">
+        <label for="bio" class="form-label">Bio</label>
+        <% if @userType == "Mentor" %>
+          <textarea id="bio" name="area" required class="form-control" rows="4"></textarea>
+        <% else %>
+          <textarea id="bio" name="area" class="form-control" rows="4"></textarea>
+        <% end %>
+      </div>
+      <button type="submit" class="btn btn-primary btnC">Create an account</button>
+    </form>
+  </div>
+</div>
+<%= erb :"common/footer" %>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"/>
+</html>

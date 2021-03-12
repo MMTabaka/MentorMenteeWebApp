@@ -978,3 +978,64 @@ I, [2021-03-12T12:25:01.181097 #329]  INFO -- : (0.000117s) SELECT * FROM `m_use
 I, [2021-03-12T12:25:01.181336 #329]  INFO -- : (0.000090s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
 I, [2021-03-12T12:25:10.999880 #329]  INFO -- : (0.000172s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
 I, [2021-03-12T12:25:11.000200 #329]  INFO -- : (0.000106s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-12T13:00:16.331221 #374]  INFO -- : (0.000168s) PRAGMA foreign_keys = 1
+I, [2021-03-12T13:00:16.331321 #374]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2021-03-12T13:00:16.332090 #374]  INFO -- : (0.000062s) SELECT sqlite_version()
+I, [2021-03-12T13:00:16.332396 #374]  INFO -- : (0.000144s) PRAGMA table_info('m_users')
+I, [2021-03-12T13:00:16.352242 #374]  INFO -- : (0.000153s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T13:00:16.352603 #374]  INFO -- : (0.000141s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T13:02:54.023372 #395]  INFO -- : (0.000210s) PRAGMA foreign_keys = 1
+I, [2021-03-12T13:02:54.023495 #395]  INFO -- : (0.000018s) PRAGMA case_sensitive_like = 1
+I, [2021-03-12T13:02:54.024308 #395]  INFO -- : (0.000078s) SELECT sqlite_version()
+I, [2021-03-12T13:02:54.024666 #395]  INFO -- : (0.000182s) PRAGMA table_info('m_users')
+I, [2021-03-12T13:02:54.031398 #395]  INFO -- : (0.000165s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T13:02:54.031717 #395]  INFO -- : (0.000124s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T13:03:10.579482 #416]  INFO -- : (0.000172s) PRAGMA foreign_keys = 1
+I, [2021-03-12T13:03:10.579590 #416]  INFO -- : (0.000018s) PRAGMA case_sensitive_like = 1
+I, [2021-03-12T13:03:10.580213 #416]  INFO -- : (0.000059s) SELECT sqlite_version()
+I, [2021-03-12T13:03:10.580498 #416]  INFO -- : (0.000134s) PRAGMA table_info('m_users')
+I, [2021-03-12T13:03:10.585109 #416]  INFO -- : (0.000118s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T13:03:10.585373 #416]  INFO -- : (0.000097s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T13:03:41.390344 #416]  INFO -- : (0.000249s) SELECT * FROM `m_users` WHERE (`email` = 'gfgfgf@vvv.com') LIMIT 1
+I, [2021-03-12T13:07:49.938287 #416]  INFO -- : (0.000154s) SELECT * FROM `m_users` WHERE (`email` = 'edytatabaka@interia.pl') LIMIT 1
+I, [2021-03-12T13:07:53.688660 #416]  INFO -- : (0.000138s) SELECT * FROM `m_users` WHERE (`email` = 'edytatabaka@interia.pl') LIMIT 1
+I, [2021-03-12T15:20:42.686387 #187]  INFO -- : (0.000263s) PRAGMA foreign_keys = 1
+I, [2021-03-12T15:20:42.692947 #187]  INFO -- : (0.000039s) PRAGMA case_sensitive_like = 1
+I, [2021-03-12T15:20:42.693781 #187]  INFO -- : (0.000075s) SELECT sqlite_version()
+I, [2021-03-12T15:20:42.694108 #187]  INFO -- : (0.000146s) PRAGMA table_info('m_users')
+I, [2021-03-12T15:20:42.710366 #187]  INFO -- : (0.000196s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T15:20:42.710686 #187]  INFO -- : (0.000114s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T15:20:56.096233 #187]  INFO -- : (0.000221s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-12T15:20:56.097228 #187]  INFO -- : (0.000165s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-12T15:22:19.314151 #209]  INFO -- : (0.000223s) PRAGMA foreign_keys = 1
+I, [2021-03-12T15:22:19.314272 #209]  INFO -- : (0.000019s) PRAGMA case_sensitive_like = 1
+I, [2021-03-12T15:22:19.315220 #209]  INFO -- : (0.000113s) SELECT sqlite_version()
+I, [2021-03-12T15:22:19.315681 #209]  INFO -- : (0.000233s) PRAGMA table_info('m_users')
+I, [2021-03-12T15:22:19.325701 #209]  INFO -- : (0.000303s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T15:22:19.326283 #209]  INFO -- : (0.000174s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T15:22:30.962846 #209]  INFO -- : (0.000172s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-12T15:22:30.963174 #209]  INFO -- : (0.000114s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-12T15:22:57.962746 #209]  INFO -- : (0.000214s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-12T15:22:57.963945 #209]  INFO -- : (0.000865s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-12T15:24:41.503382 #231]  INFO -- : (0.000211s) PRAGMA foreign_keys = 1
+I, [2021-03-12T15:24:41.503508 #231]  INFO -- : (0.000018s) PRAGMA case_sensitive_like = 1
+I, [2021-03-12T15:24:41.504335 #231]  INFO -- : (0.000061s) SELECT sqlite_version()
+I, [2021-03-12T15:24:41.504621 #231]  INFO -- : (0.000132s) PRAGMA table_info('m_users')
+I, [2021-03-12T15:24:41.511526 #231]  INFO -- : (0.000162s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T15:24:41.511813 #231]  INFO -- : (0.000105s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-12T15:24:52.196070 #231]  INFO -- : (0.000228s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-12T15:24:52.196485 #231]  INFO -- : (0.000145s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-12T15:31:45.093221 #254]  INFO -- : (0.000183s) PRAGMA foreign_keys = 1
+I, [2021-03-12T15:31:45.093324 #254]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-03-12T15:31:45.094000 #254]  INFO -- : (0.000072s) SELECT sqlite_version()
+I, [2021-03-12T15:31:45.094332 #254]  INFO -- : (0.000160s) PRAGMA table_info('m_users')
+I, [2021-03-12T15:31:53.306832 #254]  INFO -- : (0.001153s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-12T15:31:53.307331 #254]  INFO -- : (0.000186s) SELECT * FROM `m_users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-12T15:32:54.789133 #275]  INFO -- : (0.000292s) PRAGMA foreign_keys = 1
+I, [2021-03-12T15:32:54.789478 #275]  INFO -- : (0.000034s) PRAGMA case_sensitive_like = 1
+I, [2021-03-12T15:32:54.790502 #275]  INFO -- : (0.000079s) SELECT sqlite_version()
+I, [2021-03-12T15:32:54.790936 #275]  INFO -- : (0.000182s) PRAGMA table_info('m_users')
+I, [2021-03-12T15:34:57.954515 #296]  INFO -- : (0.000200s) PRAGMA foreign_keys = 1
+I, [2021-03-12T15:34:57.954631 #296]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2021-03-12T15:34:57.955414 #296]  INFO -- : (0.000085s) SELECT sqlite_version()
+I, [2021-03-12T15:34:57.955789 #296]  INFO -- : (0.000187s) PRAGMA table_info('m_users')

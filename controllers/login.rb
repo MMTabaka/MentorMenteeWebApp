@@ -45,7 +45,7 @@ end
 
 get "/" do
     redirect "/login" unless session[:logged_in]
-    erb :index
+    "Home"
 end
 
 get "/login" do
@@ -59,11 +59,15 @@ post "/login" do
     
     if M_user.login(@email, @password)
         session[:logged_in] = true
-        redirect "/userInfo"
+        redirect "/temp-user-page"
     end
+end
+
+get "/temp-user-page" do
+  "You have logged in successfully!"
 end
 
 get "/logout" do
   session.clear
-  erb :logout
+  "You have been logged out successfully"
 end

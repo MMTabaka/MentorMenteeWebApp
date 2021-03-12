@@ -41,4 +41,10 @@ class M_user < Sequel::Model
 
     nil
   end
+
+  # Returns all user information for a given user_type
+  # @param user_type An integer representation of the user's role
+  def self.retrieveUsers(user_type)
+    return  M_user.where(user_type: user_type).all
+  end
 end

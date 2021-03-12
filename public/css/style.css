@@ -2,6 +2,7 @@ body{
   background-color: #f7f6f6;
   font-size: 1.2vw;
 }
+
 .navi{
   width: 95%;
   padding: 0.5%;
@@ -15,11 +16,18 @@ body{
   width: 4%;
   text-align: center;
 }
+
 .picSmall{
   width: 85%;
-  height: auto;
+  height: 85%;
   border-radius:50%
 }
+.picSignup{
+  width: 35%;
+  height: 35%;
+  border-radius:50%
+}
+
 .btn{
   font-size: inherit;
   border: none;
@@ -28,6 +36,7 @@ body{
   background-color: #FFC107;
   color: #ffffff;
 }
+
 .container{
   width:80%;
   margin: 2em auto;
@@ -40,9 +49,16 @@ body{
   background-color: #ffffff;
   border-radius: 1.5em;
 }
+
 .content{
   padding: 5% 3%;
 }
 .contentSmall{
   padding: 5% 14%;
+}
+
+.footer{
+  margin-top: 6%; 
+  position: relative; 
+  width: -webkit-fill-available;
 }

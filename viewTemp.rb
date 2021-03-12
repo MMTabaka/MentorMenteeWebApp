@@ -1,4 +1,12 @@
-require 'sinatra'
+require "sinatra"
+require "sinatra/reloader"
+set :bind, "0.0.0.0"
+
+get '/userInfo' do
+  @username = "Mia Aka"
+  @email = "abcdb@fsef.com"
+  erb :userInfo
+end
 
 def validate(user_data)
   res = { 'valid' => true, 'errors' => {} }
@@ -43,27 +51,27 @@ def validate(user_data)
 end
 
 
-get "/" do
-    redirect "/login" unless session[:logged_in]
-    erb :index
+get '/' do
+  'Hello World!'
 end
 
-get "/login" do
-    @validation = { 'valid' => true, 'errors' => {} }
-    erb :login
+get '/registration' do
+  pic = "pic.jpg"
+  @validation = { 'valid' => true, 'errors' => {} }
+  @loggedIn = true;
+  @userType = "Mentee";
+  @requesting = false;
+  @userPic = "img/" + pic;
+  @activedM = ""
+  @activedRH = "active"
+  @activedLI = ""
+  erb :registration
 end
 
-post "/login" do
-    @email = params["email"]
-    @password = params["pass"]
-    
-    if M_user.login(@email, @password)
-        session[:logged_in] = true
-        redirect "/userInfo"
-    end
-end
-
-get "/logout" do
-  session.clear
-  erb :logout
+post '/registration' do
+  puts params
+  val = validate(params)
+  return redirect '/' if val['valid']
+  @validation = val
+  erb :registration
 end

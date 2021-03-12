@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<<<<<<< HEAD
   <title>Registration</title>
   <style>
     .form-container {
@@ -16,6 +17,16 @@
 </head>
 <body>
 <div class="form-container">
+=======
+  <link rel="stylesheet" href="css/style.css">
+  <title>Registration</title>
+</head>
+
+<body>
+<%= erb :"common/nav" %>
+<div class="containerSmall">
+  <div class="contentSmall">
+>>>>>>> origin/views
   <h1 class="text-center  pb-3">Welcome!</h1>
   <p class="text-center  pb-3">Create an account to continue</p>
   <form method="post">
@@ -58,9 +69,22 @@
         </div>
       <% end %>
     </div>
+<<<<<<< HEAD
     <button type="submit" class="btn btn-primary">Create an account</button>
   </form>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
+=======
+    <button type="submit" class="btn btn-primary btnC">Create an account</button>
+    <br/>
+    <a href="login.erb" class="text-decoration-underline text-decoration-none">Have an accout? Log in please</a>
+  </form>
+  </div>
+</div>
+<%= erb :"common/footer" %>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
+>>>>>>> origin/views

@@ -34,7 +34,7 @@ RSpec.describe M_user do
         M_user.create(email: 'user0@email.com', password: 'SecurePass123', user_type: 0)
         M_user.create(email: 'user1@email.com', password: 'SecurePass123', user_type: 1)
         M_user.create(email: 'user2@email.com', password: 'SecurePass123', user_type: 1)
-        expect(M_user.retrieveUsers(1)).count.to be == 2
+        expect(M_user.retrieveUsers(1).count).to be == 2
       end
     end
   end

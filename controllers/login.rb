@@ -44,30 +44,33 @@ end
 
 
 get "/" do
-    redirect "/login" unless session[:logged_in]
-    "Home"
+  redirect "/login" unless session[:logged_in]
+  redirect "/temp-user-page" if session[:logged_in]
 end
 
 get "/login" do
-    @validation = { 'valid' => true, 'errors' => {} }
-    erb :login
+  redirect "/temp-user-page" if session[:logged_in]
+  @validation = { 'valid' => true, 'errors' => {} }
+  erb :login
 end
 
 post "/login" do
-    @email = params["email"]
-    @password = params["pass"]
+  @email = params["email"]
+  @password = params["pass"]
     
-    if M_user.login(@email, @password)
-        session[:logged_in] = true
-        redirect "/temp-user-page"
-    end
+  if M_user.login(@email, @password)
+    session[:logged_in] = true
+    redirect "/temp-user-page"
+  end
 end
 
 get "/temp-user-page" do
-  "You have logged in successfully!"
+  redirect "/login" unless session[:logged_in]
+  "You are logged in!"
 end
 
 get "/logout" do
+  redirect "/login" unless session[:logged_in]
   session.clear
   "You have been logged out successfully"
 end

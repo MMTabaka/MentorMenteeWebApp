@@ -4,7 +4,7 @@ require_relative '../models/model'
 
 RSpec.describe "Login function" do
     
-    context "when you call registered user" do
+    context "when you call a registered user" do
         it "returns true" do
             expect(M_user.login("email@email.com", "password")).to eq(true)
         end

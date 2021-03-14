@@ -29,6 +29,14 @@
 #saveNCancel button{
   margin-right: 2em;
 }
-.btnC:focus{
-  background-color: #68e8f7;
+.picProfile{
+  border-radius: 50%;
+  width: 100%;
+}
+#picture{
+  margin-left: 33%;
+  margin-top: 12%;  
+}
+#pictureEdit{
+  margin-top: 112%;  
 }

@@ -2,11 +2,6 @@ require "sinatra"
 require "sinatra/reloader"
 set :bind, "0.0.0.0"
 
-get '/userInfo' do
-  @username = "Mia Aka"
-  @email = "abcdb@fsef.com"
-  erb :userInfo
-end
 
 def validate(user_data)
   res = { 'valid' => true, 'errors' => {} }
@@ -55,6 +50,50 @@ get '/' do
   'Hello World!'
 end
 
+get '/profile' do
+  pic = "defaultPic.jpg"
+  @validation = { 'valid' => true, 'errors' => {} }
+  @loggedIn = true;
+  @pic = "img/" + pic;
+  @userType = "Mentor";
+  @requesting = false;
+  @userPic = "img/" + pic;
+  @actived = "requestHistory";
+  @username = "";
+  @email = "sdfh@lsdkf";
+  @department = "dfsf";
+  @area = "asfaf";
+  @bio = "asasfasdascxcvzfdbzgnmhmdyhsfasd";
+  erb :profile
+end
+
+post '/profile' do
+  puts params
+  val = validate(params)
+  return redirect '/'
+  @validation = val
+  erb :profile
+end
+
+get '/addInfo' do
+  pic = "pic.jpg"
+  @validation = { 'valid' => true, 'errors' => {} }
+  @loggedIn = true;
+  @userType = "Mentor";
+  @requesting = false;
+  @userPic = "img/" + pic;
+  @actived = "requestHistory"
+  erb :addInfo
+end
+
+post '/addInfo' do
+  puts params
+  val = validate(params)
+  return redirect '/login'
+  @validation = val
+  erb :addInfo
+end
+
 get '/registration' do
   pic = "pic.jpg"
   @validation = { 'valid' => true, 'errors' => {} }
@@ -62,16 +101,33 @@ get '/registration' do
   @userType = "Mentee";
   @requesting = false;
   @userPic = "img/" + pic;
-  @activedM = ""
-  @activedRH = "active"
-  @activedLI = ""
+  @actived = "requestHistory"
   erb :registration
 end
 
 post '/registration' do
   puts params
   val = validate(params)
-  return redirect '/' if val['valid']
+  return redirect '/addInfo' if val['valid']
   @validation = val
   erb :registration
+end
+
+get '/login' do
+  pic = "pic.jpg"
+  @validation = { 'valid' => true, 'errors' => {} }
+  @loggedIn = true;
+  @userType = "Mentee";
+  @requesting = false;
+  @userPic = "img/" + pic;
+  @actived = "requestHistory"
+  erb :login
+end
+
+post '/login' do
+  puts params
+  val = validate(params)
+  return redirect '/' if val['valid']
+  @validation = val
+  erb :login
 end

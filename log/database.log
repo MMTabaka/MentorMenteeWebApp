@@ -820,3 +820,16 @@ I, [2021-03-15T13:02:41.859648 #9883]  INFO -- : (0.000149s) SELECT * FROM `m_us
 I, [2021-03-15T13:02:41.859875 #9883]  INFO -- : (0.000085s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
 I, [2021-03-15T13:02:53.872471 #9883]  INFO -- : (0.000146s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'dsvdv@fvf.com') LIMIT 1
 I, [2021-03-15T13:04:48.353718 #9883]  INFO -- : (0.000166s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'vykintazo@gmail.com') LIMIT 1
+I, [2021-03-15T13:51:42.908989 #12256]  INFO -- : (0.000153s) PRAGMA foreign_keys = 1
+I, [2021-03-15T13:51:42.909093 #12256]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-03-15T13:51:42.909943 #12256]  INFO -- : (0.000088s) SELECT sqlite_version()
+I, [2021-03-15T13:51:42.910292 #12256]  INFO -- : (0.000174s) PRAGMA table_xinfo('m_users')
+I, [2021-03-15T13:51:42.915882 #12256]  INFO -- : (0.000128s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-15T13:51:42.916089 #12256]  INFO -- : (0.000098s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-15T13:52:55.871843 #12256]  INFO -- : (0.000225s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'vykintazo@gmail.com') LIMIT 1
+I, [2021-03-15T13:53:39.963288 #12256]  INFO -- : (0.000194s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'vykintazo@gmail.com') LIMIT 1
+I, [2021-03-15T13:53:39.964156 #12256]  INFO -- : (0.000232s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'vykintazo@gmail.com') LIMIT 1
+I, [2021-03-15T13:53:39.964450 #12256]  INFO -- : (0.000061s) BEGIN
+I, [2021-03-15T13:53:39.965547 #12256]  INFO -- : (0.000653s) INSERT INTO `m_users` (`email`, `password`, `user_type`, `description`, `explanation`, `fields`) VALUES ('vykintazo@gmail.com', 'SecurePass123', 1, 'Idk', 'ljukyjghdfugiytfurdtseyrdyugiyjfchxtdhesrtdrjuhkjbhvgcfxndresdfyugihbkjvghcfnxdhzgrestdyugbjhvcfgxd', 'Very interesting, area')
+I, [2021-03-15T13:53:39.966290 #12256]  INFO -- : (0.000262s) SELECT * FROM `m_users` WHERE `id` = 4
+I, [2021-03-15T13:53:39.969805 #12256]  INFO -- : (0.003352s) COMMIT

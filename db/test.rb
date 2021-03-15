@@ -15,7 +15,7 @@ def populate_tables
     String :request
     Integer :acceptance
     Integer :suspension
-    String :field
+    String :fields
   end
 
   DB.create_table(:admins) do

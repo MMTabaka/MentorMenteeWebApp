@@ -28,12 +28,10 @@ class M_user < Sequel::Model
   end
 
   # Checks if user exists and creates a new one if not
-  # @param email email address in valid format
-  # @param password plaintext password
-  # @param user_type type of the user
+  # @param details_hash hash with all fields in the model
   # @return new instance or nil if user already exists
-  def self.register(email, password, user_type)
-    user = M_user.new(email: email, password: password, user_type: user_type)
+  def self.register(details_hash)
+    user = M_user.new(details_hash)
     user.save if user.valid?
     user
   end

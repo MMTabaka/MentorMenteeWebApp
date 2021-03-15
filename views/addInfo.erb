@@ -20,7 +20,7 @@
         <img src="img/defaultPic.jpg" class="picSignup mx-auto d-block" alt="user picture">
         <br/>
         <label for="pic" class="form-label">Your Picture</label>
-        <% if @userType == "Mentor" %>
+        <% if @userType == "1" %>
           <input id="pic" type="file" accept="image/gif,image/jpeg,image/jpg,image/png" class="form-control" name="pic" required>
         <% else %>
           <input id="pic" class="form-control" type="file" accept="image/gif,image/jpeg,image/jpg,image/png" name="pic">
@@ -28,29 +28,32 @@
       </div>
       <div class="mb-3">
         <label for="username" class="form-label">Your Name</label>
-        <input id="username" type="text" class="form-control" name="username" pattern="/^([A-Za-z]+\s?)*[A-Za-z]$/" required>
+        <input id="username" type="text" class="form-control" name="name" required>
       </div>
       <div class="mb-3">
-        <label for="department" class="form-label">Department</label>
-        <% if @userType == "Mentor" %>
+        <% if @userType == "1" %>
+          <label for="department" class="form-label">Department</label>
           <input id="department" type="text" class="form-control" name="department" required>
         <% else %>
+          <label for="department" class="form-label">Department (optional)</label>
           <input id="department" type="text" class="form-control" name="department">
         <% end %>
       </div>
       <div class="mb-3">
-        <label for="area" class="form-label">Area of Interst</label>
-        <% if @userType == "Mentor" %>
-          <input id="area" type="text" class="form-control" name="area" required>
+        <% if @userType == "1" %>
+          <label for="areas" class="form-label">Areas of Interest</label>
+          <input id="areas" type="text" class="form-control" name="areas" required>
         <% else %>
-          <input id="area" type="text" class="form-control" name="area">
+          <label for="areas" class="form-label">Areas of Interest (optional)</label>
+          <input id="areas" type="text" class="form-control" name="areas">
         <% end %>
       </div>
       <div class="mb-3">
-        <label for="bio" class="form-label">Bio</label>
-        <% if @userType == "Mentor" %>
+        <% if @userType == "1" %>
+          <label for="bio" class="form-label">Bio</label>
           <textarea id="bio" name="bio" required class="form-control" rows="4"></textarea>
         <% else %>
+          <label for="bio" class="form-label">Bio (optional)</label>
           <textarea id="bio" name="bio" class="form-control" rows="4"></textarea>
         <% end %>
       </div>

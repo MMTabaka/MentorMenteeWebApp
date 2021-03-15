@@ -7,9 +7,27 @@ end
 get '/details' do
   # Only allow if continuing from registration
   redirect '/' unless session[:reg_params]
+  @userType = session[:reg_params][:user_type]
 
-  # TODO: Complete
-  return 'WIP'
+  erb :addInfo
+end
+
+post '/details' do
+  # Cookie is gone?
+  halt 500 unless session[:reg_params]
+  usr_details = {
+    email: session[:reg_params][:email],
+    password: session[:reg_params][:password],
+    user_type: session[:reg_params][:user_type],
+    description: params['department'],
+    explanation: params['bio'],
+    fields: params['areas']
+  }
+  user = M_user.register(usr_details)
+  # Account creation successful, log in new user
+  session[:reg_params] = nil
+  session[:user] = user
+  redirect '/'
 end
 
 get '/registration' do

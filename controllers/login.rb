@@ -1,76 +1,41 @@
 require 'sinatra'
-
-def validate(user_data)
-  res = { 'valid' => true, 'errors' => {} }
-  # Validate email address
-  if user_data['email'].nil?
-    res['valid'] = false
-    res['errors']['email'] = 'Please enter your email'
-    return res
-  elsif !user_data['email'].match?(/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/)
-    res['valid'] = false
-    res['errors']['email'] = 'Invalid email'
-  end
-  # Validate password
-  if user_data['pass'].nil?
-    res['valid'] = false
-    res['errors']['pass'] = 'Please enter your password'
-    return res
-  # Password must be 8 chars long, contain lower, upper-case letters and numbers
-  elsif !user_data['pass'].match?(/(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$/)
-    res['valid'] = false
-    # TODO: This is too long i guess
-    res['errors']['pass'] = 'Must be at least 8 characters long and contain a lowercase, uppercase letter and a number'
-  end
-  if user_data['re-pass'].nil?
-    res['valid'] = false
-    res['errors']['re-pass'] = 'Please retype your password'
-    return res
-  elsif user_data['re-pass'] != user_data['pass']
-    res['valid'] = false
-    res['errors']['re-pass'] = 'Passwords do not match'
-  end
-  if user_data['user-type'].nil?
-    res['valid'] = false
-    res['errors']['user-type'] = 'Please enter your email'
-    return res
-  # If this happened, user tampered with input
-  elsif user_data['user-type'] != '1' && user_data['user-type'] != '2'
-    res['valid'] = false
-    res['errors']['user-type'] = 'Non-existing user type'
-  end
-  res
-end
-
+require_relative '../helpers/authenticated'
 
 get "/" do
-  redirect "/login" unless session[:logged_in]
-  redirect "/temp-user-page" if session[:logged_in]
+  authenticated
+  redirect "/temp-user-page"
 end
 
 get "/login" do
-  redirect "/temp-user-page" if session[:logged_in]
-  @validation = { 'valid' => true, 'errors' => {} }
+  redirect "/temp-user-page" if session[:user]
+  session[:is_valid] = true if session[:is_valid].nil?
+  @is_valid = session[:is_valid]
   erb :login
 end
 
 post "/login" do
   @email = params["email"]
   @password = params["pass"]
-    
-  if M_user.login(@email, @password)
-    session[:logged_in] = true
+  
+  user = M_user.login(@email, @password)
+  
+  unless user.nil?
+    session[:user] = user
+    session[:is_valid] = nil
     redirect "/temp-user-page"
+  else
+    session[:is_valid] = false
   end
+  redirect "/login"
 end
 
 get "/temp-user-page" do
-  redirect "/login" unless session[:logged_in]
-  "You are logged in!"
+  redirect "/login" unless session[:user]
+  "You are logged in! #{session[:user][:email]}"
 end
 
 get "/logout" do
-  redirect "/login" unless session[:logged_in]
+  redirect "/login" unless session[:user]
   session.clear
   "You have been logged out successfully"
 end

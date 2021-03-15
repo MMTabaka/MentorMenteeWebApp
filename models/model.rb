@@ -21,14 +21,12 @@ class M_user < Sequel::Model
   # @param password
   # @return boolean true if the credentials are correct
   def self.login(email, password)
-    return false if email.nil?
-    return false if password.nil?
-    return false if self.where(email: email).single_record.nil?
-    return true if self[email: email][:password] == password
-    return false if self[email: email][:password].nil?
-    
-    false
+    user = self.where(email: email).single_record
+    return nil if user.nil?
+    return user if self[email: email][:password] == password
+    nil
   end
+  
 
   # Checks if user exists and creates a new one if not
   # @param email email address in valid format

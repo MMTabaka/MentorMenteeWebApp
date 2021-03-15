@@ -15,24 +15,21 @@
   <div class="contentSmall">
   <h1 class="text-center  pb-3">Welcome!</h1>
   <p class="text-center  pb-3">Please Log In</p>
+     
+    <% unless @is_valid %>
+      <p>Email or password is incorrect or does not exist</p>
+    <% end %>
+    
   <form method="post">
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control <%= @validation[:email] ? 'is-invalid': '' %>" name="email" required>
-      <% unless @validation[:email].nil? %>
-        <div class="invalid-feedback">
-          <%= @validation[:email] %>
-        </div>
-      <% end %>
+      <input type="email" class="form-control" name="email" required>
+      
     </div>
     <div class="mb-3">
       <label for="pass" class="form-label">Password</label>
-      <input type="password" class="form-control <%= @validation[:pass] ? 'is-invalid': '' %>" name="pass" required>
-      <% unless @validation[:pass].nil? %>
-        <div class="invalid-feedback">
-          <%= @validation[:pass] %>
-        </div>
-      <% end %>
+      <input type="password" class="form-control" name="pass" required>
+      
     </div>
     <button type="submit" class="btn btn-primary btnC">Login</button>
     <br/>

@@ -10,9 +10,10 @@ RSpec.describe M_user do
     email: 'valid@email.com',
     password: 'SecurePass123',
     user_type: '1',
-    description: 'Desc',
-    explanation: 'Explanation',
-    fields: 'Area 1, Area 2'
+    name: 'Test Name',
+    department: 'Desc',
+    bio: 'Explanation',
+    interest_areas: 'Area 1, Area 2'
   }
   describe 'Data validation' do
     context 'when you provide valid data' do

@@ -10,12 +10,13 @@ def populate_tables
     Integer :user_type, null: false
     String :email, null: false
     String :password, null: false
-    String :description
-    String :explanation
+    String :name
+    String :department
+    String :bio
+    String :interest_areas
     String :request
     Integer :acceptance
     Integer :suspension
-    String :fields
   end
 
   DB.create_table(:admins) do

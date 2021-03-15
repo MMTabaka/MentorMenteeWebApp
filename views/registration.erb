@@ -47,8 +47,8 @@
     <div class="mb-3">
       <label for="user-type" class="form-label">Who you are?</label>
       <select name="user-type" class="form-select <%= @validation[:user_type] ? 'is-invalid': '' %>" required>
-        <option value="1" selected>Mentor</option>
-        <option value="2">Mentee</option>
+        <option value="0" selected>Mentor</option>
+        <option value="1">Mentee</option>
       </select>
       <% unless @validation[:user_type].nil? %>
         <div class="invalid-feedback">

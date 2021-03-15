@@ -1,5 +1,6 @@
 require 'sequel'
 
+# Model representing user record and its related actions
 class M_user < Sequel::Model
 
   plugin :validation_helpers

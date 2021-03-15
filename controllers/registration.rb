@@ -1,13 +1,9 @@
 require 'sinatra'
 
-get '/' do
-  'Hello World!'
-end
-
 get '/details' do
   # Only allow if continuing from registration
   redirect '/' unless session[:reg_params]
-  @userType = session[:reg_params][:user_type]
+  @user_type = session[:reg_params][:user_type]
 
   erb :addInfo
 end
@@ -19,19 +15,23 @@ post '/details' do
     email: session[:reg_params][:email],
     password: session[:reg_params][:password],
     user_type: session[:reg_params][:user_type],
-    description: params['department'],
-    explanation: params['bio'],
-    fields: params['areas']
+    name: params["name"],
+    department: params['department'],
+    bio: params['bio'],
+    interest_areas: params['areas']
   }
   user = M_user.register(usr_details)
   # Account creation successful, log in new user
   session[:reg_params] = nil
-  session[:user] = user
+  session[:user] = user.id
+  puts "Registration successful: #{user.id}"
   redirect '/'
 end
 
 get '/registration' do
-  @validation = {}
+  # Initialise validation if it's not set yet
+  session[:validation] = {} if session[:validation].nil?
+  @validation = session.delete(:validation)
   erb :registration
 end
 
@@ -42,15 +42,16 @@ post '/registration' do
     user = M_user.new(email: params['email'], password: params['pass'], user_type: params['user-type'])
     unless user.valid?
       # Validations failed
-      @validation = user.errors
-      # TODO: This is not ideal, I should redirect, but then I need to save validation to session?
-      return erb :registration
+      session[:validation] = user.errors
+      redirect '/registration'
     end
     # Registration successful, let's continue by saving
     # stuff we have for later
     session[:reg_params] = { email: params['email'], password: params['pass'], user_type: params['user-type'] }
-    return redirect '/details'
+    # Clear validation just in case
+    session[:validation]
+    redirect '/details'
   end
-  @validation = { re_pass: 'Passwords do not match' }
-  return erb :registration
+  session[:validation] = { re_pass: 'Passwords do not match' }
+  redirect '/registration'
 end

@@ -833,3 +833,45 @@ I, [2021-03-15T13:53:39.964450 #12256]  INFO -- : (0.000061s) BEGIN
 I, [2021-03-15T13:53:39.965547 #12256]  INFO -- : (0.000653s) INSERT INTO `m_users` (`email`, `password`, `user_type`, `description`, `explanation`, `fields`) VALUES ('vykintazo@gmail.com', 'SecurePass123', 1, 'Idk', 'ljukyjghdfugiytfurdtseyrdyugiyjfchxtdhesrtdrjuhkjbhvgcfxndresdfyugihbkjvghcfnxdhzgrestdyugbjhvcfgxd', 'Very interesting, area')
 I, [2021-03-15T13:53:39.966290 #12256]  INFO -- : (0.000262s) SELECT * FROM `m_users` WHERE `id` = 4
 I, [2021-03-15T13:53:39.969805 #12256]  INFO -- : (0.003352s) COMMIT
+I, [2021-03-15T15:15:32.148120 #17305]  INFO -- : (0.000182s) PRAGMA foreign_keys = 1
+I, [2021-03-15T15:15:32.148209 #17305]  INFO -- : (0.000018s) PRAGMA case_sensitive_like = 1
+I, [2021-03-15T15:15:32.149471 #17305]  INFO -- : (0.000241s) SELECT sqlite_version()
+I, [2021-03-15T15:15:32.149901 #17305]  INFO -- : (0.000205s) PRAGMA table_xinfo('m_users')
+I, [2021-03-15T15:15:32.157762 #17305]  INFO -- : (0.000179s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-15T15:15:32.158012 #17305]  INFO -- : (0.000122s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-15T15:16:45.190629 #17305]  INFO -- : (0.000220s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'vykintazo@gmail.com') LIMIT 1
+I, [2021-03-15T15:17:24.385721 #17305]  INFO -- : (0.000162s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'end@fvd.com') LIMIT 1
+I, [2021-03-15T15:19:07.900381 #17305]  INFO -- : (0.000452s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'end@fvd.com') LIMIT 1
+I, [2021-03-15T15:22:54.467886 #17305]  INFO -- : (0.000452s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'end@fvd.com') LIMIT 1
+I, [2021-03-15T15:22:54.469586 #17305]  INFO -- : (0.000251s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'end@fvd.com') LIMIT 1
+I, [2021-03-15T15:22:54.469910 #17305]  INFO -- : (0.000055s) BEGIN
+I, [2021-03-15T15:22:54.471705 #17305]  INFO -- : (0.001333s) INSERT INTO `m_users` (`email`, `password`, `user_type`, `description`, `explanation`, `fields`) VALUES ('end@fvd.com', 'SecurePass123', 1, 'Deptskjndfv sdvkindfv', 'dfgbhcfdsgbf', 'sdkjvndkfjvnf,dfvdfvb,svfgb')
+I, [2021-03-15T15:22:54.472399 #17305]  INFO -- : (0.000292s) SELECT * FROM `m_users` WHERE `id` = 5
+I, [2021-03-15T15:22:54.475960 #17305]  INFO -- : (0.003380s) COMMIT
+I, [2021-03-15T15:24:21.440535 #17305]  INFO -- : (0.000479s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'end@fvd.com') LIMIT 1
+I, [2021-03-16T00:02:19.706094 #58209]  INFO -- : (0.000187s) PRAGMA foreign_keys = 1
+I, [2021-03-16T00:02:19.706382 #58209]  INFO -- : (0.000052s) PRAGMA case_sensitive_like = 1
+I, [2021-03-16T00:02:19.707556 #58209]  INFO -- : (0.000095s) SELECT sqlite_version()
+I, [2021-03-16T00:02:19.707831 #58209]  INFO -- : (0.000136s) PRAGMA table_xinfo('m_users')
+I, [2021-03-16T00:02:19.714126 #58209]  INFO -- : (0.000143s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-16T00:02:19.714351 #58209]  INFO -- : (0.000080s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-16T00:03:46.513248 #58209]  INFO -- : (0.000228s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'test@test.com') LIMIT 1
+I, [2021-03-16T00:04:06.686135 #58209]  INFO -- : (0.000158s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'test@test.com') LIMIT 1
+I, [2021-03-16T00:04:06.686657 #58209]  INFO -- : (0.000115s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'test@test.com') LIMIT 1
+I, [2021-03-16T00:04:06.686844 #58209]  INFO -- : (0.000035s) BEGIN
+I, [2021-03-16T00:04:06.687319 #58209]  INFO -- : (0.000221s) INSERT INTO `m_users` (`email`, `password`, `user_type`, `description`, `explanation`, `fields`) VALUES ('test@test.com', 'SecurePass123', 1, 'dkvjndfkjvb', 'sdkvndkfjnvjkdnv', 'skdcnkjsdncvkdjs')
+I, [2021-03-16T00:04:06.687629 #58209]  INFO -- : (0.000130s) SELECT * FROM `m_users` WHERE `id` = 6
+I, [2021-03-16T00:04:06.690679 #58209]  INFO -- : (0.002930s) COMMIT
+I, [2021-03-16T00:06:42.618941 #58860]  INFO -- : (0.000174s) PRAGMA foreign_keys = 1
+I, [2021-03-16T00:06:42.619034 #58860]  INFO -- : (0.000016s) PRAGMA case_sensitive_like = 1
+I, [2021-03-16T00:06:42.619960 #58860]  INFO -- : (0.000091s) SELECT sqlite_version()
+I, [2021-03-16T00:06:42.620237 #58860]  INFO -- : (0.000136s) PRAGMA table_xinfo('m_users')
+I, [2021-03-16T00:06:42.626541 #58860]  INFO -- : (0.000139s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-16T00:06:42.626756 #58860]  INFO -- : (0.000088s) SELECT * FROM `m_users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-03-16T00:07:12.545138 #58860]  INFO -- : (0.000172s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'sdsv@dfbdfb.com') LIMIT 1
+I, [2021-03-16T00:07:22.477402 #58860]  INFO -- : (0.000402s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'sdsv@dfbdfb.com') LIMIT 1
+I, [2021-03-16T00:07:22.479353 #58860]  INFO -- : (0.000416s) SELECT count(*) AS 'count' FROM `m_users` WHERE (`email` = 'sdsv@dfbdfb.com') LIMIT 1
+I, [2021-03-16T00:07:22.479958 #58860]  INFO -- : (0.000106s) BEGIN
+I, [2021-03-16T00:07:22.481292 #58860]  INFO -- : (0.000641s) INSERT INTO `m_users` (`email`, `password`, `user_type`, `description`, `explanation`, `fields`) VALUES ('sdsv@dfbdfb.com', 'SecurePass123', 1, 'kjhbgfcx', 'klmjhbgfcdx', 'kljhgfcxd')
+I, [2021-03-16T00:07:22.482141 #58860]  INFO -- : (0.000386s) SELECT * FROM `m_users` WHERE `id` = 7
+I, [2021-03-16T00:07:22.486686 #58860]  INFO -- : (0.004200s) COMMIT

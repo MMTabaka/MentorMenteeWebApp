@@ -12,6 +12,7 @@ class M_user < Sequel::Model
     validates_format /(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$/, :password,
                      message: 'Must be at least 8 characters long and contain a lowercase, uppercase letter and a number'
     validates_includes [0, 1, 2], :user_type, message: 'User type is non-existing'
+    validates_unique(:email, message: 'This email is already take')
 
   end
 
@@ -20,6 +21,7 @@ class M_user < Sequel::Model
     return false if password.nil?
     # return false if self[:email].nil?
     # return false if self[:password].nil?
+
     return false if self[email: email][:password].nil?
     return true if self[email: email][:password] == password
     return false
@@ -31,14 +33,8 @@ class M_user < Sequel::Model
   # @param user_type type of the user
   # @return new instance or nil if user already exists
   def self.register(email, password, user_type)
-    if M_user.where(email: email).single_record.nil?
-      begin
-        return M_user.new(email: email, password: password, user_type: user_type).save
-      rescue Sequel::ValidationFailed
-        return nil
-      end
-    end
-
-    nil
+    user = M_user.new(email: email, password: password, user_type: user_type)
+    user.save if user.valid?
+    user
   end
 end

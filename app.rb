@@ -2,6 +2,8 @@ require 'require_all'
 require 'sinatra'
 require 'sinatra/reloader'
 
+enable :sessions
+
 # So we can escape HTML special characters in the view
 include ERB::Util
 

@@ -1,0 +1,40 @@
+<% activedLI = "" %>
+<% activedM = "" %>
+<% activedRH = "" %>
+<% case @actived
+   when "myMentee" || "myMentor" || "mentorList" %>
+    <% activedM="active" %>
+  <% when "requestHistory" %>
+    <% activedRH="active" %>
+  <% when "login" %>
+    <% activedLI="active" %>
+<% end %>
+<div class="bg-warning">
+  <div class="navi">
+    <ul class="nav justify-content-end nav-pills">
+      <% if @loggedIn == false %>
+        <li class="nav-item">  
+          <a class="nav-link text-body <%= activedLI %>" href="login.erb">Log In</a>
+        </li>
+      <% else %>
+        <li>
+        <% if @userType == "Mentor" %>
+          <a class="nav-link text-body <%= activedM %>" href="myMentee.erb">My Mentee</a>
+        <% elsif @userType == "Mentee" && @requesting == true %>
+          <a class="nav-link text-body <%= activedM %>" href="myMentor.erb">My Mentor</a>
+        <% else %>
+          <a class="nav-link text-body <%= activedM %>" href="mentorList.erb">Mentor List</a>
+        <% end %>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-body <%= activedRH %>" href="requestHistory.erb">Request History</a>
+        </li>
+        <li class="nav-item navPic">  
+          <a class="nav-item" href="userInfo.erb">
+            <img src="<%= @userPic %>" class="picSmall float-end" alt="user picture">
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

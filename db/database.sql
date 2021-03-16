@@ -1,14 +1,22 @@
+DROP TABLE m_users;
+DROP TABLE admins;
+
+-- Clear everything
+VACUUM;
+
 CREATE TABLE m_users (
-    user_type TEXT NOT NULL,
-    ucard INTEGER NOT NULL,
-    email TEXT NOT NULL,
+    
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_type INTEGER NOT NULL,
+    email TEXT NOT NULL UNIQUE,
     password TEXT NOT NULL,
-    description TEXT,
-    explanation TEXT,
+    name TEXT,
+    department TEXT,
+    bio TEXT,
+    interest_areas TEXT,
     request TEXT,
     acceptance INTEGER,
-    suspension INTEGER,
-    fields TEXT
+    suspension INTEGER
 );
 
 CREATE TABLE admins (
@@ -16,5 +24,10 @@ CREATE TABLE admins (
     password TEXT
 );
 
-INSERT INTO m_users VALUES ("Mentor", 23456, "email@email.com", "password", "description", "explanation", "request",
-                           0, 0, "field, field, field");
+INSERT INTO m_users (user_type, email, password, name, department, bio, request, acceptance, suspension, interest_areas)
+VALUES (1, 'email@email.com', 'VerySecurePass1337', 'Mentee John', 'Department of Computer Science', 'Random bio text',
+        '', 0, 0, 'field1,field2,field3');
+
+INSERT INTO m_users (user_type, email, password, name, department, bio, request, acceptance, suspension, interest_areas)
+VALUES (0, 'email2@email.com', 'SecurePass123', 'Mentor Paul', 'Department of Nothing', 'Random bio text',
+        '', 0, 0, 'field1,field5,field6');

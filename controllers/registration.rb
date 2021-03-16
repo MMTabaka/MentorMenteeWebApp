@@ -15,12 +15,12 @@ post '/details' do
     email: session[:reg_params][:email],
     password: session[:reg_params][:password],
     user_type: session[:reg_params][:user_type],
-    name: params["name"],
+    name: params['name'],
     department: params['department'],
     bio: params['bio'],
     interest_areas: params['areas']
   }
-  user = M_user.register(usr_details)
+  user = User.register(usr_details)
   # Account creation successful, log in new user
   session[:reg_params] = nil
   session[:user] = user.id
@@ -39,7 +39,7 @@ post '/registration' do
   puts params
   if params['pass'] == params['re-pass']
     # Create instance just for validation for now
-    user = M_user.new(email: params['email'], password: params['pass'], user_type: params['user-type'])
+    user = User.new(email: params['email'], password: params['pass'], user_type: params['user-type'])
     unless user.valid?
       # Validations failed
       session[:validation] = user.errors

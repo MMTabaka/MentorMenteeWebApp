@@ -43,6 +43,11 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.4.1)
       parser (>= 2.7.1.5)
+    rubocop-rspec (2.2.0)
+      rubocop (~> 1.0)
+      rubocop-ast (>= 1.1.0)
+    rubocop-sequel (0.2.0)
+      rubocop (~> 1.0)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.4)
     sequel (5.41.0)
@@ -73,6 +78,8 @@ DEPENDENCIES
   require_all!
   rspec!
   rubocop!
+  rubocop-rspec!
+  rubocop-sequel!
   sequel!
   sinatra!
   sinatra-contrib!

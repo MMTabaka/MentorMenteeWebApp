@@ -5,7 +5,7 @@ DB = Sequel.sqlite
 
 # Creates user and admin tables
 def populate_tables
-  DB.create_table(:m_users) do
+  DB.create_table(:users) do
     primary_key :id, auto_increment: true
     Integer :user_type, null: false
     String :email, null: false
@@ -26,7 +26,7 @@ def populate_tables
 end
 
 def cleanup
-  DB.drop_table(:m_users)
+  DB.drop_table(:users)
   DB.drop_table(:admins)
   populate_tables
 end

@@ -875,3 +875,9 @@ I, [2021-03-16T00:07:22.479958 #58860]  INFO -- : (0.000106s) BEGIN
 I, [2021-03-16T00:07:22.481292 #58860]  INFO -- : (0.000641s) INSERT INTO `m_users` (`email`, `password`, `user_type`, `description`, `explanation`, `fields`) VALUES ('sdsv@dfbdfb.com', 'SecurePass123', 1, 'kjhbgfcx', 'klmjhbgfcdx', 'kljhgfcxd')
 I, [2021-03-16T00:07:22.482141 #58860]  INFO -- : (0.000386s) SELECT * FROM `m_users` WHERE `id` = 7
 I, [2021-03-16T00:07:22.486686 #58860]  INFO -- : (0.004200s) COMMIT
+I, [2021-03-16T11:31:45.089497 #16222]  INFO -- : (0.000182s) PRAGMA foreign_keys = 1
+I, [2021-03-16T11:31:45.089599 #16222]  INFO -- : (0.000027s) PRAGMA case_sensitive_like = 1
+I, [2021-03-16T11:31:45.090456 #16222]  INFO -- : (0.000076s) SELECT sqlite_version()
+I, [2021-03-16T11:31:45.090709 #16222]  INFO -- : (0.000132s) PRAGMA table_xinfo('users')
+I, [2021-03-16T11:32:28.002080 #16222]  INFO -- : (0.000543s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-16T11:32:28.003074 #16222]  INFO -- : (0.000256s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1

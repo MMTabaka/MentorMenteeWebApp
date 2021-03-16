@@ -32,7 +32,7 @@ end
 
 get '/temp-user-page' do
   redirect '/login' unless session[:user]
-  "You are logged in! #{session[:user][:email]}"
+  "You are logged in! Id: #{session[:user]}"
 end
 
 get '/logout' do

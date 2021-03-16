@@ -2,7 +2,6 @@ require 'sequel'
 
 # Model representing user record and its related actions
 class M_user < Sequel::Model
-
   plugin :validation_helpers
   # Validates user fields
   # Regex from https://digitalfortress.tech/tricks/top-15-commonly-used-regex/
@@ -17,17 +16,18 @@ class M_user < Sequel::Model
 
   end
 
+
+  # Checks if the user exists and then checks if the password is correct
+  # @param email
+  # @param password
+  # @return boolean true if the credentials are correct
   def self.login(email, password)
-    return false if email.nil?
-    return false if password.nil?
-    # return false if self[:email].nil?
-    # return false if self[:password].nil?
-
-    return false if self[email: email][:password].nil?
-
-    return true if self[email: email][:password] == password
-    return false
+    user = self.where(email: email).single_record
+    return nil if user.nil?
+    return user if self[email: email][:password] == password
+    nil
   end
+
 
   # Checks if user exists and creates a new one if not
   # @param details_hash hash with all fields in the model
@@ -36,5 +36,11 @@ class M_user < Sequel::Model
     user = M_user.new(details_hash)
     user.save if user.valid?
     user
+  end
+
+  # Returns all user information for a given user_type
+  # @param user_type An integer representation of the user's role
+  def self.retrieveUsers(user_type)
+    return  M_user.where(user_type: user_type).all
   end
 end

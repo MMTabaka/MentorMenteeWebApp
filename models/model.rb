@@ -24,13 +24,14 @@ class M_user < Sequel::Model
     # return false if self[:password].nil?
 
     return false if self[email: email][:password].nil?
+
     return true if self[email: email][:password] == password
     return false
   end
 
   # Checks if user exists and creates a new one if not
   # @param details_hash hash with all fields in the model
-  # @return new instance or nil if user already exists
+  # @return new instance of the user (might be nil if validation fails)
   def self.register(details_hash)
     user = M_user.new(details_hash)
     user.save if user.valid?

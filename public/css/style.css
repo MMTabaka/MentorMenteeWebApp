@@ -18,12 +18,10 @@ body{
 
 .picSmall{
   width: 85%;
-  height: 85%;
   border-radius:50%
 }
 .picSignup{
   width: 35%;
-  height: 35%;
   border-radius:50%;
 }
 

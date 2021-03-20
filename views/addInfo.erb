@@ -17,16 +17,6 @@
     <p class="text-center  pb-3">Provide additional information</p>
     <form method="post">
       <div class="mb-3">
-        <img src="img/defaultPic.jpg" class="picSignup mx-auto d-block" alt="user picture">
-        <br/>
-        <label for="pic" class="form-label">Your Picture</label>
-        <% if @userType == "Mentor" %>
-          <input id="pic" type="file" accept="image/gif,image/jpeg,image/jpg,image/png" class="form-control" name="pic" required>
-        <% else %>
-          <input id="pic" class="form-control" type="file" accept="image/gif,image/jpeg,image/jpg,image/png" name="pic">
-        <% end %>
-      </div>
-      <div class="mb-3">
         <label for="username" class="form-label">Your Name</label>
         <input id="username" type="text" class="form-control" name="username" pattern="/^([A-Za-z]+\s?)*[A-Za-z]$/" required>
       </div>

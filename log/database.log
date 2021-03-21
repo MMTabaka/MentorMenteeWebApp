@@ -881,3 +881,11 @@ I, [2021-03-16T11:31:45.090456 #16222]  INFO -- : (0.000076s) SELECT sqlite_vers
 I, [2021-03-16T11:31:45.090709 #16222]  INFO -- : (0.000132s) PRAGMA table_xinfo('users')
 I, [2021-03-16T11:32:28.002080 #16222]  INFO -- : (0.000543s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
 I, [2021-03-16T11:32:28.003074 #16222]  INFO -- : (0.000256s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-16T09:39:24.711501 #458]  INFO -- : (0.000181s) PRAGMA foreign_keys = 1
+I, [2021-03-16T09:39:24.711607 #458]  INFO -- : (0.000015s) PRAGMA case_sensitive_like = 1
+I, [2021-03-16T09:39:24.712216 #458]  INFO -- : (0.000063s) SELECT sqlite_version()
+I, [2021-03-16T09:39:24.712509 #458]  INFO -- : (0.000147s) PRAGMA table_info('users')
+I, [2021-03-16T10:11:41.922643 #515]  INFO -- : (0.000184s) PRAGMA foreign_keys = 1
+I, [2021-03-16T10:11:41.922746 #515]  INFO -- : (0.000015s) PRAGMA case_sensitive_like = 1
+I, [2021-03-16T10:11:41.923387 #515]  INFO -- : (0.000065s) SELECT sqlite_version()
+I, [2021-03-16T10:11:41.923654 #515]  INFO -- : (0.000130s) PRAGMA table_info('users')

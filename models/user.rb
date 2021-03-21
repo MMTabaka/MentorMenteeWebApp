@@ -42,4 +42,25 @@ class User < Sequel::Model
   def self.retrieve_users(user_type)
     User.where(user_type: user_type).all
   end
+
+  # Returns the levenshtein distance between a mentor and mentee's interests
+  # @param mentor_fields An unsplit array of the mentor's interests
+  # @param mentee_fields An unsplit array of the mentee's interests
+  def self.levenshtein_distance(mentor_fields, mentee_fields)
+    """
+    Levenshtein distance implementation from Rosetta code:
+    https://rosettacode.org/wiki/Levenshtein_distance#Ruby
+    """
+    mentor_fields_array = mentor_fields.split(', ')
+    mentee_fields_array = mentee_fields.split(', ')
+
+    costs = Array(0..mentee_fields_array.length) # i == 0
+    (1..mentor_fields_array.length).each do |i|
+      costs[0], nw = i, i - 1  # j == 0; nw is lev(i-1, j)
+      (1..mentee_fields_array.length).each do |j|
+        costs[j], nw = [costs[j] + 1, costs[j - 1] + 1, mentor_fields_array[i - 1] == mentee_fields_array[j - 1] ? nw : nw + 1].min, costs[j]
+      end
+    end
+    return costs[mentee_fields_array.length]
+  end
 end

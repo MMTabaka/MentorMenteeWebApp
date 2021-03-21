@@ -37,10 +37,15 @@
   border-bottom: 0.1em solid;
 }
 .picML{
- width: 4em;
- border-radius: 50%;
+  width: 4em;
+  border-radius: 50%;
 }
-
+.showDetail{
+  font-weight: bold;
+  border-style: none none solid none;
+  background-color: transparent;
+  padding: 0;
+}
 .mlFirstDes{
   padding-bottom: 1em;
 }

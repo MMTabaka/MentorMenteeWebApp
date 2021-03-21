@@ -1,10 +1,10 @@
 require 'sinatra'
 require_relative '../helpers/authenticated'
 
-get '/' do
-  authenticated
-  redirect '/temp-user-page'
-end
+# get '/' do
+#   authenticated
+#   redirect '/temp-user-page'
+# end
 
 get '/login' do
   redirect '/temp-user-page' if session[:user]

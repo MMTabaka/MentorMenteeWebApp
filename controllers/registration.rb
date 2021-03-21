@@ -3,6 +3,8 @@ require 'sinatra'
 get '/details' do
   # Only allow if continuing from registration
   redirect '/' unless session[:reg_params]
+  @department = Department.all
+  @interests = Interest.all
   @user_type = session[:reg_params][:user_type]
 
   erb :addInfo

@@ -45,5 +45,14 @@ RSpec.describe User do
       end
     end
   end
+  describe 'Levenshtein Distance comparison' do
+    context 'when you compare two users with the same interests' do
+      it 'returns an integer value of interests that differ' do
+        mentee = User.create(email: 'user0@email.com', password: 'SecurePass123', user_type: 0, interest_areas: "field, field, field")
+        mentor = User.create(email: 'user1@email.com', password: 'SecurePass123', user_type: 1, interest_areas: "field, field, field")
+        expect(User.levenshtein_distance(mentor.fields, mentee.fields)).to be == 0
+      end
+    end
+  end
 end
 

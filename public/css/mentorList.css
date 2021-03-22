@@ -1,0 +1,55 @@
+.containerML{
+  margin: 2em auto;
+  border-radius: 1.5em;
+}
+.contentML{
+  padding: 2em 1em;
+}
+.containSearch{
+  width: 30%;
+  margin-left: 3%;
+  padding: 1em;
+  background-color: #ffffff;
+  border-radius: 1.5em;
+  display: inline-block;
+  vertical-align: top;
+}
+.containList{
+  width: 60%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 1em;
+  background-color: #ffffff;
+  border-radius: 1.5em;
+  display: inline-block;
+}
+
+.searchH{
+  text-align: center;
+}
+.searchh{
+  margin-top: 1em;
+  margin-bottom:0.5em;
+}
+
+.userRow{
+  padding: 1.5em 0;
+  border-bottom: 0.1em solid;
+}
+.picML{
+  width: 4em;
+  border-radius: 50%;
+}
+.showDetail{
+  font-weight: bold;
+  border-style: none none solid none;
+  background-color: transparent;
+  padding: 0;
+}
+.mlFirstDes{
+  padding-bottom: 1em;
+}
+
+.mlButton{
+  padding: 2%;
+}

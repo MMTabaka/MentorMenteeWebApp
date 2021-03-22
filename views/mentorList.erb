@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/mentorList.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <title>Mentor List</title>
+</head>
+    
+<body>
+<%= erb :"common/nav" %>
+  <div class="containerML">
+  <div class="containSearch">
+    <div class="contentML">
+      <h3 class="searchH">Search</h3>
+      <label class="searchh">By Name</label>
+      <div class="input-group mb-3">
+        <input type="text" name="nameSearch" class="form-control">
+        <button type="submit" id="searchN" class="btn btn-outline-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+      </div>
+      <label class="searchh">By Department</label>
+      <div class="input-group mb-3">
+        <input type="text" name="departmentSearch" class="form-control">
+        <button type="submit" id="searchD" class="btn btn-outline-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+      </div>
+      <label class="searchh">By Area of Interest</label>
+      <div class="input-group mb-3">
+        <input type="text" name="areaSearch" class="form-control">
+        <button type="submit" id="searchA" class="btn btn-outline-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="containList">
+    <div class="contentML">
+      <h3>Mentor List</h3>
+      <% (1..@mentors).each do |i|%>
+        <div class="row userRow flex-nowrap">
+          <div class="col">
+            <img src="img/defaultPic.jpg" class="picML" alt="user picture">
+          </div>
+          <div class="col-8">
+            <div class="row mlFirstDes">
+              <div class="col">
+                  <button id="<%= @userID %>" type="submit" class="showDetail"><%= @username %></button>
+              </div>
+              <div class="col-7">
+                <label><%= @department %></label>
+              </div>  
+            </div>
+            <div class="row">
+                <label><%= @area %></label>
+            </div>
+          </div>
+          <div class="col mlButton">
+            <button id="request<%= @userID %>" type="submit" onclick="return confirm ('Request this mentor?')" class="btn btn-secondary btn-lg btnC">Request</button>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  </div>
+<%= erb :"common/footer" %>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"/>
+</html>

@@ -1,0 +1,19 @@
+.bioText{
+  width: 70%;
+}
+.title{
+  font-weight:bold;
+}
+.name{
+  width: 45%;
+}
+.email{
+  display: inline-block;
+}
+#staticName{
+  font-size: 1.5em;
+}
+#backToMentorList{
+  width: 5em;
+  height: 3em;
+}

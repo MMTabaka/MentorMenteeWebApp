@@ -1099,3 +1099,34 @@ I, [2021-03-22T10:46:37.427351 #367]  INFO -- : (0.000080s) SELECT count(*) AS '
 I, [2021-03-22T10:46:37.429215 #367]  INFO -- : (0.000104s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'user0@email.com') LIMIT 1
 I, [2021-03-22T10:46:37.430756 #367]  INFO -- : (0.000098s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'user0@email.com') LIMIT 1
 I, [2021-03-22T10:46:37.431839 #367]  INFO -- : (0.000109s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'user0@email.com') LIMIT 1
+I, [2021-03-22T12:26:23.980932 #360]  INFO -- : (0.000181s) PRAGMA foreign_keys = 1
+I, [2021-03-22T12:26:23.981027 #360]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-03-22T12:27:36.367997 #361]  INFO -- : (0.000184s) PRAGMA foreign_keys = 1
+I, [2021-03-22T12:27:36.368094 #361]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-03-22T12:28:17.439599 #363]  INFO -- : (0.000175s) PRAGMA foreign_keys = 1
+I, [2021-03-22T12:28:17.439696 #363]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-03-22T12:28:54.903282 #364]  INFO -- : (0.000178s) PRAGMA foreign_keys = 1
+I, [2021-03-22T12:28:54.903390 #364]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2021-03-22T12:45:31.726720 #530]  INFO -- : (0.000138s) PRAGMA foreign_keys = 1
+I, [2021-03-22T12:45:31.726823 #530]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-03-22T12:45:31.729908 #530]  INFO -- : (0.000105s) SELECT sqlite_version()
+I, [2021-03-22T12:45:31.730208 #530]  INFO -- : (0.000147s) PRAGMA table_info('users')
+I, [2021-03-22T12:45:32.045516 #530]  INFO -- : (0.000190s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.045805 #530]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.046050 #530]  INFO -- : (0.000090s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.047439 #530]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`email` = 'notemail@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.047851 #530]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.048086 #530]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.048521 #530]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.048809 #530]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.049236 #530]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`email` IS NULL) LIMIT 1
+I, [2021-03-22T12:45:32.049732 #530]  INFO -- : (0.000129s) SELECT * FROM `users` WHERE (`email` IS NULL) LIMIT 1
+I, [2021-03-22T12:45:32.050191 #530]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.050395 #530]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.050808 #530]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE (`email` = '') LIMIT 1
+I, [2021-03-22T12:45:32.090508 #530]  INFO -- : (0.000172s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'valid@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.121585 #530]  INFO -- : (0.000112s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'valid@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.122756 #530]  INFO -- : (0.000076s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'valid@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.124101 #530]  INFO -- : (0.000072s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'user0@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.125062 #530]  INFO -- : (0.000069s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'user0@email.com') LIMIT 1
+I, [2021-03-22T12:45:32.126105 #530]  INFO -- : (0.000070s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'user0@email.com') LIMIT 1

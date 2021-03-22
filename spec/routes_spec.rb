@@ -14,12 +14,26 @@ RSpec.describe 'Routes Tests' do
   before(:each) do
     app.set :views, (proc { File.join(root, 'views') })
   end
+    
+    describe 'GET /' do
+    it 'has a status code of 302' do
+      get '/'
+      l = last_response
+      expect(l.status).to eq(302)
+    end
+  end
 
   describe 'GET /login' do
     it 'has a status code of 200 (OK)' do
       get '/login'
-      l = last_response
-      expect(l.status).to eq(200)
+      expect(last_response.status).to eq(200)
+    end
+  end
+  
+  describe 'GET /registration' do
+    it 'has a status code of 200 (OK)' do
+      get '/registration'
+      expect(last_response.status).to eq(200)
     end
   end
 end

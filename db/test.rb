@@ -1,7 +1,4 @@
 require 'sequel'
-# Provides an empty in-memory DB and helpers for unit testing
-# Import this file instead of db.rb into your spec files
-DB = Sequel.sqlite
 
 # Creates user and admin tables
 def populate_tables
@@ -30,7 +27,5 @@ def cleanup
   DB.drop_table(:admins)
   populate_tables
 end
-
-populate_tables
 
 

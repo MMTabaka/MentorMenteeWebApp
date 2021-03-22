@@ -1,4 +1,6 @@
-require_relative '../db/test'
+ENV['APP_ENV'] = 'test'
+
+require_relative '../db/db'
 require_relative '../models/user'
 
 RSpec.describe User do
@@ -13,7 +15,7 @@ RSpec.describe User do
     name: 'Test Name',
     department: 'Desc',
     bio: 'Explanation',
-    interest_areas: 'Area 1, Area 2'
+    interest_areas: 'Area 1,Area 2'
   }
   describe 'Data validation' do
     context 'when you provide valid data' do

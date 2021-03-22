@@ -1,5 +1,6 @@
 source 'https://rubygems.org' do
   gem 'logger'
+  gem 'rack-test'
   gem 'require_all'
   gem 'rspec'
   gem 'rubocop', require: false
@@ -10,5 +11,4 @@ source 'https://rubygems.org' do
   gem 'sinatra-contrib'
   gem 'sqlite3'
   gem 'thin'
-  gem "rack-test"
 end

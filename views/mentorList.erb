@@ -48,7 +48,7 @@
   <div class="containList">
     <div class="contentML">
       <h3>Mentor List</h3>
-      <% (1..@mentors).each do |i|%>
+      <% (@mentors).each do |i|%>
         <div class="row userRow flex-nowrap">
           <div class="col">
             <img src="img/defaultPic.jpg" class="picML" alt="user picture">
@@ -56,18 +56,18 @@
           <div class="col-8">
             <div class="row mlFirstDes">
               <div class="col">
-                  <button id="<%= @userID %>" type="submit" class="showDetail"><%= @username %></button>
+                  <button id="<%= i[:id] %>" type="submit" class="showDetail"><%= i[:name] %></button>
               </div>
               <div class="col-7">
-                <label><%= @department %></label>
+                <label><%= i[:department] %></label>
               </div>  
             </div>
             <div class="row">
-                <label><%= @area %></label>
+                <label><%= i[:interest_areas] %></label>
             </div>
           </div>
           <div class="col mlButton">
-            <button id="request<%= @userID %>" type="submit" onclick="return confirm ('Request this mentor?')" class="btn btn-secondary btn-lg btnC">Request</button>
+            <button id="request<%= i[:id] %>" type="submit" onclick="return confirm ('Request this mentor?')" class="btn btn-secondary btn-lg btnC">Request</button>
           </div>
         </div>
       <% end %>

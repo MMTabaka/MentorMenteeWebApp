@@ -7,8 +7,6 @@ function showEdit(btnId){
 }
 
 function cancelEdit(){
-  document.getElementById("picture").style.display = "block";
-  document.getElementById("pictureEdit").style.display = "none";
   document.getElementById("username").style.display = "block";
   document.getElementById("usernameEdit").style.display = "none";
   document.getElementById("email").style.display = "block";
@@ -23,7 +21,6 @@ function cancelEdit(){
   document.getElementById("bioEdit").style.display = "none";
   document.getElementById("delete").style.display = "block";
   document.getElementById("saveNCancel").style.display = "none";
-//   document.getElementById("pictureEdit").style.required = false;
 //   document.getElementById("usernameEdit").style.required = false;
 //   document.getElementById("emailEdit").style.required = false;
 //   document.getElementById("passChange").style.required = false;

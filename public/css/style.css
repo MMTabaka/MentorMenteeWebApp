@@ -1,18 +1,29 @@
-body{
+html, body{
+  height: 100%;
+  margin: 0;
   background-color: #f7f6f6;
+}
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
 }
 
 .navi{
   width: 95%;
   padding: 0.5%;
   margin: auto;
+  font-size: 1.5em;
+}
+li{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 .nav-pills .nav-link.active{
   background-color: #FFDD84;
   color: #000000;
 }
 .navPic{
-  width: 4%;
+  width: 2.5em;
   text-align: center;
 }
 
@@ -58,4 +69,7 @@ body{
   margin-top: 6%; 
   position: relative; 
   width: -webkit-fill-available;
+}
+.push {
+  height: 50px;
 }

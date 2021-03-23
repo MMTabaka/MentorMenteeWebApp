@@ -50,6 +50,31 @@ get '/' do
   'Hello World!'
 end
 
+get '/mentorList' do
+  pic = "defaultPic.jpg"
+  @validation = { 'valid' => true, 'errors' => {} }
+  @loggedIn = true;
+  @userType = "Mentee";
+  @requesting = false;
+  @actived = "mentorList";
+  @username = "sflk asfakdsj";
+  @email = "sdfh@lsdkf";
+  @department = "dfsf";
+  @area = "asfaf,alsj lfsldkjfo, asdlkjf sdfks";
+  @bio = "asasfasdascxcvzfdbzgnmhmdyhsfasd";
+  @mentors = 5;
+  @userID = "234";
+  erb :mentorList
+end
+
+post '/mentorList' do
+  puts params
+  val = validate(params)
+  return redirect '/'
+  @validation = val
+  erb :mentorList
+end
+
 get '/profile' do
   pic = "defaultPic.jpg"
   @validation = { 'valid' => true, 'errors' => {} }

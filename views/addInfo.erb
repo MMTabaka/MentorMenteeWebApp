@@ -31,7 +31,7 @@
       </div>
       <div class="mb-3">
           <label for="areas" class="form-label">Areas of Interest <%= '(optional)' unless @user_type == 0 %></label>
-          <select id="areas" name="areas" class="custom-select" multiple <%= 'required' if @user_type == 0 %>>
+          <select id="areas" name="areas[]" class="custom-select" multiple <%= 'required' if @user_type == 0 %>>
             <% @interests.each do |interest| %>
               <option value=<%= interest.interest %>><%= interest.interest %></option>
             <% end %>

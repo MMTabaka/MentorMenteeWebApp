@@ -3,9 +3,9 @@ require 'sinatra'
 get '/details' do
   # Only allow if continuing from registration
   redirect '/' unless session[:reg_params]
-  @department = Department.all
+  @departments = Department.all
   @interests = Interest.all
-  @user_type = session[:reg_params][:user_type]
+  @user_type = session[:reg_params][:user_type].to_i
 
   erb :addInfo
 end
@@ -20,7 +20,7 @@ post '/details' do
     name: params['name'],
     department: params['department'],
     bio: params['bio'],
-    interest_areas: params['areas']
+    interest_areas: params['areas'].join(',')
   }
   user = User.register(usr_details)
   # Account creation successful, log in new user

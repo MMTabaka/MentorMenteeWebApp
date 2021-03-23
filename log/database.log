@@ -2713,3 +2713,41 @@ I, [2021-03-21T17:29:58.308429 #17895]  INFO -- : (0.000373s) SELECT * FROM `dep
 I, [2021-03-21T17:29:58.308975 #17895]  INFO -- : (0.000402s) SELECT * FROM `interests`
 I, [2021-03-21T17:30:39.573318 #17895]  INFO -- : (0.000432s) SELECT * FROM `departments`
 I, [2021-03-21T17:30:39.574115 #17895]  INFO -- : (0.000603s) SELECT * FROM `interests`
+I, [2021-03-23T10:17:45.105155 #7877]  INFO -- : (0.000189s) PRAGMA foreign_keys = 1
+I, [2021-03-23T10:17:45.105278 #7877]  INFO -- : (0.000016s) PRAGMA case_sensitive_like = 1
+I, [2021-03-23T10:17:45.106037 #7877]  INFO -- : (0.000077s) SELECT sqlite_version()
+I, [2021-03-23T10:17:45.106220 #7877]  INFO -- : (0.000069s) PRAGMA table_xinfo('departments')
+I, [2021-03-23T10:17:45.106917 #7877]  INFO -- : (0.000057s) PRAGMA table_xinfo('interests')
+I, [2021-03-23T10:17:45.107834 #7877]  INFO -- : (0.000139s) PRAGMA table_xinfo('users')
+I, [2021-03-23T10:17:57.778403 #7877]  INFO -- : (0.000424s) SELECT * FROM `departments`
+I, [2021-03-23T10:17:57.779191 #7877]  INFO -- : (0.000546s) SELECT * FROM `interests`
+I, [2021-03-23T10:19:47.788064 #7877]  INFO -- : (0.000203s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'abc@abc.com') LIMIT 1
+I, [2021-03-23T10:19:47.795347 #7877]  INFO -- : (0.000379s) SELECT * FROM `departments`
+I, [2021-03-23T10:19:47.795948 #7877]  INFO -- : (0.000463s) SELECT * FROM `interests`
+I, [2021-03-23T10:20:10.335994 #7877]  INFO -- : (0.001227s) SELECT * FROM `departments`
+I, [2021-03-23T10:20:10.337590 #7877]  INFO -- : (0.001155s) SELECT * FROM `interests`
+I, [2021-03-23T10:20:54.359482 #7877]  INFO -- : (0.000238s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'abc@abc.com') LIMIT 1
+I, [2021-03-23T10:20:54.360236 #7877]  INFO -- : (0.000175s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'abc@abc.com') LIMIT 1
+I, [2021-03-23T10:20:54.360443 #7877]  INFO -- : (0.000038s) BEGIN
+I, [2021-03-23T10:20:54.360936 #7877]  INFO -- : (0.000223s) INSERT INTO `users` (`email`, `password`, `user_type`, `name`, `department`, `bio`, `interest_areas`) VALUES ('abc@abc.com', 'NiceAndSafe123', 0, 'Mentor Johnny', 'Politics', 'I am Johnny :).', 'Genetics')
+I, [2021-03-23T10:20:54.361351 #7877]  INFO -- : (0.000177s) SELECT * FROM `users` WHERE `id` = 3
+I, [2021-03-23T10:20:54.364606 #7877]  INFO -- : (0.003124s) COMMIT
+I, [2021-03-23T10:26:56.883410 #7877]  INFO -- : (0.000195s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'abc@abc.com') LIMIT 1
+I, [2021-03-23T10:27:27.495577 #7877]  INFO -- : (0.000180s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'mail@mailbox.com') LIMIT 1
+I, [2021-03-23T10:27:27.502756 #7877]  INFO -- : (0.000353s) SELECT * FROM `departments`
+I, [2021-03-23T10:27:27.503235 #7877]  INFO -- : (0.000384s) SELECT * FROM `interests`
+I, [2021-03-23T10:41:28.806615 #11434]  INFO -- : (0.000161s) PRAGMA foreign_keys = 1
+I, [2021-03-23T10:41:28.806696 #11434]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-03-23T10:41:28.807424 #11434]  INFO -- : (0.000065s) SELECT sqlite_version()
+I, [2021-03-23T10:41:28.807581 #11434]  INFO -- : (0.000054s) PRAGMA table_xinfo('departments')
+I, [2021-03-23T10:41:28.808212 #11434]  INFO -- : (0.000056s) PRAGMA table_xinfo('interests')
+I, [2021-03-23T10:41:28.809035 #11434]  INFO -- : (0.000132s) PRAGMA table_xinfo('users')
+I, [2021-03-23T10:41:51.906444 #11434]  INFO -- : (0.000167s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'vfjdf@dfkndf.com') LIMIT 1
+I, [2021-03-23T10:41:51.919228 #11434]  INFO -- : (0.000421s) SELECT * FROM `departments`
+I, [2021-03-23T10:41:51.920028 #11434]  INFO -- : (0.000622s) SELECT * FROM `interests`
+I, [2021-03-23T10:42:46.050087 #11434]  INFO -- : (0.000306s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'vfjdf@dfkndf.com') LIMIT 1
+I, [2021-03-23T10:42:46.050988 #11434]  INFO -- : (0.000197s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'vfjdf@dfkndf.com') LIMIT 1
+I, [2021-03-23T10:42:46.051229 #11434]  INFO -- : (0.000038s) BEGIN
+I, [2021-03-23T10:42:46.051844 #11434]  INFO -- : (0.000329s) INSERT INTO `users` (`email`, `password`, `user_type`, `name`, `department`, `bio`, `interest_areas`) VALUES ('vfjdf@dfkndf.com', 'GoodAndSafe123', 0, 'Mentor McDonald', 'School', 'I like Biology.', 'Aerospace,Archaeology,Biology')
+I, [2021-03-23T10:42:46.052292 #11434]  INFO -- : (0.000183s) SELECT * FROM `users` WHERE `id` = 4
+I, [2021-03-23T10:42:46.055714 #11434]  INFO -- : (0.003275s) COMMIT

@@ -12,7 +12,7 @@ class User < Sequel::Model
     validates_format /(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$/, :password,
                      message: 'Must be at least 8 characters long and contain a lowercase, uppercase letter and a number'
     validates_includes [0, 1, 2], :user_type, message: 'User type is non-existing'
-    validates_unique(:email, message: 'This email is already take')
+    validates_unique(:email, message: 'This email is already taken')
 
   end
 

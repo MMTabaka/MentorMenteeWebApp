@@ -2,12 +2,17 @@ require 'sinatra'
 require_relative '../helpers/authenticated'
 
 get '/' do
-  authenticated
-  redirect '/temp-user-page'
+  # authenticated
+  redirect '/login' unless session[:user]
+  unless session[:user].nil?
+    user = User[session[:user]]
+    return redirect '/mentors' if (user[:user_type]) == 1
+    redirect '/temp-user-page'
+  end
 end
 
 get '/login' do
-  redirect '/temp-user-page' if session[:user]
+  redirect '/' if session[:user]
   session[:is_valid] = true if session[:is_valid].nil?
   @is_valid = session[:is_valid]
   erb :login
@@ -25,7 +30,7 @@ post '/login' do
     # Setting user id to access logged in user later
     session[:user] = user.id
     session[:is_valid] = nil
-    redirect '/temp-user-page'
+    redirect '/'
   end
   redirect '/login'
 end

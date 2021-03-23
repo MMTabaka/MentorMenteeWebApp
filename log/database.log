@@ -2751,3 +2751,524 @@ I, [2021-03-23T10:42:46.051229 #11434]  INFO -- : (0.000038s) BEGIN
 I, [2021-03-23T10:42:46.051844 #11434]  INFO -- : (0.000329s) INSERT INTO `users` (`email`, `password`, `user_type`, `name`, `department`, `bio`, `interest_areas`) VALUES ('vfjdf@dfkndf.com', 'GoodAndSafe123', 0, 'Mentor McDonald', 'School', 'I like Biology.', 'Aerospace,Archaeology,Biology')
 I, [2021-03-23T10:42:46.052292 #11434]  INFO -- : (0.000183s) SELECT * FROM `users` WHERE `id` = 4
 I, [2021-03-23T10:42:46.055714 #11434]  INFO -- : (0.003275s) COMMIT
+I, [2021-03-23T11:40:26.325913 #17405]  INFO -- : (0.000181s) PRAGMA foreign_keys = 1
+I, [2021-03-23T11:40:26.326006 #17405]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2021-03-23T11:40:26.326742 #17405]  INFO -- : (0.000080s) SELECT sqlite_version()
+I, [2021-03-23T11:40:26.326907 #17405]  INFO -- : (0.000044s) PRAGMA table_xinfo('departments')
+E, [2021-03-23T11:40:26.327063 #17405] ERROR -- : SQLite3::SQLException: no such table: departments: SELECT * FROM `departments` LIMIT 1
+I, [2021-03-23T11:41:15.334665 #17459]  INFO -- : (0.000194s) PRAGMA foreign_keys = 1
+I, [2021-03-23T11:41:15.334763 #17459]  INFO -- : (0.000023s) PRAGMA case_sensitive_like = 1
+I, [2021-03-23T11:41:15.335931 #17459]  INFO -- : (0.000129s) SELECT sqlite_version()
+I, [2021-03-23T11:41:15.336168 #17459]  INFO -- : (0.000077s) PRAGMA table_xinfo('departments')
+I, [2021-03-23T11:41:15.336944 #17459]  INFO -- : (0.000059s) PRAGMA table_xinfo('interests')
+I, [2021-03-23T11:41:15.338053 #17459]  INFO -- : (0.000171s) PRAGMA table_xinfo('users')
+I, [2021-03-23T11:49:42.778025 #17459]  INFO -- : (0.000777s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-23T11:49:42.778914 #17459]  INFO -- : (0.000323s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-23T11:50:39.207850 #17459]  INFO -- : (0.000209s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:50:54.829970 #17459]  INFO -- : (0.000180s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:05.360696 #17459]  INFO -- : (0.000343s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:05.398192 #17459]  INFO -- : (0.000363s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:05.431273 #17459]  INFO -- : (0.000351s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:05.464650 #17459]  INFO -- : (0.000339s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:05.489268 #17459]  INFO -- : (0.000206s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:05.508261 #17459]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:05.529833 #17459]  INFO -- : (0.000199s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:06.643261 #17459]  INFO -- : (0.000173s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:06.661016 #17459]  INFO -- : (0.000198s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:06.677411 #17459]  INFO -- : (0.000251s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:06.693493 #17459]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:06.712715 #17459]  INFO -- : (0.000185s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:06.756383 #17459]  INFO -- : (0.000240s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:09.953050 #17459]  INFO -- : (0.000274s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:09.975129 #17459]  INFO -- : (0.000216s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:09.998014 #17459]  INFO -- : (0.000278s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:10.021567 #17459]  INFO -- : (0.000183s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:10.042429 #17459]  INFO -- : (0.000221s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:10.061676 #17459]  INFO -- : (0.000228s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:10.085636 #17459]  INFO -- : (0.001378s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:11.163899 #17459]  INFO -- : (0.000271s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:11.189916 #17459]  INFO -- : (0.000276s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:11.207597 #17459]  INFO -- : (0.000216s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:11.228021 #17459]  INFO -- : (0.000185s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:11.247348 #17459]  INFO -- : (0.000225s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:11.267092 #17459]  INFO -- : (0.000203s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:16.390409 #17459]  INFO -- : (0.000729s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:16.430534 #17459]  INFO -- : (0.000538s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:16.468001 #17459]  INFO -- : (0.000209s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:16.487628 #17459]  INFO -- : (0.000187s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:16.508082 #17459]  INFO -- : (0.000239s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:16.526007 #17459]  INFO -- : (0.000286s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:16.545355 #17459]  INFO -- : (0.000210s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:35.647000 #17459]  INFO -- : (0.000212s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:35.667024 #17459]  INFO -- : (0.000279s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:35.687084 #17459]  INFO -- : (0.000248s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:35.711977 #17459]  INFO -- : (0.000176s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:35.733985 #17459]  INFO -- : (0.000246s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:35.754628 #17459]  INFO -- : (0.000242s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:35.773640 #17459]  INFO -- : (0.000551s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:36.836722 #17459]  INFO -- : (0.000259s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:36.857238 #17459]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:36.876772 #17459]  INFO -- : (0.000197s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:36.894219 #17459]  INFO -- : (0.000199s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:36.915143 #17459]  INFO -- : (0.000195s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:36.932635 #17459]  INFO -- : (0.000280s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:56.861825 #17459]  INFO -- : (0.000252s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:56.869234 #17459]  INFO -- : (0.000393s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-23T11:51:59.832956 #17459]  INFO -- : (0.000361s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:51:59.848417 #17459]  INFO -- : (0.000235s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-23T11:52:21.210123 #17459]  INFO -- : (0.000190s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-23T11:52:21.210526 #17459]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-23T11:52:59.412285 #17459]  INFO -- : (0.000220s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:52:59.420788 #17459]  INFO -- : (0.000380s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-23T11:53:17.162382 #17459]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-23T11:53:17.162865 #17459]  INFO -- : (0.000161s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-23T11:53:17.170381 #17459]  INFO -- : (0.000583s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:53:17.178866 #17459]  INFO -- : (0.000351s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-23T11:53:26.132275 #17459]  INFO -- : (0.000572s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:53:26.137623 #17459]  INFO -- : (0.000211s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-23T11:54:42.883707 #17459]  INFO -- : (0.000159s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'sdvdfv@dfvfdv.com') LIMIT 1
+I, [2021-03-23T11:54:42.890737 #17459]  INFO -- : (0.000125s) SELECT * FROM `departments`
+I, [2021-03-23T11:54:42.890944 #17459]  INFO -- : (0.000072s) SELECT * FROM `interests`
+I, [2021-03-23T11:55:15.833699 #19065]  INFO -- : (0.000166s) PRAGMA foreign_keys = 1
+I, [2021-03-23T11:55:15.833786 #19065]  INFO -- : (0.000019s) PRAGMA case_sensitive_like = 1
+I, [2021-03-23T11:55:15.834266 #19065]  INFO -- : (0.000082s) SELECT sqlite_version()
+I, [2021-03-23T11:55:15.834437 #19065]  INFO -- : (0.000063s) PRAGMA table_xinfo('departments')
+I, [2021-03-23T11:55:15.834883 #19065]  INFO -- : (0.000055s) PRAGMA table_xinfo('interests')
+I, [2021-03-23T11:55:15.835598 #19065]  INFO -- : (0.000121s) PRAGMA table_xinfo('users')
+I, [2021-03-23T11:55:15.837302 #19065]  INFO -- : (0.000061s) DELETE FROM `departments` WHERE (1 = 1)
+I, [2021-03-23T11:55:15.837504 #19065]  INFO -- : (0.000047s) DELETE FROM `interests` WHERE (1 = 1)
+I, [2021-03-23T11:55:15.837598 #19065]  INFO -- : (0.000024s) BEGIN
+I, [2021-03-23T11:55:15.837851 #19065]  INFO -- : (0.000074s) SELECT * FROM `departments` WHERE (`department` = 'Aerospace Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.838349 #19065]  INFO -- : (0.000112s) INSERT INTO `departments` (`department`) VALUES ('Aerospace Engineering')
+I, [2021-03-23T11:55:15.838491 #19065]  INFO -- : (0.000054s) SELECT * FROM `departments` WHERE `department` = 'Aerospace Engineering'
+I, [2021-03-23T11:55:15.838654 #19065]  INFO -- : (0.000037s) SELECT * FROM `departments` WHERE (`department` = 'Archaeology') LIMIT 1
+I, [2021-03-23T11:55:15.838834 #19065]  INFO -- : (0.000028s) INSERT INTO `departments` (`department`) VALUES ('Archaeology')
+I, [2021-03-23T11:55:15.838999 #19065]  INFO -- : (0.000066s) SELECT * FROM `departments` WHERE `department` = 'Archaeology'
+I, [2021-03-23T11:55:15.839227 #19065]  INFO -- : (0.000061s) SELECT * FROM `departments` WHERE (`department` = 'School of Architecture') LIMIT 1
+I, [2021-03-23T11:55:15.839388 #19065]  INFO -- : (0.000023s) INSERT INTO `departments` (`department`) VALUES ('School of Architecture')
+I, [2021-03-23T11:55:15.839516 #19065]  INFO -- : (0.000051s) SELECT * FROM `departments` WHERE `department` = 'School of Architecture'
+I, [2021-03-23T11:55:15.839644 #19065]  INFO -- : (0.000045s) SELECT * FROM `departments` WHERE (`department` = 'Faculty of Arts and Humanities') LIMIT 1
+I, [2021-03-23T11:55:15.839801 #19065]  INFO -- : (0.000030s) INSERT INTO `departments` (`department`) VALUES ('Faculty of Arts and Humanities')
+I, [2021-03-23T11:55:15.839943 #19065]  INFO -- : (0.000053s) SELECT * FROM `departments` WHERE `department` = 'Faculty of Arts and Humanities'
+I, [2021-03-23T11:55:15.840102 #19065]  INFO -- : (0.000047s) SELECT * FROM `departments` WHERE (`department` = 'Bioengineering') LIMIT 1
+I, [2021-03-23T11:55:15.840251 #19065]  INFO -- : (0.000027s) INSERT INTO `departments` (`department`) VALUES ('Bioengineering')
+I, [2021-03-23T11:55:15.840354 #19065]  INFO -- : (0.000038s) SELECT * FROM `departments` WHERE `department` = 'Bioengineering'
+I, [2021-03-23T11:55:15.840443 #19065]  INFO -- : (0.000031s) SELECT * FROM `departments` WHERE (`department` = 'Chemical and Biological Engineering (CBE)') LIMIT 1
+I, [2021-03-23T11:55:15.840547 #19065]  INFO -- : (0.000020s) INSERT INTO `departments` (`department`) VALUES ('Chemical and Biological Engineering (CBE)')
+I, [2021-03-23T11:55:15.840642 #19065]  INFO -- : (0.000037s) SELECT * FROM `departments` WHERE `department` = 'Chemical and Biological Engineering (CBE)'
+I, [2021-03-23T11:55:15.840729 #19065]  INFO -- : (0.000031s) SELECT * FROM `departments` WHERE (`department` = 'Chemistry') LIMIT 1
+I, [2021-03-23T11:55:15.840830 #19065]  INFO -- : (0.000020s) INSERT INTO `departments` (`department`) VALUES ('Chemistry')
+I, [2021-03-23T11:55:15.840922 #19065]  INFO -- : (0.000034s) SELECT * FROM `departments` WHERE `department` = 'Chemistry'
+I, [2021-03-23T11:55:15.841024 #19065]  INFO -- : (0.000031s) SELECT * FROM `departments` WHERE (`department` = 'Civil and Structural Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.841133 #19065]  INFO -- : (0.000020s) INSERT INTO `departments` (`department`) VALUES ('Civil and Structural Engineering')
+I, [2021-03-23T11:55:15.841225 #19065]  INFO -- : (0.000034s) SELECT * FROM `departments` WHERE `department` = 'Civil and Structural Engineering'
+I, [2021-03-23T11:55:15.841308 #19065]  INFO -- : (0.000028s) SELECT * FROM `departments` WHERE (`department` = 'Clinical Psychology Unit') LIMIT 1
+I, [2021-03-23T11:55:15.841407 #19065]  INFO -- : (0.000020s) INSERT INTO `departments` (`department`) VALUES ('Clinical Psychology Unit')
+I, [2021-03-23T11:55:15.841499 #19065]  INFO -- : (0.000034s) SELECT * FROM `departments` WHERE `department` = 'Clinical Psychology Unit'
+I, [2021-03-23T11:55:15.841581 #19065]  INFO -- : (0.000029s) SELECT * FROM `departments` WHERE (`department` = 'School of Clinical Dentistry') LIMIT 1
+I, [2021-03-23T11:55:15.841677 #19065]  INFO -- : (0.000020s) INSERT INTO `departments` (`department`) VALUES ('School of Clinical Dentistry')
+I, [2021-03-23T11:55:15.841766 #19065]  INFO -- : (0.000033s) SELECT * FROM `departments` WHERE `department` = 'School of Clinical Dentistry'
+I, [2021-03-23T11:55:15.841881 #19065]  INFO -- : (0.000028s) SELECT * FROM `departments` WHERE (`department` = 'School of East Asian Studies') LIMIT 1
+I, [2021-03-23T11:55:15.841998 #19065]  INFO -- : (0.000019s) INSERT INTO `departments` (`department`) VALUES ('School of East Asian Studies')
+I, [2021-03-23T11:55:15.842091 #19065]  INFO -- : (0.000035s) SELECT * FROM `departments` WHERE `department` = 'School of East Asian Studies'
+I, [2021-03-23T11:55:15.842212 #19065]  INFO -- : (0.000030s) SELECT * FROM `departments` WHERE (`department` = 'Economics') LIMIT 1
+I, [2021-03-23T11:55:15.842313 #19065]  INFO -- : (0.000020s) INSERT INTO `departments` (`department`) VALUES ('Economics')
+I, [2021-03-23T11:55:15.842403 #19065]  INFO -- : (0.000034s) SELECT * FROM `departments` WHERE `department` = 'Economics'
+I, [2021-03-23T11:55:15.842485 #19065]  INFO -- : (0.000029s) SELECT * FROM `departments` WHERE (`department` = 'School of Education') LIMIT 1
+I, [2021-03-23T11:55:15.842582 #19065]  INFO -- : (0.000019s) INSERT INTO `departments` (`department`) VALUES ('School of Education')
+I, [2021-03-23T11:55:15.842674 #19065]  INFO -- : (0.000034s) SELECT * FROM `departments` WHERE `department` = 'School of Education'
+I, [2021-03-23T11:55:15.842770 #19065]  INFO -- : (0.000029s) SELECT * FROM `departments` WHERE (`department` = 'Faculty of Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.842868 #19065]  INFO -- : (0.000019s) INSERT INTO `departments` (`department`) VALUES ('Faculty of Engineering')
+I, [2021-03-23T11:55:15.842965 #19065]  INFO -- : (0.000039s) SELECT * FROM `departments` WHERE `department` = 'Faculty of Engineering'
+I, [2021-03-23T11:55:15.843048 #19065]  INFO -- : (0.000030s) SELECT * FROM `departments` WHERE (`department` = 'MEng Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.843146 #19065]  INFO -- : (0.000019s) INSERT INTO `departments` (`department`) VALUES ('MEng Engineering')
+I, [2021-03-23T11:55:15.843240 #19065]  INFO -- : (0.000037s) SELECT * FROM `departments` WHERE `department` = 'MEng Engineering'
+I, [2021-03-23T11:55:15.843324 #19065]  INFO -- : (0.000030s) SELECT * FROM `departments` WHERE (`department` = 'School of Health and Related Research') LIMIT 1
+I, [2021-03-23T11:55:15.843431 #19065]  INFO -- : (0.000026s) INSERT INTO `departments` (`department`) VALUES ('School of Health and Related Research')
+I, [2021-03-23T11:55:15.843596 #19065]  INFO -- : (0.000055s) SELECT * FROM `departments` WHERE `department` = 'School of Health and Related Research'
+I, [2021-03-23T11:55:15.843717 #19065]  INFO -- : (0.000044s) SELECT * FROM `departments` WHERE (`department` = 'History') LIMIT 1
+I, [2021-03-23T11:55:15.843832 #19065]  INFO -- : (0.000021s) INSERT INTO `departments` (`department`) VALUES ('History')
+I, [2021-03-23T11:55:15.843927 #19065]  INFO -- : (0.000035s) SELECT * FROM `departments` WHERE `department` = 'History'
+I, [2021-03-23T11:55:15.844017 #19065]  INFO -- : (0.000030s) SELECT * FROM `departments` WHERE (`department` = 'Information School') LIMIT 1
+I, [2021-03-23T11:55:15.844121 #19065]  INFO -- : (0.000023s) INSERT INTO `departments` (`department`) VALUES ('Information School')
+I, [2021-03-23T11:55:15.844240 #19065]  INFO -- : (0.000049s) SELECT * FROM `departments` WHERE `department` = 'Information School'
+I, [2021-03-23T11:55:15.844367 #19065]  INFO -- : (0.000048s) SELECT * FROM `departments` WHERE (`department` = 'International Faculty - City College, Thessaloniki') LIMIT 1
+I, [2021-03-23T11:55:15.844557 #19065]  INFO -- : (0.000050s) INSERT INTO `departments` (`department`) VALUES ('International Faculty - City College, Thessaloniki')
+I, [2021-03-23T11:55:15.844712 #19065]  INFO -- : (0.000052s) SELECT * FROM `departments` WHERE `department` = 'International Faculty - City College, Thessaloniki'
+I, [2021-03-23T11:55:15.844837 #19065]  INFO -- : (0.000044s) SELECT * FROM `departments` WHERE (`department` = 'Journalism Studies') LIMIT 1
+I, [2021-03-23T11:55:15.844998 #19065]  INFO -- : (0.000029s) INSERT INTO `departments` (`department`) VALUES ('Journalism Studies')
+I, [2021-03-23T11:55:15.845134 #19065]  INFO -- : (0.000051s) SELECT * FROM `departments` WHERE `department` = 'Journalism Studies'
+I, [2021-03-23T11:55:15.845258 #19065]  INFO -- : (0.000045s) SELECT * FROM `departments` WHERE (`department` = 'East Asian Studies') LIMIT 1
+I, [2021-03-23T11:55:15.845405 #19065]  INFO -- : (0.000030s) INSERT INTO `departments` (`department`) VALUES ('East Asian Studies')
+I, [2021-03-23T11:55:15.845547 #19065]  INFO -- : (0.000051s) SELECT * FROM `departments` WHERE `department` = 'East Asian Studies'
+I, [2021-03-23T11:55:15.845695 #19065]  INFO -- : (0.000067s) SELECT * FROM `departments` WHERE (`department` = 'Landscape Architecture') LIMIT 1
+I, [2021-03-23T11:55:15.845845 #19065]  INFO -- : (0.000030s) INSERT INTO `departments` (`department`) VALUES ('Landscape Architecture')
+I, [2021-03-23T11:55:15.846001 #19065]  INFO -- : (0.000054s) SELECT * FROM `departments` WHERE `department` = 'Landscape Architecture'
+I, [2021-03-23T11:55:15.846181 #19065]  INFO -- : (0.000095s) SELECT * FROM `departments` WHERE (`department` = 'School of Languages and Cultures (SLC)') LIMIT 1
+I, [2021-03-23T11:55:15.846336 #19065]  INFO -- : (0.000031s) INSERT INTO `departments` (`department`) VALUES ('School of Languages and Cultures (SLC)')
+I, [2021-03-23T11:55:15.846484 #19065]  INFO -- : (0.000056s) SELECT * FROM `departments` WHERE `department` = 'School of Languages and Cultures (SLC)'
+I, [2021-03-23T11:55:15.846616 #19065]  INFO -- : (0.000047s) SELECT * FROM `departments` WHERE (`department` = 'Law') LIMIT 1
+I, [2021-03-23T11:55:15.846771 #19065]  INFO -- : (0.000031s) INSERT INTO `departments` (`department`) VALUES ('Law')
+I, [2021-03-23T11:55:15.846959 #19065]  INFO -- : (0.000076s) SELECT * FROM `departments` WHERE `department` = 'Law'
+I, [2021-03-23T11:55:15.847121 #19065]  INFO -- : (0.000075s) SELECT * FROM `departments` WHERE (`department` = 'Department for Lifelong Learning') LIMIT 1
+I, [2021-03-23T11:55:15.847324 #19065]  INFO -- : (0.000033s) INSERT INTO `departments` (`department`) VALUES ('Department for Lifelong Learning')
+I, [2021-03-23T11:55:15.847482 #19065]  INFO -- : (0.000062s) SELECT * FROM `departments` WHERE `department` = 'Department for Lifelong Learning'
+I, [2021-03-23T11:55:15.847619 #19065]  INFO -- : (0.000047s) SELECT * FROM `departments` WHERE (`department` = 'School of English') LIMIT 1
+I, [2021-03-23T11:55:15.847781 #19065]  INFO -- : (0.000032s) INSERT INTO `departments` (`department`) VALUES ('School of English')
+I, [2021-03-23T11:55:15.847932 #19065]  INFO -- : (0.000057s) SELECT * FROM `departments` WHERE `department` = 'School of English'
+I, [2021-03-23T11:55:15.848065 #19065]  INFO -- : (0.000047s) SELECT * FROM `departments` WHERE (`department` = 'Management School') LIMIT 1
+I, [2021-03-23T11:55:15.848224 #19065]  INFO -- : (0.000031s) INSERT INTO `departments` (`department`) VALUES ('Management School')
+I, [2021-03-23T11:55:15.848385 #19065]  INFO -- : (0.000059s) SELECT * FROM `departments` WHERE `department` = 'Management School'
+I, [2021-03-23T11:55:15.848548 #19065]  INFO -- : (0.000046s) SELECT * FROM `departments` WHERE (`department` = 'Materials Science and Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.848705 #19065]  INFO -- : (0.000032s) INSERT INTO `departments` (`department`) VALUES ('Materials Science and Engineering')
+I, [2021-03-23T11:55:15.848856 #19065]  INFO -- : (0.000057s) SELECT * FROM `departments` WHERE `department` = 'Materials Science and Engineering'
+I, [2021-03-23T11:55:15.849022 #19065]  INFO -- : (0.000048s) SELECT * FROM `departments` WHERE (`department` = 'School of Mathematics and Statistics') LIMIT 1
+I, [2021-03-23T11:55:15.849181 #19065]  INFO -- : (0.000032s) INSERT INTO `departments` (`department`) VALUES ('School of Mathematics and Statistics')
+I, [2021-03-23T11:55:15.849331 #19065]  INFO -- : (0.000057s) SELECT * FROM `departments` WHERE `department` = 'School of Mathematics and Statistics'
+I, [2021-03-23T11:55:15.849467 #19065]  INFO -- : (0.000049s) SELECT * FROM `departments` WHERE (`department` = 'Mechanical Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.849666 #19065]  INFO -- : (0.000047s) INSERT INTO `departments` (`department`) VALUES ('Mechanical Engineering')
+I, [2021-03-23T11:55:15.849831 #19065]  INFO -- : (0.000056s) SELECT * FROM `departments` WHERE `department` = 'Mechanical Engineering'
+I, [2021-03-23T11:55:15.850024 #19065]  INFO -- : (0.000088s) SELECT * FROM `departments` WHERE (`department` = 'Department of Infection, Immunity and Cardiovascular Disease') LIMIT 1
+I, [2021-03-23T11:55:15.850306 #19065]  INFO -- : (0.000093s) INSERT INTO `departments` (`department`) VALUES ('Department of Infection, Immunity and Cardiovascular Disease')
+I, [2021-03-23T11:55:15.850459 #19065]  INFO -- : (0.000051s) SELECT * FROM `departments` WHERE `department` = 'Department of Infection, Immunity and Cardiovascular Disease'
+I, [2021-03-23T11:55:15.850558 #19065]  INFO -- : (0.000032s) SELECT * FROM `departments` WHERE (`department` = 'Faculty of Medicine, Dentistry and Health') LIMIT 1
+I, [2021-03-23T11:55:15.850691 #19065]  INFO -- : (0.000022s) INSERT INTO `departments` (`department`) VALUES ('Faculty of Medicine, Dentistry and Health')
+I, [2021-03-23T11:55:15.850792 #19065]  INFO -- : (0.000038s) SELECT * FROM `departments` WHERE `department` = 'Faculty of Medicine, Dentistry and Health'
+I, [2021-03-23T11:55:15.850912 #19065]  INFO -- : (0.000039s) SELECT * FROM `departments` WHERE (`department` = 'Medicine, The Medical School') LIMIT 1
+I, [2021-03-23T11:55:15.851088 #19065]  INFO -- : (0.000025s) INSERT INTO `departments` (`department`) VALUES ('Medicine, The Medical School')
+I, [2021-03-23T11:55:15.851200 #19065]  INFO -- : (0.000041s) SELECT * FROM `departments` WHERE `department` = 'Medicine, The Medical School'
+I, [2021-03-23T11:55:15.851308 #19065]  INFO -- : (0.000032s) SELECT * FROM `departments` WHERE (`department` = 'Electronic and Electrical Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.851426 #19065]  INFO -- : (0.000023s) INSERT INTO `departments` (`department`) VALUES ('Electronic and Electrical Engineering')
+I, [2021-03-23T11:55:15.851540 #19065]  INFO -- : (0.000038s) SELECT * FROM `departments` WHERE `department` = 'Electronic and Electrical Engineering'
+I, [2021-03-23T11:55:15.851642 #19065]  INFO -- : (0.000043s) SELECT * FROM `departments` WHERE (`department` = 'School of Languages and Cultures (SLC)') LIMIT 1
+I, [2021-03-23T11:55:15.851743 #19065]  INFO -- : (0.000048s) SELECT * FROM `departments` WHERE (`department` = 'Modern Languages Teaching Centre (MLTC)') LIMIT 1
+I, [2021-03-23T11:55:15.851881 #19065]  INFO -- : (0.000025s) INSERT INTO `departments` (`department`) VALUES ('Modern Languages Teaching Centre (MLTC)')
+I, [2021-03-23T11:55:15.852008 #19065]  INFO -- : (0.000053s) SELECT * FROM `departments` WHERE `department` = 'Modern Languages Teaching Centre (MLTC)'
+I, [2021-03-23T11:55:15.852100 #19065]  INFO -- : (0.000032s) SELECT * FROM `departments` WHERE (`department` = 'Music') LIMIT 1
+I, [2021-03-23T11:55:15.852263 #19065]  INFO -- : (0.000029s) INSERT INTO `departments` (`department`) VALUES ('Music')
+I, [2021-03-23T11:55:15.852369 #19065]  INFO -- : (0.000040s) SELECT * FROM `departments` WHERE `department` = 'Music'
+I, [2021-03-23T11:55:15.852508 #19065]  INFO -- : (0.000035s) SELECT * FROM `departments` WHERE (`department` = 'The Medical School') LIMIT 1
+I, [2021-03-23T11:55:15.852715 #19065]  INFO -- : (0.000032s) INSERT INTO `departments` (`department`) VALUES ('The Medical School')
+I, [2021-03-23T11:55:15.852906 #19065]  INFO -- : (0.000076s) SELECT * FROM `departments` WHERE `department` = 'The Medical School'
+I, [2021-03-23T11:55:15.853015 #19065]  INFO -- : (0.000033s) SELECT * FROM `departments` WHERE (`department` = 'Department of Oncology and Metabolism') LIMIT 1
+I, [2021-03-23T11:55:15.853227 #19065]  INFO -- : (0.000038s) INSERT INTO `departments` (`department`) VALUES ('Department of Oncology and Metabolism')
+I, [2021-03-23T11:55:15.853377 #19065]  INFO -- : (0.000040s) SELECT * FROM `departments` WHERE `department` = 'Department of Oncology and Metabolism'
+I, [2021-03-23T11:55:15.853469 #19065]  INFO -- : (0.000032s) SELECT * FROM `departments` WHERE (`department` = 'Philosophy') LIMIT 1
+I, [2021-03-23T11:55:15.853582 #19065]  INFO -- : (0.000022s) INSERT INTO `departments` (`department`) VALUES ('Philosophy')
+I, [2021-03-23T11:55:15.853680 #19065]  INFO -- : (0.000037s) SELECT * FROM `departments` WHERE `department` = 'Philosophy'
+I, [2021-03-23T11:55:15.853776 #19065]  INFO -- : (0.000039s) SELECT * FROM `departments` WHERE (`department` = 'Physics and Astronomy') LIMIT 1
+I, [2021-03-23T11:55:15.853882 #19065]  INFO -- : (0.000021s) INSERT INTO `departments` (`department`) VALUES ('Physics and Astronomy')
+I, [2021-03-23T11:55:15.853994 #19065]  INFO -- : (0.000040s) SELECT * FROM `departments` WHERE `department` = 'Physics and Astronomy'
+I, [2021-03-23T11:55:15.854096 #19065]  INFO -- : (0.000044s) SELECT * FROM `departments` WHERE (`department` = 'Politics and International Relations') LIMIT 1
+I, [2021-03-23T11:55:15.854272 #19065]  INFO -- : (0.000023s) INSERT INTO `departments` (`department`) VALUES ('Politics and International Relations')
+I, [2021-03-23T11:55:15.854374 #19065]  INFO -- : (0.000039s) SELECT * FROM `departments` WHERE `department` = 'Politics and International Relations'
+I, [2021-03-23T11:55:15.854471 #19065]  INFO -- : (0.000031s) SELECT * FROM `departments` WHERE (`department` = 'Psychology') LIMIT 1
+I, [2021-03-23T11:55:15.854579 #19065]  INFO -- : (0.000021s) INSERT INTO `departments` (`department`) VALUES ('Psychology')
+I, [2021-03-23T11:55:15.854689 #19065]  INFO -- : (0.000038s) SELECT * FROM `departments` WHERE `department` = 'Psychology'
+I, [2021-03-23T11:55:15.854778 #19065]  INFO -- : (0.000031s) SELECT * FROM `departments` WHERE (`department` = 'ScHaRR (School of Health and Related Research)') LIMIT 1
+I, [2021-03-23T11:55:15.854895 #19065]  INFO -- : (0.000021s) INSERT INTO `departments` (`department`) VALUES ('ScHaRR (School of Health and Related Research)')
+I, [2021-03-23T11:55:15.855028 #19065]  INFO -- : (0.000057s) SELECT * FROM `departments` WHERE `department` = 'ScHaRR (School of Health and Related Research)'
+I, [2021-03-23T11:55:15.855121 #19065]  INFO -- : (0.000033s) SELECT * FROM `departments` WHERE (`department` = 'Science and Engineering Foundation Year (SEFY)') LIMIT 1
+I, [2021-03-23T11:55:15.855240 #19065]  INFO -- : (0.000022s) INSERT INTO `departments` (`department`) VALUES ('Science and Engineering Foundation Year (SEFY)')
+I, [2021-03-23T11:55:15.855340 #19065]  INFO -- : (0.000038s) SELECT * FROM `departments` WHERE `department` = 'Science and Engineering Foundation Year (SEFY)'
+I, [2021-03-23T11:55:15.855444 #19065]  INFO -- : (0.000041s) SELECT * FROM `departments` WHERE (`department` = 'Faculty of Science') LIMIT 1
+I, [2021-03-23T11:55:15.855553 #19065]  INFO -- : (0.000021s) INSERT INTO `departments` (`department`) VALUES ('Faculty of Science')
+I, [2021-03-23T11:55:15.855671 #19065]  INFO -- : (0.000046s) SELECT * FROM `departments` WHERE `department` = 'Faculty of Science'
+I, [2021-03-23T11:55:15.855783 #19065]  INFO -- : (0.000053s) SELECT * FROM `departments` WHERE (`department` = 'Sheffield Institute for Interdisciplinary Biblical Studies (SIIBS)') LIMIT 1
+I, [2021-03-23T11:55:15.855898 #19065]  INFO -- : (0.000022s) INSERT INTO `departments` (`department`) VALUES ('Sheffield Institute for Interdisciplinary Biblical Studies (SIIBS)')
+I, [2021-03-23T11:55:15.856043 #19065]  INFO -- : (0.000055s) SELECT * FROM `departments` WHERE `department` = 'Sheffield Institute for Interdisciplinary Biblical Studies (SIIBS)'
+I, [2021-03-23T11:55:15.856151 #19065]  INFO -- : (0.000042s) SELECT * FROM `departments` WHERE (`department` = 'Sheffield Methods Institute') LIMIT 1
+I, [2021-03-23T11:55:15.856275 #19065]  INFO -- : (0.000023s) INSERT INTO `departments` (`department`) VALUES ('Sheffield Methods Institute')
+I, [2021-03-23T11:55:15.856398 #19065]  INFO -- : (0.000052s) SELECT * FROM `departments` WHERE `department` = 'Sheffield Methods Institute'
+I, [2021-03-23T11:55:15.856499 #19065]  INFO -- : (0.000041s) SELECT * FROM `departments` WHERE (`department` = 'Faculty of Social Sciences') LIMIT 1
+I, [2021-03-23T11:55:15.856618 #19065]  INFO -- : (0.000028s) INSERT INTO `departments` (`department`) VALUES ('Faculty of Social Sciences')
+I, [2021-03-23T11:55:15.856745 #19065]  INFO -- : (0.000048s) SELECT * FROM `departments` WHERE `department` = 'Faculty of Social Sciences'
+I, [2021-03-23T11:55:15.856850 #19065]  INFO -- : (0.000035s) SELECT * FROM `departments` WHERE (`department` = 'Sociological Studies') LIMIT 1
+I, [2021-03-23T11:55:15.856977 #19065]  INFO -- : (0.000022s) INSERT INTO `departments` (`department`) VALUES ('Sociological Studies')
+I, [2021-03-23T11:55:15.857085 #19065]  INFO -- : (0.000040s) SELECT * FROM `departments` WHERE `department` = 'Sociological Studies'
+I, [2021-03-23T11:55:15.857188 #19065]  INFO -- : (0.000034s) SELECT * FROM `departments` WHERE (`department` = 'School of Languages and Cultures') LIMIT 1
+I, [2021-03-23T11:55:15.857305 #19065]  INFO -- : (0.000021s) INSERT INTO `departments` (`department`) VALUES ('School of Languages and Cultures')
+I, [2021-03-23T11:55:15.857420 #19065]  INFO -- : (0.000044s) SELECT * FROM `departments` WHERE `department` = 'School of Languages and Cultures'
+I, [2021-03-23T11:55:15.858846 #19065]  INFO -- : (0.000056s) SELECT * FROM `departments` WHERE (`department` = 'Computer Science') LIMIT 1
+I, [2021-03-23T11:55:15.858993 #19065]  INFO -- : (0.000027s) INSERT INTO `departments` (`department`) VALUES ('Computer Science')
+I, [2021-03-23T11:55:15.859104 #19065]  INFO -- : (0.000043s) SELECT * FROM `departments` WHERE `department` = 'Computer Science'
+I, [2021-03-23T11:55:15.859209 #19065]  INFO -- : (0.000042s) SELECT * FROM `departments` WHERE (`department` = 'Geography') LIMIT 1
+I, [2021-03-23T11:55:15.859324 #19065]  INFO -- : (0.000022s) INSERT INTO `departments` (`department`) VALUES ('Geography')
+I, [2021-03-23T11:55:15.859430 #19065]  INFO -- : (0.000044s) SELECT * FROM `departments` WHERE `department` = 'Geography'
+I, [2021-03-23T11:55:15.859519 #19065]  INFO -- : (0.000033s) SELECT * FROM `departments` WHERE (`department` = 'Health Sciences School') LIMIT 1
+I, [2021-03-23T11:55:15.859644 #19065]  INFO -- : (0.000021s) INSERT INTO `departments` (`department`) VALUES ('Health Sciences School')
+I, [2021-03-23T11:55:15.859747 #19065]  INFO -- : (0.000041s) SELECT * FROM `departments` WHERE `department` = 'Health Sciences School'
+I, [2021-03-23T11:55:15.859836 #19065]  INFO -- : (0.000032s) SELECT * FROM `departments` WHERE (`department` = 'Automatic Control and Systems Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.859942 #19065]  INFO -- : (0.000022s) INSERT INTO `departments` (`department`) VALUES ('Automatic Control and Systems Engineering')
+I, [2021-03-23T11:55:15.860062 #19065]  INFO -- : (0.000057s) SELECT * FROM `departments` WHERE `department` = 'Automatic Control and Systems Engineering'
+I, [2021-03-23T11:55:15.860161 #19065]  INFO -- : (0.000032s) SELECT * FROM `departments` WHERE (`department` = 'Urban Studies and Planning') LIMIT 1
+I, [2021-03-23T11:55:15.860268 #19065]  INFO -- : (0.000021s) INSERT INTO `departments` (`department`) VALUES ('Urban Studies and Planning')
+I, [2021-03-23T11:55:15.860384 #19065]  INFO -- : (0.000055s) SELECT * FROM `departments` WHERE `department` = 'Urban Studies and Planning'
+I, [2021-03-23T11:55:15.860474 #19065]  INFO -- : (0.000034s) SELECT * FROM `departments` WHERE (`department` = 'Institute of Work Psychology') LIMIT 1
+I, [2021-03-23T11:55:15.860577 #19065]  INFO -- : (0.000021s) INSERT INTO `departments` (`department`) VALUES ('Institute of Work Psychology')
+I, [2021-03-23T11:55:15.860674 #19065]  INFO -- : (0.000036s) SELECT * FROM `departments` WHERE `department` = 'Institute of Work Psychology'
+I, [2021-03-23T11:55:15.860760 #19065]  INFO -- : (0.000031s) SELECT * FROM `departments` WHERE (`department` = 'Biosciences') LIMIT 1
+I, [2021-03-23T11:55:15.860862 #19065]  INFO -- : (0.000021s) INSERT INTO `departments` (`department`) VALUES ('Biosciences')
+I, [2021-03-23T11:55:15.860957 #19065]  INFO -- : (0.000035s) SELECT * FROM `departments` WHERE `department` = 'Biosciences'
+I, [2021-03-23T11:55:15.866339 #19065]  INFO -- : (0.005322s) COMMIT
+I, [2021-03-23T11:55:15.866489 #19065]  INFO -- : (0.000033s) BEGIN
+I, [2021-03-23T11:55:15.866745 #19065]  INFO -- : (0.000078s) SELECT * FROM `interests` WHERE (`interest` = 'Accounting') LIMIT 1
+I, [2021-03-23T11:55:15.867103 #19065]  INFO -- : (0.000100s) INSERT INTO `interests` (`interest`) VALUES ('Accounting')
+I, [2021-03-23T11:55:15.867242 #19065]  INFO -- : (0.000049s) SELECT * FROM `interests` WHERE `interest` = 'Accounting'
+I, [2021-03-23T11:55:15.867387 #19065]  INFO -- : (0.000037s) SELECT * FROM `interests` WHERE (`interest` = 'Financial Management') LIMIT 1
+I, [2021-03-23T11:55:15.867537 #19065]  INFO -- : (0.000023s) INSERT INTO `interests` (`interest`) VALUES ('Financial Management')
+I, [2021-03-23T11:55:15.867651 #19065]  INFO -- : (0.000043s) SELECT * FROM `interests` WHERE `interest` = 'Financial Management'
+I, [2021-03-23T11:55:15.867816 #19065]  INFO -- : (0.000037s) SELECT * FROM `interests` WHERE (`interest` = 'Aerospace Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.867934 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Aerospace Engineering')
+I, [2021-03-23T11:55:15.868044 #19065]  INFO -- : (0.000039s) SELECT * FROM `interests` WHERE `interest` = 'Aerospace Engineering'
+I, [2021-03-23T11:55:15.868148 #19065]  INFO -- : (0.000034s) SELECT * FROM `interests` WHERE (`interest` = 'Applied Social Sciences') LIMIT 1
+I, [2021-03-23T11:55:15.868282 #19065]  INFO -- : (0.000041s) INSERT INTO `interests` (`interest`) VALUES ('Applied Social Sciences')
+I, [2021-03-23T11:55:15.868392 #19065]  INFO -- : (0.000041s) SELECT * FROM `interests` WHERE `interest` = 'Applied Social Sciences'
+I, [2021-03-23T11:55:15.868491 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'Archaeology') LIMIT 1
+I, [2021-03-23T11:55:15.868605 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Archaeology')
+I, [2021-03-23T11:55:15.868711 #19065]  INFO -- : (0.000038s) SELECT * FROM `interests` WHERE `interest` = 'Archaeology'
+I, [2021-03-23T11:55:15.868808 #19065]  INFO -- : (0.000032s) SELECT * FROM `interests` WHERE (`interest` = 'Modern Languages & Cultures') LIMIT 1
+I, [2021-03-23T11:55:15.868919 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Modern Languages & Cultures')
+I, [2021-03-23T11:55:15.869026 #19065]  INFO -- : (0.000039s) SELECT * FROM `interests` WHERE `interest` = 'Modern Languages & Cultures'
+I, [2021-03-23T11:55:15.869141 #19065]  INFO -- : (0.000034s) SELECT * FROM `interests` WHERE (`interest` = 'Architectural Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.869254 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Architectural Engineering')
+I, [2021-03-23T11:55:15.869367 #19065]  INFO -- : (0.000045s) SELECT * FROM `interests` WHERE `interest` = 'Architectural Engineering'
+I, [2021-03-23T11:55:15.869472 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'Architecture') LIMIT 1
+I, [2021-03-23T11:55:15.869587 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Architecture')
+I, [2021-03-23T11:55:15.869694 #19065]  INFO -- : (0.000038s) SELECT * FROM `interests` WHERE `interest` = 'Architecture'
+I, [2021-03-23T11:55:15.869792 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'Artificial Intelligence') LIMIT 1
+I, [2021-03-23T11:55:15.869922 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Artificial Intelligence')
+I, [2021-03-23T11:55:15.870059 #19065]  INFO -- : (0.000068s) SELECT * FROM `interests` WHERE `interest` = 'Artificial Intelligence'
+I, [2021-03-23T11:55:15.870169 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'Bio-dental Science and Technology') LIMIT 1
+I, [2021-03-23T11:55:15.870284 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Bio-dental Science and Technology')
+I, [2021-03-23T11:55:15.870392 #19065]  INFO -- : (0.000038s) SELECT * FROM `interests` WHERE `interest` = 'Bio-dental Science and Technology'
+I, [2021-03-23T11:55:15.870490 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'Biochemistry') LIMIT 1
+I, [2021-03-23T11:55:15.870602 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Biochemistry')
+I, [2021-03-23T11:55:15.870728 #19065]  INFO -- : (0.000058s) SELECT * FROM `interests` WHERE `interest` = 'Biochemistry'
+I, [2021-03-23T11:55:15.870829 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE (`interest` = 'Bioengineering') LIMIT 1
+I, [2021-03-23T11:55:15.870941 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Bioengineering')
+I, [2021-03-23T11:55:15.871046 #19065]  INFO -- : (0.000038s) SELECT * FROM `interests` WHERE `interest` = 'Bioengineering'
+I, [2021-03-23T11:55:15.871143 #19065]  INFO -- : (0.000032s) SELECT * FROM `interests` WHERE (`interest` = 'Biology') LIMIT 1
+I, [2021-03-23T11:55:15.871256 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Biology')
+I, [2021-03-23T11:55:15.871362 #19065]  INFO -- : (0.000038s) SELECT * FROM `interests` WHERE `interest` = 'Biology'
+I, [2021-03-23T11:55:15.871473 #19065]  INFO -- : (0.000039s) SELECT * FROM `interests` WHERE (`interest` = 'Biomedical Science') LIMIT 1
+I, [2021-03-23T11:55:15.871638 #19065]  INFO -- : (0.000027s) INSERT INTO `interests` (`interest`) VALUES ('Biomedical Science')
+I, [2021-03-23T11:55:15.871757 #19065]  INFO -- : (0.000042s) SELECT * FROM `interests` WHERE `interest` = 'Biomedical Science'
+I, [2021-03-23T11:55:15.871848 #19065]  INFO -- : (0.000032s) SELECT * FROM `interests` WHERE (`interest` = 'Business Management') LIMIT 1
+I, [2021-03-23T11:55:15.871953 #19065]  INFO -- : (0.000021s) INSERT INTO `interests` (`interest`) VALUES ('Business Management')
+I, [2021-03-23T11:55:15.872063 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE `interest` = 'Business Management'
+I, [2021-03-23T11:55:15.872193 #19065]  INFO -- : (0.000046s) SELECT * FROM `interests` WHERE (`interest` = 'Chemical Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.872293 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Chemical Engineering')
+I, [2021-03-23T11:55:15.872405 #19065]  INFO -- : (0.000054s) SELECT * FROM `interests` WHERE `interest` = 'Chemical Engineering'
+I, [2021-03-23T11:55:15.872493 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'Chemistry') LIMIT 1
+I, [2021-03-23T11:55:15.872592 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Chemistry')
+I, [2021-03-23T11:55:15.872684 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE `interest` = 'Chemistry'
+I, [2021-03-23T11:55:15.872767 #19065]  INFO -- : (0.000029s) SELECT * FROM `interests` WHERE (`interest` = 'Chinese Studies') LIMIT 1
+I, [2021-03-23T11:55:15.872875 #19065]  INFO -- : (0.000021s) INSERT INTO `interests` (`interest`) VALUES ('Chinese Studies')
+I, [2021-03-23T11:55:15.872969 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE `interest` = 'Chinese Studies'
+I, [2021-03-23T11:55:15.873069 #19065]  INFO -- : (0.000031s) SELECT * FROM `interests` WHERE (`interest` = 'Civil and Structural Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.873195 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Civil and Structural Engineering')
+I, [2021-03-23T11:55:15.873290 #19065]  INFO -- : (0.000037s) SELECT * FROM `interests` WHERE `interest` = 'Civil and Structural Engineering'
+I, [2021-03-23T11:55:15.873374 #19065]  INFO -- : (0.000030s) SELECT * FROM `interests` WHERE (`interest` = 'Civil Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.873475 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Civil Engineering')
+I, [2021-03-23T11:55:15.873568 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE `interest` = 'Civil Engineering'
+I, [2021-03-23T11:55:15.873653 #19065]  INFO -- : (0.000030s) SELECT * FROM `interests` WHERE (`interest` = 'Computer Science') LIMIT 1
+I, [2021-03-23T11:55:15.873752 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Computer Science')
+I, [2021-03-23T11:55:15.873866 #19065]  INFO -- : (0.000039s) SELECT * FROM `interests` WHERE `interest` = 'Computer Science'
+I, [2021-03-23T11:55:15.873951 #19065]  INFO -- : (0.000030s) SELECT * FROM `interests` WHERE (`interest` = 'Computer Systems Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.874050 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Computer Systems Engineering')
+I, [2021-03-23T11:55:15.874174 #19065]  INFO -- : (0.000064s) SELECT * FROM `interests` WHERE `interest` = 'Computer Systems Engineering'
+I, [2021-03-23T11:55:15.874275 #19065]  INFO -- : (0.000031s) SELECT * FROM `interests` WHERE (`interest` = 'Dental Hygiene') LIMIT 1
+I, [2021-03-23T11:55:15.874375 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Dental Hygiene')
+I, [2021-03-23T11:55:15.874481 #19065]  INFO -- : (0.000036s) SELECT * FROM `interests` WHERE `interest` = 'Dental Hygiene'
+I, [2021-03-23T11:55:15.874580 #19065]  INFO -- : (0.000044s) SELECT * FROM `interests` WHERE (`interest` = 'Dental Therapy') LIMIT 1
+I, [2021-03-23T11:55:15.874680 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Dental Therapy')
+I, [2021-03-23T11:55:15.874773 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE `interest` = 'Dental Therapy'
+I, [2021-03-23T11:55:15.874856 #19065]  INFO -- : (0.000030s) SELECT * FROM `interests` WHERE (`interest` = 'Dental Surgery') LIMIT 1
+I, [2021-03-23T11:55:15.874955 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Dental Surgery')
+I, [2021-03-23T11:55:15.875047 #19065]  INFO -- : (0.000034s) SELECT * FROM `interests` WHERE `interest` = 'Dental Surgery'
+I, [2021-03-23T11:55:15.875142 #19065]  INFO -- : (0.000031s) SELECT * FROM `interests` WHERE (`interest` = 'Digital Media and Society') LIMIT 1
+I, [2021-03-23T11:55:15.875241 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Digital Media and Society')
+I, [2021-03-23T11:55:15.875334 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE `interest` = 'Digital Media and Society'
+I, [2021-03-23T11:55:15.875437 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'East Asian Studies') LIMIT 1
+I, [2021-03-23T11:55:15.875537 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('East Asian Studies')
+I, [2021-03-23T11:55:15.875629 #19065]  INFO -- : (0.000034s) SELECT * FROM `interests` WHERE `interest` = 'East Asian Studies'
+I, [2021-03-23T11:55:15.875713 #19065]  INFO -- : (0.000029s) SELECT * FROM `interests` WHERE (`interest` = 'Ecology and Conservation Biology') LIMIT 1
+I, [2021-03-23T11:55:15.875812 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Ecology and Conservation Biology')
+I, [2021-03-23T11:55:15.875948 #19065]  INFO -- : (0.000051s) SELECT * FROM `interests` WHERE `interest` = 'Ecology and Conservation Biology'
+I, [2021-03-23T11:55:15.876057 #19065]  INFO -- : (0.000054s) SELECT * FROM `interests` WHERE (`interest` = 'Economics') LIMIT 1
+I, [2021-03-23T11:55:15.876157 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Economics')
+I, [2021-03-23T11:55:15.876251 #19065]  INFO -- : (0.000037s) SELECT * FROM `interests` WHERE `interest` = 'Economics'
+I, [2021-03-23T11:55:15.876334 #19065]  INFO -- : (0.000029s) SELECT * FROM `interests` WHERE (`interest` = 'Politics') LIMIT 1
+I, [2021-03-23T11:55:15.876432 #19065]  INFO -- : (0.000019s) INSERT INTO `interests` (`interest`) VALUES ('Politics')
+I, [2021-03-23T11:55:15.876526 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE `interest` = 'Politics'
+I, [2021-03-23T11:55:15.876609 #19065]  INFO -- : (0.000029s) SELECT * FROM `interests` WHERE (`interest` = 'Finance') LIMIT 1
+I, [2021-03-23T11:55:15.876724 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Finance')
+I, [2021-03-23T11:55:15.876819 #19065]  INFO -- : (0.000037s) SELECT * FROM `interests` WHERE `interest` = 'Finance'
+I, [2021-03-23T11:55:15.876902 #19065]  INFO -- : (0.000029s) SELECT * FROM `interests` WHERE (`interest` = 'Education') LIMIT 1
+I, [2021-03-23T11:55:15.877001 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Education')
+I, [2021-03-23T11:55:15.877106 #19065]  INFO -- : (0.000034s) SELECT * FROM `interests` WHERE `interest` = 'Education'
+I, [2021-03-23T11:55:15.877207 #19065]  INFO -- : (0.000048s) SELECT * FROM `interests` WHERE (`interest` = 'Electrical and Electronic Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.877304 #19065]  INFO -- : (0.000019s) INSERT INTO `interests` (`interest`) VALUES ('Electrical and Electronic Engineering')
+I, [2021-03-23T11:55:15.877395 #19065]  INFO -- : (0.000036s) SELECT * FROM `interests` WHERE `interest` = 'Electrical and Electronic Engineering'
+I, [2021-03-23T11:55:15.877476 #19065]  INFO -- : (0.000028s) SELECT * FROM `interests` WHERE (`interest` = 'Electrical Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.877571 #19065]  INFO -- : (0.000019s) INSERT INTO `interests` (`interest`) VALUES ('Electrical Engineering')
+I, [2021-03-23T11:55:15.877660 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE `interest` = 'Electrical Engineering'
+I, [2021-03-23T11:55:15.877753 #19065]  INFO -- : (0.000042s) SELECT * FROM `interests` WHERE (`interest` = 'Electronic Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.877849 #19065]  INFO -- : (0.000019s) INSERT INTO `interests` (`interest`) VALUES ('Electronic Engineering')
+I, [2021-03-23T11:55:15.877962 #19065]  INFO -- : (0.000057s) SELECT * FROM `interests` WHERE `interest` = 'Electronic Engineering'
+I, [2021-03-23T11:55:15.878054 #19065]  INFO -- : (0.000032s) SELECT * FROM `interests` WHERE (`interest` = 'Electronics') LIMIT 1
+I, [2021-03-23T11:55:15.878190 #19065]  INFO -- : (0.000023s) INSERT INTO `interests` (`interest`) VALUES ('Electronics')
+I, [2021-03-23T11:55:15.878318 #19065]  INFO -- : (0.000042s) SELECT * FROM `interests` WHERE `interest` = 'Electronics'
+I, [2021-03-23T11:55:15.878412 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'English') LIMIT 1
+I, [2021-03-23T11:55:15.878522 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('English')
+I, [2021-03-23T11:55:15.878624 #19065]  INFO -- : (0.000038s) SELECT * FROM `interests` WHERE `interest` = 'English'
+I, [2021-03-23T11:55:15.878716 #19065]  INFO -- : (0.000032s) SELECT * FROM `interests` WHERE (`interest` = 'Linguistics') LIMIT 1
+I, [2021-03-23T11:55:15.878824 #19065]  INFO -- : (0.000021s) INSERT INTO `interests` (`interest`) VALUES ('Linguistics')
+I, [2021-03-23T11:55:15.878925 #19065]  INFO -- : (0.000038s) SELECT * FROM `interests` WHERE `interest` = 'Linguistics'
+I, [2021-03-23T11:55:15.879031 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'Literature') LIMIT 1
+I, [2021-03-23T11:55:15.879147 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Literature')
+I, [2021-03-23T11:55:15.879248 #19065]  INFO -- : (0.000038s) SELECT * FROM `interests` WHERE `interest` = 'Literature'
+I, [2021-03-23T11:55:15.879343 #19065]  INFO -- : (0.000032s) SELECT * FROM `interests` WHERE (`interest` = 'Environmental Science') LIMIT 1
+I, [2021-03-23T11:55:15.879454 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Environmental Science')
+I, [2021-03-23T11:55:15.879593 #19065]  INFO -- : (0.000068s) SELECT * FROM `interests` WHERE `interest` = 'Environmental Science'
+I, [2021-03-23T11:55:15.879690 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE (`interest` = 'Financial Mathematics') LIMIT 1
+I, [2021-03-23T11:55:15.879800 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Financial Mathematics')
+I, [2021-03-23T11:55:15.879901 #19065]  INFO -- : (0.000038s) SELECT * FROM `interests` WHERE `interest` = 'Financial Mathematics'
+I, [2021-03-23T11:55:15.879994 #19065]  INFO -- : (0.000032s) SELECT * FROM `interests` WHERE (`interest` = 'General Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.880120 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('General Engineering')
+I, [2021-03-23T11:55:15.880224 #19065]  INFO -- : (0.000040s) SELECT * FROM `interests` WHERE `interest` = 'General Engineering'
+I, [2021-03-23T11:55:15.880316 #19065]  INFO -- : (0.000032s) SELECT * FROM `interests` WHERE (`interest` = 'Genetics') LIMIT 1
+I, [2021-03-23T11:55:15.880425 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Genetics')
+I, [2021-03-23T11:55:15.880527 #19065]  INFO -- : (0.000039s) SELECT * FROM `interests` WHERE `interest` = 'Genetics'
+I, [2021-03-23T11:55:15.880620 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'Geography') LIMIT 1
+I, [2021-03-23T11:55:15.880773 #19065]  INFO -- : (0.000050s) INSERT INTO `interests` (`interest`) VALUES ('Geography')
+I, [2021-03-23T11:55:15.880916 #19065]  INFO -- : (0.000055s) SELECT * FROM `interests` WHERE `interest` = 'Geography'
+I, [2021-03-23T11:55:15.881035 #19065]  INFO -- : (0.000041s) SELECT * FROM `interests` WHERE (`interest` = 'Human Sciences') LIMIT 1
+I, [2021-03-23T11:55:15.881152 #19065]  INFO -- : (0.000023s) INSERT INTO `interests` (`interest`) VALUES ('Human Sciences')
+I, [2021-03-23T11:55:15.881256 #19065]  INFO -- : (0.000039s) SELECT * FROM `interests` WHERE `interest` = 'Human Sciences'
+I, [2021-03-23T11:55:15.881350 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'History') LIMIT 1
+I, [2021-03-23T11:55:15.881461 #19065]  INFO -- : (0.000023s) INSERT INTO `interests` (`interest`) VALUES ('History')
+I, [2021-03-23T11:55:15.881584 #19065]  INFO -- : (0.000038s) SELECT * FROM `interests` WHERE `interest` = 'History'
+I, [2021-03-23T11:55:15.881681 #19065]  INFO -- : (0.000037s) SELECT * FROM `interests` WHERE (`interest` = 'Japanese Studies') LIMIT 1
+I, [2021-03-23T11:55:15.881790 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Japanese Studies')
+I, [2021-03-23T11:55:15.881893 #19065]  INFO -- : (0.000038s) SELECT * FROM `interests` WHERE `interest` = 'Japanese Studies'
+I, [2021-03-23T11:55:15.881986 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'Journalism Studies') LIMIT 1
+I, [2021-03-23T11:55:15.882095 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Journalism Studies')
+I, [2021-03-23T11:55:15.882209 #19065]  INFO -- : (0.000040s) SELECT * FROM `interests` WHERE `interest` = 'Journalism Studies'
+I, [2021-03-23T11:55:15.882322 #19065]  INFO -- : (0.000052s) SELECT * FROM `interests` WHERE (`interest` = 'Korean Studies') LIMIT 1
+I, [2021-03-23T11:55:15.882434 #19065]  INFO -- : (0.000023s) INSERT INTO `interests` (`interest`) VALUES ('Korean Studies')
+I, [2021-03-23T11:55:15.882539 #19065]  INFO -- : (0.000041s) SELECT * FROM `interests` WHERE `interest` = 'Korean Studies'
+I, [2021-03-23T11:55:15.882639 #19065]  INFO -- : (0.000033s) SELECT * FROM `interests` WHERE (`interest` = 'Landscape Architecture') LIMIT 1
+I, [2021-03-23T11:55:15.882748 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Landscape Architecture')
+I, [2021-03-23T11:55:15.882851 #19065]  INFO -- : (0.000039s) SELECT * FROM `interests` WHERE `interest` = 'Landscape Architecture'
+I, [2021-03-23T11:55:15.882962 #19065]  INFO -- : (0.000051s) SELECT * FROM `interests` WHERE (`interest` = 'Law') LIMIT 1
+I, [2021-03-23T11:55:15.883072 #19065]  INFO -- : (0.000022s) INSERT INTO `interests` (`interest`) VALUES ('Law')
+I, [2021-03-23T11:55:15.883183 #19065]  INFO -- : (0.000046s) SELECT * FROM `interests` WHERE `interest` = 'Law'
+I, [2021-03-23T11:55:15.883284 #19065]  INFO -- : (0.000039s) SELECT * FROM `interests` WHERE (`interest` = 'Criminology') LIMIT 1
+I, [2021-03-23T11:55:15.883426 #19065]  INFO -- : (0.000033s) INSERT INTO `interests` (`interest`) VALUES ('Criminology')
+I, [2021-03-23T11:55:15.883621 #19065]  INFO -- : (0.000073s) SELECT * FROM `interests` WHERE `interest` = 'Criminology'
+I, [2021-03-23T11:55:15.883802 #19065]  INFO -- : (0.000064s) SELECT * FROM `interests` WHERE (`interest` = 'Materials Science') LIMIT 1
+I, [2021-03-23T11:55:15.884055 #19065]  INFO -- : (0.000038s) INSERT INTO `interests` (`interest`) VALUES ('Materials Science')
+I, [2021-03-23T11:55:15.884255 #19065]  INFO -- : (0.000081s) SELECT * FROM `interests` WHERE `interest` = 'Materials Science'
+I, [2021-03-23T11:55:15.884431 #19065]  INFO -- : (0.000061s) SELECT * FROM `interests` WHERE (`interest` = 'Mathematics') LIMIT 1
+I, [2021-03-23T11:55:15.884644 #19065]  INFO -- : (0.000041s) INSERT INTO `interests` (`interest`) VALUES ('Mathematics')
+I, [2021-03-23T11:55:15.884786 #19065]  INFO -- : (0.000042s) SELECT * FROM `interests` WHERE `interest` = 'Mathematics'
+I, [2021-03-23T11:55:15.884889 #19065]  INFO -- : (0.000036s) SELECT * FROM `interests` WHERE (`interest` = 'Statistics') LIMIT 1
+I, [2021-03-23T11:55:15.885042 #19065]  INFO -- : (0.000029s) INSERT INTO `interests` (`interest`) VALUES ('Statistics')
+I, [2021-03-23T11:55:15.885172 #19065]  INFO -- : (0.000052s) SELECT * FROM `interests` WHERE `interest` = 'Statistics'
+I, [2021-03-23T11:55:15.885333 #19065]  INFO -- : (0.000084s) SELECT * FROM `interests` WHERE (`interest` = 'French') LIMIT 1
+I, [2021-03-23T11:55:15.885474 #19065]  INFO -- : (0.000028s) INSERT INTO `interests` (`interest`) VALUES ('French')
+I, [2021-03-23T11:55:15.885590 #19065]  INFO -- : (0.000044s) SELECT * FROM `interests` WHERE `interest` = 'French'
+I, [2021-03-23T11:55:15.885695 #19065]  INFO -- : (0.000036s) SELECT * FROM `interests` WHERE (`interest` = 'German') LIMIT 1
+I, [2021-03-23T11:55:15.885850 #19065]  INFO -- : (0.000027s) INSERT INTO `interests` (`interest`) VALUES ('German')
+I, [2021-03-23T11:55:15.885984 #19065]  INFO -- : (0.000047s) SELECT * FROM `interests` WHERE `interest` = 'German'
+I, [2021-03-23T11:55:15.886101 #19065]  INFO -- : (0.000037s) SELECT * FROM `interests` WHERE (`interest` = 'Spanish') LIMIT 1
+I, [2021-03-23T11:55:15.886280 #19065]  INFO -- : (0.000025s) INSERT INTO `interests` (`interest`) VALUES ('Spanish')
+I, [2021-03-23T11:55:15.886405 #19065]  INFO -- : (0.000048s) SELECT * FROM `interests` WHERE `interest` = 'Spanish'
+I, [2021-03-23T11:55:15.886512 #19065]  INFO -- : (0.000034s) SELECT * FROM `interests` WHERE (`interest` = 'Mechanical Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.886649 #19065]  INFO -- : (0.000025s) INSERT INTO `interests` (`interest`) VALUES ('Mechanical Engineering')
+I, [2021-03-23T11:55:15.886766 #19065]  INFO -- : (0.000042s) SELECT * FROM `interests` WHERE `interest` = 'Mechanical Engineering'
+I, [2021-03-23T11:55:15.886870 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE (`interest` = 'Robotics') LIMIT 1
+I, [2021-03-23T11:55:15.886995 #19065]  INFO -- : (0.000023s) INSERT INTO `interests` (`interest`) VALUES ('Robotics')
+I, [2021-03-23T11:55:15.887150 #19065]  INFO -- : (0.000044s) SELECT * FROM `interests` WHERE `interest` = 'Robotics'
+I, [2021-03-23T11:55:15.887254 #19065]  INFO -- : (0.000034s) SELECT * FROM `interests` WHERE (`interest` = 'Medical Genetics') LIMIT 1
+I, [2021-03-23T11:55:15.887376 #19065]  INFO -- : (0.000024s) INSERT INTO `interests` (`interest`) VALUES ('Medical Genetics')
+I, [2021-03-23T11:55:15.887493 #19065]  INFO -- : (0.000042s) SELECT * FROM `interests` WHERE `interest` = 'Medical Genetics'
+I, [2021-03-23T11:55:15.887600 #19065]  INFO -- : (0.000037s) SELECT * FROM `interests` WHERE (`interest` = 'Medical Microbiology') LIMIT 1
+I, [2021-03-23T11:55:15.887739 #19065]  INFO -- : (0.000038s) INSERT INTO `interests` (`interest`) VALUES ('Medical Microbiology')
+I, [2021-03-23T11:55:15.887860 #19065]  INFO -- : (0.000046s) SELECT * FROM `interests` WHERE `interest` = 'Medical Microbiology'
+I, [2021-03-23T11:55:15.887991 #19065]  INFO -- : (0.000032s) SELECT * FROM `interests` WHERE (`interest` = 'Medicine') LIMIT 1
+I, [2021-03-23T11:55:15.888137 #19065]  INFO -- : (0.000036s) INSERT INTO `interests` (`interest`) VALUES ('Medicine')
+I, [2021-03-23T11:55:15.888255 #19065]  INFO -- : (0.000037s) SELECT * FROM `interests` WHERE `interest` = 'Medicine'
+I, [2021-03-23T11:55:15.888429 #19065]  INFO -- : (0.000082s) SELECT * FROM `interests` WHERE (`interest` = 'Microbiology') LIMIT 1
+I, [2021-03-23T11:55:15.888628 #19065]  INFO -- : (0.000031s) INSERT INTO `interests` (`interest`) VALUES ('Microbiology')
+I, [2021-03-23T11:55:15.888769 #19065]  INFO -- : (0.000053s) SELECT * FROM `interests` WHERE `interest` = 'Microbiology'
+I, [2021-03-23T11:55:15.888897 #19065]  INFO -- : (0.000046s) SELECT * FROM `interests` WHERE (`interest` = 'Molecular Biology') LIMIT 1
+I, [2021-03-23T11:55:15.889065 #19065]  INFO -- : (0.000028s) INSERT INTO `interests` (`interest`) VALUES ('Molecular Biology')
+I, [2021-03-23T11:55:15.889198 #19065]  INFO -- : (0.000050s) SELECT * FROM `interests` WHERE `interest` = 'Molecular Biology'
+I, [2021-03-23T11:55:15.889318 #19065]  INFO -- : (0.000043s) SELECT * FROM `interests` WHERE (`interest` = 'Music') LIMIT 1
+I, [2021-03-23T11:55:15.889501 #19065]  INFO -- : (0.000066s) INSERT INTO `interests` (`interest`) VALUES ('Music')
+I, [2021-03-23T11:55:15.889668 #19065]  INFO -- : (0.000058s) SELECT * FROM `interests` WHERE `interest` = 'Music'
+I, [2021-03-23T11:55:15.889802 #19065]  INFO -- : (0.000055s) SELECT * FROM `interests` WHERE (`interest` = 'Nursing') LIMIT 1
+I, [2021-03-23T11:55:15.889946 #19065]  INFO -- : (0.000029s) INSERT INTO `interests` (`interest`) VALUES ('Nursing')
+I, [2021-03-23T11:55:15.890078 #19065]  INFO -- : (0.000050s) SELECT * FROM `interests` WHERE `interest` = 'Nursing'
+I, [2021-03-23T11:55:15.890229 #19065]  INFO -- : (0.000046s) SELECT * FROM `interests` WHERE (`interest` = 'Orthoptics') LIMIT 1
+I, [2021-03-23T11:55:15.890446 #19065]  INFO -- : (0.000046s) INSERT INTO `interests` (`interest`) VALUES ('Orthoptics')
+I, [2021-03-23T11:55:15.890594 #19065]  INFO -- : (0.000054s) SELECT * FROM `interests` WHERE `interest` = 'Orthoptics'
+I, [2021-03-23T11:55:15.890739 #19065]  INFO -- : (0.000049s) SELECT * FROM `interests` WHERE (`interest` = 'Philosophy') LIMIT 1
+I, [2021-03-23T11:55:15.890936 #19065]  INFO -- : (0.000029s) INSERT INTO `interests` (`interest`) VALUES ('Philosophy')
+I, [2021-03-23T11:55:15.891073 #19065]  INFO -- : (0.000053s) SELECT * FROM `interests` WHERE `interest` = 'Philosophy'
+I, [2021-03-23T11:55:15.891220 #19065]  INFO -- : (0.000070s) SELECT * FROM `interests` WHERE (`interest` = 'Physics') LIMIT 1
+I, [2021-03-23T11:55:15.891365 #19065]  INFO -- : (0.000029s) INSERT INTO `interests` (`interest`) VALUES ('Physics')
+I, [2021-03-23T11:55:15.891507 #19065]  INFO -- : (0.000058s) SELECT * FROM `interests` WHERE `interest` = 'Physics'
+I, [2021-03-23T11:55:15.891625 #19065]  INFO -- : (0.000043s) SELECT * FROM `interests` WHERE (`interest` = 'Astrophysics') LIMIT 1
+I, [2021-03-23T11:55:15.891768 #19065]  INFO -- : (0.000029s) INSERT INTO `interests` (`interest`) VALUES ('Astrophysics')
+I, [2021-03-23T11:55:15.891910 #19065]  INFO -- : (0.000051s) SELECT * FROM `interests` WHERE `interest` = 'Astrophysics'
+I, [2021-03-23T11:55:15.892001 #19065]  INFO -- : (0.000032s) SELECT * FROM `interests` WHERE (`interest` = 'Particle Physics') LIMIT 1
+I, [2021-03-23T11:55:15.892123 #19065]  INFO -- : (0.000021s) INSERT INTO `interests` (`interest`) VALUES ('Particle Physics')
+I, [2021-03-23T11:55:15.892222 #19065]  INFO -- : (0.000039s) SELECT * FROM `interests` WHERE `interest` = 'Particle Physics'
+I, [2021-03-23T11:55:15.892316 #19065]  INFO -- : (0.000031s) SELECT * FROM `interests` WHERE (`interest` = 'Plant Sciences') LIMIT 1
+I, [2021-03-23T11:55:15.892420 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Plant Sciences')
+I, [2021-03-23T11:55:15.892516 #19065]  INFO -- : (0.000036s) SELECT * FROM `interests` WHERE `interest` = 'Plant Sciences'
+I, [2021-03-23T11:55:15.892600 #19065]  INFO -- : (0.000030s) SELECT * FROM `interests` WHERE (`interest` = 'Psychology') LIMIT 1
+I, [2021-03-23T11:55:15.892700 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Psychology')
+I, [2021-03-23T11:55:15.892804 #19065]  INFO -- : (0.000037s) SELECT * FROM `interests` WHERE `interest` = 'Psychology'
+I, [2021-03-23T11:55:15.892888 #19065]  INFO -- : (0.000029s) SELECT * FROM `interests` WHERE (`interest` = 'Sociology') LIMIT 1
+I, [2021-03-23T11:55:15.892987 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Sociology')
+I, [2021-03-23T11:55:15.893080 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE `interest` = 'Sociology'
+I, [2021-03-23T11:55:15.893162 #19065]  INFO -- : (0.000029s) SELECT * FROM `interests` WHERE (`interest` = 'Social Policy') LIMIT 1
+I, [2021-03-23T11:55:15.893269 #19065]  INFO -- : (0.000021s) INSERT INTO `interests` (`interest`) VALUES ('Social Policy')
+I, [2021-03-23T11:55:15.893364 #19065]  INFO -- : (0.000036s) SELECT * FROM `interests` WHERE `interest` = 'Social Policy'
+I, [2021-03-23T11:55:15.893448 #19065]  INFO -- : (0.000030s) SELECT * FROM `interests` WHERE (`interest` = 'Software Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.893567 #19065]  INFO -- : (0.000039s) INSERT INTO `interests` (`interest`) VALUES ('Software Engineering')
+I, [2021-03-23T11:55:15.893705 #19065]  INFO -- : (0.000047s) SELECT * FROM `interests` WHERE `interest` = 'Software Engineering'
+I, [2021-03-23T11:55:15.893791 #19065]  INFO -- : (0.000030s) SELECT * FROM `interests` WHERE (`interest` = 'Speech and Language Therapy') LIMIT 1
+I, [2021-03-23T11:55:15.893893 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Speech and Language Therapy')
+I, [2021-03-23T11:55:15.893988 #19065]  INFO -- : (0.000036s) SELECT * FROM `interests` WHERE `interest` = 'Speech and Language Therapy'
+I, [2021-03-23T11:55:15.894072 #19065]  INFO -- : (0.000030s) SELECT * FROM `interests` WHERE (`interest` = 'Structural Engineering') LIMIT 1
+I, [2021-03-23T11:55:15.894214 #19065]  INFO -- : (0.000021s) INSERT INTO `interests` (`interest`) VALUES ('Structural Engineering')
+I, [2021-03-23T11:55:15.894310 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE `interest` = 'Structural Engineering'
+I, [2021-03-23T11:55:15.894449 #19065]  INFO -- : (0.000049s) SELECT * FROM `interests` WHERE (`interest` = 'Theoretical Physics') LIMIT 1
+I, [2021-03-23T11:55:15.894550 #19065]  INFO -- : (0.000020s) INSERT INTO `interests` (`interest`) VALUES ('Theoretical Physics')
+I, [2021-03-23T11:55:15.894644 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE `interest` = 'Theoretical Physics'
+I, [2021-03-23T11:55:15.894743 #19065]  INFO -- : (0.000044s) SELECT * FROM `interests` WHERE (`interest` = 'Urban Studies') LIMIT 1
+I, [2021-03-23T11:55:15.894925 #19065]  INFO -- : (0.000034s) INSERT INTO `interests` (`interest`) VALUES ('Urban Studies')
+I, [2021-03-23T11:55:15.895018 #19065]  INFO -- : (0.000035s) SELECT * FROM `interests` WHERE `interest` = 'Urban Studies'
+I, [2021-03-23T11:55:15.895102 #19065]  INFO -- : (0.000029s) SELECT * FROM `interests` WHERE (`interest` = 'Zoology') LIMIT 1
+I, [2021-03-23T11:55:15.895226 #19065]  INFO -- : (0.000021s) INSERT INTO `interests` (`interest`) VALUES ('Zoology')
+I, [2021-03-23T11:55:15.895323 #19065]  INFO -- : (0.000039s) SELECT * FROM `interests` WHERE `interest` = 'Zoology'
+I, [2021-03-23T11:55:15.898371 #19065]  INFO -- : (0.003004s) COMMIT
+I, [2021-03-23T11:55:21.639606 #17459]  INFO -- : (0.000999s) SELECT * FROM `departments`
+I, [2021-03-23T11:55:21.640994 #17459]  INFO -- : (0.001082s) SELECT * FROM `interests`
+I, [2021-03-23T11:55:41.049778 #17459]  INFO -- : (0.000548s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'sdvdfv@dfvfdv.com') LIMIT 1
+I, [2021-03-23T11:55:41.050858 #17459]  INFO -- : (0.000183s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'sdvdfv@dfvfdv.com') LIMIT 1
+I, [2021-03-23T11:55:41.051263 #17459]  INFO -- : (0.000067s) BEGIN
+I, [2021-03-23T11:55:41.053427 #17459]  INFO -- : (0.000424s) INSERT INTO `users` (`email`, `password`, `user_type`, `name`, `department`, `bio`, `interest_areas`) VALUES ('sdvdfv@dfvfdv.com', 'VerySecurePass123', 0, 'Mentor McDonald', 'School', 'My bio', 'Aerospace,Computer,Computer,Dental,Dental,Dental')
+I, [2021-03-23T11:55:41.053929 #17459]  INFO -- : (0.000194s) SELECT * FROM `users` WHERE `id` = 4
+I, [2021-03-23T11:55:41.057218 #17459]  INFO -- : (0.003161s) COMMIT
+I, [2021-03-23T11:55:41.067032 #17459]  INFO -- : (0.000237s) SELECT * FROM `users` WHERE `id` = 4
+I, [2021-03-23T11:55:56.865521 #17459]  INFO -- : (0.000432s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-23T11:55:56.866313 #17459]  INFO -- : (0.000410s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-23T11:55:56.884086 #17459]  INFO -- : (0.000445s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-23T11:55:56.898021 #17459]  INFO -- : (0.000474s) SELECT * FROM `users` WHERE (`user_type` = 0)

@@ -21,22 +21,21 @@
         <input id="username" type="text" class="form-control" name="name" required>
       </div>
       <div class="mb-3">
-        <% if @user_type == 0 %>
-          <label for="department" class="form-label">Department</label>
-          <input id="department" type="text" class="form-control" name="department" required>
-        <% else %>
-          <label for="department" class="form-label">Department (optional)</label>
-          <input id="department" type="text" class="form-control" name="department">
-        <% end %>
+          <label for="department" class="form-label">Department <%= '(optional)' unless @user_type == 0 %></label>
+          <select id="department" class="custom-select" name="department" <%= 'required' if @user_type == 0 %>>
+            <option data-placeholder="true"></option>
+            <% @departments.each do |dep| %>
+            <option value=<%= dep.department %>><%= dep.department %></option>
+            <% end %>
+          </select>
       </div>
       <div class="mb-3">
-        <% if @user_type == 0 %>
-          <label for="areas" class="form-label">Areas of Interest</label>
-          <input id="areas" type="text" class="form-control" name="areas" required>
-        <% else %>
-          <label for="areas" class="form-label">Areas of Interest (optional)</label>
-          <input id="areas" type="text" class="form-control" name="areas">
-        <% end %>
+          <label for="areas" class="form-label">Areas of Interest <%= '(optional)' unless @user_type == 0 %></label>
+          <select id="areas" name="areas[]" class="custom-select" multiple <%= 'required' if @user_type == 0 %>>
+            <% @interests.each do |interest| %>
+              <option value=<%= interest.interest %>><%= interest.interest %></option>
+            <% end %>
+          </select>
       </div>
       <div class="mb-3">
         <% if @user_type == 0 %>
@@ -57,5 +56,10 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet"></link>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+<script src="js/select.js"></script>
 </html>

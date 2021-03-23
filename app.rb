@@ -10,7 +10,7 @@ set :bind, '0.0.0.0'
 
 # Sessions
 enable :sessions
-set :session_secret, "ap*kTBwmtjW!{{]lVEbey926tq8l!j2sb57kMxoF~~TXnHnyyJDkJ"
+set :session_secret, 'ap*kTBwmtjW!{{]lVEbey926tq8l!j2sb57kMxoF~~TXnHnyyJDkJ'
 
 # Database
 require_relative 'db/db'

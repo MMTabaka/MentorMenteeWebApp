@@ -1274,3 +1274,8 @@ I, [2021-03-22T16:07:29.504567 #49796]  INFO -- : (0.000022s) PRAGMA case_sensit
 I, [2021-03-22T16:07:29.505507 #49796]  INFO -- : (0.000094s) SELECT sqlite_version()
 I, [2021-03-22T16:07:29.505777 #49796]  INFO -- : (0.000141s) PRAGMA table_info('users')
 I, [2021-03-22T16:07:31.304554 #49796]  INFO -- : (0.000227s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-23T11:30:54.291666 #16141]  INFO -- : (0.000210s) PRAGMA foreign_keys = 1
+I, [2021-03-23T11:30:54.291790 #16141]  INFO -- : (0.000027s) PRAGMA case_sensitive_like = 1
+I, [2021-03-23T11:30:54.293219 #16141]  INFO -- : (0.000088s) SELECT sqlite_version()
+I, [2021-03-23T11:30:54.293538 #16141]  INFO -- : (0.000188s) PRAGMA table_xinfo('users')
+I, [2021-03-23T11:31:26.478463 #16141]  INFO -- : (0.000338s) SELECT * FROM `users` WHERE (`user_type` = 0)

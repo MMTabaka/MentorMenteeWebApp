@@ -1,11 +1,18 @@
-body{
+html, body{
+  height: 100%;
+  margin: 0;
   background-color: #f7f6f6;
+}
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
 }
 
 .navi{
   width: 95%;
   padding: 0.5%;
   margin: auto;
+  font-size: 1.5em;
 }
 .nav-pills .nav-link.active{
   background-color: #FFDD84;
@@ -58,6 +65,9 @@ body{
   margin-top: 6%; 
   position: relative; 
   width: -webkit-fill-available;
+}
+.push {
+  height: 50px;
 }
 
 .ss-main .ss-single-selected, .ss-main .ss-multi-selected {

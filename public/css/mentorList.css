@@ -34,6 +34,7 @@
 
 .userRow{
   padding: 1.5em 0;
+  height: 7em;
   border-bottom: 0.1em solid;
 }
 .picML{
@@ -51,5 +52,5 @@
 }
 
 .mlButton{
-  padding: 2%;
+  padding: 1em;
 }

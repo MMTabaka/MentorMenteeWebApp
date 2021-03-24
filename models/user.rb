@@ -51,9 +51,14 @@ class User < Sequel::Model
     Levenshtein distance implementation from Rosetta code:
     https://rosettacode.org/wiki/Levenshtein_distance#Ruby
     """
-    mentor_fields_array = mentor_fields.split(', ')
-    mentee_fields_array = mentee_fields.split(', ')
+    
+    if (mentor_fields.nil? || mentee_fields.nil?)
+      return nil
+    end
 
+    mentor_fields_array = mentor_fields.split(',')
+    mentee_fields_array = mentee_fields.split(',')
+    
     costs = Array(0..mentee_fields_array.length) # i == 0
     (1..mentor_fields_array.length).each do |i|
       costs[0], nw = i, i - 1  # j == 0; nw is lev(i-1, j)

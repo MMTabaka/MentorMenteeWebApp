@@ -59,3 +59,7 @@ body{
   position: relative; 
   width: -webkit-fill-available;
 }
+
+.ss-main .ss-single-selected, .ss-main .ss-multi-selected {
+  min-height: 37px !important;
+}

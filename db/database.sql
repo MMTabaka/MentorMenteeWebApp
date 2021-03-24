@@ -24,6 +24,14 @@ CREATE TABLE admins (
     password TEXT
 );
 
+CREATE TABLE departments (
+    department TEXT PRIMARY KEY
+);
+
+CREATE TABLE interests (
+    interest TEXT PRIMARY KEY
+);
+
 INSERT INTO users (user_type, email, password, name, department, bio, request, acceptance, suspension, interest_areas)
 VALUES (1, 'email@email.com', 'VerySecurePass1337', 'Mentee John', 'Department of Computer Science', 'Random bio text',
         '', 0, 0, 'field1,field2,field3');

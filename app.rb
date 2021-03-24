@@ -17,3 +17,4 @@ require_relative 'db/db'
 
 require_all 'models'
 require_all 'controllers'
+require_all 'helpers'

@@ -3272,3 +3272,64 @@ I, [2021-03-23T11:55:56.865521 #17459]  INFO -- : (0.000432s) SELECT * FROM `use
 I, [2021-03-23T11:55:56.866313 #17459]  INFO -- : (0.000410s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
 I, [2021-03-23T11:55:56.884086 #17459]  INFO -- : (0.000445s) SELECT * FROM `users` WHERE `id` = 1
 I, [2021-03-23T11:55:56.898021 #17459]  INFO -- : (0.000474s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-24T21:18:10.839243 #32145]  INFO -- : (0.000196s) PRAGMA foreign_keys = 1
+I, [2021-03-24T21:18:10.839482 #32145]  INFO -- : (0.000019s) PRAGMA case_sensitive_like = 1
+I, [2021-03-24T21:18:10.840365 #32145]  INFO -- : (0.000084s) SELECT sqlite_version()
+I, [2021-03-24T21:18:10.840572 #32145]  INFO -- : (0.000075s) PRAGMA table_xinfo('departments')
+I, [2021-03-24T21:18:10.841532 #32145]  INFO -- : (0.000081s) PRAGMA table_xinfo('interests')
+I, [2021-03-24T21:18:10.842862 #32145]  INFO -- : (0.000177s) PRAGMA table_xinfo('users')
+I, [2021-03-24T21:19:00.951474 #32275]  INFO -- : (0.000199s) PRAGMA foreign_keys = 1
+I, [2021-03-24T21:19:00.951571 #32275]  INFO -- : (0.000021s) PRAGMA case_sensitive_like = 1
+I, [2021-03-24T21:19:00.952380 #32275]  INFO -- : (0.000094s) SELECT sqlite_version()
+I, [2021-03-24T21:19:00.952587 #32275]  INFO -- : (0.000075s) PRAGMA table_xinfo('departments')
+I, [2021-03-24T21:19:00.953471 #32275]  INFO -- : (0.000063s) PRAGMA table_xinfo('interests')
+I, [2021-03-24T21:19:00.954587 #32275]  INFO -- : (0.000163s) PRAGMA table_xinfo('users')
+I, [2021-03-24T21:21:44.147010 #32633]  INFO -- : (0.000185s) PRAGMA foreign_keys = 1
+I, [2021-03-24T21:21:44.147107 #32633]  INFO -- : (0.000018s) PRAGMA case_sensitive_like = 1
+I, [2021-03-24T21:21:44.147934 #32633]  INFO -- : (0.000085s) SELECT sqlite_version()
+I, [2021-03-24T21:21:44.148126 #32633]  INFO -- : (0.000071s) PRAGMA table_xinfo('departments')
+I, [2021-03-24T21:21:44.148943 #32633]  INFO -- : (0.000061s) PRAGMA table_xinfo('interests')
+I, [2021-03-24T21:21:44.150049 #32633]  INFO -- : (0.000161s) PRAGMA table_xinfo('users')
+I, [2021-03-24T21:22:05.085476 #32754]  INFO -- : (0.000231s) PRAGMA foreign_keys = 1
+I, [2021-03-24T21:22:05.085588 #32754]  INFO -- : (0.000025s) PRAGMA case_sensitive_like = 1
+I, [2021-03-24T21:22:05.086774 #32754]  INFO -- : (0.000158s) SELECT sqlite_version()
+I, [2021-03-24T21:22:05.087200 #32754]  INFO -- : (0.000138s) PRAGMA table_xinfo('departments')
+I, [2021-03-24T21:22:05.088878 #32754]  INFO -- : (0.000158s) PRAGMA table_xinfo('interests')
+I, [2021-03-24T21:22:05.091133 #32754]  INFO -- : (0.000329s) PRAGMA table_xinfo('users')
+I, [2021-03-24T21:22:08.761000 #32771]  INFO -- : (0.000180s) PRAGMA foreign_keys = 1
+I, [2021-03-24T21:22:08.761093 #32771]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2021-03-24T21:22:08.761866 #32771]  INFO -- : (0.000085s) SELECT sqlite_version()
+I, [2021-03-24T21:22:08.762079 #32771]  INFO -- : (0.000073s) PRAGMA table_xinfo('departments')
+I, [2021-03-24T21:22:08.762895 #32771]  INFO -- : (0.000077s) PRAGMA table_xinfo('interests')
+I, [2021-03-24T21:22:08.764086 #32771]  INFO -- : (0.000182s) PRAGMA table_xinfo('users')
+I, [2021-03-24T21:24:24.307923 #32771]  INFO -- : (0.000353s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-24T21:24:24.308614 #32771]  INFO -- : (0.000240s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-24T21:26:40.574707 #32771]  INFO -- : (0.000353s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-24T21:26:40.575488 #32771]  INFO -- : (0.000299s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-24T21:26:40.583527 #32771]  INFO -- : (0.000283s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-24T21:28:09.723717 #33534]  INFO -- : (0.000181s) PRAGMA foreign_keys = 1
+I, [2021-03-24T21:28:09.723801 #33534]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-03-24T21:28:09.724447 #33534]  INFO -- : (0.000067s) SELECT sqlite_version()
+I, [2021-03-24T21:28:09.724606 #33534]  INFO -- : (0.000055s) PRAGMA table_xinfo('departments')
+I, [2021-03-24T21:28:09.725260 #33534]  INFO -- : (0.000051s) PRAGMA table_xinfo('interests')
+I, [2021-03-24T21:28:09.726208 #33534]  INFO -- : (0.000135s) PRAGMA table_xinfo('users')
+I, [2021-03-24T21:28:13.711280 #33534]  INFO -- : (0.000269s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-24T21:28:13.721436 #33534]  INFO -- : (0.000243s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-24T21:32:24.613978 #34030]  INFO -- : (0.000195s) PRAGMA foreign_keys = 1
+I, [2021-03-24T21:32:24.614070 #34030]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2021-03-24T21:32:24.614840 #34030]  INFO -- : (0.000085s) SELECT sqlite_version()
+I, [2021-03-24T21:32:24.615029 #34030]  INFO -- : (0.000070s) PRAGMA table_xinfo('departments')
+I, [2021-03-24T21:32:24.615854 #34030]  INFO -- : (0.000079s) PRAGMA table_xinfo('interests')
+I, [2021-03-24T21:32:24.617063 #34030]  INFO -- : (0.000199s) PRAGMA table_xinfo('users')
+I, [2021-03-24T21:35:35.652936 #34239]  INFO -- : (0.000185s) PRAGMA foreign_keys = 1
+I, [2021-03-24T21:35:35.653019 #34239]  INFO -- : (0.000016s) PRAGMA case_sensitive_like = 1
+I, [2021-03-24T21:35:35.653833 #34239]  INFO -- : (0.000084s) SELECT sqlite_version()
+I, [2021-03-24T21:35:35.654029 #34239]  INFO -- : (0.000071s) PRAGMA table_xinfo('departments')
+I, [2021-03-24T21:35:35.654883 #34239]  INFO -- : (0.000075s) PRAGMA table_xinfo('interests')
+I, [2021-03-24T21:35:35.656044 #34239]  INFO -- : (0.000160s) PRAGMA table_xinfo('users')
+I, [2021-03-24T21:36:14.501482 #34368]  INFO -- : (0.000197s) PRAGMA foreign_keys = 1
+I, [2021-03-24T21:36:14.501581 #34368]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2021-03-24T21:36:14.502244 #34368]  INFO -- : (0.000074s) SELECT sqlite_version()
+I, [2021-03-24T21:36:14.502415 #34368]  INFO -- : (0.000060s) PRAGMA table_xinfo('departments')
+I, [2021-03-24T21:36:14.503096 #34368]  INFO -- : (0.000052s) PRAGMA table_xinfo('interests')
+I, [2021-03-24T21:36:14.504228 #34368]  INFO -- : (0.000172s) PRAGMA table_xinfo('users')

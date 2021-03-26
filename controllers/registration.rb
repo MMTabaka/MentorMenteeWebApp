@@ -13,14 +13,20 @@ end
 post '/details' do
   # Cookie is gone?
   halt 500 unless session[:reg_params]
+  depart = Department[params['department']].department
+  # params['areas'] is an array.
+  interests = Interest.where_all(id: params['areas'])
+                      .map(&:interest)
+                      .sort
+
   usr_details = {
     email: session[:reg_params][:email],
     password: session[:reg_params][:password],
     user_type: session[:reg_params][:user_type],
     name: params['name'],
-    department: params['department'],
+    department: depart,
     bio: params['bio'],
-    interest_areas: params['areas'].join(',')
+    interest_areas: interests.join(',')
   }
   user = User.register(usr_details)
   # Account creation successful, log in new user

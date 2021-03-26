@@ -21,30 +21,25 @@
         <input id="username" type="text" class="form-control" name="name" required>
       </div>
       <div class="mb-3">
-          <label for="department" class="form-label">Department <%= '(optional)' unless @user_type == UserType::MENTEE %></label>
-          <select id="department" class="custom-select" name="department" <%= 'required' if @user_type == UserType::MENTEE %>>
+          <label for="department" class="form-label">Department <%= '(optional)' if @user_type == @mentee_type %></label>
+          <select id="department" class="custom-select" name="department" <%= 'required' if @user_type == @mentee_type %>>
             <option data-placeholder="true"></option>
             <% @departments.each do |dep| %>
-            <option value=<%= dep.department %>><%= dep.department %></option>
+            <option value=<%= dep.id %>><%= dep.department %></option>
             <% end %>
           </select>
       </div>
       <div class="mb-3">
-          <label for="areas" class="form-label">Areas of Interest <%= '(optional)' unless @user_type == UserType::MENTEE %></label>
-          <select id="areas" name="areas[]" class="custom-select" multiple <%= 'required' if @user_type == UserType::MENTEE %>>
+          <label for="areas" class="form-label">Areas of Interest <%= '(optional)' if @user_type == @mentee_type %></label>
+          <select id="areas" name="areas[]" class="custom-select" multiple <%= 'required' if @user_type == @mentee_type %>>
             <% @interests.each do |interest| %>
-              <option value=<%= interest.interest %>><%= interest.interest %></option>
+              <option value=<%= interest.id %>><%= interest.interest %></option>
             <% end %>
           </select>
       </div>
       <div class="mb-3">
-        <% if @user_type == UserType::MENTEE %>
-          <label for="bio" class="form-label">Bio</label>
-          <textarea id="bio" name="bio" required class="form-control" rows="4"></textarea>
-        <% else %>
-          <label for="bio" class="form-label">Bio (optional)</label>
-          <textarea id="bio" name="bio" class="form-control" rows="4"></textarea>
-        <% end %>
+          <label for="bio" class="form-label">Bio <%= '(optional)' if @user_type == @mentee_type %></label>
+          <textarea id="bio" name="bio" class="form-control" rows="4" <%= 'required' if @user_type == @mentee_type %>></textarea>
       </div>
       <button type="submit" class="btn btn-primary btnC">Create an account</button>
     </form>

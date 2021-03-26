@@ -1,5 +1,7 @@
 DROP TABLE users;
 DROP TABLE admins;
+DROP TABLE departments;
+DROP TABLE interests;
 
 -- Clear everything
 VACUUM;
@@ -25,11 +27,13 @@ CREATE TABLE admins (
 );
 
 CREATE TABLE departments (
-    department TEXT PRIMARY KEY
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    department TEXT UNIQUE NOT NULL
 );
 
 CREATE TABLE interests (
-    interest TEXT PRIMARY KEY
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    interest TEXT UNIQUE NOT NULL
 );
 
 INSERT INTO users (user_type, email, password, name, department, bio, request, acceptance, suspension, interest_areas)

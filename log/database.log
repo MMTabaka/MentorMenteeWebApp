@@ -3799,3 +3799,65 @@ I, [2021-03-26T13:26:22.056935 #11950]  INFO -- : (0.000463s) INSERT INTO `users
 I, [2021-03-26T13:26:22.057662 #11950]  INFO -- : (0.000300s) SELECT * FROM `users` WHERE `id` = 5
 I, [2021-03-26T13:26:22.061726 #11950]  INFO -- : (0.003863s) COMMIT
 I, [2021-03-26T13:26:22.070595 #11950]  INFO -- : (0.000240s) SELECT * FROM `users` WHERE `id` = 5
+I, [2021-03-26T15:01:45.322755 #21359]  INFO -- : (0.000159s) PRAGMA foreign_keys = 1
+I, [2021-03-26T15:01:45.322836 #21359]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2021-03-26T15:01:45.323447 #21359]  INFO -- : (0.000063s) SELECT sqlite_version()
+I, [2021-03-26T15:01:45.323609 #21359]  INFO -- : (0.000062s) PRAGMA table_xinfo('departments')
+I, [2021-03-26T15:01:45.324259 #21359]  INFO -- : (0.000058s) PRAGMA table_xinfo('interests')
+I, [2021-03-26T15:01:45.325180 #21359]  INFO -- : (0.000131s) PRAGMA table_xinfo('users')
+I, [2021-03-26T15:01:56.661601 #21359]  INFO -- : (0.000199s) SELECT * FROM `users` WHERE `id` = 5
+I, [2021-03-26T15:02:54.218636 #21359]  INFO -- : (0.000183s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'pppp@pppp.co.uk') LIMIT 1
+I, [2021-03-26T15:02:54.225196 #21359]  INFO -- : (0.000479s) SELECT * FROM `departments`
+I, [2021-03-26T15:02:54.226968 #21359]  INFO -- : (0.001582s) SELECT * FROM `interests`
+I, [2021-03-26T15:06:43.751705 #21735]  INFO -- : (0.000169s) PRAGMA foreign_keys = 1
+I, [2021-03-26T15:06:43.751789 #21735]  INFO -- : (0.000020s) PRAGMA case_sensitive_like = 1
+I, [2021-03-26T15:06:43.752505 #21735]  INFO -- : (0.000073s) SELECT sqlite_version()
+I, [2021-03-26T15:06:43.752694 #21735]  INFO -- : (0.000076s) PRAGMA table_xinfo('departments')
+I, [2021-03-26T15:06:43.753518 #21735]  INFO -- : (0.000069s) PRAGMA table_xinfo('interests')
+I, [2021-03-26T15:06:43.754642 #21735]  INFO -- : (0.000150s) PRAGMA table_xinfo('users')
+I, [2021-03-26T15:06:47.613002 #21735]  INFO -- : (0.000497s) SELECT * FROM `departments`
+I, [2021-03-26T15:06:47.613824 #21735]  INFO -- : (0.000647s) SELECT * FROM `interests`
+I, [2021-03-26T15:07:32.762589 #21735]  INFO -- : (0.001178s) SELECT * FROM `departments`
+I, [2021-03-26T15:07:32.764350 #21735]  INFO -- : (0.001385s) SELECT * FROM `interests`
+I, [2021-03-26T15:08:22.199143 #21923]  INFO -- : (0.000189s) PRAGMA foreign_keys = 1
+I, [2021-03-26T15:08:22.199266 #21923]  INFO -- : (0.000016s) PRAGMA case_sensitive_like = 1
+I, [2021-03-26T15:08:22.200056 #21923]  INFO -- : (0.000089s) SELECT sqlite_version()
+I, [2021-03-26T15:08:22.200307 #21923]  INFO -- : (0.000115s) PRAGMA table_xinfo('departments')
+I, [2021-03-26T15:08:22.201187 #21923]  INFO -- : (0.000096s) PRAGMA table_xinfo('interests')
+I, [2021-03-26T15:08:22.202465 #21923]  INFO -- : (0.000166s) PRAGMA table_xinfo('users')
+I, [2021-03-26T15:08:25.483670 #21923]  INFO -- : (0.000578s) SELECT * FROM `departments`
+I, [2021-03-26T15:08:25.484529 #21923]  INFO -- : (0.000655s) SELECT * FROM `interests`
+I, [2021-03-26T15:08:27.048873 #21923]  INFO -- : (0.001090s) SELECT * FROM `departments`
+I, [2021-03-26T15:08:27.050708 #21923]  INFO -- : (0.001474s) SELECT * FROM `interests`
+I, [2021-03-26T15:08:53.515255 #21923]  INFO -- : (0.000146s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'pppp@pppp.co.uk') LIMIT 1
+I, [2021-03-26T15:08:53.522042 #21923]  INFO -- : (0.000423s) SELECT * FROM `departments`
+I, [2021-03-26T15:08:53.522784 #21923]  INFO -- : (0.000591s) SELECT * FROM `interests`
+I, [2021-03-26T15:09:36.028613 #21923]  INFO -- : (0.001149s) SELECT * FROM `departments`
+I, [2021-03-26T15:09:36.030416 #21923]  INFO -- : (0.001452s) SELECT * FROM `interests`
+I, [2021-03-26T15:10:01.467980 #21923]  INFO -- : (0.000182s) SELECT * FROM `departments` WHERE `id` = '3'
+I, [2021-03-26T15:10:01.468584 #21923]  INFO -- : (0.000229s) SELECT * FROM `interests` WHERE (`id` IN ('4', '19'))
+I, [2021-03-26T15:10:01.469409 #21923]  INFO -- : (0.000133s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'pppp@pppp.co.uk') LIMIT 1
+I, [2021-03-26T15:10:01.469845 #21923]  INFO -- : (0.000089s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'pppp@pppp.co.uk') LIMIT 1
+I, [2021-03-26T15:10:01.469991 #21923]  INFO -- : (0.000031s) BEGIN
+I, [2021-03-26T15:10:01.470479 #21923]  INFO -- : (0.000222s) INSERT INTO `users` (`email`, `password`, `user_type`, `name`, `department`, `bio`, `interest_areas`) VALUES ('pppp@pppp.co.uk', 'StrongPassword123', 0, 'Mentor Max', 'School of Architecture', 'Bio.', 'Applied Social Sciences,Civil and Structural Engineering')
+I, [2021-03-26T15:10:01.470775 #21923]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE `id` = 6
+I, [2021-03-26T15:10:01.475276 #21923]  INFO -- : (0.004395s) COMMIT
+I, [2021-03-26T15:10:01.481347 #21923]  INFO -- : (0.000214s) SELECT * FROM `users` WHERE `id` = 6
+I, [2021-03-26T15:10:17.232829 #21923]  INFO -- : (0.000211s) SELECT * FROM `users` WHERE `id` = 6
+I, [2021-03-26T15:10:44.408755 #21923]  INFO -- : (0.000197s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-26T15:10:44.409185 #21923]  INFO -- : (0.000169s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-26T15:11:04.384514 #21923]  INFO -- : (0.000232s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-26T15:11:04.385070 #21923]  INFO -- : (0.000211s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-26T15:11:18.788191 #21923]  INFO -- : (0.000306s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-26T15:11:18.788940 #21923]  INFO -- : (0.000249s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-03-26T15:11:18.795583 #21923]  INFO -- : (0.000204s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-26T15:11:18.802310 #21923]  INFO -- : (0.000202s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-26T15:11:18.802703 #21923]  INFO -- : (0.000185s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-26T15:12:42.106521 #22432]  INFO -- : (0.000157s) PRAGMA foreign_keys = 1
+I, [2021-03-26T15:12:42.106608 #22432]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-03-26T15:12:42.107305 #22432]  INFO -- : (0.000082s) SELECT sqlite_version()
+I, [2021-03-26T15:12:42.107481 #22432]  INFO -- : (0.000068s) PRAGMA table_xinfo('departments')
+I, [2021-03-26T15:12:42.108223 #22432]  INFO -- : (0.000098s) PRAGMA table_xinfo('interests')
+I, [2021-03-26T15:12:42.109405 #22432]  INFO -- : (0.000150s) PRAGMA table_xinfo('users')
+I, [2021-03-26T15:12:45.902228 #22432]  INFO -- : (0.000455s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-03-26T15:12:45.903853 #22432]  INFO -- : (0.000352s) SELECT * FROM `users` WHERE (`user_type` = 0)

@@ -6,6 +6,7 @@ get '/details' do
   @departments = Department.all
   @interests = Interest.all
   @user_type = session[:reg_params][:user_type].to_i
+  @mentee_type = UserType::MENTEE
 
   erb :addInfo
 end

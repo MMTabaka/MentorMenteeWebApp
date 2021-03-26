@@ -38,13 +38,8 @@
           </select>
       </div>
       <div class="mb-3">
-        <% if @user_type == @mentee_type %>
-          <label for="bio" class="form-label">Bio</label>
-          <textarea id="bio" name="bio" required class="form-control" rows="4"></textarea>
-        <% else %>
-          <label for="bio" class="form-label">Bio (optional)</label>
-          <textarea id="bio" name="bio" class="form-control" rows="4"></textarea>
-        <% end %>
+          <label for="bio" class="form-label">Bio <%= '(optional)' if @user_type == @mentee_type %></label>
+          <textarea id="bio" name="bio" class="form-control" rows="4" <%= 'required' if @user_type == @mentee_type %>></textarea>
       </div>
       <button type="submit" class="btn btn-primary btnC">Create an account</button>
     </form>

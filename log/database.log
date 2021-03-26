@@ -3861,3 +3861,33 @@ I, [2021-03-26T15:12:42.108223 #22432]  INFO -- : (0.000098s) PRAGMA table_xinfo
 I, [2021-03-26T15:12:42.109405 #22432]  INFO -- : (0.000150s) PRAGMA table_xinfo('users')
 I, [2021-03-26T15:12:45.902228 #22432]  INFO -- : (0.000455s) SELECT * FROM `users` WHERE `id` = 1
 I, [2021-03-26T15:12:45.903853 #22432]  INFO -- : (0.000352s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-26T15:21:05.905818 #22432]  INFO -- : (0.000276s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-03-26T15:21:05.915428 #22432]  INFO -- : (0.000739s) SELECT * FROM `departments`
+I, [2021-03-26T15:21:05.916521 #22432]  INFO -- : (0.000805s) SELECT * FROM `interests`
+I, [2021-03-26T15:22:51.517269 #22432]  INFO -- : (0.000182s) SELECT * FROM `departments` WHERE `id` = '51'
+I, [2021-03-26T15:22:51.518224 #22432]  INFO -- : (0.000362s) SELECT * FROM `interests` WHERE (`id` IN ('9', '46', '77'))
+I, [2021-03-26T15:22:51.519497 #22432]  INFO -- : (0.000202s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-03-26T15:22:51.520186 #22432]  INFO -- : (0.000163s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-03-26T15:22:51.520487 #22432]  INFO -- : (0.000042s) BEGIN
+I, [2021-03-26T15:22:51.521268 #22432]  INFO -- : (0.000439s) INSERT INTO `users` (`email`, `password`, `user_type`, `name`, `department`, `bio`, `interest_areas`) VALUES ('email1@email1.com', 'VerySecure123', 1, 'Mentee John', 'Computer Science', 'My bio', 'Artificial Intelligence,History,Software Engineering')
+I, [2021-03-26T15:22:51.521775 #22432]  INFO -- : (0.000227s) SELECT * FROM `users` WHERE `id` = 7
+I, [2021-03-26T15:22:51.525096 #22432]  INFO -- : (0.003154s) COMMIT
+I, [2021-03-26T15:22:51.534295 #22432]  INFO -- : (0.000423s) SELECT * FROM `users` WHERE `id` = 7
+I, [2021-03-26T15:22:51.542613 #22432]  INFO -- : (0.000220s) SELECT * FROM `users` WHERE `id` = 7
+I, [2021-03-26T15:22:51.543087 #22432]  INFO -- : (0.000223s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-26T15:24:04.580267 #23617]  INFO -- : (0.000211s) PRAGMA foreign_keys = 1
+I, [2021-03-26T15:24:04.580413 #23617]  INFO -- : (0.000062s) PRAGMA case_sensitive_like = 1
+I, [2021-03-26T15:24:04.581238 #23617]  INFO -- : (0.000081s) SELECT sqlite_version()
+I, [2021-03-26T15:24:04.581491 #23617]  INFO -- : (0.000085s) PRAGMA table_xinfo('departments')
+I, [2021-03-26T15:24:04.582408 #23617]  INFO -- : (0.000073s) PRAGMA table_xinfo('interests')
+I, [2021-03-26T15:24:04.583646 #23617]  INFO -- : (0.000165s) PRAGMA table_xinfo('users')
+I, [2021-03-26T15:25:14.715810 #23617]  INFO -- : (0.000343s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-03-26T15:30:02.027974 #23617]  INFO -- : (0.000271s) SELECT * FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-03-26T15:30:02.028536 #23617]  INFO -- : (0.000189s) SELECT * FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-03-26T15:30:15.802815 #23617]  INFO -- : (0.000263s) SELECT * FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-03-26T15:30:15.803398 #23617]  INFO -- : (0.000243s) SELECT * FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-03-26T15:30:15.811631 #23617]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE `id` = 7
+I, [2021-03-26T15:30:15.819515 #23617]  INFO -- : (0.000267s) SELECT * FROM `users` WHERE `id` = 7
+I, [2021-03-26T15:30:15.819955 #23617]  INFO -- : (0.000183s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-03-26T15:31:01.331366 #23617]  INFO -- : (0.000529s) SELECT * FROM `users` WHERE `id` = 7
+I, [2021-03-26T15:31:01.332466 #23617]  INFO -- : (0.000545s) SELECT * FROM `users` WHERE (`user_type` = 0)

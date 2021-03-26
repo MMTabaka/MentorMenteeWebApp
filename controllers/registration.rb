@@ -38,6 +38,7 @@ post '/details' do
 end
 
 get '/registration' do
+  redirect '/' if session[:user]
   # Initialise validation if it's not set yet
   session[:validation] = {} if session[:validation].nil?
   @validation = session.delete(:validation)

@@ -50,6 +50,23 @@ get '/' do
   'Hello World!'
 end
 
+get '/requestHistory' do
+  pic = "defaultPic.jpg"
+  @validation = { 'valid' => true, 'errors' => {} }
+  @loggedIn = true;
+  @userType = "Mentee";
+  @requesting = false;
+  @actived = "requestHistory";
+  @username = "sflk asfakdsj";
+  @department = "dfsf";
+  @sTime = "22/03/2021 13:05:32";
+  @eTime = "22/03/2021 13:05:32";
+  @reason = "Mentor reject Mentee. Because of some weired reason, I have to reject you, hope we can meet in some sunny day.";
+  @history = 5;
+  @userID = "234";
+  erb :requestHistory
+end
+
 get '/mentorList' do
   pic = "defaultPic.jpg"
   @validation = { 'valid' => true, 'errors' => {} }

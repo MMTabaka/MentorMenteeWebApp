@@ -36,6 +36,10 @@
   padding: 2% 0 1% 0;
   border-bottom: 0.1em solid;
 }
+.userRowH{
+  padding: 2% 0 2% 0;
+  border-bottom: 0.1em solid;
+}
 .picML{
   width: 4em;
   border-radius: 50%;

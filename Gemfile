@@ -11,4 +11,5 @@ source 'https://rubygems.org' do
   gem 'sinatra-contrib'
   gem 'sqlite3'
   gem 'thin'
+  gem 'sib-api-v3-sdk'
 end

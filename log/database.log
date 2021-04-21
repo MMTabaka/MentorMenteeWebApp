@@ -3891,3 +3891,9 @@ I, [2021-03-26T15:30:15.819515 #23617]  INFO -- : (0.000267s) SELECT * FROM `use
 I, [2021-03-26T15:30:15.819955 #23617]  INFO -- : (0.000183s) SELECT * FROM `users` WHERE (`user_type` = 0)
 I, [2021-03-26T15:31:01.331366 #23617]  INFO -- : (0.000529s) SELECT * FROM `users` WHERE `id` = 7
 I, [2021-03-26T15:31:01.332466 #23617]  INFO -- : (0.000545s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-21T19:57:01.323869 #35941]  INFO -- : (0.000156s) PRAGMA foreign_keys = 1
+I, [2021-04-21T19:57:01.324101 #35941]  INFO -- : (0.000015s) PRAGMA case_sensitive_like = 1
+I, [2021-04-21T19:57:01.326262 #35941]  INFO -- : (0.000070s) SELECT sqlite_version()
+I, [2021-04-21T19:57:01.326442 #35941]  INFO -- : (0.000070s) PRAGMA table_xinfo('departments')
+I, [2021-04-21T19:57:01.327293 #35941]  INFO -- : (0.000059s) PRAGMA table_xinfo('interests')
+I, [2021-04-21T19:57:01.328405 #35941]  INFO -- : (0.000123s) PRAGMA table_xinfo('users')

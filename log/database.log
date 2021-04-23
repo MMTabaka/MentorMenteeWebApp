@@ -4291,3 +4291,32 @@ I, [2021-04-23T15:59:51.178923 #335]  INFO -- : (0.000140s) SELECT * FROM `users
 I, [2021-04-23T15:59:51.336235 #335]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE `id` = 9
 I, [2021-04-23T15:59:51.480698 #335]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE `id` = 9
 I, [2021-04-23T15:59:51.481929 #335]  INFO -- : (0.000162s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-23T20:12:50.027956 #206]  INFO -- : (0.006451s) PRAGMA foreign_keys = 1
+I, [2021-04-23T20:12:50.031112 #206]  INFO -- : (0.000042s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T20:12:50.031916 #206]  INFO -- : (0.000093s) SELECT sqlite_version()
+I, [2021-04-23T20:12:50.032316 #206]  INFO -- : (0.000196s) PRAGMA table_info('connections')
+I, [2021-04-23T20:12:50.033735 #206]  INFO -- : (0.000145s) PRAGMA table_info('departments')
+I, [2021-04-23T20:12:50.034683 #206]  INFO -- : (0.000143s) PRAGMA table_info('interests')
+I, [2021-04-23T20:12:50.038343 #206]  INFO -- : (0.000246s) PRAGMA table_info('users')
+I, [2021-04-23T20:13:08.968124 #206]  INFO -- : (0.000178s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T20:13:08.968422 #206]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T20:13:08.968608 #206]  INFO -- : (0.000084s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T20:13:09.104234 #206]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T20:13:09.243797 #206]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T20:13:09.244065 #206]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-23T20:13:14.025935 #206]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T20:14:19.206499 #206]  INFO -- : (0.000150s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T20:14:24.147110 #206]  INFO -- : (0.000279s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T20:15:14.206121 #206]  INFO -- : (0.000179s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T20:15:14.206537 #206]  INFO -- : (0.000027s) BEGIN
+I, [2021-04-23T20:15:14.206999 #206]  INFO -- : (0.000257s) INSERT INTO `connections` (`mentee_id`, `mentor_id`, `status`) VALUES (9, 10, 0)
+I, [2021-04-23T20:15:14.207197 #206]  INFO -- : (0.000071s) SELECT * FROM `connections` WHERE `id` = 1
+I, [2021-04-23T20:15:14.299389 #206]  INFO -- : (0.092103s) COMMIT
+I, [2021-04-23T20:16:35.152435 #206]  INFO -- : (0.000184s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T20:16:35.152624 #206]  INFO -- : (0.000017s) BEGIN
+I, [2021-04-23T20:16:35.152931 #206]  INFO -- : (0.000173s) INSERT INTO `connections` (`mentee_id`, `mentor_id`, `status`) VALUES (9, 3, 0)
+I, [2021-04-23T20:16:35.153113 #206]  INFO -- : (0.000074s) SELECT * FROM `connections` WHERE `id` = 2
+I, [2021-04-23T20:16:35.245024 #206]  INFO -- : (0.091846s) COMMIT
+I, [2021-04-23T20:17:09.142870 #206]  INFO -- : (0.000283s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T20:17:09.272267 #206]  INFO -- : (0.000158s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T20:17:09.272587 #206]  INFO -- : (0.000135s) SELECT * FROM `users` WHERE (`user_type` = 0)

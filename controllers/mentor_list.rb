@@ -15,4 +15,16 @@ end
 post '/request' do
   @mentor_id = params['mentor_id']
   puts @mentor_id
+  
+  authenticated
+  user = User[session[:user]]
+  
+  connection_details = {
+    mentee_id: user[:id],
+    mentor_id: @mentor_id,
+    status: 0
+  }
+  
+  Connection.add(connection_details)
+  "Connection created"
 end

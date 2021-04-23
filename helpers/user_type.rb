@@ -2,5 +2,5 @@
 module UserType
   MENTOR = 0
   MENTEE = 1
-  ADMIN = 3
+  ADMIN = 2
 end

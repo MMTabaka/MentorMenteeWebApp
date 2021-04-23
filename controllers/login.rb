@@ -38,7 +38,6 @@ end
 
 # TODO: This should be POST
 get '/logout' do
-  redirect '/login' unless session[:user]
   session.clear
-  'You have been logged out successfully'
+  redirect '/login'
 end

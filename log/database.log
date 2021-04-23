@@ -4086,3 +4086,193 @@ I, [2021-04-19T10:02:40.717260 #169]  INFO -- : (0.000136s) PRAGMA table_info('u
 I, [2021-04-19T10:03:04.567883 #169]  INFO -- : (0.000251s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
 I, [2021-04-19T10:03:04.568268 #169]  INFO -- : (0.000147s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
 I, [2021-04-19T10:03:04.568533 #169]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T09:53:15.029100 #278]  INFO -- : (0.000186s) PRAGMA foreign_keys = 1
+I, [2021-04-23T09:53:15.029180 #278]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T09:53:15.029616 #278]  INFO -- : (0.000052s) SELECT sqlite_version()
+I, [2021-04-23T09:53:15.029792 #278]  INFO -- : (0.000069s) PRAGMA table_info('admins')
+I, [2021-04-23T09:53:15.030308 #278]  INFO -- : (0.000074s) PRAGMA table_info('departments')
+I, [2021-04-23T09:53:15.030827 #278]  INFO -- : (0.000072s) PRAGMA table_info('interests')
+I, [2021-04-23T09:56:41.626168 #281]  INFO -- : (0.000202s) PRAGMA foreign_keys = 1
+I, [2021-04-23T09:56:41.626263 #281]  INFO -- : (0.000015s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T09:56:41.626735 #281]  INFO -- : (0.000053s) SELECT sqlite_version()
+I, [2021-04-23T09:56:41.626931 #281]  INFO -- : (0.000075s) PRAGMA table_info('admins')
+I, [2021-04-23T09:56:41.627465 #281]  INFO -- : (0.000072s) PRAGMA table_info('departments')
+I, [2021-04-23T09:56:41.627977 #281]  INFO -- : (0.000072s) PRAGMA table_info('interests')
+I, [2021-04-23T09:56:41.628789 #281]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2021-04-23T09:57:18.628829 #281]  INFO -- : (0.000184s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-04-23T09:57:18.629141 #281]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-04-23T09:57:18.629377 #281]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`user_type` = 2) LIMIT 1
+I, [2021-04-23T09:57:30.875047 #281]  INFO -- : (0.000327s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-04-23T09:57:30.875723 #281]  INFO -- : (0.000234s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-04-23T09:57:30.876098 #281]  INFO -- : (0.000207s) SELECT * FROM `users` WHERE (`user_type` = 2) LIMIT 1
+I, [2021-04-23T09:58:07.533573 #281]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE (`email` = 'email1@email.com') LIMIT 1
+I, [2021-04-23T09:59:12.113864 #281]  INFO -- : (0.000170s) SELECT * FROM `users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-04-23T09:59:12.114836 #281]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-04-23T09:59:12.115020 #281]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE (`user_type` = 2) LIMIT 1
+I, [2021-04-23T10:01:53.752135 #364]  INFO -- : (0.000197s) PRAGMA foreign_keys = 1
+I, [2021-04-23T10:01:53.752247 #364]  INFO -- : (0.000018s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T10:01:53.752771 #364]  INFO -- : (0.000063s) SELECT sqlite_version()
+I, [2021-04-23T10:01:53.753028 #364]  INFO -- : (0.000081s) PRAGMA table_info('admins')
+I, [2021-04-23T10:01:53.753672 #364]  INFO -- : (0.000077s) PRAGMA table_info('departments')
+I, [2021-04-23T10:01:53.754258 #364]  INFO -- : (0.000074s) PRAGMA table_info('interests')
+I, [2021-04-23T10:01:53.755088 #364]  INFO -- : (0.000122s) PRAGMA table_info('users')
+I, [2021-04-23T10:01:57.525517 #364]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-04-23T10:01:57.525811 #364]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-04-23T10:01:57.526005 #364]  INFO -- : (0.000088s) SELECT * FROM `users` WHERE (`email` = 'email2@email.com') LIMIT 1
+I, [2021-04-23T10:01:57.693607 #364]  INFO -- : (0.000166s) SELECT * FROM `users` WHERE `id` = 2
+I, [2021-04-23T10:02:20.465835 #364]  INFO -- : (0.000237s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-04-23T10:02:20.467252 #364]  INFO -- : (0.001069s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-04-23T10:02:20.467551 #364]  INFO -- : (0.000152s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-04-23T10:02:20.593410 #364]  INFO -- : (0.000196s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-04-23T10:02:28.304043 #364]  INFO -- : (0.001324s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-04-23T10:03:08.345590 #364]  INFO -- : (0.000296s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-04-23T10:03:08.345975 #364]  INFO -- : (0.000160s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-04-23T10:03:08.346257 #364]  INFO -- : (0.000144s) SELECT * FROM `users` WHERE (`email` = 'email@email.com') LIMIT 1
+I, [2021-04-23T10:03:08.473589 #364]  INFO -- : (0.000872s) SELECT * FROM `users` WHERE `id` = 1
+I, [2021-04-23T10:08:22.696656 #388]  INFO -- : (0.000181s) PRAGMA foreign_keys = 1
+I, [2021-04-23T10:08:22.696749 #388]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T10:08:22.697198 #388]  INFO -- : (0.000053s) SELECT sqlite_version()
+I, [2021-04-23T10:08:22.697435 #388]  INFO -- : (0.000085s) PRAGMA table_info('departments')
+I, [2021-04-23T10:08:22.697983 #388]  INFO -- : (0.000073s) PRAGMA table_info('interests')
+I, [2021-04-23T10:08:22.698826 #388]  INFO -- : (0.000124s) PRAGMA table_info('users')
+I, [2021-04-23T10:10:34.602633 #388]  INFO -- : (0.000172s) SELECT * FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-04-23T10:10:34.603539 #388]  INFO -- : (0.000676s) SELECT * FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-04-23T10:10:34.810671 #388]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE `id` = 7
+I, [2021-04-23T10:10:34.971069 #388]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE `id` = 7
+I, [2021-04-23T10:10:34.971426 #388]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-23T10:11:57.346721 #388]  INFO -- : (0.000125s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:11:57.475259 #388]  INFO -- : (0.000283s) SELECT * FROM `departments`
+I, [2021-04-23T10:11:57.476517 #388]  INFO -- : (0.001118s) SELECT * FROM `interests`
+I, [2021-04-23T10:12:54.796092 #388]  INFO -- : (0.000128s) SELECT * FROM `departments` WHERE `id` = '51'
+I, [2021-04-23T10:12:54.796504 #388]  INFO -- : (0.000164s) SELECT * FROM `interests` WHERE (`id` IN ('6', '21', '69'))
+I, [2021-04-23T10:12:54.797704 #388]  INFO -- : (0.000078s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:12:54.797979 #388]  INFO -- : (0.000062s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:12:54.798085 #388]  INFO -- : (0.000018s) BEGIN
+I, [2021-04-23T10:12:54.798472 #388]  INFO -- : (0.000250s) INSERT INTO `users` (`email`, `password`, `user_type`, `name`, `department`, `bio`, `interest_areas`) VALUES ('miloszmtabaka@gmail.com', 'PassWord123', 1, 'Milosz Mentee', 'Computer Science', 'My amazing bio', 'Computer Science,Modern Languages & Cultures,Philosophy')
+I, [2021-04-23T10:12:54.798636 #388]  INFO -- : (0.000071s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T10:12:54.896118 #388]  INFO -- : (0.096546s) COMMIT
+I, [2021-04-23T10:12:55.045717 #388]  INFO -- : (0.000163s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T10:12:55.176675 #388]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T10:12:55.177007 #388]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-23T10:15:32.074806 #473]  INFO -- : (0.000245s) PRAGMA foreign_keys = 1
+I, [2021-04-23T10:15:32.074921 #473]  INFO -- : (0.000019s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T10:15:32.075514 #473]  INFO -- : (0.000074s) SELECT sqlite_version()
+I, [2021-04-23T10:15:32.075788 #473]  INFO -- : (0.000105s) PRAGMA table_info('departments')
+I, [2021-04-23T10:15:32.076518 #473]  INFO -- : (0.000080s) PRAGMA table_info('interests')
+I, [2021-04-23T10:15:32.079283 #473]  INFO -- : (0.000129s) PRAGMA table_info('users')
+I, [2021-04-23T10:15:48.334625 #473]  INFO -- : (0.000180s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:15:48.334932 #473]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:15:48.472430 #473]  INFO -- : (0.000148s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T10:15:48.609260 #473]  INFO -- : (0.000145s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T10:15:48.609654 #473]  INFO -- : (0.000144s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-23T10:16:34.108829 #473]  INFO -- : (0.000127s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-23T10:16:34.243997 #473]  INFO -- : (0.000295s) SELECT * FROM `departments`
+I, [2021-04-23T10:16:34.244952 #473]  INFO -- : (0.000822s) SELECT * FROM `interests`
+I, [2021-04-23T10:17:29.784406 #473]  INFO -- : (0.000127s) SELECT * FROM `departments` WHERE `id` = '51'
+I, [2021-04-23T10:17:29.784797 #473]  INFO -- : (0.000157s) SELECT * FROM `interests` WHERE (`id` IN ('9', '21', '69'))
+I, [2021-04-23T10:17:29.785193 #473]  INFO -- : (0.000070s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-23T10:17:29.785489 #473]  INFO -- : (0.000063s) SELECT count(*) AS 'count' FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-23T10:17:29.785596 #473]  INFO -- : (0.000017s) BEGIN
+I, [2021-04-23T10:17:29.785948 #473]  INFO -- : (0.000211s) INSERT INTO `users` (`email`, `password`, `user_type`, `name`, `department`, `bio`, `interest_areas`) VALUES ('mmtabaka1@sheffield.ac.uk', 'PassWord123', 0, 'Mentor Milosz', 'Computer Science', 'My amazing bio', 'Artificial Intelligence,Computer Science,Philosophy')
+I, [2021-04-23T10:17:29.786120 #473]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-23T10:17:30.039705 #473]  INFO -- : (0.253510s) COMMIT
+I, [2021-04-23T10:17:30.174244 #473]  INFO -- : (0.000177s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-23T10:17:57.114008 #473]  INFO -- : (0.000164s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:17:57.114307 #473]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:17:57.253772 #473]  INFO -- : (0.000224s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T10:17:57.384102 #473]  INFO -- : (0.000977s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T10:17:57.384443 #473]  INFO -- : (0.000138s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-23T10:21:37.231716 #473]  INFO -- : (0.000161s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:21:37.232060 #473]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:21:37.373574 #473]  INFO -- : (0.000155s) SELECT * FROM `users` WHERE `id` = 8
+I, [2021-04-23T10:21:43.301449 #473]  INFO -- : (0.000199s) SELECT * FROM `users` WHERE `id` = 8
+I, [2021-04-23T10:22:33.244032 #499]  INFO -- : (0.000197s) PRAGMA foreign_keys = 1
+I, [2021-04-23T10:22:33.244125 #499]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T10:22:33.244554 #499]  INFO -- : (0.000052s) SELECT sqlite_version()
+I, [2021-04-23T10:22:33.244753 #499]  INFO -- : (0.000075s) PRAGMA table_info('departments')
+I, [2021-04-23T10:22:33.245288 #499]  INFO -- : (0.000073s) PRAGMA table_info('interests')
+I, [2021-04-23T10:22:33.246123 #499]  INFO -- : (0.000128s) PRAGMA table_info('users')
+I, [2021-04-23T10:22:52.666945 #499]  INFO -- : (0.000176s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:22:52.667247 #499]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:22:52.667438 #499]  INFO -- : (0.000084s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:24:15.275385 #520]  INFO -- : (0.000188s) PRAGMA foreign_keys = 1
+I, [2021-04-23T10:24:15.275514 #520]  INFO -- : (0.000016s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T10:24:15.276040 #520]  INFO -- : (0.000062s) SELECT sqlite_version()
+I, [2021-04-23T10:24:15.276280 #520]  INFO -- : (0.000081s) PRAGMA table_info('departments')
+I, [2021-04-23T10:24:15.276901 #520]  INFO -- : (0.000076s) PRAGMA table_info('interests')
+I, [2021-04-23T10:24:15.277807 #520]  INFO -- : (0.000127s) PRAGMA table_info('users')
+I, [2021-04-23T10:29:16.942613 #520]  INFO -- : (0.000204s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:29:50.154361 #520]  INFO -- : (0.000175s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:29:56.350476 #520]  INFO -- : (0.000165s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:30:10.096669 #604]  INFO -- : (0.000186s) PRAGMA foreign_keys = 1
+I, [2021-04-23T10:30:10.096809 #604]  INFO -- : (0.000052s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T10:30:10.097262 #604]  INFO -- : (0.000058s) SELECT sqlite_version()
+I, [2021-04-23T10:30:10.097474 #604]  INFO -- : (0.000076s) PRAGMA table_info('departments')
+I, [2021-04-23T10:30:10.098038 #604]  INFO -- : (0.000075s) PRAGMA table_info('interests')
+I, [2021-04-23T10:30:10.098872 #604]  INFO -- : (0.000128s) PRAGMA table_info('users')
+I, [2021-04-23T10:30:27.168357 #604]  INFO -- : (0.000188s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:30:27.168711 #604]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:30:27.168928 #604]  INFO -- : (0.000094s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:30:46.127949 #625]  INFO -- : (0.000180s) PRAGMA foreign_keys = 1
+I, [2021-04-23T10:30:46.128079 #625]  INFO -- : (0.000049s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T10:30:46.128548 #625]  INFO -- : (0.000060s) SELECT sqlite_version()
+I, [2021-04-23T10:30:46.128751 #625]  INFO -- : (0.000077s) PRAGMA table_info('departments')
+I, [2021-04-23T10:30:46.129353 #625]  INFO -- : (0.000098s) PRAGMA table_info('interests')
+I, [2021-04-23T10:30:46.130315 #625]  INFO -- : (0.000203s) PRAGMA table_info('users')
+I, [2021-04-23T10:31:22.823501 #646]  INFO -- : (0.000208s) PRAGMA foreign_keys = 1
+I, [2021-04-23T10:31:22.823607 #646]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T10:31:22.824031 #646]  INFO -- : (0.000053s) SELECT sqlite_version()
+I, [2021-04-23T10:31:22.824227 #646]  INFO -- : (0.000075s) PRAGMA table_info('departments')
+I, [2021-04-23T10:31:22.824765 #646]  INFO -- : (0.000077s) PRAGMA table_info('interests')
+I, [2021-04-23T10:31:22.825604 #646]  INFO -- : (0.000124s) PRAGMA table_info('users')
+I, [2021-04-23T10:32:55.598398 #646]  INFO -- : (0.000187s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:32:55.598699 #646]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:32:55.598898 #646]  INFO -- : (0.000090s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:32:55.774942 #646]  INFO -- : (0.000163s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T10:32:55.903243 #646]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T10:32:55.904310 #646]  INFO -- : (0.000162s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-23T10:33:10.963306 #668]  INFO -- : (0.000190s) PRAGMA foreign_keys = 1
+I, [2021-04-23T10:33:10.963402 #668]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T10:33:10.963837 #668]  INFO -- : (0.000053s) SELECT sqlite_version()
+I, [2021-04-23T10:33:10.964035 #668]  INFO -- : (0.000074s) PRAGMA table_info('departments')
+I, [2021-04-23T10:33:10.964592 #668]  INFO -- : (0.000076s) PRAGMA table_info('interests')
+I, [2021-04-23T10:33:10.965413 #668]  INFO -- : (0.000147s) PRAGMA table_info('users')
+I, [2021-04-23T10:33:33.482967 #668]  INFO -- : (0.000182s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:33:33.483274 #668]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:33:33.483474 #668]  INFO -- : (0.000090s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:34:30.704785 #689]  INFO -- : (0.000177s) PRAGMA foreign_keys = 1
+I, [2021-04-23T10:34:30.704872 #689]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T10:34:30.705258 #689]  INFO -- : (0.000050s) SELECT sqlite_version()
+I, [2021-04-23T10:34:30.705454 #689]  INFO -- : (0.000073s) PRAGMA table_info('departments')
+I, [2021-04-23T10:34:30.705961 #689]  INFO -- : (0.000075s) PRAGMA table_info('interests')
+I, [2021-04-23T10:34:30.706767 #689]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2021-04-23T10:35:50.747544 #689]  INFO -- : (0.000203s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:35:50.747922 #689]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:35:50.748737 #689]  INFO -- : (0.000689s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:35:50.956161 #689]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE `id` = 8
+I, [2021-04-23T10:36:24.499267 #689]  INFO -- : (0.000174s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:36:24.499611 #689]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:36:24.499772 #689]  INFO -- : (0.000083s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:36:24.634202 #689]  INFO -- : (0.000149s) SELECT * FROM `users` WHERE `id` = 8
+I, [2021-04-23T10:37:17.843401 #689]  INFO -- : (0.000174s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:37:17.843709 #689]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:37:17.843903 #689]  INFO -- : (0.000093s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:37:17.995632 #689]  INFO -- : (0.000151s) SELECT * FROM `users` WHERE `id` = 8
+I, [2021-04-23T10:37:25.799600 #710]  INFO -- : (0.000230s) PRAGMA foreign_keys = 1
+I, [2021-04-23T10:37:25.799720 #710]  INFO -- : (0.000019s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T10:37:25.800341 #710]  INFO -- : (0.000074s) SELECT sqlite_version()
+I, [2021-04-23T10:37:25.800601 #710]  INFO -- : (0.000096s) PRAGMA table_info('departments')
+I, [2021-04-23T10:37:25.801372 #710]  INFO -- : (0.000124s) PRAGMA table_info('interests')
+I, [2021-04-23T10:37:25.802632 #710]  INFO -- : (0.000174s) PRAGMA table_info('users')
+I, [2021-04-23T10:37:44.098580 #710]  INFO -- : (0.000185s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:37:44.098890 #710]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:37:44.099089 #710]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:37:56.393525 #710]  INFO -- : (0.000221s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:37:56.393888 #710]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:37:56.394695 #710]  INFO -- : (0.000719s) SELECT * FROM `users` WHERE (`email` = 'admin@admin.com') LIMIT 1
+I, [2021-04-23T10:41:11.390379 #710]  INFO -- : (0.000843s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:41:11.390646 #710]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:41:11.390798 #710]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T10:41:11.596753 #710]  INFO -- : (0.000158s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T10:41:11.740358 #710]  INFO -- : (0.001026s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T10:41:11.740726 #710]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE (`user_type` = 0)

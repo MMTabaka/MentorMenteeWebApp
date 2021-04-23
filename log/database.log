@@ -4276,3 +4276,18 @@ I, [2021-04-23T10:41:11.390798 #710]  INFO -- : (0.000078s) SELECT * FROM `users
 I, [2021-04-23T10:41:11.596753 #710]  INFO -- : (0.000158s) SELECT * FROM `users` WHERE `id` = 9
 I, [2021-04-23T10:41:11.740358 #710]  INFO -- : (0.001026s) SELECT * FROM `users` WHERE `id` = 9
 I, [2021-04-23T10:41:11.740726 #710]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-23T15:57:32.490841 #335]  INFO -- : (0.000202s) PRAGMA foreign_keys = 1
+I, [2021-04-23T15:57:32.490935 #335]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-23T15:57:32.491390 #335]  INFO -- : (0.000055s) SELECT sqlite_version()
+I, [2021-04-23T15:57:32.491589 #335]  INFO -- : (0.000075s) PRAGMA table_info('departments')
+I, [2021-04-23T15:57:32.492150 #335]  INFO -- : (0.000074s) PRAGMA table_info('interests')
+I, [2021-04-23T15:57:32.492974 #335]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2021-04-23T15:57:50.464658 #335]  INFO -- : (0.000152s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmaail.com') LIMIT 1
+I, [2021-04-23T15:58:12.383807 #335]  INFO -- : (0.000233s) SELECT * FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-04-23T15:58:12.384218 #335]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE (`email` = 'email1@email1.com') LIMIT 1
+I, [2021-04-23T15:59:51.177254 #335]  INFO -- : (0.000231s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T15:59:51.178544 #335]  INFO -- : (0.001018s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T15:59:51.178923 #335]  INFO -- : (0.000140s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-23T15:59:51.336235 #335]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T15:59:51.480698 #335]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-23T15:59:51.481929 #335]  INFO -- : (0.000162s) SELECT * FROM `users` WHERE (`user_type` = 0)

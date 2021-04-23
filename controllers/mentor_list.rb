@@ -11,3 +11,8 @@ get '/mentors' do
   @mentors = Hash[unsorted_mentors.zip(values).sort_by {|k, v| v}].keys
   erb :mentorList
 end
+
+post '/request' do
+  @mentor_id = params['mentor_id']
+  puts @mentor_id
+end

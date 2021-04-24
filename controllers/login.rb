@@ -1,12 +1,11 @@
 require 'sinatra'
 require_relative '../helpers/authenticated'
+require_relative '../helpers/user_redirect.rb'
 
 get '/' do
   authenticated
   user = User[session[:user]]
-  # If current user is mentee
-  redirect '/mentors' if (user[:user_type]) == UserType::MENTEE
-  redirect '/temp-user-page'
+  user_redirect(user)
 end
 
 get '/login' do

@@ -4320,3 +4320,220 @@ I, [2021-04-23T20:16:35.245024 #206]  INFO -- : (0.091846s) COMMIT
 I, [2021-04-23T20:17:09.142870 #206]  INFO -- : (0.000283s) SELECT * FROM `users` WHERE `id` = 9
 I, [2021-04-23T20:17:09.272267 #206]  INFO -- : (0.000158s) SELECT * FROM `users` WHERE `id` = 9
 I, [2021-04-23T20:17:09.272587 #206]  INFO -- : (0.000135s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-24T10:55:00.429006 #205]  INFO -- : (0.000181s) PRAGMA foreign_keys = 1
+I, [2021-04-24T10:55:00.432423 #205]  INFO -- : (0.000018s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T10:57:23.316180 #207]  INFO -- : (0.000209s) PRAGMA foreign_keys = 1
+I, [2021-04-24T10:57:23.316278 #207]  INFO -- : (0.000019s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T10:58:53.551396 #208]  INFO -- : (0.000190s) PRAGMA foreign_keys = 1
+I, [2021-04-24T10:58:53.551478 #208]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T10:59:59.548820 #210]  INFO -- : (0.000187s) PRAGMA foreign_keys = 1
+I, [2021-04-24T10:59:59.548897 #210]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T11:00:24.909863 #211]  INFO -- : (0.000189s) PRAGMA foreign_keys = 1
+I, [2021-04-24T11:00:24.909942 #211]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T11:00:50.138065 #212]  INFO -- : (0.000181s) PRAGMA foreign_keys = 1
+I, [2021-04-24T11:00:50.138143 #212]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T11:00:50.138585 #212]  INFO -- : (0.000052s) SELECT sqlite_version()
+I, [2021-04-24T11:00:50.138813 #212]  INFO -- : (0.000123s) PRAGMA table_info('connections')
+I, [2021-04-24T11:00:50.139477 #212]  INFO -- : (0.000078s) PRAGMA table_info('departments')
+I, [2021-04-24T11:00:50.139960 #212]  INFO -- : (0.000069s) PRAGMA table_info('interests')
+I, [2021-04-24T11:00:50.146232 #212]  INFO -- : (0.000147s) PRAGMA table_info('users')
+I, [2021-04-24T11:00:50.164848 #212]  INFO -- : (0.000104s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T11:01:24.153759 #213]  INFO -- : (0.000191s) PRAGMA foreign_keys = 1
+I, [2021-04-24T11:01:24.153835 #213]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T11:01:24.154279 #213]  INFO -- : (0.000051s) SELECT sqlite_version()
+I, [2021-04-24T11:01:24.154499 #213]  INFO -- : (0.000112s) PRAGMA table_info('connections')
+I, [2021-04-24T11:01:24.155162 #213]  INFO -- : (0.000075s) PRAGMA table_info('departments')
+I, [2021-04-24T11:01:24.155632 #213]  INFO -- : (0.000069s) PRAGMA table_info('interests')
+I, [2021-04-24T11:01:24.156443 #213]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2021-04-24T11:01:24.165166 #213]  INFO -- : (0.000099s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T11:01:24.165383 #213]  INFO -- : (0.000095s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T11:01:24.165580 #213]  INFO -- : (0.000072s) SELECT * FROM `connections` WHERE (`mentor_id` = 3) LIMIT 1
+I, [2021-04-24T11:01:24.165738 #213]  INFO -- : (0.000067s) SELECT * FROM `connections` WHERE (`mentor_id` = 3) LIMIT 1
+I, [2021-04-24T11:01:24.165900 #213]  INFO -- : (0.000065s) SELECT * FROM `connections` WHERE (`mentor_id` = 10) LIMIT 1
+I, [2021-04-24T11:01:24.166086 #213]  INFO -- : (0.000068s) SELECT * FROM `connections` WHERE (`mentor_id` = 10) LIMIT 1
+I, [2021-04-24T11:01:24.166244 #213]  INFO -- : (0.000061s) SELECT * FROM `connections` WHERE (`mentee_id` = 34) LIMIT 1
+I, [2021-04-24T11:13:58.197842 #214]  INFO -- : (0.000185s) PRAGMA foreign_keys = 1
+I, [2021-04-24T11:13:58.197921 #214]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T11:13:58.198349 #214]  INFO -- : (0.000048s) SELECT sqlite_version()
+I, [2021-04-24T11:13:58.198551 #214]  INFO -- : (0.000097s) PRAGMA table_info('connections')
+I, [2021-04-24T11:13:58.199230 #214]  INFO -- : (0.000075s) PRAGMA table_info('departments')
+I, [2021-04-24T11:13:58.199724 #214]  INFO -- : (0.000070s) PRAGMA table_info('interests')
+I, [2021-04-24T11:13:58.200519 #214]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2021-04-24T11:14:14.565280 #215]  INFO -- : (0.000183s) PRAGMA foreign_keys = 1
+I, [2021-04-24T11:14:14.565381 #215]  INFO -- : (0.000015s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T11:14:14.565853 #215]  INFO -- : (0.000050s) SELECT sqlite_version()
+I, [2021-04-24T11:14:14.566097 #215]  INFO -- : (0.000126s) PRAGMA table_info('connections')
+I, [2021-04-24T11:14:14.566780 #215]  INFO -- : (0.000073s) PRAGMA table_info('departments')
+I, [2021-04-24T11:14:14.567269 #215]  INFO -- : (0.000070s) PRAGMA table_info('interests')
+I, [2021-04-24T11:14:14.568084 #215]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2021-04-24T11:14:33.427675 #215]  INFO -- : (0.000232s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-24T11:14:33.427992 #215]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-24T11:14:33.428936 #215]  INFO -- : (0.000804s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-24T11:14:33.554900 #215]  INFO -- : (0.000604s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T11:14:33.555198 #215]  INFO -- : (0.000096s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T11:14:33.555394 #215]  INFO -- : (0.000078s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T11:14:33.555565 #215]  INFO -- : (0.000072s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T11:15:15.954528 #215]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T11:15:15.955308 #215]  INFO -- : (0.000562s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T11:15:15.955617 #215]  INFO -- : (0.000092s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T11:15:15.955770 #215]  INFO -- : (0.000069s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T11:15:46.404771 #215]  INFO -- : (0.000141s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka@sheffield.ac.uk') LIMIT 1
+I, [2021-04-24T11:15:59.545148 #215]  INFO -- : (0.000165s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-24T11:15:59.545508 #215]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-24T11:15:59.545671 #215]  INFO -- : (0.000082s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-24T11:15:59.674257 #215]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-24T16:59:12.415899 #161]  INFO -- : (0.000213s) PRAGMA foreign_keys = 1
+I, [2021-04-24T16:59:12.423140 #161]  INFO -- : (0.000029s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T16:59:12.423712 #161]  INFO -- : (0.000064s) SELECT sqlite_version()
+I, [2021-04-24T16:59:12.423948 #161]  INFO -- : (0.000105s) PRAGMA table_info('connections')
+I, [2021-04-24T16:59:12.424718 #161]  INFO -- : (0.000096s) PRAGMA table_info('departments')
+I, [2021-04-24T16:59:12.425243 #161]  INFO -- : (0.000071s) PRAGMA table_info('interests')
+I, [2021-04-24T16:59:12.428537 #161]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2021-04-24T17:00:07.970684 #162]  INFO -- : (0.000207s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:00:07.970773 #162]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:00:07.971341 #162]  INFO -- : (0.000059s) SELECT sqlite_version()
+I, [2021-04-24T17:00:07.971606 #162]  INFO -- : (0.000123s) PRAGMA table_info('connections')
+I, [2021-04-24T17:00:07.972382 #162]  INFO -- : (0.000075s) PRAGMA table_info('departments')
+I, [2021-04-24T17:00:07.973037 #162]  INFO -- : (0.000127s) PRAGMA table_info('interests')
+I, [2021-04-24T17:00:07.974067 #162]  INFO -- : (0.000127s) PRAGMA table_info('users')
+I, [2021-04-24T17:01:30.658769 #166]  INFO -- : (0.000306s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:01:30.658922 #166]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:01:30.659691 #166]  INFO -- : (0.000085s) SELECT sqlite_version()
+I, [2021-04-24T17:01:30.660119 #166]  INFO -- : (0.000243s) PRAGMA table_info('connections')
+I, [2021-04-24T17:01:30.661331 #166]  INFO -- : (0.000136s) PRAGMA table_info('departments')
+I, [2021-04-24T17:01:30.662181 #166]  INFO -- : (0.000127s) PRAGMA table_info('interests')
+I, [2021-04-24T17:01:30.663637 #166]  INFO -- : (0.000269s) PRAGMA table_info('users')
+I, [2021-04-24T17:01:46.213910 #167]  INFO -- : (0.000183s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:01:46.213992 #167]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:01:46.214459 #167]  INFO -- : (0.000052s) SELECT sqlite_version()
+I, [2021-04-24T17:01:46.214689 #167]  INFO -- : (0.000121s) PRAGMA table_info('connections')
+I, [2021-04-24T17:01:46.215350 #167]  INFO -- : (0.000079s) PRAGMA table_info('departments')
+I, [2021-04-24T17:01:46.215836 #167]  INFO -- : (0.000070s) PRAGMA table_info('interests')
+I, [2021-04-24T17:01:46.216664 #167]  INFO -- : (0.000144s) PRAGMA table_info('users')
+I, [2021-04-24T17:03:39.850953 #168]  INFO -- : (0.000182s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:03:39.851068 #168]  INFO -- : (0.000036s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:03:39.851550 #168]  INFO -- : (0.000052s) SELECT sqlite_version()
+I, [2021-04-24T17:03:39.851834 #168]  INFO -- : (0.000160s) PRAGMA table_info('connections')
+I, [2021-04-24T17:03:39.852532 #168]  INFO -- : (0.000075s) PRAGMA table_info('departments')
+I, [2021-04-24T17:03:39.853047 #168]  INFO -- : (0.000069s) PRAGMA table_info('interests')
+I, [2021-04-24T17:03:39.853906 #168]  INFO -- : (0.000146s) PRAGMA table_info('users')
+I, [2021-04-24T17:03:57.636777 #171]  INFO -- : (0.000188s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:03:57.636866 #171]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:03:57.637334 #171]  INFO -- : (0.000071s) SELECT sqlite_version()
+I, [2021-04-24T17:03:57.637570 #171]  INFO -- : (0.000126s) PRAGMA table_info('connections')
+I, [2021-04-24T17:03:57.638229 #171]  INFO -- : (0.000073s) PRAGMA table_info('departments')
+I, [2021-04-24T17:03:57.638702 #171]  INFO -- : (0.000070s) PRAGMA table_info('interests')
+I, [2021-04-24T17:03:57.639514 #171]  INFO -- : (0.000125s) PRAGMA table_info('users')
+I, [2021-04-24T17:04:32.752874 #172]  INFO -- : (0.000196s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:04:32.752961 #172]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:04:32.753439 #172]  INFO -- : (0.000053s) SELECT sqlite_version()
+I, [2021-04-24T17:04:32.753675 #172]  INFO -- : (0.000119s) PRAGMA table_info('connections')
+I, [2021-04-24T17:04:32.754378 #172]  INFO -- : (0.000079s) PRAGMA table_info('departments')
+I, [2021-04-24T17:04:32.754871 #172]  INFO -- : (0.000071s) PRAGMA table_info('interests')
+I, [2021-04-24T17:04:32.755712 #172]  INFO -- : (0.000125s) PRAGMA table_info('users')
+I, [2021-04-24T17:05:18.719788 #173]  INFO -- : (0.000197s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:05:18.719877 #173]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:05:18.720379 #173]  INFO -- : (0.000054s) SELECT sqlite_version()
+I, [2021-04-24T17:05:18.720615 #173]  INFO -- : (0.000104s) PRAGMA table_info('connections')
+I, [2021-04-24T17:05:18.721398 #173]  INFO -- : (0.000109s) PRAGMA table_info('departments')
+I, [2021-04-24T17:05:18.721917 #173]  INFO -- : (0.000072s) PRAGMA table_info('interests')
+I, [2021-04-24T17:05:18.722764 #173]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2021-04-24T17:05:45.450810 #174]  INFO -- : (0.000197s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:05:45.450897 #174]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:05:45.451391 #174]  INFO -- : (0.000062s) SELECT sqlite_version()
+I, [2021-04-24T17:05:45.451620 #174]  INFO -- : (0.000108s) PRAGMA table_info('connections')
+I, [2021-04-24T17:05:45.452326 #174]  INFO -- : (0.000076s) PRAGMA table_info('departments')
+I, [2021-04-24T17:05:45.452841 #174]  INFO -- : (0.000070s) PRAGMA table_info('interests')
+I, [2021-04-24T17:05:45.453678 #174]  INFO -- : (0.000131s) PRAGMA table_info('users')
+I, [2021-04-24T17:05:51.631661 #177]  INFO -- : (0.000196s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:05:51.631748 #177]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:05:51.632193 #177]  INFO -- : (0.000050s) SELECT sqlite_version()
+I, [2021-04-24T17:05:51.632438 #177]  INFO -- : (0.000136s) PRAGMA table_info('connections')
+I, [2021-04-24T17:05:51.633078 #177]  INFO -- : (0.000072s) PRAGMA table_info('departments')
+I, [2021-04-24T17:05:51.633574 #177]  INFO -- : (0.000069s) PRAGMA table_info('interests')
+I, [2021-04-24T17:05:51.634404 #177]  INFO -- : (0.000148s) PRAGMA table_info('users')
+I, [2021-04-24T17:06:38.691782 #178]  INFO -- : (0.000188s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:06:38.691867 #178]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:06:38.692338 #178]  INFO -- : (0.000051s) SELECT sqlite_version()
+I, [2021-04-24T17:06:38.692560 #178]  INFO -- : (0.000101s) PRAGMA table_info('connections')
+I, [2021-04-24T17:06:38.693236 #178]  INFO -- : (0.000074s) PRAGMA table_info('departments')
+I, [2021-04-24T17:06:38.693751 #178]  INFO -- : (0.000072s) PRAGMA table_info('interests')
+I, [2021-04-24T17:06:38.694558 #178]  INFO -- : (0.000124s) PRAGMA table_info('users')
+I, [2021-04-24T17:07:08.611259 #180]  INFO -- : (0.000202s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:07:08.611345 #180]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:07:08.611804 #180]  INFO -- : (0.000051s) SELECT sqlite_version()
+I, [2021-04-24T17:07:08.612032 #180]  INFO -- : (0.000104s) PRAGMA table_info('connections')
+I, [2021-04-24T17:07:08.612736 #180]  INFO -- : (0.000073s) PRAGMA table_info('departments')
+I, [2021-04-24T17:07:08.613225 #180]  INFO -- : (0.000069s) PRAGMA table_info('interests')
+I, [2021-04-24T17:07:08.614046 #180]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2021-04-24T17:07:18.724493 #182]  INFO -- : (0.000188s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:07:18.724581 #182]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:07:18.725054 #182]  INFO -- : (0.000053s) SELECT sqlite_version()
+I, [2021-04-24T17:07:18.725273 #182]  INFO -- : (0.000105s) PRAGMA table_info('connections')
+I, [2021-04-24T17:07:18.725984 #182]  INFO -- : (0.000074s) PRAGMA table_info('departments')
+I, [2021-04-24T17:07:18.726485 #182]  INFO -- : (0.000071s) PRAGMA table_info('interests')
+I, [2021-04-24T17:07:18.727289 #182]  INFO -- : (0.000124s) PRAGMA table_info('users')
+I, [2021-04-24T17:07:34.652632 #182]  INFO -- : (0.000248s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-24T17:07:34.652953 #182]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-24T17:07:34.653171 #182]  INFO -- : (0.000094s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-24T17:07:34.786727 #182]  INFO -- : (0.000188s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T17:07:34.787637 #182]  INFO -- : (0.000115s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T17:07:34.787875 #182]  INFO -- : (0.000085s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T17:07:34.788056 #182]  INFO -- : (0.000077s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T17:10:15.803429 #235]  INFO -- : (0.000221s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:10:15.803513 #235]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:10:15.803957 #235]  INFO -- : (0.000050s) SELECT sqlite_version()
+I, [2021-04-24T17:10:15.804197 #235]  INFO -- : (0.000126s) PRAGMA table_info('connections')
+I, [2021-04-24T17:10:15.804866 #235]  INFO -- : (0.000073s) PRAGMA table_info('departments')
+I, [2021-04-24T17:10:15.805367 #235]  INFO -- : (0.000089s) PRAGMA table_info('interests')
+I, [2021-04-24T17:10:15.806222 #235]  INFO -- : (0.000123s) PRAGMA table_info('users')
+I, [2021-04-24T17:10:31.469490 #235]  INFO -- : (0.000217s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-24T17:10:31.469789 #235]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-24T17:10:31.469982 #235]  INFO -- : (0.000087s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-24T17:10:31.596020 #235]  INFO -- : (0.000140s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T17:10:31.596343 #235]  INFO -- : (0.000091s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T17:10:31.726387 #235]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T17:10:31.726764 #235]  INFO -- : (0.000181s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-24T17:10:37.559732 #235]  INFO -- : (0.000174s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T17:10:37.560422 #235]  INFO -- : (0.000024s) BEGIN
+I, [2021-04-24T17:10:37.560820 #235]  INFO -- : (0.000234s) INSERT INTO `connections` (`mentee_id`, `mentor_id`, `status`) VALUES (9, 10, 0)
+I, [2021-04-24T17:10:37.561009 #235]  INFO -- : (0.000064s) SELECT * FROM `connections` WHERE `id` = 3
+I, [2021-04-24T17:10:37.650619 #235]  INFO -- : (0.089549s) COMMIT
+I, [2021-04-24T17:10:44.166812 #235]  INFO -- : (0.000694s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T17:10:44.167148 #235]  INFO -- : (0.000103s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T17:10:44.167352 #235]  INFO -- : (0.000083s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T17:10:44.167519 #235]  INFO -- : (0.000071s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T17:13:08.544987 #235]  INFO -- : (0.000158s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T17:13:08.545352 #235]  INFO -- : (0.000122s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T17:13:08.545628 #235]  INFO -- : (0.000091s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T17:13:08.686422 #235]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T17:13:08.686676 #235]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-24T17:13:15.498534 #235]  INFO -- : (0.000169s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T17:13:15.498742 #235]  INFO -- : (0.000019s) BEGIN
+I, [2021-04-24T17:13:15.499029 #235]  INFO -- : (0.000165s) INSERT INTO `connections` (`mentee_id`, `mentor_id`, `status`) VALUES (9, 10, 0)
+I, [2021-04-24T17:13:15.499216 #235]  INFO -- : (0.000072s) SELECT * FROM `connections` WHERE `id` = 4
+I, [2021-04-24T17:13:15.614309 #235]  INFO -- : (0.115025s) COMMIT
+I, [2021-04-24T17:15:20.030642 #259]  INFO -- : (0.000191s) PRAGMA foreign_keys = 1
+I, [2021-04-24T17:15:20.030722 #259]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-24T17:15:20.031170 #259]  INFO -- : (0.000050s) SELECT sqlite_version()
+I, [2021-04-24T17:15:20.031393 #259]  INFO -- : (0.000102s) PRAGMA table_info('connections')
+I, [2021-04-24T17:15:20.032122 #259]  INFO -- : (0.000077s) PRAGMA table_info('departments')
+I, [2021-04-24T17:15:20.032628 #259]  INFO -- : (0.000072s) PRAGMA table_info('interests')
+I, [2021-04-24T17:15:20.033559 #259]  INFO -- : (0.000150s) PRAGMA table_info('users')
+I, [2021-04-24T17:15:23.370242 #259]  INFO -- : (0.000219s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T17:15:23.370856 #259]  INFO -- : (0.000162s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T17:15:23.371174 #259]  INFO -- : (0.000117s) SELECT * FROM `connections` WHERE (`mentee_id` = 9) LIMIT 1
+I, [2021-04-24T17:15:23.520355 #259]  INFO -- : (0.000190s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-24T17:15:23.520788 #259]  INFO -- : (0.000187s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-24T17:15:44.600655 #259]  INFO -- : (0.000174s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-24T17:15:44.600954 #259]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-24T17:15:44.601146 #259]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-24T17:15:44.982426 #259]  INFO -- : (0.000728s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-24T17:15:44.982694 #259]  INFO -- : (0.000094s) SELECT * FROM `connections` WHERE (`mentor_id` = 10) LIMIT 1
+I, [2021-04-24T17:15:44.982878 #259]  INFO -- : (0.000076s) SELECT * FROM `connections` WHERE (`mentor_id` = 10) LIMIT 1
+I, [2021-04-24T17:15:48.509738 #259]  INFO -- : (0.000155s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-24T17:15:48.510035 #259]  INFO -- : (0.000092s) SELECT * FROM `connections` WHERE (`mentor_id` = 10) LIMIT 1
+I, [2021-04-24T17:15:48.510493 #259]  INFO -- : (0.000289s) SELECT * FROM `connections` WHERE (`mentor_id` = 10) LIMIT 1
+I, [2021-04-24T17:15:52.213526 #259]  INFO -- : (0.000674s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-24T17:15:52.213869 #259]  INFO -- : (0.000111s) SELECT * FROM `connections` WHERE (`mentor_id` = 10) LIMIT 1
+I, [2021-04-24T17:15:52.214034 #259]  INFO -- : (0.000076s) SELECT * FROM `connections` WHERE (`mentor_id` = 10) LIMIT 1

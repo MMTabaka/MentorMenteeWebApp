@@ -12,6 +12,10 @@ get '/mentors' do
   erb :mentorList
 end
 
+get '/request' do
+  "Request has been sent"
+end
+
 post '/request' do
   @mentor_id = params['mentor_id']
   puts @mentor_id
@@ -26,5 +30,5 @@ post '/request' do
   }
   
   Connection.add(connection_details)
-  "Connection created"
+  redirect '/request'
 end

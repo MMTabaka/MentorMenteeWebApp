@@ -48,14 +48,17 @@
             </div>
           </div>
         </div>
-        <!--<div class="row">
-          <div class="mb-3 row">
-            <div class="col-sm-10">
-              <button id="password" type="button" class="btn btn-primary mb-3 btnC" onclick="showEdit(this.id)">Change Password</button>
-            </div>
-            <div id="passwordEdit" class="mb-3 row edit">
+        <div class="row edit">
+            <div id="passwordEdit" class="mb-3 row">
               <label class="col-sm-2 col-form-label">Password</label>
               <div class="col-sm-10">
+                <input id="passOld" type="password" name="pass" class="form-control <%= @validation['errors']['pass'] ? 'is-invalid': '' %>" placeholder="Old Password">
+                <% unless @validation['errors']['pass'].nil? %>
+                  <div class="invalid-feedback">
+                    <%= @validation['errors']['pass'] %>
+                  </div>
+                <% end %>
+                <br/>
                 <input id="passChange" type="password" name="pass" class="form-control <%= @validation['errors']['pass'] ? 'is-invalid': '' %>" placeholder="New Password">
                 <% unless @validation['errors']['pass'].nil? %>
                   <div class="invalid-feedback">
@@ -72,7 +75,6 @@
               </div>
             </div>
           </div>
-        </div>-->
         <div class="row">
           <div class="mb-3 row">
             <label class="col-sm-2 col-form-label">Department</label>
@@ -113,7 +115,7 @@
               <button id="delete" type="submit" onclick="return confirm ('Are you sure?')'" class="btn btn-secondary btn-lg btnC">Delete Account</button>
             </div>
             <div id="saveNCancel" class="col-sm-10 edit">
-              <button id="save" type="submit" class="btn btn-primary btn-lg btnC">Save</button>
+              <button id="save" type="submit" class="btn btn-primary btn-lg btnC" onclick="return confirm ('Are you sure?')'">Save</button>
               <button id="cancel" type="button" class="btn btn-secondary btn-lg btnC" onclick="cancelEdit()">Cancel</button>
             </div>
           </div>

@@ -6,8 +6,8 @@
     
 <div class="containerSmall">
   <div class="contentSmall">
-  <h1 class="text-center  pb-3">Welcome!</h1>
-  <p class="text-center  pb-3">Please Log In</p>
+  <h1 class="text-center pb-3">Welcome!</h1>
+  <p class="text-center pb-3">Please Log In</p>
   <form method="post">
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
@@ -27,8 +27,10 @@
         </div>
       <% end %>
     </div>
+    <div>
     <button type="submit" class="btn btn-primary btnC">Login</button>
-    <br/>
+    <button type="submit" class="btn btn-primary btnC" formnovalidate onclick="return confirm ('Do you want to reset password? An email for resetting will be sent to you.')'">Forget Password</button>
+    </div>
     <a href="registration" class="text-decoration-underline text-decoration-none">Do not have accout? Join us.</a>
   </form>
   </div>

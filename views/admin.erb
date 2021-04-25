@@ -1,0 +1,60 @@
+<%= erb :"common/header" %>
+  <link rel="stylesheet" href="css/mentorList.css">
+  <title>Dashboard</title>
+</header>
+
+<body>
+<div class="wrapper">
+<div class="bg-warning">
+  <div class="navi">
+    <ul class="nav justify-content-end nav-pills">
+      <li>
+        <a class="nav-link text-body">Welcome, <%= @adminName %>.</a>
+      </li>
+      <li>  
+        <a class="nav-link text-body active" href="logout">Logout</a>
+      </li>
+    </ul>
+  </div>
+</div>
+    
+<div class="container">
+  <div class="content">
+    <div class="table-responsive">
+      <table class="table table-hover table-borderless align-middle">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Type</th>
+            <th scope="col">Status</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% (1..@users).each do |i|%>
+            <tr>
+              <th id="<%= @userID %>" scope="row"><%= @userID %></th>
+              <td id="<%= @userID %>Username"><%= @username %></td>
+              <td id="<%= @userID %>Email"><%= @email %></td>
+              <td id="<%= @userID %>Type"><%= @userType %></td>
+              <td id="<%= @userID %>Status"><%= @status %></td>
+              <td>
+                <button id="<%= @userID %>Reset" type="submit" class="btn btn-primary btn-lg btnC">Reset Password</button>
+                <button id="<%= @userID %>ChangeStatus" type="submit" class="btn btn-secondary btn-lg btnC">
+                  <% if @status == "Active" %>
+                    Suspend
+                  <% else %>
+                    Unsuspend
+                  <% end %>
+                </button>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<%= erb :"common/footer" %>

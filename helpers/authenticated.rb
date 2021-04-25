@@ -1,5 +1,5 @@
-require "sinatra"
+require 'sinatra'
 
 def authenticated
-  redirect "/login" unless session[:user].nil?
+  redirect '/login' if session[:user].nil?
 end

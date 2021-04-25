@@ -1,2 +1,2 @@
-INSERT INTO m_users (user_type, email, password, description, explanation, request, acceptance, suspension, fields) 
+INSERT INTO users (user_type, email, password, description, explanation, request, acceptance, suspension, fields)
 VALUES (0, "email6@email.com", "password3", "description", "explanation", "request", 0, 0, "field, field, field");

@@ -18,7 +18,7 @@
 </head>
 
 <!-- All input tags are not be set as required, 
-I think if users submit with empty input maybe we can change nothing for them in database, 
+I think if users submit with empty input we will not update their info in database, 
 so we don`t need to recognize if users are mentors in frontend and they can`t submit empty info. 
 (Just a suggestion)
 
@@ -31,7 +31,7 @@ we can separate it to profile page and profile edit page or use other way, so js
   <div class="content">
     <form method="post" class="row">
       <div class="col-sm">
-        <img src="<%= @pic %>" class="img-thumbnail float-start picProfile" alt="User Picture">
+        <img src="img/defaultPic.jpg" class="img-thumbnail float-start picProfile" alt="User Picture">
         <button id="picture" type="button" class="btn btn-primary btn-lg btnC pic" onclick="showEdit(this.id)">Edit</button>
         <input id="pictureEdit" class="form-control edit" type="file" accept="image/gif,image/jpeg,image/jpg,image/png" name="pic">
       </div>
@@ -147,7 +147,7 @@ we can separate it to profile page and profile edit page or use other way, so js
         <div class="row">
           <div class="mb-3 row">
             <div class="col-sm-10">
-              <button id="delete" type="submit" onclick="return confirm ('Are you sure?')'" class="btn btn-primary btn-lg btnC">Delete Account</button>
+              <button id="delete" type="submit" onclick="return confirm ('Are you sure?')" class="btn btn-primary btn-lg btnC">Delete Account</button>
             </div>
             <div id="saveNCancel" class="col-sm-10 edit">
               <button id="save" type="submit" class="btn btn-primary btn-lg btnC">Save</button>

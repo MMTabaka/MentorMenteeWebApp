@@ -9,6 +9,7 @@
   <% when "login" %>
     <% activedLI="active" %>
 <% end %>
+<div class="wrapper">
 <div class="bg-warning">
   <div class="navi">
     <ul class="nav justify-content-end nav-pills">
@@ -31,7 +32,7 @@
         </li>
         <li class="nav-item navPic">  
           <a class="nav-item" href="userInfo.erb">
-            <img src="<%= @userPic %>" class="picSmall float-end" alt="user picture">
+            <img src="img/defaultPic.jpg" class="picSmall float-end" alt="user picture">
           </a>
         </li>
       <% end %>

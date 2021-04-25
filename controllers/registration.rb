@@ -3,7 +3,10 @@ require 'sinatra'
 get '/details' do
   # Only allow if continuing from registration
   redirect '/' unless session[:reg_params]
-  @user_type = session[:reg_params][:user_type]
+  @departments = Department.all
+  @interests = Interest.all
+  @user_type = session[:reg_params][:user_type].to_i
+  @mentee_type = UserType::MENTEE
 
   erb :addInfo
 end
@@ -11,14 +14,20 @@ end
 post '/details' do
   # Cookie is gone?
   halt 500 unless session[:reg_params]
+  depart = Department[params['department']].department
+  # params['areas'] is an array.
+  interests = Interest.where_all(id: params['areas'])
+                      .map(&:interest)
+                      .sort
+
   usr_details = {
     email: session[:reg_params][:email],
     password: session[:reg_params][:password],
     user_type: session[:reg_params][:user_type],
     name: params['name'],
-    department: params['department'],
+    department: depart,
     bio: params['bio'],
-    interest_areas: params['areas']
+    interest_areas: interests.join(',')
   }
   user = User.register(usr_details)
   # Account creation successful, log in new user
@@ -29,6 +38,7 @@ post '/details' do
 end
 
 get '/registration' do
+  redirect '/' if session[:user]
   # Initialise validation if it's not set yet
   session[:validation] = {} if session[:validation].nil?
   @validation = session.delete(:validation)

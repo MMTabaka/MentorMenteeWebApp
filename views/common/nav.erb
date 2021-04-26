@@ -1,8 +1,9 @@
+<body>
 <% activedLI = "" %>
 <% activedM = "" %>
 <% activedRH = "" %>
-<% case @actived
-   when "myMentee" || "myMentor" || "mentorList" %>
+<% case @actived %>
+  <% when "myMentee", "myMentor", "mentorList", "mentorDetail" %>
     <% activedM="active" %>
   <% when "requestHistory" %>
     <% activedRH="active" %>
@@ -15,25 +16,29 @@
     <ul class="nav justify-content-end nav-pills">
       <% if @loggedIn == false %>
         <li class="nav-item">  
-          <a class="nav-link text-body <%= activedLI %>" href="login.erb">Log In</a>
+          <a class="nav-link text-body <%= activedLI %>" href="login">Log In</a>
         </li>
       <% else %>
         <li>
         <% if @userType == "Mentor" %>
-          <a class="nav-link text-body <%= activedM %>" href="myMentee.erb">My Mentee</a>
+          <a class="nav-link text-body <%= activedM %>" href="myMentee">My Mentee</a>
         <% elsif @userType == "Mentee" && @requesting == true %>
-          <a class="nav-link text-body <%= activedM %>" href="myMentor.erb">My Mentor</a>
+          <a class="nav-link text-body <%= activedM %>" href="myMentor">My Mentor</a>
         <% else %>
-          <a class="nav-link text-body <%= activedM %>" href="mentorList.erb">Mentor List</a>
+          <a class="nav-link text-body <%= activedM %>" href="mentorList">Mentor List</a>
         <% end %>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-body <%= activedRH %>" href="requestHistory.erb">Request History</a>
+          <a class="nav-link text-body <%= activedRH %>" href="requestHistory">Request History</a>
         </li>
         <li class="nav-item navPic">  
-          <a class="nav-item" href="userInfo.erb">
+          <button class="nav-item" type="button" id="user" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="img/defaultPic.jpg" class="picSmall float-end" alt="user picture">
-          </a>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="user">
+            <li><a class="dropdown-item" href="profile">Profile</a></li>
+            <li><a class="dropdown-item" href="logout">Logout</a></li>
+          </ul>
         </li>
       <% end %>
     </ul>

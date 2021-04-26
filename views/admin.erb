@@ -1,0 +1,61 @@
+<%= erb :"common/header" %>
+  <link rel="stylesheet" href="css/mentorList.css">
+  <title>Dashboard</title>
+</header>
+
+<body>
+<div class="wrapper">
+<div class="bg-warning">
+  <div class="navi">
+    <ul class="nav justify-content-end nav-pills">
+      <li>
+        <a class="nav-link text-body"><%= @adminName %></a>
+      </li>
+      <li>  
+        <a class="nav-link text-body active" href="logout">Logout</a>
+      </li>
+    </ul>
+  </div>
+</div>
+    
+<div class="container">
+  <div class="content">
+    <div class="table-responsive">
+      <table class="table table-hover table-borderless align-middle">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Type</th>
+            <th scope="col">Status</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% (@users).each do |i|%>
+            <tr>
+              <th id="<%= i[:id] %>" scope="row"><%= i[:id] %></th>
+              <td id="<%= i[:id] %>Username"><%= i[:name] %></td>
+              <td id="<%= i[:id] %>Email"><%= i[:email] %></td>
+              <td id="<%= i[:id] %>Type"><%= i[:user_type] %></td>
+              <td id="<%= i[:id] %>Status"><%= i[:status] %></td>
+              <td>
+                <button id="<%= i[:id] %>Detail" type="submit" class="btn btn-primary btn-lg btnC">Detail</button>
+                <button id="<%= i[:id] %>Reset" type="submit" class="btn btn-primary btn-lg btnC">Reset Password</button>
+                <button id="<%= i[:id] %>ChangeStatus" type="submit" class="btn btn-primary btn-lg btnC">
+                  <% if i[:status] == "Active" %>
+                    Suspend
+                  <% else %>
+                    Unsuspend
+                  <% end %>
+                </button>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<%= erb :"common/footer" %>

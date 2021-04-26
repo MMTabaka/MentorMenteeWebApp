@@ -1,34 +1,25 @@
-function showEdit(btnId){
-  document.getElementById("delete").style.display = "none";
-  document.getElementById(btnId).style.display = "none";
-  document.getElementById(btnId + "Edit").style.display = "flex";
-  //document.getElementById(btnId + "Edit").required = true;
+function change(a, b){
+  var x = document.getElementsByClassName(a);
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var y = document.getElementsByClassName(b);
+  var j;
+  for (j = 0; j < y.length; j++) {
+    y[j].style.display = "flex";
+  }
+}
+
+
+function editU(){
+  change("text", "edit");
+  document.getElementById("editNDelete").style.display = "none";
   document.getElementById("saveNCancel").style.display = "flex";
 }
 
 function cancelEdit(){
-  document.getElementById("picture").style.display = "block";
-  document.getElementById("pictureEdit").style.display = "none";
-  document.getElementById("username").style.display = "block";
-  document.getElementById("usernameEdit").style.display = "none";
-  document.getElementById("email").style.display = "block";
-  document.getElementById("emailEdit").style.display = "none";
-  document.getElementById("password").style.display = "block";
-  document.getElementById("passwordEdit").style.display = "none";
-  document.getElementById("department").style.display = "block";
-  document.getElementById("departmentEdit").style.display = "none";
-  document.getElementById("area").style.display = "block";
-  document.getElementById("areaEdit").style.display = "none";
-  document.getElementById("bio").style.display = "block";
-  document.getElementById("bioEdit").style.display = "none";
-  document.getElementById("delete").style.display = "block";
+  change("edit", "text");
+  document.getElementById("editNDelete").style.display = "block";
   document.getElementById("saveNCancel").style.display = "none";
-//   document.getElementById("pictureEdit").style.required = false;
-//   document.getElementById("usernameEdit").style.required = false;
-//   document.getElementById("emailEdit").style.required = false;
-//   document.getElementById("passChange").style.required = false;
-//   document.getElementById("passConfirm").style.required = false;
-//   document.getElementById("departmentEdit").style.required = false;
-//   document.getElementById("areaEdit").style.required = false;
-//   document.getElementById("bioEdit").style.required = false;
 }

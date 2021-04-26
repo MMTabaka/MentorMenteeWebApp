@@ -68,4 +68,12 @@ class User < Sequel::Model
     end
     return costs[mentee_fields_array.length]
   end
+
+  # Toggles user's suspension status
+  def toggle_suspension
+    update(suspension: (Sequel[:suspension] + 1) % 2)
+  end
+
 end
+
+

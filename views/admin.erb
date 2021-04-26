@@ -9,7 +9,7 @@
   <div class="navi">
     <ul class="nav justify-content-end nav-pills">
       <li>
-        <a class="nav-link text-body"><%= @adminName %></a>
+        <a class="nav-link text-body"><%= @admin_name %></a>
       </li>
       <li>  
         <a class="nav-link text-body active" href="logout">Logout</a>
@@ -41,10 +41,10 @@
               <td id="<%= i[:id] %>Type"><%= i[:user_type] %></td>
               <td id="<%= i[:id] %>Status"><%= i[:status] %></td>
               <td>
-                <button id="<%= i[:id] %>Detail" type="submit" class="btn btn-primary btn-lg btnC">Detail</button>
-                <button id="<%= i[:id] %>Reset" type="submit" class="btn btn-primary btn-lg btnC">Reset Password</button>
+                <a href="/user/<%= i[:id] %>" id="<%= i[:id] %>Profile Details" type="submit" class="btn btn-primary btn-lg btnC">Detail</a>
+                <button id="<%= i[:id] %>Reset Password" type="submit" class="btn btn-primary btn-lg btnC">Reset Password</button>
                 <button id="<%= i[:id] %>ChangeStatus" type="submit" class="btn btn-primary btn-lg btnC">
-                  <% if i[:status] == "Active" %>
+                  <% if i[:suspension] == 0 %>
                     Suspend
                   <% else %>
                     Unsuspend

@@ -9,7 +9,7 @@
   <div class="navi">
     <ul class="nav justify-content-end nav-pills">
       <li>
-        <a class="nav-link text-body">Welcome, <%= @adminName %>.</a>
+        <a class="nav-link text-body"><%= @adminName %></a>
       </li>
       <li>  
         <a class="nav-link text-body active" href="logout">Logout</a>
@@ -33,12 +33,12 @@
           </tr>
         </thead>
         <tbody>
-          <% (1..@users).each do |i|%>
+<!--           <% (1..@users).each do |i|%>
             <tr>
               <th id="<%= @userID %>" scope="row"><%= @userID %></th>
               <td id="<%= @userID %>Username"><%= @username %></td>
               <td id="<%= @userID %>Email"><%= @email %></td>
-              <td id="<%= @userID %>Type"><%= @userType %></td>
+              <td id="<%= @userID %>Type"><%= @user_type %></td>
               <td id="<%= @userID %>Status"><%= @status %></td>
               <td>
                 <button id="<%= @userID %>Reset" type="submit" class="btn btn-primary btn-lg btnC">Reset Password</button>
@@ -51,7 +51,26 @@
                 </button>
               </td>
             </tr>
-          <% end %>
+          <% end %> -->
+          <% (@users).each do |i|%>
+            <tr>
+              <th id="<%= i[:id] %>" scope="row"><%= i[:id] %></th>
+              <td id="<%= i[:id] %>Username"><%= i[:name] %></td>
+              <td id="<%= i[:id] %>Email"><%= i[:email] %></td>
+              <td id="<%= i[:id] %>Type"><%= i[:user_type] %></td>
+              <td id="<%= i[:id] %>Status"><%= i[:status] %></td>
+              <td>
+                <button id="<%= i[:id] %>Reset" type="submit" class="btn btn-primary btn-lg btnC">Reset Password</button>
+                <button id="<%= i[:id] %>ChangeStatus" type="submit" class="btn btn-secondary btn-lg btnC">
+                  <% if i[:status] == "Active" %>
+                    Suspend
+                  <% else %>
+                    Unsuspend
+                  <% end %>
+                </button>
+              </td>
+            </tr>
+          <% end %>  
         </tbody>
       </table>
     </div>

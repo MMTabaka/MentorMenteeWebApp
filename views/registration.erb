@@ -4,6 +4,7 @@
 
 <%= erb :"common/nav" %>
     
+<% puts @validation %>
 <div class="containerSmall">
   <div class="contentSmall">
   <h1 class="text-center  pb-3">Welcome!</h1>
@@ -11,47 +12,49 @@
   <form method="post">
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control <%= @validation['errors']['email'] ? 'is-invalid': '' %>" name="email" required>
-      <% unless @validation['errors']['email'].nil? %>
+      <input type="email" class="form-control <%= @validation[:email] ? 'is-invalid': '' %>" name="email" required>
+      <% unless @validation[:email].nil? %>
         <div class="invalid-feedback">
-          <%= @validation['errors']['email'] %>
+          <%= @validation[:email][0] %>
         </div>
       <% end %>
     </div>
     <div class="mb-3">
       <label for="pass" class="form-label">Password</label>
-      <input type="password" class="form-control <%= @validation['errors']['pass'] ? 'is-invalid': '' %>" name="pass" required>
-      <% unless @validation['errors']['pass'].nil? %>
+      <input type="password" class="form-control <%= @validation[:password] ? 'is-invalid': '' %>" name="pass" required>
+      <% unless @validation[:password].nil? %>
         <div class="invalid-feedback">
-          <%= @validation['errors']['pass'] %>
+          <%= @validation[:password][0] %>
         </div>
       <% end %>
     </div>
     <div class="mb-3">
       <label for="re-pass" class="form-label">Confirm Password</label>
-      <input type="password" class="form-control <%= @validation['errors']['re-pass'] ? 'is-invalid': '' %>" name="re-pass" required>
-      <% unless @validation['errors']['re-pass'].nil? %>
+      <input type="password" class="form-control <%= @validation[:re_pass] ? 'is-invalid': '' %>" name="re-pass" required>
+      <% unless @validation[:re_pass].nil? %>
         <div class="invalid-feedback">
-          <%= @validation['errors']['re-pass'] %>
+          <%= @validation[:re_pass] %>
         </div>
       <% end %>
     </div>
     <div class="mb-3">
       <label for="user-type" class="form-label">Who you are?</label>
-      <select name="user-type" class="form-select <%= @validation['errors']['user-type'] ? 'is-invalid': '' %>" required>
-        <option value="1" selected>Mentor</option>
-        <option value="2">Mentee</option>
+      <select name="user-type" class="form-select <%= @validation[:user_type] ? 'is-invalid': '' %>" required>
+        <option value="0" selected>Mentor</option>
+        <option value="1">Mentee</option>
       </select>
-      <% unless @validation['errors']['user-type'].nil? %>
+      <% unless @validation[:user_type].nil? %>
         <div class="invalid-feedback">
-          <%= @validation['errors']['user-type'] %>
+          <%= @validation[:user_type][0] %>
         </div>
       <% end %>
     </div>
-    <button type="submit" class="btn btn-primary btnC">Create an account</button>
+    <button type="submit" class="btn btn-primary btnC">Continue</button>
     <br/>
-    <a href="login" class="text-decoration-underline text-decoration-none">Have an accout? Log in please</a>
+    <a href="login" class="text-decoration-underline text-decoration-none">Have an account? Log in please</a>
   </form>
   </div>
 </div>
+
 <%= erb :"common/footer" %>
+</html>

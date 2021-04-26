@@ -1,5 +1,5 @@
 <%= erb :"common/header" %>
-  <title>Registration Additional Information</title>
+  <title>Additional Information</title>
 </header>
 
 <%= erb :"common/nav" %>
@@ -11,34 +11,40 @@
     <form method="post">
       <div class="mb-3">
         <label for="username" class="form-label">Your Name</label>
-        <input id="username" type="text" class="form-control" name="username" pattern="/^([A-Za-z]+\s?)*[A-Za-z]$/" required>
+        <input id="username" type="text" class="form-control" name="name" required>
       </div>
       <div class="mb-3">
-        <label for="department" class="form-label">Department</label>
-        <% if @userType == "Mentor" %>
-          <input id="department" type="text" class="form-control" name="department" required>
-        <% else %>
-          <input id="department" type="text" class="form-control" name="department">
-        <% end %>
+          <label for="department" class="form-label">Department <%= '(optional)' if @user_type == @mentee_type %></label>
+          <select id="department" class="custom-select" name="department" <%= 'required' if @user_type == @mentee_type %>>
+            <option data-placeholder="true"></option>
+            <% @departments.each do |dep| %>
+            <option value=<%= dep.id %>><%= dep.department %></option>
+            <% end %>
+          </select>
       </div>
       <div class="mb-3">
-        <label for="area" class="form-label">Area of Interst</label>
-        <% if @userType == "Mentor" %>
-          <input id="area" type="text" class="form-control" name="area" required>
-        <% else %>
-          <input id="area" type="text" class="form-control" name="area">
-        <% end %>
+          <label for="areas" class="form-label">Areas of Interest <%= '(optional)' if @user_type == @mentee_type %></label>
+          <select id="areas" name="areas[]" class="custom-select" multiple <%= 'required' if @user_type == @mentee_type %>>
+            <% @interests.each do |interest| %>
+              <option value=<%= interest.id %>><%= interest.interest %></option>
+            <% end %>
+          </select>
       </div>
       <div class="mb-3">
-        <label for="bio" class="form-label">Bio</label>
-        <% if @userType == "Mentor" %>
-          <textarea id="bio" name="bio" required class="form-control" rows="4"></textarea>
-        <% else %>
-          <textarea id="bio" name="bio" class="form-control" rows="4"></textarea>
-        <% end %>
+          <label for="bio" class="form-label">Bio <%= '(optional)' if @user_type == @mentee_type %></label>
+          <textarea id="bio" name="bio" class="form-control" rows="4" <%= 'required' if @user_type == @mentee_type %>></textarea>
       </div>
       <button type="submit" class="btn btn-primary btnC">Create an account</button>
     </form>
   </div>
 </div>
+
 <%= erb :"common/footer" %>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet"></link>
+<script src="js/select.js"></script>
+</html>

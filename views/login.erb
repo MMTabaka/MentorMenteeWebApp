@@ -3,36 +3,34 @@
 </head>
 
 <%= erb :"common/nav" %>
-    
 <div class="containerSmall">
   <div class="contentSmall">
-  <h1 class="text-center pb-3">Welcome!</h1>
-  <p class="text-center pb-3">Please Log In</p>
+  <h1 class="text-center  pb-3">Welcome!</h1>
+  <p class="text-center  pb-3">Please Log In</p>
+     
+    <% unless @is_valid %>
+      <p>Email or password is incorrect or does not exist</p>
+    <% end %>
+    
   <form method="post">
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control <%= @validation['errors']['email'] ? 'is-invalid': '' %>" name="email" required>
-      <% unless @validation['errors']['email'].nil? %>
-        <div class="invalid-feedback">
-          <%= @validation['errors']['email'] %>
-        </div>
-      <% end %>
+      <input type="email" class="form-control" name="email" required>
+      
     </div>
     <div class="mb-3">
       <label for="pass" class="form-label">Password</label>
-      <input type="password" class="form-control <%= @validation['errors']['pass'] ? 'is-invalid': '' %>" name="pass" required>
-      <% unless @validation['errors']['pass'].nil? %>
-        <div class="invalid-feedback">
-          <%= @validation['errors']['pass'] %>
-        </div>
-      <% end %>
+      <input type="password" class="form-control" name="pass" required>
+      
     </div>
     <div>
-    <button type="submit" class="btn btn-primary btnC">Login</button>
-    <button type="submit" class="btn btn-primary btnC" formnovalidate onclick="return confirm ('Do you want to reset password? An email for resetting will be sent to you.')'">Forget Password</button>
+      <button type="submit" class="btn btn-primary btnC">Login</button>
+      <button type="submit" class="btn btn-primary btnC" formnovalidate onclick="return confirm ('Do you want to reset password? An email for resetting will be sent to you.')'">Forget Password</button>
     </div>
     <a href="registration" class="text-decoration-underline text-decoration-none">Do not have accout? Join us.</a>
   </form>
   </div>
 </div>
+    
 <%= erb :"common/footer" %>
+</html>

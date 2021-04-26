@@ -7,9 +7,6 @@ class Connection < Sequel::Model
     connection.save
   end
   
-  def self.get_status()
-  end
-  
   def self.exist?(user_type, user_id)
     if user_type == UserType::MENTOR
       return true if where(mentor_id: user_id).single_record != nil && self[mentor_id: user_id][:status] != 2

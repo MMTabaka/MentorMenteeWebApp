@@ -13,6 +13,7 @@ get '/mentors' do
 end
 
 get '/request' do
+  authenticated
   "Request has been sent"
 end
 

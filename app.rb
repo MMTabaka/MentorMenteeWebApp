@@ -19,5 +19,5 @@ require_all 'models'
 require_all 'controllers'
 require_all 'helpers'
 
-pat = Connection.where(mentee_id: 9, active: 0)
-pat.update(status: 0, active: 1)
+#pat = Connection.where(mentee_id: 9, active: 1)
+#pat.update(status: 2, active: 0)

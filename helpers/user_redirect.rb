@@ -18,7 +18,7 @@ def user_redirect(user)
         "puts Redirection didn't work"
       end
     else
-      redirect '/temp-user-page'
+      redirect '/request-history'
     end
   elsif user[:user_type] == UserType::MENTEE
     if Connection.exist?(UserType::MENTEE, user[:id])

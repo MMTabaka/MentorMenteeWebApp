@@ -35,6 +35,34 @@ get '/temp-user-page' do
   "You are logged in! Id: #{session[:user]}"
 end
 
+get '/request-history' do
+  @history = 4
+  @username = 'empty'
+  @department = 'empty'
+  @sTime = 'empty'
+  @eTime = 'empty'
+  @reason = 'empty'
+  authenticated
+  erb :requestHistory
+end
+
+get '/connected' do
+  @email = 'empty'
+  @username = 'empty'
+  @email = 'empty'
+  @department = 'empty'
+  @area = 'empty'
+  @bio = 'empty'
+  authenticated
+  erb :myMate
+end
+
+get '/profile' do
+  @username = 'empty'
+   
+  erb :profile
+end
+
 # TODO: This should be POST
 get '/logout' do
   session.clear

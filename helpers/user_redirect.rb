@@ -3,15 +3,17 @@ require 'sinatra'
 def user_redirect(user)
   if user[:user_type] == UserType::MENTOR
     if Connection.exist?(UserType::MENTOR, user[:id]) 
-      case Connection[mentor_id: user[:id]][:status]
+      connection = Connection.where(mentor_id: user[:id], active: 1)
+      puts connection[:id][:status]
+      case connection[:id][:status]
         when Status::REQUEST 
-          redirect '/temp-user-page'
+          redirect '/request-mentor'
         when Status::ACCEPT 
-          redirect '/temp-user-page'
+          redirect '/accept-mentor'
         when Status::REJECTED 
-          redirect '/temp-user-page'
+          redirect '/request-history'
         when Status::CONNECTED 
-          redirect '/temp-user-page'
+          redirect '/connected'
       else
         "puts Redirection didn't work"
       end
@@ -19,16 +21,18 @@ def user_redirect(user)
       redirect '/temp-user-page'
     end
   elsif user[:user_type] == UserType::MENTEE
-    if Connection.exist?(UserType::MENTEE, user[:id]) 
-      case Connection[mentee_id: user[:id]][:status]
+    if Connection.exist?(UserType::MENTEE, user[:id])
+      connection = Connection.where(mentee_id: user[:id], active: 1)
+      puts connection[:id][:status]
+      case connection[:id][:status]
         when Status::REQUEST 
-          redirect '/request'
+          redirect '/request-mentee'
         when Status::ACCEPT 
-          redirect '/temp-user-page'
+          redirect '/accept-mentee'
         when Status::REJECTED 
-          redirect '/temp-user-page'
+          redirect '/mentors'
         when Status::CONNECTED 
-          redirect '/temp-user-page'
+          redirect '/connected'
       else
         "puts Redirection didn't work"
       end

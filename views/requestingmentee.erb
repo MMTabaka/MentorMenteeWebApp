@@ -1,3 +1,10 @@
+<% if @user_type == "Mentee" %>
+  <% title = "Mentor" %>
+<% else %>
+  <% title = "Mentee" %>
+<% end %>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,17 +13,17 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/userInfo.css"> 
+  <link rel="stylesheet" href="css/userInfo.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
   <script src="js/userInfo.js" defer="defer"></script>
-  <title>Requesting</title>
+  <title>Requesting My <%= title %></title>
 </head>
 
 <body>
 <%= erb :"common/nav" %>
   <div class="containerSmall">
   <div class="contentSmall">
-  <h2 class="text-left  ">Requesting Mentee/Mentor</h2>
+  <h2 class="text-left  ">Requesting <%= title %></h2>
       <!-----name and department---->
         <div class="row">
           <div class="mb-3 row">
@@ -44,7 +51,7 @@
             </div>
           </div>
         </div>
-      
+
       <div class="jumbotron">
 <p>
     <button class="btn btn-primary btnC" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -61,6 +68,7 @@
 </div>
    </div>
     <br/>
+      <% if @user_type == "Mentor" %>
       <div class="row">
           <div class="mb-3 row">
             <label class="col-sm-2 col-form-label">Reason</label>
@@ -86,7 +94,8 @@
               <button id="cancel" type="button" class="btn btn-secondary btn-lg btnC" onclick="cancelEdit()">Cancel</button>
             </div>
           </div>
-        </div> 
+        </div>
+        <% end %>
   </div>
 </div>
 <%= erb :"common/footer" %>

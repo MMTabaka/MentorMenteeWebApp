@@ -68,15 +68,4 @@ class User < Sequel::Model
     end
     return costs[mentee_fields_array.length]
   end
-
-  # Updates a specified user
-  # @param params Parameters to be updated
-  # def update(params)
-  #   user = User.where(id: user.id).single_record
-  #   params.each do |k, v|
-  #     user.k.to_sym = v
-  #     user.save
-  #     puts user
-  #   end
-  # end
 end

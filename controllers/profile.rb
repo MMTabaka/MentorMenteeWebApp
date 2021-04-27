@@ -15,8 +15,15 @@ post '/profile' do
   user_hash = {}
   
   params.each do |k,v|
+    if k == "password" && params['password'] != params['re-pass']
+      puts "invalid password"
+      session[:validation] = { re_pass: 'Passwords do not match' } if @validation == false
+      redirect '/profile'
+      break
+    else
       user_hash[k.to_sym] = v unless v == ''
     end
+  end
   @username = user.name
   @validation = { 'valid' => true, 'errors' => {} }
   puts user_hash

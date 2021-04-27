@@ -13,13 +13,20 @@ html, body{
   padding: 0.5%;
   margin: auto;
   font-size: 1.5em;
+<<<<<<< HEAD
+=======
+}
+li{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+>>>>>>> origin/views
 }
 .nav-pills .nav-link.active{
   background-color: #FFDD84;
   color: #000000;
 }
 .navPic{
-  width: 4%;
+  width: 2.5em;
   text-align: center;
 }
 
@@ -61,6 +68,12 @@ html, body{
   padding: 5% 14%;
 }
 
+#user{
+  background-color: transparent;
+  border: none;
+  height: 100%;
+}
+
 .footer{
   margin-top: 6%; 
   position: relative; 
@@ -69,7 +82,10 @@ html, body{
 .push {
   height: 50px;
 }
+<<<<<<< HEAD
 
 .ss-main .ss-single-selected, .ss-main .ss-multi-selected {
   min-height: 37px !important;
 }
+=======
+>>>>>>> origin/views

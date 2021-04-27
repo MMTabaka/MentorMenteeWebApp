@@ -11,14 +11,10 @@
   font-size: 2.5em !important;
   font-weight: 600;
 }
-.btnText{
+.text{
   width: 40%;
   text-align: left;
   margin: 0;
-}
-#pictureEdit{
-  width:100%;
-  margin-top: 1em;
 }
 .form-control{
   width: 60%;
@@ -29,14 +25,14 @@
 #saveNCancel button{
   margin-right: 2em;
 }
+#editNDelete button{
+  margin-right: 2em;
+}
 .picProfile{
   border-radius: 50%;
-  width: 100%;
+  width: 80%;
 }
 #picture{
   margin-left: 33%;
   margin-top: 12%;  
-}
-#pictureEdit{
-  margin-top: 112%;  
 }

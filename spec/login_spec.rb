@@ -64,4 +64,10 @@ RSpec.describe 'Login function' do
       expect(User.login('', '')).to eq(nil)
     end
   end
+
+  context 'When admin is trying to log in using main page' do
+    it 'returns nil' do
+      expect(User.login('admin@admin.com', 'PassWord123')).to eq(nil)
+    end
+  end
 end

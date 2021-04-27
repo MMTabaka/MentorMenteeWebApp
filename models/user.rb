@@ -71,12 +71,12 @@ class User < Sequel::Model
 
   # Updates a specified user
   # @param params Parameters to be updated
-  def update(params)
-    user = User.where(id: user.id).single_record
-    params.each do |k, v|
-      user.k.to_sym = v
-      user.save
-      puts user
-    end
-  end
+  # def update(params)
+  #   user = User.where(id: user.id).single_record
+  #   params.each do |k, v|
+  #     user.k.to_sym = v
+  #     user.save
+  #     puts user
+  #   end
+  # end
 end

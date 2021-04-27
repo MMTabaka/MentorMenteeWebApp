@@ -8,6 +8,7 @@ get '/request-mentee' do
   mentor = User.where(id: connection[:id][:mentor_id])
   
   @username = mentor[:id][:name]
+  @user_type = "Mentee"
   @status = "User #{@username} has received your request. Check your email inbox for a reply.
   After arranged meeting decide if you want to accept the user as your mentor."
   authenticated
@@ -55,13 +56,3 @@ get '/request-history' do
   erb :requestHistory
 end
 
-get '/connected' do
-  @email = 'empty'
-  @username = 'empty'
-  @email = 'empty'
-  @department = 'empty'
-  @area = 'empty'
-  @bio = 'empty'
-  authenticated
-  erb :myMate
-end

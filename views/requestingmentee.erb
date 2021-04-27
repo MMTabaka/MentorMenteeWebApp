@@ -56,12 +56,12 @@
         
         
     <p>
-      <form method="post" action="/accept-mentee">
+      <form method="post" <% if @user_type == "Mentee" %> action="/accept-mentee" <% else %> action="/connected" <% end %>>
     <button class="btn btn-primary btnC" type="submit" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
     Accept
   </button>
      </form>
-        <form method="post" action="/rejected-mentee">
+        <form method="post" <% if @user_type == "Mentee" %> action="/reject-mentee" <% else %> action="/reject-mentor" <% end %>>
   <button class="btn btn-primary btnC" type="submit" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
     Reject
   </button>

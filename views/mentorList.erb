@@ -60,7 +60,7 @@
             </div>
           </div>
           <div class="col mlButton">
-            <form method="post" action="/request">
+            <form method="post" action="/request-mentee">
               <input type="hidden" name="mentor_id" value="<%= i[:id] %>">
               <button id="request<%= i[:id] %>" type="submit" onclick="return confirm ('Request this mentor?')" class="btn btn-secondary btn-lg btnC">Request</button>
             </form>

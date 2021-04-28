@@ -51,7 +51,7 @@ class User < Sequel::Model
     '''
     Levenshtein distance implementation from Rosetta code:
     https://rosettacode.org/wiki/Levenshtein_distance#Ruby
-    ''' 
+    '''
     if mentor_fields.nil? || mentee_fields.nil?
       return nil
     end
@@ -72,6 +72,17 @@ class User < Sequel::Model
   # Toggles user's suspension status
   def toggle_suspension
     update(suspension: (Sequel[:suspension] + 1) % 2)
+  end
+
+  def reset_password
+    new_password = Utils.generate_password
+    email = PasswordResetEmail.new(self[:name], self[:email], new_password)
+    begin
+      email.send
+      update(password: new_password)
+    rescue EmailSendError, InvalidEmailError => e
+      puts "Could not reset password: #{e}"
+    end
   end
 
 end

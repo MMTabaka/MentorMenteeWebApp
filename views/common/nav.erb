@@ -2,8 +2,8 @@
 <% activedLI = "" %>
 <% activedM = "" %>
 <% activedRH = "" %>
-<% case @actived %>
-  <% when "myMentee", "myMentor", "mentorList", "mentorDetail" %>
+<% case @actived
+     when "myMentee", "myMentor", "mentorList", "mentorDetail" %>
     <% activedM="active" %>
   <% when "requestHistory" %>
     <% activedRH="active" %>

@@ -15,6 +15,7 @@ end
 
 post '/admin/suspend/?' do
   # TODO: change to post
+  puts params
   user = User[params['id']]
   user.toggle_suspension
 end
@@ -22,5 +23,5 @@ end
 post '/admin/reset/?' do
   # TODO: change to post
   user = User[params['id']]
-  user.toggle_suspension
+  user.reset_password
 end

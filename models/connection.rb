@@ -17,6 +17,10 @@ class Connection < Sequel::Model
     end
     false
   end
+  
+  def self.get()
+    return get_users[2]
+  end
     
 end
 

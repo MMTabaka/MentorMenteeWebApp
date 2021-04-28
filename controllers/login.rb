@@ -1,6 +1,8 @@
 require 'sinatra'
 require_relative '../helpers/authenticated'
 require_relative '../helpers/user_redirect.rb'
+require_relative '../helpers/get_users.rb'
+require_relative '../helpers/rejection.rb'
 
 get '/' do
   authenticated
@@ -30,12 +32,6 @@ post '/login' do
   redirect '/login'
 end
 
-get '/temp-user-page' do
-  authenticated
-  "You are logged in! Id: #{session[:user]}"
-end
-
-
 
 get '/profile' do
   user = User[session[:user]]
@@ -44,12 +40,10 @@ get '/profile' do
   @department = user[:department]
   @area = user[:interest_areas]
   @bio = user[:bio]
-  
-   
   erb :profile
 end
 
-# TODO: This should be POST
+
 get '/logout' do
   session.clear
   redirect '/login'

@@ -1,12 +1,11 @@
 require 'sinatra'
 require_relative '../helpers/authenticated'
 require_relative '../helpers/user_redirect.rb'
+require_relative '../helpers/get_users.rb'
+require_relative '../helpers/rejection.rb'
 
 get '/request-mentee' do
-  user = User[session[:user]]
-  connection = Connection.where(mentee_id: user[:id], active: 1)
-  mentor = User.where(id: connection[:id][:mentor_id])
-  
+  mentor = get_users[0]
   @username = mentor[:id][:name]
   @user_type = "Mentee"
   @status = "User #{@username} has received your request. Check your email inbox for a reply.
@@ -35,9 +34,7 @@ end
 
 
 get '/request-mentor' do
-  user = User[session[:user]]
-  connection = Connection.where(mentor_id: user[:id], active: 1)
-  mentee = User.where(id: connection[:id][:mentee_id])
+  mentee = get_users[1]
   
   @username = mentee[:id][:name]
   @department = mentee[:id][:department]

@@ -21,6 +21,14 @@ class Connection < Sequel::Model
   def self.get()
     return get_users[2]
   end
-    
+  
+  def self.retrieve(user)
+    if user[:user_type] == UserType::MENTOR
+      return Connection.where(mentor_id: user[:id]).all
+    elsif user[:user_type] == UserType::MENTEE
+      return Connection.where(mentee_id: user[:id]).all
+    end
+    nil
+  end
 end
 

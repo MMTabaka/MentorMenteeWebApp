@@ -6628,3 +6628,1651 @@ I, [2021-04-28T17:50:39.434296 #556]  INFO -- : (0.000162s) SELECT * FROM `users
 I, [2021-04-28T17:50:39.434656 #556]  INFO -- : (0.000107s) SELECT * FROM `connections` WHERE ((`mentor_id` = 10) AND (`active` = 1) AND `id`) LIMIT 1
 I, [2021-04-28T17:50:40.798145 #556]  INFO -- : (0.000160s) SELECT * FROM `users` WHERE `id` = 10
 I, [2021-04-28T17:50:40.798505 #556]  INFO -- : (0.000109s) SELECT * FROM `connections` WHERE ((`mentor_id` = 10) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:28:19.056056 #137]  INFO -- : (0.000277s) PRAGMA foreign_keys = 1
+I, [2021-04-28T19:28:19.064912 #137]  INFO -- : (0.000031s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T19:28:19.065622 #137]  INFO -- : (0.000072s) SELECT sqlite_version()
+I, [2021-04-28T19:28:19.065964 #137]  INFO -- : (0.000166s) PRAGMA table_info('connections')
+I, [2021-04-28T19:28:19.067060 #137]  INFO -- : (0.000105s) PRAGMA table_info('departments')
+I, [2021-04-28T19:28:19.067758 #137]  INFO -- : (0.000096s) PRAGMA table_info('interests')
+I, [2021-04-28T19:28:19.071341 #137]  INFO -- : (0.000171s) PRAGMA table_info('users')
+I, [2021-04-28T19:29:06.890950 #137]  INFO -- : (0.000274s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T19:29:06.891372 #137]  INFO -- : (0.000133s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T19:29:06.891586 #137]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T19:29:07.042407 #137]  INFO -- : (0.000205s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:29:07.042906 #137]  INFO -- : (0.000165s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:29:07.043238 #137]  INFO -- : (0.000117s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:29:07.043698 #137]  INFO -- : (0.000131s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:29:12.482467 #137]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:29:12.483137 #137]  INFO -- : (0.000246s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T19:29:12.653053 #137]  INFO -- : (0.000180s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:29:12.654496 #137]  INFO -- : (0.000186s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T19:29:12.889474 #137]  INFO -- : (0.000243s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:29:12.890113 #137]  INFO -- : (0.000237s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T19:29:27.533507 #137]  INFO -- : (0.000165s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:29:37.126370 #137]  INFO -- : (0.000155s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:29:37.126774 #137]  INFO -- : (0.000177s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T19:30:26.302623 #137]  INFO -- : (0.000151s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:30:26.303039 #137]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T19:31:34.460521 #137]  INFO -- : (0.000219s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:31:34.460921 #137]  INFO -- : (0.000196s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T19:52:01.677555 #197]  INFO -- : (0.000264s) PRAGMA foreign_keys = 1
+I, [2021-04-28T19:52:01.680631 #197]  INFO -- : (0.000044s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T19:52:01.681414 #197]  INFO -- : (0.000158s) SELECT sqlite_version()
+I, [2021-04-28T19:52:01.681826 #197]  INFO -- : (0.000193s) PRAGMA table_info('connections')
+I, [2021-04-28T19:52:01.682883 #197]  INFO -- : (0.000084s) PRAGMA table_info('departments')
+I, [2021-04-28T19:52:01.683506 #197]  INFO -- : (0.000100s) PRAGMA table_info('interests')
+I, [2021-04-28T19:52:01.687208 #197]  INFO -- : (0.000227s) PRAGMA table_info('users')
+I, [2021-04-28T19:52:20.384013 #197]  INFO -- : (0.000299s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T19:52:20.384412 #197]  INFO -- : (0.000151s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T19:52:20.384709 #197]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T19:52:20.967607 #197]  INFO -- : (0.001136s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:52:20.968142 #197]  INFO -- : (0.000168s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:52:20.968842 #197]  INFO -- : (0.000149s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:52:20.969260 #197]  INFO -- : (0.000127s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:52:33.743030 #197]  INFO -- : (0.000223s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:52:33.743527 #197]  INFO -- : (0.000171s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:52:33.743903 #197]  INFO -- : (0.000128s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:52:33.745850 #197]  INFO -- : (0.000140s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:52:39.599387 #197]  INFO -- : (0.000421s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:53:38.932278 #197]  INFO -- : (0.000291s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:53:41.446737 #197]  INFO -- : (0.000601s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:53:41.447153 #197]  INFO -- : (0.000169s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:53:41.447565 #197]  INFO -- : (0.000109s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:53:41.447893 #197]  INFO -- : (0.000131s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:53:41.619404 #197]  INFO -- : (0.000175s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:53:41.619840 #197]  INFO -- : (0.000152s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:53:41.620170 #197]  INFO -- : (0.000142s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:43.216908 #197]  INFO -- : (0.000204s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:54:43.217433 #197]  INFO -- : (0.000197s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:43.218757 #197]  INFO -- : (0.001115s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:44.493029 #197]  INFO -- : (0.000248s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:54:44.493483 #197]  INFO -- : (0.000185s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:54:44.493862 #197]  INFO -- : (0.000144s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:44.494233 #197]  INFO -- : (0.000150s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:44.630987 #197]  INFO -- : (0.000190s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:54:44.631411 #197]  INFO -- : (0.000136s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:44.631732 #197]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:49.845700 #197]  INFO -- : (0.000207s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:54:49.846131 #197]  INFO -- : (0.000140s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:54:49.846554 #197]  INFO -- : (0.000167s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:49.846896 #197]  INFO -- : (0.000132s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:50.035088 #197]  INFO -- : (0.000190s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:54:50.035527 #197]  INFO -- : (0.000145s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:50.035856 #197]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:56.020590 #197]  INFO -- : (0.000221s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:54:56.021036 #197]  INFO -- : (0.000149s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:54:56.021402 #197]  INFO -- : (0.000155s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:56.021831 #197]  INFO -- : (0.000130s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:56.168515 #197]  INFO -- : (0.000204s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:54:56.168977 #197]  INFO -- : (0.000145s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:54:56.169321 #197]  INFO -- : (0.000151s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:07.235665 #197]  INFO -- : (0.000244s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:55:07.236076 #197]  INFO -- : (0.000131s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:55:07.236358 #197]  INFO -- : (0.000099s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:07.236679 #197]  INFO -- : (0.000153s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:07.450523 #197]  INFO -- : (0.000190s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:55:07.450953 #197]  INFO -- : (0.000157s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:07.451276 #197]  INFO -- : (0.000129s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:51.258984 #197]  INFO -- : (0.000166s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:55:51.259357 #197]  INFO -- : (0.000122s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:55:51.259634 #197]  INFO -- : (0.000104s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:51.259867 #197]  INFO -- : (0.000094s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:51.397262 #197]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:55:51.397573 #197]  INFO -- : (0.000097s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:51.397789 #197]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:56.922167 #197]  INFO -- : (0.000264s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:55:56.922577 #197]  INFO -- : (0.000134s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:55:56.922873 #197]  INFO -- : (0.000107s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:56.923172 #197]  INFO -- : (0.000127s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:57.051596 #197]  INFO -- : (0.000199s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:55:57.052029 #197]  INFO -- : (0.000147s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:55:57.052333 #197]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:18.244708 #197]  INFO -- : (0.000258s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:56:18.245281 #197]  INFO -- : (0.000172s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:18.245743 #197]  INFO -- : (0.000188s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:19.243956 #197]  INFO -- : (0.000175s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:56:19.244321 #197]  INFO -- : (0.000131s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:56:19.244577 #197]  INFO -- : (0.000085s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:19.244797 #197]  INFO -- : (0.000087s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:19.401680 #197]  INFO -- : (0.000185s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:56:19.402139 #197]  INFO -- : (0.000191s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:19.402467 #197]  INFO -- : (0.000132s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:22.041931 #197]  INFO -- : (0.000161s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:56:22.042283 #197]  INFO -- : (0.000107s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:56:22.042539 #197]  INFO -- : (0.000090s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:22.042803 #197]  INFO -- : (0.000101s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:22.174041 #197]  INFO -- : (0.000237s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:56:22.174454 #197]  INFO -- : (0.000151s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:22.174831 #197]  INFO -- : (0.000162s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:45.172538 #197]  INFO -- : (0.000182s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:56:45.173067 #197]  INFO -- : (0.000206s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:56:45.173449 #197]  INFO -- : (0.000151s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:45.173804 #197]  INFO -- : (0.000137s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:45.334687 #197]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:56:45.335002 #197]  INFO -- : (0.000095s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:45.335212 #197]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:47.178304 #197]  INFO -- : (0.000209s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:56:47.855390 #197]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:56:47.855829 #197]  INFO -- : (0.000171s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:56:47.856122 #197]  INFO -- : (0.000096s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:47.856396 #197]  INFO -- : (0.000092s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:48.150812 #197]  INFO -- : (0.000225s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:56:48.151266 #197]  INFO -- : (0.000147s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:56:48.151619 #197]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:38.014348 #197]  INFO -- : (0.000229s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:57:38.014855 #197]  INFO -- : (0.000129s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:38.015176 #197]  INFO -- : (0.000140s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:39.110436 #197]  INFO -- : (0.000212s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:57:39.110855 #197]  INFO -- : (0.000124s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:57:39.111102 #197]  INFO -- : (0.000088s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:39.111323 #197]  INFO -- : (0.000091s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:39.276855 #197]  INFO -- : (0.000243s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:57:39.277253 #197]  INFO -- : (0.000128s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:39.277524 #197]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:42.230190 #197]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:57:42.230572 #197]  INFO -- : (0.000119s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:57:42.230827 #197]  INFO -- : (0.000087s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:42.231052 #197]  INFO -- : (0.000088s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:42.362784 #197]  INFO -- : (0.000211s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:57:42.363276 #197]  INFO -- : (0.000164s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:42.363622 #197]  INFO -- : (0.000136s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:46.237140 #197]  INFO -- : (0.000237s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:57:46.237597 #197]  INFO -- : (0.000132s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:57:46.237969 #197]  INFO -- : (0.000140s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:46.238329 #197]  INFO -- : (0.000145s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:46.467700 #197]  INFO -- : (0.000155s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:57:46.468048 #197]  INFO -- : (0.000105s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:46.468268 #197]  INFO -- : (0.000087s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:47.610525 #197]  INFO -- : (0.000244s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:57:47.610978 #197]  INFO -- : (0.000129s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:57:47.611339 #197]  INFO -- : (0.000139s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:47.611701 #197]  INFO -- : (0.000158s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:47.743711 #197]  INFO -- : (0.000181s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:57:47.744139 #197]  INFO -- : (0.000136s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:57:47.744444 #197]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:58:34.335999 #197]  INFO -- : (0.000157s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:58:34.336345 #197]  INFO -- : (0.000100s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:58:34.336565 #197]  INFO -- : (0.000090s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:58:35.683243 #197]  INFO -- : (0.000216s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:58:35.683677 #197]  INFO -- : (0.000147s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:58:35.683997 #197]  INFO -- : (0.000117s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:58:35.684328 #197]  INFO -- : (0.000146s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:58:35.813076 #197]  INFO -- : (0.000145s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:58:35.813434 #197]  INFO -- : (0.000135s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:58:35.813663 #197]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:58:40.807592 #197]  INFO -- : (0.000187s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:58:40.807955 #197]  INFO -- : (0.000112s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T19:58:40.808214 #197]  INFO -- : (0.000088s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:58:40.808443 #197]  INFO -- : (0.000089s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:58:41.158611 #197]  INFO -- : (0.000225s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:58:41.159264 #197]  INFO -- : (0.000173s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:58:41.159653 #197]  INFO -- : (0.000141s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T19:59:04.695444 #197]  INFO -- : (0.000164s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T19:59:04.695974 #197]  INFO -- : (0.000185s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T19:59:04.696320 #197]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:15.746409 #197]  INFO -- : (0.000229s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:00:15.746982 #197]  INFO -- : (0.000162s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:15.747246 #197]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:34.901764 #197]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:00:34.902137 #197]  INFO -- : (0.000135s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:34.902465 #197]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:44.389130 #197]  INFO -- : (0.000201s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:00:44.389561 #197]  INFO -- : (0.000127s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:44.389934 #197]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:45.550181 #197]  INFO -- : (0.000210s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:00:45.550653 #197]  INFO -- : (0.000164s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:00:45.551011 #197]  INFO -- : (0.000132s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:45.551488 #197]  INFO -- : (0.000159s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:45.687872 #197]  INFO -- : (0.000204s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:00:45.688341 #197]  INFO -- : (0.000155s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:45.688688 #197]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:49.106152 #197]  INFO -- : (0.000203s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:00:49.106563 #197]  INFO -- : (0.000139s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:00:49.106891 #197]  INFO -- : (0.000116s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:49.107170 #197]  INFO -- : (0.000119s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:49.253012 #197]  INFO -- : (0.000169s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:00:49.253458 #197]  INFO -- : (0.000119s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:00:49.253700 #197]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:11.288310 #197]  INFO -- : (0.000189s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:11.288657 #197]  INFO -- : (0.000109s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:01:11.288905 #197]  INFO -- : (0.000089s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:11.289156 #197]  INFO -- : (0.000091s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:11.424156 #197]  INFO -- : (0.000200s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:11.424596 #197]  INFO -- : (0.000136s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:11.424900 #197]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:23.508461 #197]  INFO -- : (0.000162s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:23.509033 #197]  INFO -- : (0.000208s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:23.509414 #197]  INFO -- : (0.000173s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:24.543712 #197]  INFO -- : (0.000189s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:24.544058 #197]  INFO -- : (0.000107s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:01:24.544314 #197]  INFO -- : (0.000085s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:24.544565 #197]  INFO -- : (0.000115s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:24.678221 #197]  INFO -- : (0.000164s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:24.678579 #197]  INFO -- : (0.000107s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:24.678875 #197]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:28.052341 #197]  INFO -- : (0.000167s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:28.052760 #197]  INFO -- : (0.000143s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:01:28.053059 #197]  INFO -- : (0.000101s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:28.053402 #197]  INFO -- : (0.000175s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:28.257797 #197]  INFO -- : (0.000182s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:28.258205 #197]  INFO -- : (0.000145s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:28.258546 #197]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:30.919829 #197]  INFO -- : (0.000184s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:30.920337 #197]  INFO -- : (0.000178s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:01:30.920703 #197]  INFO -- : (0.000099s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:30.921003 #197]  INFO -- : (0.000124s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:31.123731 #197]  INFO -- : (0.000205s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:31.124202 #197]  INFO -- : (0.000168s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:31.124516 #197]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:31.883794 #197]  INFO -- : (0.000174s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:31.884117 #197]  INFO -- : (0.000102s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:01:31.884401 #197]  INFO -- : (0.000137s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:31.884820 #197]  INFO -- : (0.000156s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:32.009469 #197]  INFO -- : (0.000185s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:32.009822 #197]  INFO -- : (0.000107s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:32.010055 #197]  INFO -- : (0.000091s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:35.642813 #197]  INFO -- : (0.000236s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:35.643261 #197]  INFO -- : (0.000131s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:01:35.643628 #197]  INFO -- : (0.000158s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:35.644041 #197]  INFO -- : (0.000196s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:35.764835 #197]  INFO -- : (0.000192s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:01:35.765204 #197]  INFO -- : (0.000127s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:01:35.765524 #197]  INFO -- : (0.000125s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:02.753531 #197]  INFO -- : (0.000337s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:02:02.753983 #197]  INFO -- : (0.000168s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:02:02.754409 #197]  INFO -- : (0.000153s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:02.754665 #197]  INFO -- : (0.000106s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:02.895517 #197]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:02:02.895904 #197]  INFO -- : (0.000126s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:02.896141 #197]  INFO -- : (0.000091s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:05.470956 #197]  INFO -- : (0.000206s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:02:05.471398 #197]  INFO -- : (0.000160s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:02:05.471726 #197]  INFO -- : (0.000117s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:05.472016 #197]  INFO -- : (0.000112s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:05.610774 #197]  INFO -- : (0.000205s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:02:05.611224 #197]  INFO -- : (0.000141s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:05.611542 #197]  INFO -- : (0.000137s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:18.602481 #197]  INFO -- : (0.000234s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:02:18.603105 #197]  INFO -- : (0.000169s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:02:18.603569 #197]  INFO -- : (0.000131s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:18.604003 #197]  INFO -- : (0.000160s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:18.738605 #197]  INFO -- : (0.000230s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:02:18.739231 #197]  INFO -- : (0.000174s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:18.739652 #197]  INFO -- : (0.000142s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:22.982555 #197]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:02:22.983026 #197]  INFO -- : (0.000175s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:02:22.983376 #197]  INFO -- : (0.000133s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:22.983671 #197]  INFO -- : (0.000122s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:23.103336 #197]  INFO -- : (0.000190s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:02:23.103838 #197]  INFO -- : (0.000169s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:02:23.104201 #197]  INFO -- : (0.000163s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:03:22.675721 #197]  INFO -- : (0.000165s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:03:22.676069 #197]  INFO -- : (0.000112s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:03:22.676343 #197]  INFO -- : (0.000086s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:03:22.676566 #197]  INFO -- : (0.000083s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:03:22.831850 #197]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:03:22.832173 #197]  INFO -- : (0.000104s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:03:22.832413 #197]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:04:03.552931 #197]  INFO -- : (0.000178s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:04:08.396472 #197]  INFO -- : (0.000155s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:04:08.396848 #197]  INFO -- : (0.000113s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:04:08.397124 #197]  INFO -- : (0.000089s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:04:08.397421 #197]  INFO -- : (0.000131s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:04:08.565026 #197]  INFO -- : (0.000223s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:04:08.565545 #197]  INFO -- : (0.000148s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:04:08.565870 #197]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:07:07.055719 #197]  INFO -- : (0.000219s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T20:07:07.056310 #197]  INFO -- : (0.000225s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T20:07:07.056574 #197]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T20:07:07.203259 #197]  INFO -- : (0.000143s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:07:07.203581 #197]  INFO -- : (0.000124s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:07:07.203833 #197]  INFO -- : (0.000092s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:07:07.204077 #197]  INFO -- : (0.000109s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:07:07.341056 #197]  INFO -- : (0.000172s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:07:07.353470 #197]  INFO -- : (0.012159s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:07:07.353893 #197]  INFO -- : (0.000182s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:07:13.181992 #197]  INFO -- : (0.000218s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:07:13.182475 #197]  INFO -- : (0.000161s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:07:13.182855 #197]  INFO -- : (0.000134s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:07:13.183234 #197]  INFO -- : (0.000169s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:07:13.334435 #197]  INFO -- : (0.000212s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:07:13.334955 #197]  INFO -- : (0.000163s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:07:13.335288 #197]  INFO -- : (0.000143s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:08:49.571950 #197]  INFO -- : (0.000158s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:08:49.572335 #197]  INFO -- : (0.000132s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:08:49.572583 #197]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:08:50.574011 #197]  INFO -- : (0.000214s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:08:50.574467 #197]  INFO -- : (0.000153s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:08:50.574799 #197]  INFO -- : (0.000122s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:08:50.575097 #197]  INFO -- : (0.000122s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:08:50.746197 #197]  INFO -- : (0.000158s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:08:50.746589 #197]  INFO -- : (0.000119s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:08:50.746858 #197]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:08:53.912013 #197]  INFO -- : (0.000270s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:08:53.912685 #197]  INFO -- : (0.000174s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:08:53.913030 #197]  INFO -- : (0.000124s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:08:53.913352 #197]  INFO -- : (0.000146s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:08:54.054931 #197]  INFO -- : (0.000234s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:08:54.055549 #197]  INFO -- : (0.000165s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:08:54.055920 #197]  INFO -- : (0.000151s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:11.316883 #197]  INFO -- : (0.000219s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:09:11.317462 #197]  INFO -- : (0.000208s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:11.317910 #197]  INFO -- : (0.000149s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:12.446643 #197]  INFO -- : (0.000229s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:09:12.447174 #197]  INFO -- : (0.000163s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:09:12.447550 #197]  INFO -- : (0.000127s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:12.447887 #197]  INFO -- : (0.000123s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:12.602827 #197]  INFO -- : (0.000207s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:09:12.603286 #197]  INFO -- : (0.000143s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:12.603593 #197]  INFO -- : (0.000133s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:16.291621 #197]  INFO -- : (0.000219s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:09:16.292559 #197]  INFO -- : (0.000190s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:09:16.293059 #197]  INFO -- : (0.000161s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:16.297902 #197]  INFO -- : (0.000177s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:16.441142 #197]  INFO -- : (0.000269s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:09:16.441856 #197]  INFO -- : (0.000212s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:16.442491 #197]  INFO -- : (0.000236s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:38.804397 #197]  INFO -- : (0.000214s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:09:38.804877 #197]  INFO -- : (0.000160s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:38.805210 #197]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:45.597359 #197]  INFO -- : (0.000194s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:09:45.597818 #197]  INFO -- : (0.000166s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:09:45.598122 #197]  INFO -- : (0.000093s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:45.598344 #197]  INFO -- : (0.000083s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:45.855731 #197]  INFO -- : (0.000167s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:09:45.856115 #197]  INFO -- : (0.000120s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:09:45.856365 #197]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:42.336594 #197]  INFO -- : (0.000208s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:10:42.337079 #197]  INFO -- : (0.000149s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:42.337424 #197]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:44.991216 #197]  INFO -- : (0.000217s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:10:44.991656 #197]  INFO -- : (0.000148s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:10:44.991991 #197]  INFO -- : (0.000124s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:44.992292 #197]  INFO -- : (0.000117s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:45.155392 #197]  INFO -- : (0.000132s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:10:45.155696 #197]  INFO -- : (0.000096s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:45.155906 #197]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:47.717125 #197]  INFO -- : (0.000190s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:10:47.717504 #197]  INFO -- : (0.000114s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:10:47.717828 #197]  INFO -- : (0.000134s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:47.718125 #197]  INFO -- : (0.000096s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:47.845473 #197]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:10:47.845790 #197]  INFO -- : (0.000128s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:47.846108 #197]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:57.587376 #197]  INFO -- : (0.000215s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:10:57.587768 #197]  INFO -- : (0.000113s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:10:57.588016 #197]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:11:00.409068 #197]  INFO -- : (0.000171s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:11:00.409608 #197]  INFO -- : (0.000191s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:11:00.409936 #197]  INFO -- : (0.000098s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:11:00.410201 #197]  INFO -- : (0.000122s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:11:00.535455 #197]  INFO -- : (0.000140s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:11:00.535793 #197]  INFO -- : (0.000115s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:11:00.536027 #197]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:11:30.906759 #197]  INFO -- : (0.000166s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:11:30.907134 #197]  INFO -- : (0.000114s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:11:30.907401 #197]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:11:32.055539 #197]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:11:32.055882 #197]  INFO -- : (0.000110s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:11:32.056125 #197]  INFO -- : (0.000085s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:11:32.056352 #197]  INFO -- : (0.000093s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:11:32.198434 #197]  INFO -- : (0.000176s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:11:32.198832 #197]  INFO -- : (0.000138s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:11:32.199147 #197]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:20:10.054912 #197]  INFO -- : (0.000209s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:20:10.055310 #197]  INFO -- : (0.000117s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:20:10.055547 #197]  INFO -- : (0.000085s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:20:10.055783 #197]  INFO -- : (0.000110s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:20:10.222038 #197]  INFO -- : (0.000144s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:20:10.228414 #197]  INFO -- : (0.000138s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:20:10.228665 #197]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:31:44.298011 #354]  INFO -- : (0.000192s) PRAGMA foreign_keys = 1
+I, [2021-04-28T20:31:44.298104 #354]  INFO -- : (0.000015s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T20:31:44.298709 #354]  INFO -- : (0.000057s) SELECT sqlite_version()
+I, [2021-04-28T20:31:44.298967 #354]  INFO -- : (0.000124s) PRAGMA table_info('connections')
+I, [2021-04-28T20:31:44.299735 #354]  INFO -- : (0.000072s) PRAGMA table_info('departments')
+I, [2021-04-28T20:31:44.300325 #354]  INFO -- : (0.000079s) PRAGMA table_info('interests')
+I, [2021-04-28T20:31:44.303797 #354]  INFO -- : (0.000155s) PRAGMA table_info('users')
+I, [2021-04-28T20:33:11.450275 #375]  INFO -- : (0.000212s) PRAGMA foreign_keys = 1
+I, [2021-04-28T20:33:11.450372 #375]  INFO -- : (0.000015s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T20:33:11.450934 #375]  INFO -- : (0.000055s) SELECT sqlite_version()
+I, [2021-04-28T20:33:11.451221 #375]  INFO -- : (0.000149s) PRAGMA table_info('connections')
+I, [2021-04-28T20:33:11.452158 #375]  INFO -- : (0.000078s) PRAGMA table_info('departments')
+I, [2021-04-28T20:33:11.452734 #375]  INFO -- : (0.000097s) PRAGMA table_info('interests')
+I, [2021-04-28T20:33:11.453637 #375]  INFO -- : (0.000164s) PRAGMA table_info('users')
+I, [2021-04-28T20:34:00.423912 #375]  INFO -- : (0.015405s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:34:22.906625 #375]  INFO -- : (0.000203s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:34:42.914642 #375]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:34:48.666255 #396]  INFO -- : (0.000218s) PRAGMA foreign_keys = 1
+I, [2021-04-28T20:34:48.666341 #396]  INFO -- : (0.000014s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T20:34:48.666955 #396]  INFO -- : (0.000055s) SELECT sqlite_version()
+I, [2021-04-28T20:34:48.667199 #396]  INFO -- : (0.000129s) PRAGMA table_info('connections')
+I, [2021-04-28T20:34:48.668034 #396]  INFO -- : (0.000074s) PRAGMA table_info('departments')
+I, [2021-04-28T20:34:48.668674 #396]  INFO -- : (0.000093s) PRAGMA table_info('interests')
+I, [2021-04-28T20:34:48.669652 #396]  INFO -- : (0.000144s) PRAGMA table_info('users')
+I, [2021-04-28T20:34:50.893990 #396]  INFO -- : (0.000226s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:34:50.916709 #396]  INFO -- : (0.022473s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:36:19.702404 #396]  INFO -- : (0.000185s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:36:19.702852 #396]  INFO -- : (0.000178s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:37:50.271006 #396]  INFO -- : (0.000274s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:37:50.271610 #396]  INFO -- : (0.000299s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:38:01.156813 #396]  INFO -- : (0.000236s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:38:01.157393 #396]  INFO -- : (0.000288s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:38:01.159316 #396]  INFO -- : (0.000162s) SELECT * FROM `users` WHERE (`id` = 1) LIMIT 1
+I, [2021-04-28T20:38:01.159658 #396]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE (`id` = 2) LIMIT 1
+I, [2021-04-28T20:38:01.160063 #396]  INFO -- : (0.000156s) SELECT * FROM `users` WHERE (`id` = 3) LIMIT 1
+I, [2021-04-28T20:38:01.160321 #396]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`id` = 4) LIMIT 1
+I, [2021-04-28T20:38:39.280612 #396]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:38:39.280966 #396]  INFO -- : (0.000158s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:38:39.282226 #396]  INFO -- : (0.000135s) SELECT * FROM `users` WHERE (`id` = 1) LIMIT 1
+I, [2021-04-28T20:38:39.282400 #396]  INFO -- : (0.000083s) SELECT * FROM `users` WHERE (`id` = 2) LIMIT 1
+I, [2021-04-28T20:38:39.282561 #396]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 3) LIMIT 1
+I, [2021-04-28T20:38:39.282711 #396]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 4) LIMIT 1
+I, [2021-04-28T20:39:53.223351 #396]  INFO -- : (0.000282s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:39:53.223987 #396]  INFO -- : (0.000291s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:40:36.344565 #396]  INFO -- : (0.000168s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:40:36.344964 #396]  INFO -- : (0.000163s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:42:40.308035 #396]  INFO -- : (0.000243s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:42:40.308568 #396]  INFO -- : (0.000240s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:42:40.310402 #396]  INFO -- : (0.000158s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.310697 #396]  INFO -- : (0.000149s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.310953 #396]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.311182 #396]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.311436 #396]  INFO -- : (0.000136s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.311722 #396]  INFO -- : (0.000171s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.311920 #396]  INFO -- : (0.000088s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.312127 #396]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.312366 #396]  INFO -- : (0.000129s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.312636 #396]  INFO -- : (0.000156s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.312890 #396]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.313048 #396]  INFO -- : (0.000079s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.313337 #396]  INFO -- : (0.000187s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.313603 #396]  INFO -- : (0.000133s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.313892 #396]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:42:40.314066 #396]  INFO -- : (0.000084s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:16.894933 #396]  INFO -- : (0.000195s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:43:16.895406 #396]  INFO -- : (0.000233s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:43:16.897024 #396]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`id` IS NULL) LIMIT 1
+I, [2021-04-28T20:43:38.859963 #396]  INFO -- : (0.000157s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:43:38.860348 #396]  INFO -- : (0.000170s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:43:38.861617 #396]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.861810 #396]  INFO -- : (0.000090s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.862009 #396]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.862176 #396]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.862332 #396]  INFO -- : (0.000079s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.862493 #396]  INFO -- : (0.000087s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.862661 #396]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.862822 #396]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.862970 #396]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.863139 #396]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.863293 #396]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.863439 #396]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.863589 #396]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.863750 #396]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.863895 #396]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:38.864057 #396]  INFO -- : (0.000093s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:43:59.240454 #449]  INFO -- : (0.000256s) PRAGMA foreign_keys = 1
+I, [2021-04-28T20:43:59.240580 #449]  INFO -- : (0.000022s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T20:43:59.241428 #449]  INFO -- : (0.000132s) SELECT sqlite_version()
+I, [2021-04-28T20:43:59.241774 #449]  INFO -- : (0.000167s) PRAGMA table_info('connections')
+I, [2021-04-28T20:43:59.243018 #449]  INFO -- : (0.000104s) PRAGMA table_info('departments')
+I, [2021-04-28T20:43:59.243771 #449]  INFO -- : (0.000098s) PRAGMA table_info('interests')
+I, [2021-04-28T20:43:59.244958 #449]  INFO -- : (0.000184s) PRAGMA table_info('users')
+I, [2021-04-28T20:44:01.093404 #449]  INFO -- : (0.000301s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:44:01.093927 #449]  INFO -- : (0.000273s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:44:01.100657 #449]  INFO -- : (0.000163s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.100917 #449]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.101314 #449]  INFO -- : (0.000140s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.101602 #449]  INFO -- : (0.000138s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.101800 #449]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.102076 #449]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.102359 #449]  INFO -- : (0.000152s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.102578 #449]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.102823 #449]  INFO -- : (0.000138s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.103074 #449]  INFO -- : (0.000136s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.103368 #449]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.103555 #449]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.103789 #449]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.104047 #449]  INFO -- : (0.000129s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.104312 #449]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:01.104508 #449]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.033490 #449]  INFO -- : (0.000209s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:44:11.033983 #449]  INFO -- : (0.000251s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:44:11.036669 #449]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.036888 #449]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.038102 #449]  INFO -- : (0.001095s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.038275 #449]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.038488 #449]  INFO -- : (0.000135s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.038727 #449]  INFO -- : (0.000129s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.039555 #449]  INFO -- : (0.000732s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.039723 #449]  INFO -- : (0.000083s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.039876 #449]  INFO -- : (0.000082s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.040117 #449]  INFO -- : (0.000144s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.040937 #449]  INFO -- : (0.000718s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.041145 #449]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.041325 #449]  INFO -- : (0.000084s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.041550 #449]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.041776 #449]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:11.042785 #449]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.416233 #449]  INFO -- : (0.000177s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:44:54.416657 #449]  INFO -- : (0.000181s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:44:54.421991 #449]  INFO -- : (0.000167s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.422176 #449]  INFO -- : (0.000087s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.422319 #449]  INFO -- : (0.000074s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.422500 #449]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.422737 #449]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.422906 #449]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.423048 #449]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.423195 #449]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.423418 #449]  INFO -- : (0.000133s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.423618 #449]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.423786 #449]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.423934 #449]  INFO -- : (0.000083s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.424146 #449]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.424350 #449]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.424522 #449]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:44:54.424682 #449]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.527344 #449]  INFO -- : (0.000156s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:45:22.527710 #449]  INFO -- : (0.000162s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:45:22.528879 #449]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.529069 #449]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.529227 #449]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.529432 #449]  INFO -- : (0.000129s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.529599 #449]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.529779 #449]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.530008 #449]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.530173 #449]  INFO -- : (0.000088s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.530325 #449]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.530484 #449]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.530633 #449]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.530803 #449]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.531061 #449]  INFO -- : (0.000152s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.531228 #449]  INFO -- : (0.000083s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.531426 #449]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:22.531598 #449]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.108050 #449]  INFO -- : (0.000196s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:45:43.109555 #449]  INFO -- : (0.001270s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:45:43.113108 #449]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.113291 #449]  INFO -- : (0.000091s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.113539 #449]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.114613 #449]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.114779 #449]  INFO -- : (0.000087s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.114970 #449]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.115218 #449]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.115999 #449]  INFO -- : (0.000689s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.116181 #449]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.116328 #449]  INFO -- : (0.000083s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.116553 #449]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.116782 #449]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.117268 #449]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.117543 #449]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.117729 #449]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:43.117872 #449]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:54.310735 #449]  INFO -- : (0.000218s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:45:56.983057 #449]  INFO -- : (0.000200s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:45:56.984483 #449]  INFO -- : (0.001007s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:45:56.990609 #449]  INFO -- : (0.000152s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.990852 #449]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.991052 #449]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.991247 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.991438 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.991626 #449]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.991836 #449]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.992061 #449]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.992273 #449]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.992474 #449]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.992678 #449]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.992869 #449]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.993074 #449]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.993257 #449]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.993480 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:56.993687 #449]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:57.600659 #449]  INFO -- : (0.000228s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:45:57.601046 #449]  INFO -- : (0.000121s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:45:57.601340 #449]  INFO -- : (0.000122s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:45:57.601725 #449]  INFO -- : (0.000176s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:45:57.730886 #449]  INFO -- : (0.000222s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:45:57.731385 #449]  INFO -- : (0.000167s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:45:57.731746 #449]  INFO -- : (0.000147s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:45:58.520717 #449]  INFO -- : (0.000201s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:45:58.521192 #449]  INFO -- : (0.000229s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:45:58.522933 #449]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.523187 #449]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.523389 #449]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.523594 #449]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.523788 #449]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.523983 #449]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.524211 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.524411 #449]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.524600 #449]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.524816 #449]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.525015 #449]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.525200 #449]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.525416 #449]  INFO -- : (0.000133s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.525607 #449]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.525814 #449]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:45:58.526003 #449]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.579616 #449]  INFO -- : (0.000204s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:46:35.580108 #449]  INFO -- : (0.000246s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:46:35.581932 #449]  INFO -- : (0.000169s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.582183 #449]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.582410 #449]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.582636 #449]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.582815 #449]  INFO -- : (0.000083s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.582959 #449]  INFO -- : (0.000077s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.583128 #449]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.583276 #449]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.583427 #449]  INFO -- : (0.000082s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.583575 #449]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.583716 #449]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.583899 #449]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.584138 #449]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.584349 #449]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.584529 #449]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.584727 #449]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.584952 #449]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.585117 #449]  INFO -- : (0.000088s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.585258 #449]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.585502 #449]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.585733 #449]  INFO -- : (0.000125s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.585913 #449]  INFO -- : (0.000093s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.586098 #449]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.586297 #449]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.586509 #449]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.586743 #449]  INFO -- : (0.000132s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.586968 #449]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.587170 #449]  INFO -- : (0.000090s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.587313 #449]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.587542 #449]  INFO -- : (0.000147s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.587731 #449]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:35.587867 #449]  INFO -- : (0.000070s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:56.695575 #449]  INFO -- : (0.000152s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:46:56.695938 #449]  INFO -- : (0.000108s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:46:56.696193 #449]  INFO -- : (0.000091s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:46:56.696417 #449]  INFO -- : (0.000088s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:46:56.843494 #449]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:46:56.843895 #449]  INFO -- : (0.000146s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:46:56.844278 #449]  INFO -- : (0.000132s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:46:58.612703 #449]  INFO -- : (0.000155s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:46:58.613077 #449]  INFO -- : (0.000173s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:46:58.614366 #449]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.614556 #449]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.614714 #449]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.614887 #449]  INFO -- : (0.000077s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.615051 #449]  INFO -- : (0.000087s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.615204 #449]  INFO -- : (0.000077s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.615387 #449]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.615545 #449]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.615691 #449]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.615830 #449]  INFO -- : (0.000071s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.615986 #449]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.616129 #449]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.616277 #449]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.616433 #449]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.616576 #449]  INFO -- : (0.000074s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.616712 #449]  INFO -- : (0.000070s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.616851 #449]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.617012 #449]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.617152 #449]  INFO -- : (0.000071s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.617285 #449]  INFO -- : (0.000069s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.617471 #449]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.617600 #449]  INFO -- : (0.000068s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.617748 #449]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.617880 #449]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.618025 #449]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.618151 #449]  INFO -- : (0.000071s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.618271 #449]  INFO -- : (0.000064s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.618446 #449]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.618597 #449]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.618740 #449]  INFO -- : (0.000082s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.618872 #449]  INFO -- : (0.000071s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:46:58.619014 #449]  INFO -- : (0.000082s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:00.645504 #449]  INFO -- : (0.000309s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:47:03.879948 #449]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:47:03.880302 #449]  INFO -- : (0.000158s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:47:03.881596 #449]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.881791 #449]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.881973 #449]  INFO -- : (0.000091s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.882114 #449]  INFO -- : (0.000077s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.882256 #449]  INFO -- : (0.000079s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.882405 #449]  INFO -- : (0.000090s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.882534 #449]  INFO -- : (0.000069s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.882666 #449]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.882793 #449]  INFO -- : (0.000071s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.882935 #449]  INFO -- : (0.000087s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.883068 #449]  INFO -- : (0.000066s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.883192 #449]  INFO -- : (0.000066s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.883341 #449]  INFO -- : (0.000084s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.883463 #449]  INFO -- : (0.000066s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.883586 #449]  INFO -- : (0.000069s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.883707 #449]  INFO -- : (0.000066s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.883841 #449]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.883969 #449]  INFO -- : (0.000074s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.884088 #449]  INFO -- : (0.000064s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.884207 #449]  INFO -- : (0.000067s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.884350 #449]  INFO -- : (0.000071s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.884469 #449]  INFO -- : (0.000065s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.884587 #449]  INFO -- : (0.000064s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.884721 #449]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.884847 #449]  INFO -- : (0.000071s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.884990 #449]  INFO -- : (0.000071s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.885109 #449]  INFO -- : (0.000064s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.885256 #449]  INFO -- : (0.000066s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.885394 #449]  INFO -- : (0.000069s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.885516 #449]  INFO -- : (0.000066s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.885651 #449]  INFO -- : (0.000082s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:03.885809 #449]  INFO -- : (0.000083s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.160923 #449]  INFO -- : (0.000199s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:47:32.161471 #449]  INFO -- : (0.000311s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:47:32.162782 #449]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.163018 #449]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.163189 #449]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.163345 #449]  INFO -- : (0.000083s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.163579 #449]  INFO -- : (0.000147s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.163882 #449]  INFO -- : (0.000152s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.164153 #449]  INFO -- : (0.000156s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.164384 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.164563 #449]  INFO -- : (0.000084s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.164772 #449]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.165015 #449]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.165337 #449]  INFO -- : (0.000204s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.165521 #449]  INFO -- : (0.000087s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.165672 #449]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.165901 #449]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.166172 #449]  INFO -- : (0.000163s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.166426 #449]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.166584 #449]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.166784 #449]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.167026 #449]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.167284 #449]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.167510 #449]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.167684 #449]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.167906 #449]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.168150 #449]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.168417 #449]  INFO -- : (0.000135s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.168595 #449]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.168780 #449]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.169036 #449]  INFO -- : (0.000148s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.169374 #449]  INFO -- : (0.000222s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:47:32.169590 #449]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:47:32.169737 #449]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:50:54.598909 #449]  INFO -- : (0.000220s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:50:54.599323 #449]  INFO -- : (0.000209s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:51:28.710257 #449]  INFO -- : (0.000156s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:51:44.555019 #449]  INFO -- : (0.000162s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:51:44.555411 #449]  INFO -- : (0.000181s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:51:44.556662 #449]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.556844 #449]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.557032 #449]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.557210 #449]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.557396 #449]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.557568 #449]  INFO -- : (0.000091s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.557740 #449]  INFO -- : (0.000079s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.557881 #449]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.558023 #449]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.558165 #449]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.558310 #449]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.558450 #449]  INFO -- : (0.000074s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.558596 #449]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.558741 #449]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.558896 #449]  INFO -- : (0.000077s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.559039 #449]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.559179 #449]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.559319 #449]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.559486 #449]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.559687 #449]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.559922 #449]  INFO -- : (0.000129s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.560141 #449]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.560369 #449]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.560583 #449]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.560822 #449]  INFO -- : (0.000142s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.561031 #449]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.561217 #449]  INFO -- : (0.000084s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.561449 #449]  INFO -- : (0.000152s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.561718 #449]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.561978 #449]  INFO -- : (0.000147s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:51:44.562210 #449]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:51:44.562444 #449]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:09.523596 #449]  INFO -- : (0.003454s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-28T20:52:09.523958 #449]  INFO -- : (0.000155s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-28T20:52:26.470716 #449]  INFO -- : (0.000201s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-28T20:52:26.470998 #449]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-28T20:52:26.471187 #449]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-28T20:52:26.615561 #449]  INFO -- : (0.000164s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-28T20:52:26.615948 #449]  INFO -- : (0.000124s) SELECT * FROM `connections` WHERE ((`mentor_id` = 10) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:52:26.616231 #449]  INFO -- : (0.000105s) SELECT * FROM `connections` WHERE ((`mentor_id` = 10) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:52:26.616489 #449]  INFO -- : (0.000106s) SELECT * FROM `connections` WHERE ((`mentor_id` = 10) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:52:26.793795 #449]  INFO -- : (0.000137s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-28T20:52:26.794114 #449]  INFO -- : (0.000099s) SELECT * FROM `connections` WHERE ((`mentor_id` = 10) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:52:26.794337 #449]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE ((`id` = 9) AND `id`) LIMIT 1
+I, [2021-04-28T20:52:26.794512 #449]  INFO -- : (0.000079s) SELECT * FROM `users` WHERE ((`id` = 9) AND `id`) LIMIT 1
+I, [2021-04-28T20:52:29.680263 #449]  INFO -- : (0.000156s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-28T20:52:29.680636 #449]  INFO -- : (0.000166s) SELECT * FROM `connections` WHERE (`mentor_id` = 10)
+I, [2021-04-28T20:52:29.681975 #449]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.682166 #449]  INFO -- : (0.000088s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.682330 #449]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.682481 #449]  INFO -- : (0.000077s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.682643 #449]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.682789 #449]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.682959 #449]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.683103 #449]  INFO -- : (0.000074s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.683254 #449]  INFO -- : (0.000082s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.683401 #449]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.683544 #449]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.683706 #449]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.683868 #449]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.684011 #449]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.684162 #449]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.687392 #449]  INFO -- : (0.003158s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.687602 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.687762 #449]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.687913 #449]  INFO -- : (0.000077s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.688087 #449]  INFO -- : (0.000088s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.688239 #449]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.688392 #449]  INFO -- : (0.000084s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.688543 #449]  INFO -- : (0.000077s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.688685 #449]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.688826 #449]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.688964 #449]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.689122 #449]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.689262 #449]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.689426 #449]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.689568 #449]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.689722 #449]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:52:29.689861 #449]  INFO -- : (0.000071s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.333422 #449]  INFO -- : (0.000244s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-28T20:53:14.333911 #449]  INFO -- : (0.000249s) SELECT * FROM `connections` WHERE (`mentor_id` = 10)
+I, [2021-04-28T20:53:14.335665 #449]  INFO -- : (0.000143s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.335909 #449]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.336123 #449]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.336328 #449]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.336540 #449]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.336738 #449]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.336933 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.337124 #449]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.337333 #449]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.337544 #449]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.337768 #449]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.337969 #449]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.338181 #449]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.338374 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.338564 #449]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.338760 #449]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.338974 #449]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.339175 #449]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.339379 #449]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.339570 #449]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.339770 #449]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.339968 #449]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.340157 #449]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.340367 #449]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.340590 #449]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.340795 #449]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.341011 #449]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.341201 #449]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.341410 #449]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.341636 #449]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.341858 #449]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:14.342056 #449]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T20:53:49.350756 #449]  INFO -- : (0.000200s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T20:53:49.351829 #449]  INFO -- : (0.000184s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T20:53:49.352157 #449]  INFO -- : (0.000133s) SELECT * FROM `users` WHERE (`email` = 'miloszmtabaka@gmail.com') LIMIT 1
+I, [2021-04-28T20:53:49.493040 #449]  INFO -- : (0.000179s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:53:49.493437 #449]  INFO -- : (0.000155s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:53:49.493745 #449]  INFO -- : (0.000109s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:53:49.493999 #449]  INFO -- : (0.000103s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:53:49.634711 #449]  INFO -- : (0.000211s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:53:49.635237 #449]  INFO -- : (0.000160s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:53:49.635614 #449]  INFO -- : (0.000142s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:53:51.517599 #449]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:53:51.518079 #449]  INFO -- : (0.000241s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:53:51.519881 #449]  INFO -- : (0.000141s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.520122 #449]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.520351 #449]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.520550 #449]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.520752 #449]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.520942 #449]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.521154 #449]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.521408 #449]  INFO -- : (0.000166s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.521665 #449]  INFO -- : (0.000158s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.521872 #449]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.522073 #449]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.522280 #449]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.522507 #449]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.522714 #449]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.522925 #449]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.523124 #449]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.523359 #449]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.523553 #449]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.523756 #449]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.523958 #449]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.524168 #449]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.524360 #449]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.524557 #449]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.524743 #449]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.524941 #449]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.525146 #449]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.525444 #449]  INFO -- : (0.000188s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.525653 #449]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.525855 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.526042 #449]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.526234 #449]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:53:51.526439 #449]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:23.066367 #449]  INFO -- : (0.000217s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:23.066764 #449]  INFO -- : (0.000128s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:55:23.067045 #449]  INFO -- : (0.000103s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:55:23.067453 #449]  INFO -- : (0.000119s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:55:23.274348 #449]  INFO -- : (0.000193s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:23.274752 #449]  INFO -- : (0.000128s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:55:23.275036 #449]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T20:55:28.744801 #449]  INFO -- : (0.000162s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:28.745163 #449]  INFO -- : (0.000111s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:55:28.840358 #449]  INFO -- : (0.094980s) UPDATE `connections` SET `status` = 2, `active` = 0 WHERE ((`mentee_id` = 9) AND (`active` = 1))
+I, [2021-04-28T20:55:28.977636 #449]  INFO -- : (0.000202s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:28.978049 #449]  INFO -- : (0.000125s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:55:29.230026 #449]  INFO -- : (0.000199s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:29.230441 #449]  INFO -- : (0.000177s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T20:55:31.050545 #449]  INFO -- : (0.000195s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:31.050978 #449]  INFO -- : (0.000210s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:55:31.052711 #449]  INFO -- : (0.000143s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.052939 #449]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.053120 #449]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.054225 #449]  INFO -- : (0.001005s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.054472 #449]  INFO -- : (0.000125s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.054669 #449]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.054840 #449]  INFO -- : (0.000094s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.055002 #449]  INFO -- : (0.000091s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.055185 #449]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.055349 #449]  INFO -- : (0.000093s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.055512 #449]  INFO -- : (0.000094s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.055672 #449]  INFO -- : (0.000093s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.055862 #449]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.056021 #449]  INFO -- : (0.000090s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.056178 #449]  INFO -- : (0.000087s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.056361 #449]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.056527 #449]  INFO -- : (0.000093s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.056670 #449]  INFO -- : (0.000074s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.056820 #449]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.056987 #449]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.057163 #449]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.057360 #449]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.057590 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.057819 #449]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.058011 #449]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.058236 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.058506 #449]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.058764 #449]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.058980 #449]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.059191 #449]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.059427 #449]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:31.059643 #449]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:35.195028 #449]  INFO -- : (0.000213s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:35.195574 #449]  INFO -- : (0.000186s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:55:35.327077 #449]  INFO -- : (0.000195s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:35.327486 #449]  INFO -- : (0.000189s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T20:55:38.738805 #449]  INFO -- : (0.000231s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:38.739293 #449]  INFO -- : (0.000025s) BEGIN
+I, [2021-04-28T20:55:38.739708 #449]  INFO -- : (0.000249s) INSERT INTO `connections` (`mentee_id`, `mentor_id`, `status`, `active`) VALUES (9, 5, 0, 1)
+I, [2021-04-28T20:55:38.739930 #449]  INFO -- : (0.000090s) SELECT * FROM `connections` WHERE `id` = 17
+I, [2021-04-28T20:55:38.854402 #449]  INFO -- : (0.114393s) COMMIT
+I, [2021-04-28T20:55:38.977667 #449]  INFO -- : (0.000178s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:38.978022 #449]  INFO -- : (0.000108s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:55:38.978273 #449]  INFO -- : (0.000093s) SELECT * FROM `users` WHERE ((`id` = 5) AND `id`) LIMIT 1
+I, [2021-04-28T20:55:40.389068 #449]  INFO -- : (0.000201s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:40.389584 #449]  INFO -- : (0.000148s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T20:55:40.481896 #449]  INFO -- : (0.092127s) UPDATE `connections` SET `status` = 2, `active` = 0 WHERE ((`mentee_id` = 9) AND (`active` = 1))
+I, [2021-04-28T20:55:40.765159 #449]  INFO -- : (0.000206s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:40.765634 #449]  INFO -- : (0.000151s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T20:55:40.906681 #449]  INFO -- : (0.000184s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:40.907111 #449]  INFO -- : (0.000207s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T20:55:42.115838 #449]  INFO -- : (0.000195s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T20:55:42.116288 #449]  INFO -- : (0.000227s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T20:55:42.118097 #449]  INFO -- : (0.000143s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.118339 #449]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.118525 #449]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.118707 #449]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.118889 #449]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.119107 #449]  INFO -- : (0.000145s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.119287 #449]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.119461 #449]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.119668 #449]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.119847 #449]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.120024 #449]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.120191 #449]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.120397 #449]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.120567 #449]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.120736 #449]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.120926 #449]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.121115 #449]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.121288 #449]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.123646 #449]  INFO -- : (0.000144s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.123903 #449]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.124143 #449]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.124373 #449]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.124644 #449]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.124919 #449]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.125173 #449]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.125425 #449]  INFO -- : (0.000135s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.125666 #449]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.125848 #449]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.126021 #449]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.126191 #449]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.126384 #449]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.126556 #449]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T20:55:42.126728 #449]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T20:55:42.126919 #449]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T20:57:34.260062 #473]  INFO -- : (0.000282s) PRAGMA foreign_keys = 1
+I, [2021-04-28T20:57:34.260174 #473]  INFO -- : (0.000018s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T20:57:34.260831 #473]  INFO -- : (0.000052s) SELECT sqlite_version()
+I, [2021-04-28T20:57:34.261072 #473]  INFO -- : (0.000108s) PRAGMA table_info('connections')
+I, [2021-04-28T20:57:34.262139 #473]  INFO -- : (0.000078s) PRAGMA table_info('departments')
+I, [2021-04-28T20:57:34.262869 #473]  INFO -- : (0.000072s) PRAGMA table_info('interests')
+I, [2021-04-28T20:57:34.263989 #473]  INFO -- : (0.000184s) PRAGMA table_info('users')
+I, [2021-04-28T20:58:03.895107 #474]  INFO -- : (0.000263s) PRAGMA foreign_keys = 1
+I, [2021-04-28T20:58:03.895229 #474]  INFO -- : (0.000023s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T20:58:03.895910 #474]  INFO -- : (0.000069s) SELECT sqlite_version()
+I, [2021-04-28T20:58:03.896232 #474]  INFO -- : (0.000160s) PRAGMA table_info('connections')
+I, [2021-04-28T20:58:03.897178 #474]  INFO -- : (0.000077s) PRAGMA table_info('departments')
+I, [2021-04-28T20:58:03.897706 #474]  INFO -- : (0.000071s) PRAGMA table_info('interests')
+I, [2021-04-28T20:58:03.898584 #474]  INFO -- : (0.000144s) PRAGMA table_info('users')
+I, [2021-04-28T20:59:37.407726 #475]  INFO -- : (0.000187s) PRAGMA foreign_keys = 1
+I, [2021-04-28T20:59:37.407820 #475]  INFO -- : (0.000013s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T20:59:37.408566 #475]  INFO -- : (0.000057s) SELECT sqlite_version()
+I, [2021-04-28T20:59:37.408879 #475]  INFO -- : (0.000167s) PRAGMA table_info('connections')
+I, [2021-04-28T20:59:37.409948 #475]  INFO -- : (0.000107s) PRAGMA table_info('departments')
+I, [2021-04-28T20:59:37.410512 #475]  INFO -- : (0.000073s) PRAGMA table_info('interests')
+I, [2021-04-28T20:59:37.411688 #475]  INFO -- : (0.000189s) PRAGMA table_info('users')
+I, [2021-04-28T21:00:07.530441 #476]  INFO -- : (0.000249s) PRAGMA foreign_keys = 1
+I, [2021-04-28T21:00:07.530553 #476]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T21:00:07.531245 #476]  INFO -- : (0.000070s) SELECT sqlite_version()
+I, [2021-04-28T21:00:07.531583 #476]  INFO -- : (0.000186s) PRAGMA table_info('connections')
+I, [2021-04-28T21:00:07.532621 #476]  INFO -- : (0.000096s) PRAGMA table_info('departments')
+I, [2021-04-28T21:00:07.533319 #476]  INFO -- : (0.000090s) PRAGMA table_info('interests')
+I, [2021-04-28T21:00:07.534449 #476]  INFO -- : (0.000181s) PRAGMA table_info('users')
+I, [2021-04-28T21:02:31.961347 #476]  INFO -- : (0.000208s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:02:31.961859 #476]  INFO -- : (0.000240s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T21:02:31.968622 #476]  INFO -- : (0.000141s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.968890 #476]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.969214 #476]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.969420 #476]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.969646 #476]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.969831 #476]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.970005 #476]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.970184 #476]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.970363 #476]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.970531 #476]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.970706 #476]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.970872 #476]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.971060 #476]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.971228 #476]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.971428 #476]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.971605 #476]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.971788 #476]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.971967 #476]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.972140 #476]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.972325 #476]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.972504 #476]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.972690 #476]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.972866 #476]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.973033 #476]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.973205 #476]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.973389 #476]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.973586 #476]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.973757 #476]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.973926 #476]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.974092 #476]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.974258 #476]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.974435 #476]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:31.974609 #476]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:02:31.974785 #476]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:02:33.185514 #476]  INFO -- : (0.000277s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:02:33.186900 #476]  INFO -- : (0.001018s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:02:33.335876 #476]  INFO -- : (0.000186s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:02:33.336489 #476]  INFO -- : (0.000204s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T21:02:36.470715 #476]  INFO -- : (0.000206s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:02:36.472090 #476]  INFO -- : (0.000031s) BEGIN
+I, [2021-04-28T21:02:36.472772 #476]  INFO -- : (0.000385s) INSERT INTO `connections` (`mentee_id`, `mentor_id`, `status`, `active`, `request_time`) VALUES (9, 10, 0, 1, '2021-04-28 21:02:36 UTC')
+I, [2021-04-28T21:02:36.473033 #476]  INFO -- : (0.000098s) SELECT * FROM `connections` WHERE `id` = 18
+I, [2021-04-28T21:02:36.570925 #476]  INFO -- : (0.097796s) COMMIT
+I, [2021-04-28T21:02:36.737035 #476]  INFO -- : (0.000202s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:02:36.737682 #476]  INFO -- : (0.000160s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T21:02:36.738942 #476]  INFO -- : (0.000997s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T21:02:38.663512 #476]  INFO -- : (0.000195s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:02:38.664077 #476]  INFO -- : (0.000216s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T21:02:38.769505 #476]  INFO -- : (0.105227s) UPDATE `connections` SET `status` = 2, `active` = 0 WHERE ((`mentee_id` = 9) AND (`active` = 1))
+I, [2021-04-28T21:02:38.952568 #476]  INFO -- : (0.000200s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:02:38.952968 #476]  INFO -- : (0.000114s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:02:39.080748 #476]  INFO -- : (0.000185s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:02:39.081141 #476]  INFO -- : (0.000177s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T21:02:40.507521 #476]  INFO -- : (0.000282s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:02:40.508130 #476]  INFO -- : (0.000305s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T21:02:40.510395 #476]  INFO -- : (0.000181s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.510661 #476]  INFO -- : (0.000135s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.510883 #476]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.511089 #476]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.511314 #476]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.511583 #476]  INFO -- : (0.000176s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.511835 #476]  INFO -- : (0.000138s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.512045 #476]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.512262 #476]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.512474 #476]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.512689 #476]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.512986 #476]  INFO -- : (0.000143s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.513273 #476]  INFO -- : (0.000132s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.513601 #476]  INFO -- : (0.000152s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.513894 #476]  INFO -- : (0.000146s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.515590 #476]  INFO -- : (0.000182s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.515964 #476]  INFO -- : (0.000164s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.516258 #476]  INFO -- : (0.000150s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.517770 #476]  INFO -- : (0.001370s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.518101 #476]  INFO -- : (0.000159s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.518380 #476]  INFO -- : (0.000138s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.518662 #476]  INFO -- : (0.000147s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.518936 #476]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.520515 #476]  INFO -- : (0.000172s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.520843 #476]  INFO -- : (0.000142s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.521171 #476]  INFO -- : (0.000152s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.524267 #476]  INFO -- : (0.001344s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.524556 #476]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.524807 #476]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.525186 #476]  INFO -- : (0.000147s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.526593 #476]  INFO -- : (0.001245s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.526876 #476]  INFO -- : (0.000152s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.527109 #476]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:02:40.527340 #476]  INFO -- : (0.000135s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:02:40.528656 #476]  INFO -- : (0.001213s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:02:40.528933 #476]  INFO -- : (0.000149s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.886907 #476]  INFO -- : (0.000180s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:03:44.887439 #476]  INFO -- : (0.000301s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T21:03:44.891679 #476]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.891897 #476]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.892070 #476]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.892224 #476]  INFO -- : (0.000079s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.892857 #476]  INFO -- : (0.000547s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.893030 #476]  INFO -- : (0.000083s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.893191 #476]  INFO -- : (0.000087s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.893366 #476]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.893534 #476]  INFO -- : (0.000089s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.893965 #476]  INFO -- : (0.000366s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.894134 #476]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.894278 #476]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.894417 #476]  INFO -- : (0.000070s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.895268 #476]  INFO -- : (0.000785s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.895452 #476]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.895613 #476]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.895767 #476]  INFO -- : (0.000082s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.895912 #476]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.896807 #476]  INFO -- : (0.000824s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.896985 #476]  INFO -- : (0.000086s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.897146 #476]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.897292 #476]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.898160 #476]  INFO -- : (0.000693s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.898335 #476]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.898531 #476]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.898699 #476]  INFO -- : (0.000092s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.898869 #476]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.899894 #476]  INFO -- : (0.000942s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.900130 #476]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.900336 #476]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.903126 #476]  INFO -- : (0.000176s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.903380 #476]  INFO -- : (0.000129s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.903606 #476]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:03:44.903792 #476]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:03:44.903946 #476]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:44.904093 #476]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:47.308850 #476]  INFO -- : (0.000194s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:03:47.309241 #476]  INFO -- : (0.000121s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:03:47.440131 #476]  INFO -- : (0.000188s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:03:47.440568 #476]  INFO -- : (0.000201s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T21:03:50.163161 #476]  INFO -- : (0.000206s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:03:50.163470 #476]  INFO -- : (0.000030s) BEGIN
+I, [2021-04-28T21:03:50.163918 #476]  INFO -- : (0.000256s) INSERT INTO `connections` (`mentee_id`, `mentor_id`, `status`, `active`, `request_time`) VALUES (9, 10, 0, 1, '2021-04-28 21:03:50 UTC')
+I, [2021-04-28T21:03:50.164183 #476]  INFO -- : (0.000108s) SELECT * FROM `connections` WHERE `id` = 19
+I, [2021-04-28T21:03:50.265649 #476]  INFO -- : (0.101370s) COMMIT
+I, [2021-04-28T21:03:50.402060 #476]  INFO -- : (0.000200s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:03:50.402513 #476]  INFO -- : (0.000142s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T21:03:50.402815 #476]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T21:03:51.994693 #476]  INFO -- : (0.000229s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:03:51.995171 #476]  INFO -- : (0.000148s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T21:03:52.092774 #476]  INFO -- : (0.097407s) UPDATE `connections` SET `status` = 2, `active` = 0 WHERE ((`mentee_id` = 9) AND (`active` = 1))
+I, [2021-04-28T21:03:52.272151 #476]  INFO -- : (0.000158s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:03:52.272503 #476]  INFO -- : (0.000100s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:03:52.469847 #476]  INFO -- : (0.000204s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:03:52.470272 #476]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T21:03:53.669159 #476]  INFO -- : (0.000202s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:03:53.669855 #476]  INFO -- : (0.000281s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T21:03:53.671782 #476]  INFO -- : (0.000148s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.672093 #476]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.672314 #476]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.672605 #476]  INFO -- : (0.000133s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.672910 #476]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.673180 #476]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.673466 #476]  INFO -- : (0.000132s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.673813 #476]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.674085 #476]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.674337 #476]  INFO -- : (0.000155s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.674579 #476]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.674846 #476]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.675114 #476]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.675372 #476]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.675631 #476]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.675895 #476]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.676176 #476]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.676427 #476]  INFO -- : (0.000125s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.676628 #476]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.679721 #476]  INFO -- : (0.002285s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.680832 #476]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.681048 #476]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.681325 #476]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.681637 #476]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.681904 #476]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.682208 #476]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.682555 #476]  INFO -- : (0.000130s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.682852 #476]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.683136 #476]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.683382 #476]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.683588 #476]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.683848 #476]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.684083 #476]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:03:53.684283 #476]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:03:53.684536 #476]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.684795 #476]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.685064 #476]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:03:53.685344 #476]  INFO -- : (0.000133s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:04:15.902678 #497]  INFO -- : (0.000200s) PRAGMA foreign_keys = 1
+I, [2021-04-28T21:04:15.902778 #497]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T21:04:15.903297 #497]  INFO -- : (0.000051s) SELECT sqlite_version()
+I, [2021-04-28T21:04:15.903533 #497]  INFO -- : (0.000108s) PRAGMA table_info('connections')
+I, [2021-04-28T21:04:15.904283 #497]  INFO -- : (0.000075s) PRAGMA table_info('departments')
+I, [2021-04-28T21:04:15.904792 #497]  INFO -- : (0.000069s) PRAGMA table_info('interests')
+I, [2021-04-28T21:04:15.905725 #497]  INFO -- : (0.000150s) PRAGMA table_info('users')
+I, [2021-04-28T21:05:32.074242 #498]  INFO -- : (0.000196s) PRAGMA foreign_keys = 1
+I, [2021-04-28T21:05:32.074346 #498]  INFO -- : (0.000017s) PRAGMA case_sensitive_like = 1
+I, [2021-04-28T21:05:32.074966 #498]  INFO -- : (0.000059s) SELECT sqlite_version()
+I, [2021-04-28T21:05:32.075228 #498]  INFO -- : (0.000113s) PRAGMA table_info('connections')
+I, [2021-04-28T21:05:32.075997 #498]  INFO -- : (0.000072s) PRAGMA table_info('departments')
+I, [2021-04-28T21:05:32.076531 #498]  INFO -- : (0.000073s) PRAGMA table_info('interests')
+I, [2021-04-28T21:05:32.077433 #498]  INFO -- : (0.000148s) PRAGMA table_info('users')
+I, [2021-04-28T21:05:39.558241 #498]  INFO -- : (0.000218s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:05:39.558792 #498]  INFO -- : (0.000276s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T21:05:39.565542 #498]  INFO -- : (0.000148s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.565828 #498]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.566175 #498]  INFO -- : (0.000137s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.566392 #498]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.566618 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.566858 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.567061 #498]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.567269 #498]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.567478 #498]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.567687 #498]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.567894 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.568088 #498]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.568299 #498]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.568499 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.568707 #498]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.568911 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.569114 #498]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.569321 #498]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.569530 #498]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.569721 #498]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.569926 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.570139 #498]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.570336 #498]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.570537 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.570732 #498]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.570927 #498]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.571141 #498]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.571355 #498]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.571610 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.571810 #498]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.572019 #498]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.572215 #498]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.572431 #498]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:05:39.572673 #498]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:05:39.572894 #498]  INFO -- : (0.000129s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.573090 #498]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.574143 #498]  INFO -- : (0.000963s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:39.574373 #498]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:05:43.794534 #498]  INFO -- : (0.000221s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:05:43.794993 #498]  INFO -- : (0.000124s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:05:44.003230 #498]  INFO -- : (0.000201s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:05:44.004050 #498]  INFO -- : (0.000567s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T21:05:47.150630 #498]  INFO -- : (0.000204s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:05:47.151957 #498]  INFO -- : (0.000033s) BEGIN
+I, [2021-04-28T21:05:47.152467 #498]  INFO -- : (0.000272s) INSERT INTO `connections` (`mentee_id`, `mentor_id`, `status`, `active`, `request_time`) VALUES (9, 10, 0, 1, '2021-04-28 21:05:47 UTC')
+I, [2021-04-28T21:05:47.152736 #498]  INFO -- : (0.000100s) SELECT * FROM `connections` WHERE `id` = 20
+I, [2021-04-28T21:05:47.250680 #498]  INFO -- : (0.097810s) COMMIT
+I, [2021-04-28T21:05:47.381790 #498]  INFO -- : (0.000222s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:05:47.383200 #498]  INFO -- : (0.000165s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T21:05:47.383494 #498]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE ((`id` = 10) AND `id`) LIMIT 1
+I, [2021-04-28T21:05:48.953532 #498]  INFO -- : (0.000163s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:05:48.954008 #498]  INFO -- : (0.000177s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T21:05:49.038447 #498]  INFO -- : (0.084219s) UPDATE `connections` SET `status` = 2, `active` = 0, `end_time` = '2021-04-28 21:05:48 UTC' WHERE ((`mentee_id` = 9) AND (`active` = 1))
+I, [2021-04-28T21:05:49.221085 #498]  INFO -- : (0.000201s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:05:49.221538 #498]  INFO -- : (0.000131s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:05:50.570390 #498]  INFO -- : (0.000207s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:05:50.570859 #498]  INFO -- : (0.000210s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T21:06:09.186067 #498]  INFO -- : (0.000194s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:09.186554 #498]  INFO -- : (0.000252s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T21:06:09.188283 #498]  INFO -- : (0.000138s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.188504 #498]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.188690 #498]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.188863 #498]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.189054 #498]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.189238 #498]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.189468 #498]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.190793 #498]  INFO -- : (0.000136s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.191018 #498]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.191211 #498]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.192442 #498]  INFO -- : (0.001144s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.192702 #498]  INFO -- : (0.000136s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.192909 #498]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.193088 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.194340 #498]  INFO -- : (0.001171s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.194574 #498]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.194764 #498]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.194948 #498]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.195126 #498]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.196087 #498]  INFO -- : (0.000886s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.196316 #498]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.196502 #498]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.196695 #498]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.197936 #498]  INFO -- : (0.001160s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.198179 #498]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.198370 #498]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.198568 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.198743 #498]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.198920 #498]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.200000 #498]  INFO -- : (0.001003s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.200228 #498]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.200411 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.200598 #498]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:06:09.200769 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:06:09.201913 #498]  INFO -- : (0.001064s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.202137 #498]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.202331 #498]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.202518 #498]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.203884 #498]  INFO -- : (0.001273s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.204104 #498]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.303833 #498]  INFO -- : (0.001446s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:09.304308 #498]  INFO -- : (0.000257s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T21:06:09.308296 #498]  INFO -- : (0.001043s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.308540 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.308753 #498]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.308932 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.310122 #498]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.310335 #498]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.310526 #498]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.310701 #498]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.311796 #498]  INFO -- : (0.001017s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.312026 #498]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.312216 #498]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.312406 #498]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.312610 #498]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.316377 #498]  INFO -- : (0.003688s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.316603 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.316789 #498]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.316968 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.317162 #498]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.317355 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.317539 #498]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.317716 #498]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.317885 #498]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.318060 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.318230 #498]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.318399 #498]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.318565 #498]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.318758 #498]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.318934 #498]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.319112 #498]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.319280 #498]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.319515 #498]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.319691 #498]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.319866 #498]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:06:09.320032 #498]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:06:09.320202 #498]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.320370 #498]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.320536 #498]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.320699 #498]  INFO -- : (0.000094s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.320877 #498]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:09.321043 #498]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:33.723501 #498]  INFO -- : (0.000201s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:33.723908 #498]  INFO -- : (0.000122s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:06:33.734671 #498]  INFO -- : (0.000181s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:33.735032 #498]  INFO -- : (0.000124s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:06:33.955135 #498]  INFO -- : (0.000199s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:33.955550 #498]  INFO -- : (0.000186s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T21:06:36.383131 #498]  INFO -- : (0.000201s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:36.383630 #498]  INFO -- : (0.000252s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T21:06:36.385414 #498]  INFO -- : (0.000191s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.385643 #498]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.385830 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.386006 #498]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.386198 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.388419 #498]  INFO -- : (0.002141s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.388664 #498]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.388848 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.389073 #498]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.389261 #498]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.389466 #498]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.389646 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.389861 #498]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.390041 #498]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.390215 #498]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.390387 #498]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.390558 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.390725 #498]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.390895 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.391064 #498]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.391233 #498]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.391433 #498]  INFO -- : (0.000129s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.391613 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.391783 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.391956 #498]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.392127 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.392326 #498]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.392503 #498]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.392692 #498]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.392887 #498]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.393058 #498]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.393226 #498]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.393427 #498]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:06:36.393610 #498]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:06:36.393783 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.393950 #498]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.394118 #498]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.394295 #498]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.394472 #498]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:36.394642 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:45.110253 #498]  INFO -- : (0.000228s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:45.110727 #498]  INFO -- : (0.000150s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:06:45.242676 #498]  INFO -- : (0.000223s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:45.243286 #498]  INFO -- : (0.000222s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T21:06:49.492688 #498]  INFO -- : (0.000232s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:49.492977 #498]  INFO -- : (0.000026s) BEGIN
+I, [2021-04-28T21:06:49.493480 #498]  INFO -- : (0.000316s) INSERT INTO `connections` (`mentee_id`, `mentor_id`, `status`, `active`, `request_time`) VALUES (9, 5, 0, 1, '2021-04-28 21:06:49 UTC')
+I, [2021-04-28T21:06:49.493735 #498]  INFO -- : (0.000107s) SELECT * FROM `connections` WHERE `id` = 21
+I, [2021-04-28T21:06:49.581430 #498]  INFO -- : (0.087599s) COMMIT
+I, [2021-04-28T21:06:49.712066 #498]  INFO -- : (0.000154s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:49.712547 #498]  INFO -- : (0.000194s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T21:06:49.712958 #498]  INFO -- : (0.000164s) SELECT * FROM `users` WHERE ((`id` = 5) AND `id`) LIMIT 1
+I, [2021-04-28T21:06:53.092603 #498]  INFO -- : (0.000245s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:53.093116 #498]  INFO -- : (0.000136s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1) AND `id`) LIMIT 1
+I, [2021-04-28T21:06:53.202285 #498]  INFO -- : (0.108975s) UPDATE `connections` SET `status` = 2, `active` = 0, `end_time` = '2021-04-28 21:06:53 UTC' WHERE ((`mentee_id` = 9) AND (`active` = 1))
+I, [2021-04-28T21:06:53.435048 #498]  INFO -- : (0.000198s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:53.435442 #498]  INFO -- : (0.000115s) SELECT * FROM `connections` WHERE ((`mentee_id` = 9) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:06:53.561928 #498]  INFO -- : (0.000172s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:53.562466 #498]  INFO -- : (0.000303s) SELECT * FROM `users` WHERE (`user_type` = 0)
+I, [2021-04-28T21:06:54.786600 #498]  INFO -- : (0.000210s) SELECT * FROM `users` WHERE `id` = 9
+I, [2021-04-28T21:06:54.787106 #498]  INFO -- : (0.000269s) SELECT * FROM `connections` WHERE (`mentee_id` = 9)
+I, [2021-04-28T21:06:54.788878 #498]  INFO -- : (0.000142s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.789114 #498]  INFO -- : (0.000138s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.789452 #498]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.789678 #498]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.789872 #498]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.790093 #498]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.790268 #498]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.793529 #498]  INFO -- : (0.003182s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.793844 #498]  INFO -- : (0.000163s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.794078 #498]  INFO -- : (0.000134s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.794276 #498]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.794491 #498]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.794734 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.794940 #498]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.795144 #498]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.795358 #498]  INFO -- : (0.000129s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.795567 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.795778 #498]  INFO -- : (0.000121s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.795994 #498]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.796236 #498]  INFO -- : (0.000148s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.796445 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.796644 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.796876 #498]  INFO -- : (0.000142s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.797102 #498]  INFO -- : (0.000128s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.797344 #498]  INFO -- : (0.000144s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.797616 #498]  INFO -- : (0.000173s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.797877 #498]  INFO -- : (0.000142s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.798087 #498]  INFO -- : (0.000115s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.798303 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.798535 #498]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.798745 #498]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.798949 #498]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.799165 #498]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:06:54.799397 #498]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:06:54.799649 #498]  INFO -- : (0.000135s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.799866 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.800092 #498]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.800339 #498]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.800569 #498]  INFO -- : (0.000127s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.800833 #498]  INFO -- : (0.000131s) SELECT * FROM `users` WHERE (`id` = 10) LIMIT 1
+I, [2021-04-28T21:06:54.801094 #498]  INFO -- : (0.000153s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:06:54.803308 #498]  INFO -- : (0.002106s) SELECT * FROM `users` WHERE (`id` = 5) LIMIT 1
+I, [2021-04-28T21:07:46.833872 #498]  INFO -- : (0.000183s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-28T21:07:46.834146 #498]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-28T21:07:46.834327 #498]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`email` = 'mmtabaka1@sheffield.ac.uk') LIMIT 1
+I, [2021-04-28T21:07:46.962765 #498]  INFO -- : (0.000178s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-28T21:07:46.963172 #498]  INFO -- : (0.000158s) SELECT * FROM `connections` WHERE ((`mentor_id` = 10) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:07:47.112390 #498]  INFO -- : (0.000126s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-28T21:07:47.112764 #498]  INFO -- : (0.000198s) SELECT * FROM `connections` WHERE (`mentor_id` = 10)
+I, [2021-04-28T21:07:47.114105 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.114288 #498]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.114443 #498]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.114587 #498]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.114752 #498]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.114894 #498]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.115032 #498]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.115188 #498]  INFO -- : (0.000090s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.115332 #498]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.115470 #498]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.115611 #498]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.115775 #498]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.115927 #498]  INFO -- : (0.000077s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.116073 #498]  INFO -- : (0.000077s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.116230 #498]  INFO -- : (0.000090s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.116370 #498]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.116511 #498]  INFO -- : (0.000076s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.116658 #498]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.116818 #498]  INFO -- : (0.000073s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.116956 #498]  INFO -- : (0.000071s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.117094 #498]  INFO -- : (0.000074s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.117243 #498]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.117413 #498]  INFO -- : (0.000085s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.117566 #498]  INFO -- : (0.000078s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.117705 #498]  INFO -- : (0.000070s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.117862 #498]  INFO -- : (0.000094s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.118020 #498]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.118157 #498]  INFO -- : (0.000070s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.118320 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.118462 #498]  INFO -- : (0.000075s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.118597 #498]  INFO -- : (0.000070s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.118750 #498]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.118906 #498]  INFO -- : (0.000088s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.119049 #498]  INFO -- : (0.000072s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.119224 #498]  INFO -- : (0.000088s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.119377 #498]  INFO -- : (0.000081s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.119545 #498]  INFO -- : (0.000080s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:47.119687 #498]  INFO -- : (0.000074s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.772610 #498]  INFO -- : (0.000227s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-28T21:07:57.773041 #498]  INFO -- : (0.000159s) SELECT * FROM `connections` WHERE ((`mentor_id` = 10) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:07:57.847634 #498]  INFO -- : (0.000140s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-28T21:07:57.847981 #498]  INFO -- : (0.000134s) SELECT * FROM `connections` WHERE ((`mentor_id` = 10) AND (`active` = 1)) LIMIT 1
+I, [2021-04-28T21:07:57.981947 #498]  INFO -- : (0.000174s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-28T21:07:57.982434 #498]  INFO -- : (0.000290s) SELECT * FROM `connections` WHERE (`mentor_id` = 10)
+I, [2021-04-28T21:07:57.984190 #498]  INFO -- : (0.000156s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.984405 #498]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.984594 #498]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.984768 #498]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.984963 #498]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.985140 #498]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.985334 #498]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.985536 #498]  INFO -- : (0.000124s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.985723 #498]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.985893 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.986061 #498]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.986265 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.986437 #498]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.986603 #498]  INFO -- : (0.000096s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.986791 #498]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.986968 #498]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.987142 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.987311 #498]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.987509 #498]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.987681 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.987851 #498]  INFO -- : (0.000097s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.988037 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.988219 #498]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.988393 #498]  INFO -- : (0.000100s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.988563 #498]  INFO -- : (0.000095s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.992154 #498]  INFO -- : (0.003497s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.992413 #498]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.992611 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.992792 #498]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.992971 #498]  INFO -- : (0.000104s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.993147 #498]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.993332 #498]  INFO -- : (0.000114s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.993526 #498]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.993697 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.993869 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.994042 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.994220 #498]  INFO -- : (0.000101s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:57.994387 #498]  INFO -- : (0.000098s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.982350 #498]  INFO -- : (0.000211s) SELECT * FROM `users` WHERE `id` = 10
+I, [2021-04-28T21:07:58.982847 #498]  INFO -- : (0.000276s) SELECT * FROM `connections` WHERE (`mentor_id` = 10)
+I, [2021-04-28T21:07:58.984514 #498]  INFO -- : (0.000142s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.984738 #498]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.984929 #498]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.985196 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.985478 #498]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.985723 #498]  INFO -- : (0.000113s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.985965 #498]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.986152 #498]  INFO -- : (0.000103s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.986337 #498]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.986515 #498]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.986754 #498]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.986996 #498]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.987238 #498]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.987501 #498]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.987807 #498]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.988053 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.988280 #498]  INFO -- : (0.000109s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.988517 #498]  INFO -- : (0.000118s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.988741 #498]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.988972 #498]  INFO -- : (0.000119s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.989212 #498]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.989466 #498]  INFO -- : (0.000116s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.989720 #498]  INFO -- : (0.000122s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.989975 #498]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.990215 #498]  INFO -- : (0.000117s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.990445 #498]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.990687 #498]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.990908 #498]  INFO -- : (0.000106s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.991131 #498]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.991320 #498]  INFO -- : (0.000108s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.991520 #498]  INFO -- : (0.000105s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.991705 #498]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.991889 #498]  INFO -- : (0.000107s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.992066 #498]  INFO -- : (0.000102s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.992325 #498]  INFO -- : (0.000120s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.992574 #498]  INFO -- : (0.000123s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.992771 #498]  INFO -- : (0.000112s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1
+I, [2021-04-28T21:07:58.992944 #498]  INFO -- : (0.000099s) SELECT * FROM `users` WHERE (`id` = 9) LIMIT 1

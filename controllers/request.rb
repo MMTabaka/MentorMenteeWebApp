@@ -25,7 +25,8 @@ post '/request-mentee' do
     mentee_id: user[:id],
     mentor_id: @mentor_id,
     status: 0,
-    active: 1
+    active: 1,
+    request_time: Time.now.gmtime.to_s
   }
   
   Connection.add(connection_details)
@@ -43,8 +44,8 @@ get '/request-mentor' do
 end
 
 get '/request-history' do
-  @history = 20
-  @username = 'empty'
+  @user = User[session[:user]]
+  @history = Connection.retrieve(@user)
   @department = 'empty'
   @sTime = 'empty'
   @eTime = 'empty'

@@ -1,5 +1,4 @@
-ENV['APP_ENV'] = 'test'
-
+require_relative 'rspec_helper'
 require_relative '../db/db'
 require_relative '../models/user'
 

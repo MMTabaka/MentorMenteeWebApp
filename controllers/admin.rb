@@ -13,8 +13,14 @@ get '/admin/login/?' do
   'Admin Login Page'
 end
 
-get '/admin/suspend/?' do
+post '/admin/suspend/?' do
   # TODO: change to post
-  user = User[1]
+  user = User[params['id']]
+  user.toggle_suspension
+end
+
+post '/admin/reset/?' do
+  # TODO: change to post
+  user = User[params['id']]
   user.toggle_suspension
 end

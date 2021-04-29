@@ -10,6 +10,7 @@ get '/request-mentee' do
   @user_type = "Mentee"
   @status = "User #{@username} has received your request. Check your email inbox for a reply.
   After arranged meeting decide if you want to accept the user as your mentor."
+  @time = get_users[2][:id][:request_time]
   authenticated
   erb :requestingmentee
 end

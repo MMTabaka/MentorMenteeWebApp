@@ -9,12 +9,13 @@ post '/connected' do
 end
 
 get '/connected' do
-  @email = 'empty'
-  @username = 'empty'
-  @email = 'empty'
-  @department = 'empty'
-  @area = 'empty'
-  @bio = 'empty'
+  user = get_users[3]
+  @email = user[:id][:email]
+  @username = user[:id][:name]
+  @email = user[:id][:email]
+  @department = user[:id][:department]
+  @area = user[:id][:interest_areas]
+  @bio = user[:id][:bio]
   authenticated
   erb :myMate
 end

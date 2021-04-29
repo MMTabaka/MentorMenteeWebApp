@@ -1,4 +1,6 @@
 require 'sequel'
+require_relative '../helpers/utils'
+require_relative '../emailing/password_reset_email'
 
 # Model representing user record and its related actions
 class User < Sequel::Model
@@ -80,6 +82,7 @@ class User < Sequel::Model
     begin
       email.send
       update(password: new_password)
+      puts 'Email reset complete.'
     rescue EmailSendError, InvalidEmailError => e
       puts "Could not reset password: #{e}"
     end

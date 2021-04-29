@@ -42,8 +42,8 @@
               <td id="<%= i[:id] %>Status"><%= i[:status] %></td>
               <td>
                 <a href="/profile/<%= i[:id] %>" id="<%= i[:id] %>Profile Details" type="submit" class="btn btn-primary btn-lg btnC">Detail</a>
-                <button id="<%= i[:id] %>-reset-pass" onclick="requester('/admin/reset', 'post', {id: <%= i[:id] %>})" type="submit" class="btn btn-primary btn-lg btnC">Reset Password</button>
-                <button id="<%= i[:id] %>-suspend" onclick="requester('/admin/suspend/', 'post', {id: <%= i[:id] %>})" class="btn btn-primary btn-lg btnC">
+                <button id="<%= i[:id] %>-reset-pass" data-id="<%= i[:id] %>" type="submit" class="btn btn-primary btn-lg btnC reset-btn">Reset Password</button>
+                <button id="<%= i[:id] %>-suspend" data-id="<%= i[:id] %>" class="btn btn-primary btn-lg btnC suspend-btn">
                   <% if i[:suspension] == 0 %>
                     Suspend
                   <% else %>
@@ -58,5 +58,5 @@
     </div>
   </div>
 </div>
-  <script src="js/requester.js"></script>
+  <script src="js/admin.js"></script>
 <%= erb :"common/footer" %>

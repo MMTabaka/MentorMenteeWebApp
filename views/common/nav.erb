@@ -1,14 +1,11 @@
 <body>
-<% activedLI = "" %>
 <% activedM = "" %>
 <% activedRH = "" %>
 <% case @actived %>
-  <% when "myMentee", "myMentor", "mentorList", "mentorDetail" %>
+  <% when "myMentee", "myMentor", "mentorList" %>
     <% activedM="active" %>
   <% when "requestHistory" %>
     <% activedRH="active" %>
-  <% when "login" %>
-    <% activedLI="active" %>
 <% end %>
 <div class="wrapper">
 <div class="bg-warning">
@@ -16,7 +13,7 @@
     <ul class="nav justify-content-end nav-pills">
       <% if @loggedIn == false %>
         <li class="nav-item">  
-          <a class="nav-link text-body <%= activedLI %>" href="login">Log In</a>
+          <a class="nav-link text-body" href="login">Log In</a>
         </li>
       <% else %>
         <li>

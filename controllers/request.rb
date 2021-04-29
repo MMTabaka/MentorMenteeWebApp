@@ -38,7 +38,6 @@ post '/request-mentee' do
   begin
     to_mentor = EmailToMentor.new(mentor[:id][:email], mentor[:id][:name], mentee[:email], mentee[:name])
     puts "#{mentor[:id][:email]}"
-    puts to_mentor
     to_mentor.send
   rescue EmailSendError
     puts "email send error"

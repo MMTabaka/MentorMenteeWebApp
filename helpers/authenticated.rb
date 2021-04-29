@@ -4,6 +4,7 @@ require_relative '../helpers/authenticated'
 
 def authenticated
   redirect '/login' if session[:user].nil?
+  @logged_in = true
 end
 
 # Handles redirection to login if admin user is not logged in yet

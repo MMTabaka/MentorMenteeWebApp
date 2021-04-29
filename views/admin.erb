@@ -9,7 +9,7 @@
   <div class="navi">
     <ul class="nav justify-content-end nav-pills">
       <li>
-        <a class="nav-link text-body"><%= @adminName %></a>
+        <a class="nav-link text-body"><%= @admin_name %></a>
       </li>
       <li>  
         <a class="nav-link text-body active" href="logout">Logout</a>
@@ -41,10 +41,10 @@
               <td id="<%= i[:id] %>Type"><%= i[:user_type] %></td>
               <td id="<%= i[:id] %>Status"><%= i[:status] %></td>
               <td>
-                <button id="<%= i[:id] %>Detail" type="submit" class="btn btn-primary btn-lg btnC">Detail</button>
-                <button id="<%= i[:id] %>Reset" type="submit" class="btn btn-primary btn-lg btnC">Reset Password</button>
-                <button id="<%= i[:id] %>ChangeStatus" type="submit" class="btn btn-primary btn-lg btnC">
-                  <% if i[:status] == "Active" %>
+                <a href="/profile/<%= i[:id] %>" id="<%= i[:id] %>Profile Details" type="submit" class="btn btn-primary btn-lg btnC">Detail</a>
+                <button id="<%= i[:id] %>-reset-pass" data-id="<%= i[:id] %>" type="submit" class="btn btn-primary btn-lg btnC reset-btn">Reset Password</button>
+                <button id="<%= i[:id] %>-suspend" data-id="<%= i[:id] %>" class="btn btn-primary btn-lg btnC suspend-btn">
+                  <% if i[:suspension] == 0 %>
                     Suspend
                   <% else %>
                     Unsuspend
@@ -58,5 +58,5 @@
     </div>
   </div>
 </div>
+  <script src="js/admin.js"></script>
 <%= erb :"common/footer" %>
-</html>

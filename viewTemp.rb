@@ -53,7 +53,7 @@ end
 get '/requestHistory' do
   pic = "defaultPic.jpg"
   @validation = { 'valid' => true, 'errors' => {} }
-  @loggedIn = true;
+  @logged_in = true;
   @userType = "Mentee";
   @requesting = false;
   @actived = "requestHistory";
@@ -70,7 +70,7 @@ end
 get '/mentorList' do
   pic = "defaultPic.jpg"
   @validation = { 'valid' => true, 'errors' => {} }
-  @loggedIn = true;
+  @logged_in = true;
   @userType = "Mentee";
   @requesting = false;
   @actived = "mentorList";
@@ -95,7 +95,7 @@ end
 get '/profile' do
   pic = "defaultPic.jpg"
   @validation = { 'valid' => true, 'errors' => {} }
-  @loggedIn = true;
+  @logged_in = true;
   @pic = "img/" + pic;
   @userType = "Mentor";
   @requesting = false;
@@ -120,7 +120,7 @@ end
 get '/addInfo' do
   pic = "pic.jpg"
   @validation = { 'valid' => true, 'errors' => {} }
-  @loggedIn = true;
+  @logged_in = true;
   @userType = "Mentor";
   @requesting = false;
   @userPic = "img/" + pic;
@@ -139,7 +139,7 @@ end
 get '/registration' do
   pic = "pic.jpg"
   @validation = { 'valid' => true, 'errors' => {} }
-  @loggedIn = true;
+  @logged_in = true;
   @userType = "Mentee";
   @requesting = false;
   @userPic = "img/" + pic;
@@ -158,7 +158,7 @@ end
 get '/login' do
   pic = "pic.jpg"
   @validation = { 'valid' => true, 'errors' => {} }
-  @loggedIn = true;
+  @logged_in = true;
   @userType = "Mentee";
   @requesting = false;
   @userPic = "img/" + pic;
@@ -178,7 +178,7 @@ end
 get '/requestingmentee' do
   pic = "pic.jpg"
   @validation = { 'valid' => true, 'errors' => {} }
-  @loggedIn = true;
+  @logged_in = true;
   @userType = "Mentee";
   @requesting = false;
   @userPic = "img/" + pic;

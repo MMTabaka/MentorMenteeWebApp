@@ -13,13 +13,14 @@ get '/admin/login/?' do
   # TODO: Refactor this to DRY
   session[:is_valid] = true if session[:is_valid].nil?
   @is_valid = session[:is_valid]
+  @logged_in = false
   erb :login
 end
 
 post '/admin/login/?' do
   @email = params['email']
   @password = params['pass']
-  user = User.login(@email, @password, true)
+  user = User.login(@email, @password, admin: true)
   if user.nil?
     session[:is_valid] = false
   else

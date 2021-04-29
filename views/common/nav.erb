@@ -1,20 +1,22 @@
 <body>
+<% activedLI = "" %>
 <% activedM = "" %>
 <% activedRH = "" %>
-<% case @actived %>
-  <% when "myMentee", "myMentor", "mentorList" %>
+<% case @actived
+     when "myMentee", "myMentor", "mentorList", "mentorDetail" %>
     <% activedM="active" %>
   <% when "requestHistory" %>
     <% activedRH="active" %>
+  <% when "login" %>
+    <% activedLI="active" %>
 <% end %>
-
 <div class="wrapper">
 <div class="bg-warning">
   <div class="navi">
     <ul class="nav justify-content-end nav-pills">
       <% if @loggedIn == false %>
         <li class="nav-item">  
-          <a class="nav-link text-body" href="login">Log In</a>
+          <a class="nav-link text-body <%= activedLI %>" href="login">Log In</a>
         </li>
       <% else %>
         <li>
@@ -23,11 +25,11 @@
         <% elsif @userType == "Mentee" && @requesting == true %>
           <a class="nav-link text-body <%= activedM %>" href="myMentor">My Mentor</a>
         <% else %>
-          <a class="nav-link text-body <%= activedM %>" href="../mentors">Mentor List</a>
+          <a class="nav-link text-body <%= activedM %>" href="mentorList">Mentor List</a>
         <% end %>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-body <%= activedRH %>" href="/request-history">Request History</a>
+          <a class="nav-link text-body <%= activedRH %>" href="requestHistory">Request History</a>
         </li>
         <li class="nav-item navPic">  
           <button class="nav-item" type="button" id="user" data-bs-toggle="dropdown" aria-expanded="false">

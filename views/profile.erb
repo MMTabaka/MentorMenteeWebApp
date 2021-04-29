@@ -14,96 +14,113 @@
 <div class="container">
   <div class="content">
     <form method="post" class="row">
-        
       <div class="col-sm">
         <img src="img/defaultPic.jpg" class="img-thumbnail float-start picProfile" alt="User Picture">
       </div>
-      
       <div class="col-9">
         <div class="row">
           <label id="username" class="btnHeader text"><%= userName %></label>
           <div id="usernameEdit" class="mb-3 row edit">
             <label for="usernameInput" class="col-sm-2 col-form-label">Username</label>
             <div class="col-sm-10">
-              <input id="usernameInput" type="text" name="username" class="form-control" pattern="/^([A-Za-z]+\s?)*[A-Za-z]$/" placeholder="<%= userName %>">
-            </div>      
+              <input id="usernameInput" type="text" name="username" class="form-control <%= @validation['errors']['username'] ? 'is-invalid': '' %>" pattern="/^([A-Za-z]+\s?)*[A-Za-z]$/" placeholder="<%= userName %>">
+              <% unless @validation['errors']['username'].nil? %>
+                <div class="invalid-feedback">
+                  <%= @validation['errors']['username'] %>
+                </div>
+              <% end %>      
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="row">
-        <div class="mb-3 row">
-          <label class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <label id="email" class="text"><%= @email %></label>
+        <div class="row">
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
-              <input id="emailEdit" type="email" name="email" class="form-control edit" placeholder="<%= @email %>">
+              <label id="email" class="text"><%= @email %></label>
+              <div class="col-sm-10">
+                <input id="emailEdit" type="email" name="email" class="form-control edit <%= @validation['errors']['email'] ? 'is-invalid': '' %>" placeholder="<%= @email %>">
+                <% unless @validation['errors']['email'].nil? %>
+                  <div class="invalid-feedback">
+                    <%= @validation['errors']['email'] %>
+                  </div>
+                <% end %>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-        
-      <div class="row edit">
-        <div id="passwordEdit" class="mb-3 row">
-          <label class="col-sm-2 col-form-label">Password</label>
-          <div class="col-sm-10">
-            <input id="passOld" type="password" name="pass" class="form-control" placeholder="Old Password">
-            <br/>
-            <input id="passChange" type="password" name="pass" class="form-control" placeholder="New Password">
-            <br/>
-            <input id="passConfirm" type="password" name="re-pass" class="form-control " placeholder="Confirm New Password">            </div>
-        </div>
-      </div>
-          
-      <div class="row">
-        <div class="mb-3 row">
-          <label class="col-sm-2 col-form-label">Department</label>
-          <div class="col-sm-10">
-            <label id="department" class="text"><%= @department %></label>
+        <div class="row edit">
+            <div id="passwordEdit" class="mb-3 row">
+              <label class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input id="passOld" type="password" name="pass" class="form-control <%= @validation['errors']['pass'] ? 'is-invalid': '' %>" placeholder="Old Password">
+                <% unless @validation['errors']['pass'].nil? %>
+                  <div class="invalid-feedback">
+                    <%= @validation['errors']['pass'] %>
+                  </div>
+                <% end %>
+                <br/>
+                <input id="passChange" type="password" name="pass" class="form-control <%= @validation['errors']['pass'] ? 'is-invalid': '' %>" placeholder="New Password">
+                <% unless @validation['errors']['pass'].nil? %>
+                  <div class="invalid-feedback">
+                    <%= @validation['errors']['pass'] %>
+                  </div>
+                <% end %>
+                <br/>
+                <input id="passConfirm" type="password" name="re-pass" class="form-control <%= @validation['errors']['re-pass'] ? 'is-invalid': '' %>" placeholder="Confirm New Password">
+                <% unless @validation['errors']['re-pass'].nil? %>
+                  <div class="invalid-feedback">
+                    <%= @validation['errors']['re-pass'] %>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        <div class="row">
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Department</label>
             <div class="col-sm-10">
-              <input id="departmentEdit" type="text" class="form-control edit" name="department" placeholder="<%= @department %>">
+              <label id="department" class="text"><%= @department %></label>
+              <div class="col-sm-10">
+                <input id="departmentEdit" type="text" class="form-control edit" name="department" placeholder="<%= @department %>">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-        
-      <div class="row">
-        <div class="mb-3 row">
-          <label class="col-sm-2 col-form-label">Area of Interest</label>
-          <div class="col-sm-10">
-            <label id="area" class="text"><%= @area %></label>
+        <div class="row">
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Area of Interest</label>
             <div class="col-sm-10">
-              <input id="areaEdit" type="text" name="area" class="form-control edit" placeholder="<%= @area %>">
+              <label id="area" class="text"><%= @area %></label>
+              <div class="col-sm-10">
+                <input id="areaEdit" type="text" name="area" class="form-control edit" placeholder="<%= @area %>">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Bio</label>
+            <div class="col-sm-10">
+              <label id="bio" class="text"><%= @bio %></label>
+              <div class="mb-3">
+                <textarea id="bioEdit" name="bio" class="form-control edit" rows="4"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3 row">
+            <div id="editNDelete" class="col-sm-10">
+              <button id="edit" type="button" class="btn btn-primary btn-lg btnC" onclick="editU()">Edit</button>
+              <button id="delete" type="submit" onclick="return confirm ('Are you sure?')'" class="btn btn-secondary btn-lg btnC">Delete Account</button>
+            </div>
+            <div id="saveNCancel" class="col-sm-10 edit">
+              <button id="save" type="submit" class="btn btn-primary btn-lg btnC" onclick="return confirm ('Are you sure?')'">Save</button>
+              <button id="cancel" type="button" class="btn btn-secondary btn-lg btnC" onclick="cancelEdit()">Cancel</button>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="mb-3 row">
-          <label class="col-sm-2 col-form-label">Bio</label>
-          <div class="col-sm-10">
-            <label id="bio" class="text"><%= @bio %></label>
-            <div class="mb-3">
-              <textarea id="bioEdit" name="bio" class="form-control edit" rows="4"></textarea>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="mb-3 row">
-          <div id="editNDelete" class="col-sm-10">
-            <button id="edit" type="button" class="btn btn-primary btn-lg btnC" onclick="editU()">Edit</button>
-            <button id="delete" type="submit" onclick="return confirm ('Are you sure?')'" class="btn btn-secondary btn-lg btnC">Delete Account</button>
-          </div>
-          <div id="saveNCancel" class="col-sm-10 edit">
-            <button id="save" type="submit" class="btn btn-primary btn-lg btnC" onclick="return confirm ('Are you sure?')'">Save</button>
-            <button id="cancel" type="button" class="btn btn-secondary btn-lg btnC" onclick="cancelEdit()">Cancel</button>
-          </div>
-        </div>
-      </div>
-      
     </form>
   </div>
 </div>

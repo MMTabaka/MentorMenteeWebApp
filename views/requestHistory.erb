@@ -1,0 +1,44 @@
+<%= erb :"common/header" %>
+  <title>Request History</title>
+  <link rel="stylesheet" href="css/mentorList.css">
+  <script src="js/userInfo.js" defer="defer"></script>
+</header>
+
+<%= erb :"common/nav" %>
+    
+<div class="container">
+  <div class="content">
+    <h3>Request History</h3>
+      
+    <% (1..@history).each do |i|%>
+      <div class="row userRowH flex-nowrap">
+        <div class="col">
+          <img src="img/defaultPic.jpg" class="picML" alt="user picture">
+        </div>
+        <div class="col-11">
+          <div class="row mlFirstDes">
+            <div class="col">
+                <label class="showDetail"><%= @username %></label>
+            </div>
+            <div class="col-7">
+              <label><%= @department %></label>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col">
+              <label>Start Time: <%= @sTime %></label>
+            </div>
+            <div class="col-7">
+              <label>End Time: <%= @eTime %></label>
+            </div>
+          </div>
+          <div class="row">
+              <label>Reason: <%= @reason %></label>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<%= erb :"common/footer" %>
+</html>

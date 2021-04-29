@@ -1,7 +1,7 @@
 require 'sinatra'
 require_relative '../helpers/authenticated'
 
-get '/profile' do
+get '/account' do
   authenticated
   user = User[session[:user]]
   @user = user
@@ -9,7 +9,7 @@ get '/profile' do
   erb :profile
 end
 
-post '/profile' do
+post '/account' do
   authenticated
   user = User[session[:user]]
   user_hash = {}

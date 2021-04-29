@@ -3,6 +3,7 @@ require_relative '../helpers/authenticated'
 require_relative '../helpers/user_redirect.rb'
 require_relative '../helpers/get_users.rb'
 require_relative '../helpers/rejection.rb'
+require_relative '../emailing/email_to_mentor'
 
 get '/request-mentee' do
   mentor = get_users[0]
@@ -31,6 +32,20 @@ post '/request-mentee' do
   }
   
   Connection.add(connection_details)
+  
+  mentor = get_users[0] 
+  mentee = get_users[1]
+  begin
+    to_mentor = EmailToMentor.new(mentor[:id][:email], mentor[:id][:name], mentee[:email], mentee[:name])
+    puts "#{mentor[:id][:email]}"
+    puts to_mentor
+    to_mentor.send
+  rescue EmailSendError
+    puts "email send error"
+  rescue InvalidEmailError
+    puts "invalid email error"
+  end
+  
   redirect '/request-mentee'
 end
 

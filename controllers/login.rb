@@ -11,7 +11,7 @@ get '/' do
 end
 
 get '/login' do
-  @loggedIn = false
+  @logged_in = false
   redirect '/' if session[:user]
   session[:is_valid] = true if session[:is_valid].nil?
   @is_valid = session[:is_valid]

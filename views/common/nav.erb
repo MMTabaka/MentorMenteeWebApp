@@ -2,8 +2,8 @@
 <% activedLI = "" %>
 <% activedM = "" %>
 <% activedRH = "" %>
-<% case @actived %>
-  <% when "myMentee", "myMentor", "mentorList", "mentorDetail" %>
+<% case @actived
+  when "myMentee", "myMentor", "mentorList", "mentorDetail" %>
     <% activedM="active" %>
   <% when "requestHistory" %>
     <% activedRH="active" %>
@@ -14,7 +14,7 @@
 <div class="bg-warning">
   <div class="navi">
     <ul class="nav justify-content-end nav-pills">
-      <% if @loggedIn == false %>
+      <% if !@logged_in %>
         <li class="nav-item">  
           <a class="nav-link text-body <%= activedLI %>" href="login">Log In</a>
         </li>
@@ -33,7 +33,7 @@
         </li>
         <li class="nav-item navPic">  
           <button class="nav-item" type="button" id="user" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="img/defaultPic.jpg" class="picSmall float-end" alt="user picture">
+            <img src="/img/defaultPic.jpg" class="picSmall float-end" alt="user picture">
           </button>
           <ul class="dropdown-menu" aria-labelledby="user">
             <li><a class="dropdown-item" href="profile">Profile</a></li>

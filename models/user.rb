@@ -23,11 +23,13 @@ class User < Sequel::Model
   # @param email
   # @param password
   # @return boolean true if the credentials are correct
-  def self.login(email, password)
+  def self.login(email, password, admin: false)
     user = where(email: email).single_record
     return nil if user.nil?
+
     if self[email: email][:password] == password
-      return nil if self[email: email][:user_type] == UserType::ADMIN
+      return nil if self[email: email][:user_type] == UserType::ADMIN && !admin
+
       return user
     end
     nil

@@ -19,8 +19,8 @@ end
 post '/admin/login/?' do
   @email = params['email']
   @password = params['pass']
-  user = User.login(@email, @password)
-  if user.nil? || user[:user_type] != UserType::ADMIN
+  user = User.login(@email, @password, true)
+  if user.nil?
     session[:is_valid] = false
   else
     # Setting user id to access logged in user later

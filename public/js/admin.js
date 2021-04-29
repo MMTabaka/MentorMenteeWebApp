@@ -22,7 +22,7 @@ suspendBtns.forEach(button => button.addEventListener("click", async (event) => 
     if(window.confirm(`Do you want to ${operation} this user?`)){
         const res = await requester("/admin/suspend", "post", {id: event.target.getAttribute("data-id")});
         if(res.ok){
-            event.target.innerText = operation === "Suspend" ? "Unsuspend" : "Suspend";
+            event.target.innerText = operation === "suspend" ? "Unsuspend" : "Suspend";
         }
         else {
             window.alert(`Error: could not ${operation} user. Try again.`);

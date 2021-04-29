@@ -1,5 +1,5 @@
 DROP TABLE users;
-DROP TABLE admins;
+DROP TABLE connections;
 DROP TABLE departments;
 DROP TABLE interests;
 
@@ -16,14 +16,7 @@ CREATE TABLE users (
     department TEXT,
     bio TEXT,
     interest_areas TEXT,
-    request TEXT,
-    acceptance INTEGER,
-    suspension INTEGER
-);
-
-CREATE TABLE admins (
-    login TEXT,
-    password TEXT
+    suspension INTEGER DEFAULT 0
 );
 
 CREATE TABLE departments (
@@ -34,6 +27,16 @@ CREATE TABLE departments (
 CREATE TABLE interests (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     interest TEXT UNIQUE NOT NULL
+);
+CREATE TABLE connections (
+     id INTEGER PRIMARY KEY AUTOINCREMENT,
+     mentee_id INTEGER NOT NULL,
+     mentor_id INTEGER NOT NULL,
+     status INTEGER NOT NULL,
+     active INTEGER NOT NULL,
+     request_time TEXT,
+     end_time TEXT,
+     rejection_reason TEXT
 );
 
 INSERT INTO users (user_type, email, password, name, department, bio, request, acceptance, suspension, interest_areas)

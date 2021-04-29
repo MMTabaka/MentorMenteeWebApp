@@ -1,12 +1,13 @@
 require 'sinatra'
 require_relative '../helpers/authenticated'
+require_relative '../helpers/user_redirect.rb'
+require_relative '../helpers/get_users.rb'
+require_relative '../helpers/rejection.rb'
 
 get '/' do
   authenticated
   user = User[session[:user]]
-  # If current user is mentee
-  redirect '/mentors' if (user[:user_type]) == UserType::MENTEE
-  redirect '/temp-user-page'
+  user_redirect(user)
 end
 
 get '/login' do
@@ -31,14 +32,19 @@ post '/login' do
   redirect '/login'
 end
 
-get '/temp-user-page' do
-  authenticated
-  "You are logged in! Id: #{session[:user]}"
+
+get '/profile' do
+  user = User[session[:user]]
+  @username = user[:name]
+  @email = user[:email]
+  @department = user[:department]
+  @area = user[:interest_areas]
+  @bio = user[:bio]
+  erb :profile
 end
 
-# TODO: This should be POST
+
 get '/logout' do
-  redirect '/login' unless session[:user]
   session.clear
-  'You have been logged out successfully'
+  redirect '/login'
 end

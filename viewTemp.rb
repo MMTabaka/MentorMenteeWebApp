@@ -173,3 +173,31 @@ post '/login' do
   @validation = val
   erb :login
 end
+
+
+get '/requestingmentee' do
+  pic = "pic.jpg"
+  @validation = { 'valid' => true, 'errors' => {} }
+  @loggedIn = true;
+  @userType = "Mentee";
+  @requesting = false;
+  @userPic = "img/" + pic;
+  @actived = "requestHistory"
+  @username = "username"; 
+  @department = "department"
+  @email = "sdfh@lsdkf";
+  @status = "xxxxxxxxxxxxxxxxxxxx";
+  @area = "asfaf";
+  @bio = "Optional...";
+  @time = "xxxxxx"  
+  erb :requestingmentee
+end
+
+post '/requestingmentee' do
+  puts params
+  val = validate(params)
+  return redirect '/' if val['valid']
+  @validation = val
+  erb :requestingmentee
+end
+

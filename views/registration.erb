@@ -11,46 +11,46 @@
   <form method="post">
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control <%= @validation[:email] ? 'is-invalid': '' %>" name="email" required>
-      <% unless @validation[:email].nil? %>
+      <input type="email" class="form-control <%= @validation['errors']['email'] ? 'is-invalid': '' %>" name="email" required>
+      <% unless @validation['errors']['email'].nil? %>
         <div class="invalid-feedback">
-          <%= @validation[:email][0] %>
+          <%= @validation['errors']['email'] %>
         </div>
       <% end %>
     </div>
     <div class="mb-3">
       <label for="pass" class="form-label">Password</label>
-      <input type="password" class="form-control <%= @validation[:password] ? 'is-invalid': '' %>" name="pass" required>
-      <% unless @validation[:password].nil? %>
+      <input type="password" class="form-control <%= @validation['errors']['pass'] ? 'is-invalid': '' %>" name="pass" required>
+      <% unless @validation['errors']['pass'].nil? %>
         <div class="invalid-feedback">
-          <%= @validation[:password][0] %>
+          <%= @validation['errors']['pass'] %>
         </div>
       <% end %>
     </div>
     <div class="mb-3">
       <label for="re-pass" class="form-label">Confirm Password</label>
-      <input type="password" class="form-control <%= @validation[:re_pass] ? 'is-invalid': '' %>" name="re-pass" required>
-      <% unless @validation[:re_pass].nil? %>
+      <input type="password" class="form-control <%= @validation['errors']['re-pass'] ? 'is-invalid': '' %>" name="re-pass" required>
+      <% unless @validation['errors']['re-pass'].nil? %>
         <div class="invalid-feedback">
-          <%= @validation[:re_pass] %>
+          <%= @validation['errors']['re-pass'] %>
         </div>
       <% end %>
     </div>
     <div class="mb-3">
       <label for="user-type" class="form-label">Who you are?</label>
-      <select name="user-type" class="form-select <%= @validation[:user_type] ? 'is-invalid': '' %>" required>
-        <option value="0" selected>Mentor</option>
-        <option value="1">Mentee</option>
+      <select name="user-type" class="form-select <%= @validation['errors']['user-type'] ? 'is-invalid': '' %>" required>
+        <option value="1" selected>Mentor</option>
+        <option value="2">Mentee</option>
       </select>
-      <% unless @validation[:user_type].nil? %>
+      <% unless @validation['errors']['user-type'].nil? %>
         <div class="invalid-feedback">
-          <%= @validation[:user_type][0] %>
+          <%= @validation['errors']['user-type'] %>
         </div>
       <% end %>
     </div>
-    <button type="submit" class="btn btn-primary btnC">Continue</button>
+    <button type="submit" class="btn btn-primary btnC">Create an account</button>
     <br/>
-    <a href="login" class="text-decoration-underline text-decoration-none">Have an account? Log in please</a>
+    <a href="login" class="text-decoration-underline text-decoration-none">Have an accout? Log in please</a>
   </form>
   </div>
 </div>

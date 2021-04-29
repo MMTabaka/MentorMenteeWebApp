@@ -10,6 +10,7 @@ get '/request-mentee' do
   @user_type = "Mentee"
   @status = "User #{@username} has received your request. Check your email inbox for a reply.
   After arranged meeting decide if you want to accept the user as your mentor."
+  @time = get_users[2][:id][:request_time]
   authenticated
   erb :requestingmentee
 end
@@ -25,7 +26,8 @@ post '/request-mentee' do
     mentee_id: user[:id],
     mentor_id: @mentor_id,
     status: 0,
-    active: 1
+    active: 1,
+    request_time: Time.now.gmtime.to_s
   }
   
   Connection.add(connection_details)
@@ -43,8 +45,8 @@ get '/request-mentor' do
 end
 
 get '/request-history' do
-  @history = 20
-  @username = 'empty'
+  @user = User[session[:user]]
+  @history = Connection.retrieve(@user)
   @department = 'empty'
   @sTime = 'empty'
   @eTime = 'empty'

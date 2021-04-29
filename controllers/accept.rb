@@ -6,7 +6,7 @@ require_relative '../helpers/rejection.rb'
 
 post '/accept-mentee' do
   connection = get_users[2]
-  connection.update(status: 1)
+  connection.update(status: 1, request_time: Time.now.gmtime.to_s)
   redirect '/accept-mentee'
 end
 
@@ -19,9 +19,11 @@ end
 get '/accept-mentor' do
   mentee = get_users[1]
   @username = mentee[:id][:name]
+  @department = mentee[:id][:department]
   @user_type == "Mentor"
   @bio = 'sth'
   @status = "User #{@username} has accepted you as their mentor. "
+  @time = get_users[2][:id][:request_time]
   authenticated
   erb :requestingmentee
 end

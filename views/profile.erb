@@ -1,9 +1,9 @@
-<% userName = @email %>
-<% if !@username.empty? %>
-  <% userName = @username%>
+<% userName = @user[:email] %>
+<% if !@user[:name].empty? %>
+  <% userName = @user[:name]%>
   <% puts userName%>
 <% end %>
-
+<%= javascript_tag "alert('Passwords do not match')" if @validation['errors']['re-pass'] == 'Passwords do not match'%>
 <!doctype html>
 <html lang="en">
 <head>
@@ -59,13 +59,13 @@ we can separate it to profile page and profile edit page or use other way, so js
           <div class="mb-3 row">
             <label class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
-              <button id="email" type="button" class="btn btnText" onclick="showEdit(this.id)"><%= @email %>
+              <button id="email" type="button" class="btn btnText" onclick="showEdit(this.id)"><%= @user[:email] %>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
                   <path d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
                 </svg>
               </button>
               <div class="col-sm-10">
-                <input id="emailEdit" type="email" name="email" class="form-control edit <%= @validation['errors']['email'] ? 'is-invalid': '' %>" placeholder="<%= @email %>">
+                <input id="emailEdit" type="email" name="email" class="form-control edit <%= @validation['errors']['email'] ? 'is-invalid': '' %>" placeholder="<%= @user[:email] %>">
                 <% unless @validation['errors']['email'].nil? %>
                   <div class="invalid-feedback">
                     <%= @validation['errors']['email'] %>
@@ -104,13 +104,13 @@ we can separate it to profile page and profile edit page or use other way, so js
           <div class="mb-3 row">
             <label class="col-sm-2 col-form-label">Department</label>
             <div class="col-sm-10">
-              <button id="department" type="button" class="btn btnText" onclick="showEdit(this.id)"><%= @department %>
+              <button id="department" type="button" class="btn btnText" onclick="showEdit(this.id)"><%= @user[:department] %>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
                   <path d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
                 </svg>
               </button>
               <div class="col-sm-10">
-                <input id="departmentEdit" type="text" class="form-control edit" name="department" placeholder="<%= @department %>">
+                <input id="departmentEdit" type="text" class="form-control edit" name="department" placeholder="<%= @user[:department] %>">
               </div>
             </div>
           </div>
@@ -119,13 +119,13 @@ we can separate it to profile page and profile edit page or use other way, so js
           <div class="mb-3 row">
             <label class="col-sm-2 col-form-label">Area of Interest</label>
             <div class="col-sm-10">
-              <button id="area" type="button" class="btn btnText" onclick="showEdit(this.id)"><%= @interest_areas %>
+              <button id="area" type="button" class="btn btnText" onclick="showEdit(this.id)"><%= @user[:interest_areas] %>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
                   <path d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
                 </svg>
               </button>
               <div class="col-sm-10">
-                <input id="areaEdit" type="text" name="interest_areas" class="form-control edit" placeholder="<%= @interest_areas %>">
+                <input id="areaEdit" type="text" name="interest_areas" class="form-control edit" placeholder="<%= @user[:interest_areas] %>">
               </div>
             </div>
           </div>

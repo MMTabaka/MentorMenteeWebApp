@@ -23,7 +23,6 @@ def user_redirect(user)
   elsif user[:user_type] == UserType::MENTEE
     if Connection.exist?(UserType::MENTEE, user[:id])
       connection = Connection.where(mentee_id: user[:id], active: 1)
-      puts connection[:id][:status]
       case connection[:id][:status]
         when Status::REQUEST 
           redirect '/request-mentee'

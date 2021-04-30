@@ -1,5 +1,6 @@
 require 'sinatra'
 require_relative '../helpers/authenticated'
+require_relative '../helpers/redirect_home.rb'
 
 get '/admin/?' do
   authenticated_as_admin

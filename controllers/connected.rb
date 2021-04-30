@@ -1,6 +1,7 @@
 require 'sinatra'
 require_relative '../helpers/authenticated'
 require_relative '../helpers/user_redirect.rb'
+require_relative '../helpers/redirect_home.rb'
 
 post '/connected' do
   connection = get_users[2]
@@ -9,6 +10,8 @@ post '/connected' do
 end
 
 get '/connected' do
+  authenticated
+  redirect_home(3)
   user = get_users[3]
   @email = user[:id][:email]
   @username = user[:id][:name]
@@ -16,6 +19,5 @@ get '/connected' do
   @department = user[:id][:department]
   @area = user[:id][:interest_areas]
   @bio = user[:id][:bio]
-  authenticated
   erb :myMate
 end

@@ -59,7 +59,7 @@ post '/registration' do
     # stuff we have for later
     session[:reg_params] = { email: params['email'], password: params['pass'], user_type: params['user-type'] }
     # Clear validation just in case
-    session[:validation]
+    session.delete(:validation)
     redirect '/details'
   end
   session[:validation] = { re_pass: 'Passwords do not match' }

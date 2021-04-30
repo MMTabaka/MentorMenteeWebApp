@@ -2,7 +2,7 @@ const passwordField = document.querySelector("input.val-psw");
 const repeatPasswordField = document.querySelector("input.val-re-psw");
 const form = document.querySelector("form.needs-validation");
 
-repeatPasswordField.addEventListener("input", event => {
+repeatPasswordField?.addEventListener("input", event => {
     if(form.classList.contains("was-validated")) {
         repeatPasswordField.setCustomValidity(event.target.value !== passwordField.value ?
             "Passwords do not match" : "");
@@ -10,10 +10,11 @@ repeatPasswordField.addEventListener("input", event => {
     }
 })
 form.addEventListener("submit", event => {
-    repeatPasswordField.setCustomValidity(repeatPasswordField.value !== passwordField.value ?
+    console.log("Validating...");
+    repeatPasswordField?.setCustomValidity(repeatPasswordField.value !== passwordField.value ?
         "Passwords do not match" : "");
-    repeatPasswordField.checkValidity();
-    if (!form.checkValidity()) {
+    if (!form.checkValidity() || (repeatPasswordField ? !repeatPasswordField?.checkValidity() : false)) {
+        console.log("Validation failed.");
         event.preventDefault()
         event.stopPropagation()
     }

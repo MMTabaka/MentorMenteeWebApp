@@ -10,7 +10,6 @@
   <p class="text-center  pb-3">Create an account to continue</p>
   <form method="post" class="needs-validation" novalidate>
     <div class="mb-3">
-      <% puts @validation %>
       <% unless @validation.nil? || @validation.empty? %>
       <div class="alert alert-danger" role="alert">
         Encountered errors:

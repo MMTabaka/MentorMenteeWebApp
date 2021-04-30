@@ -3,51 +3,60 @@
 </header>
 
 <%= erb :"common/nav" %>
-    
-<% puts @validation %>
+
 <div class="containerSmall">
   <div class="contentSmall">
   <h1 class="text-center  pb-3">Welcome!</h1>
   <p class="text-center  pb-3">Create an account to continue</p>
-  <form method="post">
+  <form method="post" class="needs-validation" novalidate>
+    <div class="mb-3">
+      <% unless @validation.nil? || @validation.empty? %>
+      <div class="alert alert-danger" role="alert">
+        Encountered errors:
+        <ul>
+        <% @validation.each do |k, v| %>
+            <li> <%= v.join(', ') %></li>
+        <% end %>
+        </ul>
+      </div>
+        <% end %>
+    </div>
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control <%= @validation[:email] ? 'is-invalid': '' %>" name="email" required>
-      <% unless @validation[:email].nil? %>
-        <div class="invalid-feedback">
-          <%= @validation[:email][0] %>
-        </div>
-      <% end %>
+      <input type="email" class="form-control"
+             name="email"
+             required
+             pattern="^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$">
+      <div class="invalid-feedback">
+        Email is invalid or empty
+      </div>
     </div>
     <div class="mb-3">
       <label for="pass" class="form-label">Password</label>
-      <input type="password" class="form-control <%= @validation[:password] ? 'is-invalid': '' %>" name="pass" required>
-      <% unless @validation[:password].nil? %>
-        <div class="invalid-feedback">
-          <%= @validation[:password][0] %>
-        </div>
-      <% end %>
+      <input type="password" class="form-control val-psw"
+             name="pass"
+             required
+             pattern="(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$">
+      <div class="invalid-feedback">
+        Password must contain at least 8 characters and include an uppercase, lowercase letter and a number
+      </div>
     </div>
     <div class="mb-3">
       <label for="re-pass" class="form-label">Confirm Password</label>
-      <input type="password" class="form-control <%= @validation[:re_pass] ? 'is-invalid': '' %>" name="re-pass" required>
-      <% unless @validation[:re_pass].nil? %>
-        <div class="invalid-feedback">
-          <%= @validation[:re_pass] %>
-        </div>
-      <% end %>
+      <input type="password" class="form-control val-re-psw" name="re-pass" required>
+      <div class="invalid-feedback">
+        Passwords do not match
+      </div>
     </div>
     <div class="mb-3">
       <label for="user-type" class="form-label">Who you are?</label>
-      <select name="user-type" class="form-select <%= @validation[:user_type] ? 'is-invalid': '' %>" required>
+      <select name="user-type" class="form-select" required>
         <option value="0" selected>Mentor</option>
         <option value="1">Mentee</option>
       </select>
-      <% unless @validation[:user_type].nil? %>
-        <div class="invalid-feedback">
-          <%= @validation[:user_type][0] %>
-        </div>
-      <% end %>
+      <div class="invalid-feedback">
+        User type is not selected or invalid
+      </div>
     </div>
     <button type="submit" class="btn btn-primary btnC">Continue</button>
     <br/>
@@ -55,6 +64,6 @@
   </form>
   </div>
 </div>
-
+<script src="/js/frontendValidation.js"></script>
 <%= erb :"common/footer" %>
 </html>

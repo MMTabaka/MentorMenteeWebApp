@@ -1,5 +1,6 @@
 require 'sib-api-v3-sdk'
 require_relative 'email_contact'
+require_relative 'errors'
 # Represents email to be sent using SendinBlue API
 class Email
   attr_reader :contact_to, :contact_from, :contact_reply_to, :subject, :body
@@ -24,11 +25,12 @@ class Email
 
   # Sends the email
   def send
-    raise StandardError 'Email details are invalid' unless @email.valid?
+    raise InvalidEmailError unless @email.valid?
 
     @api.send_transac_email(@email)
   rescue SibApiV3Sdk::ApiError => e
     puts "Exception while trying to send an email: #{e}"
+    raise EmailSendError
   end
 
   private

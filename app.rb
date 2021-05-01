@@ -18,3 +18,8 @@ require_relative 'db/db'
 require_all 'models'
 require_all 'controllers'
 require_all 'helpers'
+
+#pat = Connection.where(mentee_id: 9, active: 1)
+#pat.update(status: 2, active: 0)
+
+puts Time.now.gmtime.to_s

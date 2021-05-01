@@ -14,7 +14,7 @@ end
 post '/details' do
   # Cookie is gone?
   halt 500 unless session[:reg_params]
-  depart = Department[params['department']].department
+  depart = Department[params['department']]&.department || ''
   # params['areas'] is an array.
   interests = Interest.where_all(id: params['areas'])
                       .map(&:interest)
@@ -29,6 +29,7 @@ post '/details' do
     bio: params['bio'],
     interest_areas: interests.join(',')
   }
+  puts usr_details
   user = User.register(usr_details)
   # Account creation successful, log in new user
   session[:reg_params] = nil
@@ -59,7 +60,7 @@ post '/registration' do
     # stuff we have for later
     session[:reg_params] = { email: params['email'], password: params['pass'], user_type: params['user-type'] }
     # Clear validation just in case
-    session[:validation]
+    session.delete(:validation)
     redirect '/details'
   end
   session[:validation] = { re_pass: 'Passwords do not match' }

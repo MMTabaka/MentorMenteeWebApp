@@ -1,0 +1,46 @@
+<%= erb :"common/header" %>
+  <title>Request History</title>
+  <link rel="stylesheet" href="css/mentorList.css">
+  <script src="js/userInfo.js" defer="defer"></script>
+</header>
+
+<%= erb :"common/nav" %>
+    
+<div class="container">
+  <div class="content">
+    <h3>Request History</h3>
+      
+    <% (@history).each do |i|%>
+      <div class="row userRowH flex-nowrap">
+        <div class="col">
+          <img src="img/defaultPic.jpg" class="picML" alt="user picture">
+        </div>
+        <div class="col-11">
+          <div class="row mlFirstDes">
+            <div class="col">
+                <label class="showDetail"><% if @user[:user_type] == UserType::MENTEE %> <%= User[id: i[:mentor_id]][:name] %> <% else %> 
+               <%= User[id: i[:mentee_id]][:name] %>  <% end %> </label>
+            </div>
+            <div class="col-7">
+              <label><% if @user[:user_type] == UserType::MENTEE %> <%= User[id: i[:mentor_id]][:department] %> <% else %> 
+               <%= User[id: i[:mentee_id]][:department] %> <% end %></label>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col">
+              <label>Start Time: <%= i[:request_time] %></label>
+            </div>
+            <div class="col-7">
+              <label>End Time: <%= i[:end_time] %></label>
+            </div>
+          </div>
+          <div class="row">
+              <label>Reason: <%= i[:rejection_reason] %></label>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<%= erb :"common/footer" %>
+</html>

@@ -1,5 +1,4 @@
-ENV['APP_ENV'] = 'test'
-
+require_relative 'rspec_helper'
 require_relative '../db/db'
 require_relative '../models/user'
 
@@ -62,6 +61,12 @@ RSpec.describe 'Login function' do
   context 'entries are empty strings' do
     it 'returns nil' do
       expect(User.login('', '')).to eq(nil)
+    end
+  end
+
+  context 'When admin is trying to log in using main page' do
+    it 'returns nil' do
+      expect(User.login('admin@admin.com', 'PassWord123')).to eq(nil)
     end
   end
 end

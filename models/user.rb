@@ -1,4 +1,6 @@
 require 'sequel'
+require_relative '../helpers/utils'
+require_relative '../emailing/password_reset_email'
 
 # Model representing user record and its related actions
 class User < Sequel::Model
@@ -21,11 +23,15 @@ class User < Sequel::Model
   # @param email
   # @param password
   # @return boolean true if the credentials are correct
-  def self.login(email, password)
+  def self.login(email, password, admin: false)
     user = where(email: email).single_record
     return nil if user.nil?
-    return user if self[email: email][:password] == password
 
+    if self[email: email][:password] == password
+      return nil if self[email: email][:user_type] == UserType::ADMIN && !admin
+
+      return user
+    end
     nil
   end
 
@@ -51,7 +57,7 @@ class User < Sequel::Model
     '''
     Levenshtein distance implementation from Rosetta code:
     https://rosettacode.org/wiki/Levenshtein_distance#Ruby
-    ''' 
+    '''
     if mentor_fields.nil? || mentee_fields.nil?
       return nil
     end
@@ -67,5 +73,32 @@ class User < Sequel::Model
       end
     end
     return costs[mentee_fields_array.length]
+  end
+
+  # Toggles user's suspension status
+  def toggle_suspension
+    update(suspension: (Sequel[:suspension] + 1) % 2)
+  end
+
+  def reset_password
+    new_password = Utils.generate_password
+    email = PasswordResetEmail.new(self[:name], self[:email], new_password)
+    begin
+      email.send
+      update(password: new_password)
+      puts 'Email reset complete.'
+    rescue EmailSendError, InvalidEmailError => e
+      puts "Could not reset password: #{e}"
+    end
+  end
+
+  # Returns the number of same interests between mentee and mentor
+  # @param mentor Mentor to be compared against
+  # @return number of same interests between mentee and mentor
+  def match_factor(mentor)
+    mentee_fields = self[:interest_areas].split(',')
+    mentor_fields = mentor[:interest_areas].split(',')
+    same_fields = (mentee_fields & mentor_fields).length
+    return same_fields
   end
 end

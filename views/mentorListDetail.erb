@@ -1,0 +1,94 @@
+<%= erb :"common/header" %>
+  <link rel="stylesheet" href="css/userInfo.css">
+  <link rel="stylesheet" href="css/mentorListDetail.css">
+  <title>User Detail</title>
+</header>
+
+<%= erb :"common/nav" %>
+    
+<div class="container">
+  <div class="content">
+    <div class="row">
+      <% if @user[:user_type] == 2 %>
+        <% backlink = 'admin' %>
+      <% elsif @user[:user_type] == 1 %>
+        <% backlink = 'mentorList' %>
+      <% end %>
+      <a type="button" id="backToMentorList" class="btn btn-primary btnC" href="/<%= backlink %>">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-sm"> 
+        <img src="img/defaultPic.jpg" class="img-thumbnail float-start picProfile" alt="User Picture"> </div>
+      <div class="col-9"> 
+        <!-----username and email---->
+        <div class="row">
+          <div class="mb-3 row">
+            <div class="col-sm-10">
+              <% userName = @user[:email] %>
+              <% if !@user[:name].empty? %>
+                <% userName = @user[:name]%>
+                <label class="col-sm-2 col-form-label title name" id="staticName"><%= userName %></label>
+                <label class="form-control-plaintext name email" id="staticEmail"><%= @user[:email] %></label>
+              <% else %>
+                <label class="col-sm-2 col-form-label title name" id="staticName"><%= userName %></label>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        
+        <!-----Department---->
+        <div class="row">
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label title">Department</label>
+            <div class="col-sm-10">
+              <label class="form-control-plaintext" id="staticDepartment"><%= @user[:department] %></label>
+            </div>
+          </div>
+        </div>
+        
+        <!-----Area of Interest---->
+        <div class="row">
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label title">Area of Interest</label>
+            <div class="col-sm-10">
+              <label class="form-control-plaintext" id="staticArea"><%= @user[:interest_areas].gsub(',', ', ') %></label>
+            </div>
+          </div>
+        </div>
+        <!-----Bio---->
+        <div class="row">
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label title">Bio</label>
+            <div class="col-sm-10">
+              <label class="form-control-plaintext bioText" id="staticBio"><%= @user[:bio] %></label>
+            </div>
+          </div>
+        </div>
+        
+        <!-----Request botton---->
+        
+        <% if @user[:user_type] == 1 %>
+          <% show = " " %>
+        <% else %>
+          <% show = "show" %>
+        <% end %>
+        <div class="row <%= show %>">
+          <div class="mb-3 row">
+            <div class="col-sm-10">
+              <button id="request" type="submit" onclick="return confirm ('Request this mentor?')" class="btn btn-primary btn-lg btnC">Request
+              </button>
+            </div>
+          </div>
+        </div>
+        <!---------------------------------------------> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+<%= erb :"common/footer" %>
+</html>

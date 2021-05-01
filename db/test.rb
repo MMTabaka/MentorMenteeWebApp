@@ -11,14 +11,17 @@ def populate_tables
     String :department
     String :bio
     String :interest_areas
-    String :request
-    Integer :acceptance
     Integer :suspension
   end
-
-  DB.create_table(:admins) do
-    String :login, null: false
-    String :password, null: false
+  DB.create_table(:connections) do
+    primary_key :id, auto_increment: true
+    Integer :mentee_id, null: false
+    Integer :mentor_id, null: false
+    Integer :status, null: false
+    Integer :active, null: false
+    String :request_time
+    String :end_time
+    String :rejection_reason
   end
   DB.create_table(:departments) do
     primary_key :id, auto_increment: true
@@ -32,7 +35,7 @@ end
 
 def cleanup
   DB.drop_table(:users)
-  DB.drop_table(:admins)
+  DB.drop_table(:connections)
   DB.drop_table(:departments)
   DB.drop_table(:interests)
   populate_tables

@@ -8,6 +8,7 @@
     <div class="content">
       <h3>Mentor List</h3>
       <% (@mentors).each do |i|%>
+          <% next if Connection.exist?(UserType::MENTOR, i[:id]) %>
         <div class="row userRow flex-nowrap">
           <div class="col">
             <img src="img/defaultPic.jpg" class="picML" alt="user picture">

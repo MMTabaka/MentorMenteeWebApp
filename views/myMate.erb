@@ -1,4 +1,4 @@
-<% if @user_type == "Mentee" %>
+<% if @user[:id][:user_type] == 0 %>
   <% title = "Mentor" %>
 <% else %>
   <% title = "Mentee" %>
@@ -25,11 +25,11 @@
         <div class="row">
           <div class="mb-3 row">
             <div class="col-sm-10">
-              <% userName = @email %>
-              <% if !@username.empty? %>
-                <% userName = @username%>
+              <% userName = @user[:id][:email] %>
+              <% if !@user[:id][:name].empty? %>
+                <% userName = @user[:id][:name]%>
                 <label class="col-sm-2 col-form-label title name" id="staticName"><%= userName %></label>
-                <label class="form-control-plaintext name email" id="staticEmail"><%= @email %></label>
+                <label class="form-control-plaintext name email" id="staticEmail"><%= @user[:id][:email] %></label>
               <% else %>
                 <label class="col-sm-2 col-form-label title name" id="staticName"><%= userName %></label>
               <% end %>
@@ -42,7 +42,7 @@
           <div class="mb-3 row">
             <label class="col-sm-2 col-form-label title">Department</label>
             <div class="col-sm-10">
-              <label class="form-control-plaintext" id="staticDepartment"><%= @department %></label>
+              <label class="form-control-plaintext" id="staticDepartment"><%= @user[:id][:department] %></label>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
           <div class="mb-3 row">
             <label class="col-sm-2 col-form-label title">Area of Interest</label>
             <div class="col-sm-10">
-              <label class="form-control-plaintext" id="staticArea"><%= @area %></label>
+              <label class="form-control-plaintext" id="staticArea"><%= @user[:id][:interest_areas] %></label>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@
           <div class="mb-3 row">
             <label class="col-sm-2 col-form-label title">Bio</label>
             <div class="col-sm-10">
-              <label class="form-control-plaintext bioText" id="staticBio"><%= @bio %></label>
+              <label class="form-control-plaintext bioText" id="staticBio"><%= @user[:id][:bio] %></label>
             </div>
           </div>
         </div>

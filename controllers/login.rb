@@ -3,6 +3,7 @@ require_relative '../helpers/authenticated'
 require_relative '../helpers/user_redirect.rb'
 require_relative '../helpers/get_users.rb'
 require_relative '../helpers/rejection.rb'
+require_relative '../helpers/redirect_home.rb'
 
 get '/' do
   authenticated
@@ -11,10 +12,10 @@ get '/' do
 end
 
 get '/login' do
-  @logged_in = false
   redirect '/' if session[:user]
   session[:is_valid] = true if session[:is_valid].nil?
   @is_valid = session[:is_valid]
+  @logged_in = false
   erb :login
 end
 
@@ -35,6 +36,7 @@ end
 
 
 get '/profile' do
+  authenticated
   user = User[session[:user]]
   @username = user[:name]
   @email = user[:email]
@@ -49,3 +51,18 @@ get '/logout' do
   session.clear
   redirect '/login'
 end
+
+# Hides error pages
+=begin
+disable :raise_errors
+disable :show_exceptions
+
+not_found do
+  "Page was not found"
+end
+
+
+error do
+  "Sorry, we couldn't find that page. Try https://percent-engine-4567.codio.io/"
+end
+=end

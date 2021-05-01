@@ -12,6 +12,8 @@ def get_users()
     connection = Connection.where(mentee_id: mentee[:id], active: 1)
     mentor = User.where(id: connection[:id][:mentor_id])
     connected_user = mentor
+  else
+    return nil
   end
   
   return [mentor, mentee, connection, connected_user]

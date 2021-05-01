@@ -1,9 +1,12 @@
 require 'sinatra'
 require_relative '../helpers/authenticated'
+require_relative '../helpers/redirect_home.rb'
 
 get '/mentors' do
   authenticated
   user = User[session[:user]]
+  redirect '/' if user[:user_type] == UserType::MENTOR
+  redirect '/' if Connection.exist?(user[:user_type], user[:id])
   puts user[:interest_areas]
   redirect '/request-history' if user[:user_type] == UserType::MENTOR
   unsorted_mentors = User.retrieve_users(UserType::MENTOR)

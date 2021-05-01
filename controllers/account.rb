@@ -17,13 +17,12 @@ post '/account' do
     if k == "password" && params['password'] != params['re-pass']
       puts "invalid password"
       session[:validation] = { re_pass: 'Passwords do not match' } if @validation == false
-      redirect '/profile'
+      redirect '/account'
       break
     else
       user_hash[k.to_sym] = v unless v == ''
     end
   end
-  @validation = { 'valid' => true, 'errors' => {} }
   puts user_hash
   user.update(user_hash)
   erb :profile

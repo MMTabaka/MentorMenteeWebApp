@@ -92,6 +92,13 @@ class User < Sequel::Model
     end
   end
 
+  # Returns the number of same interests between mentee and mentor
+  # @param mentor Mentor to be compared against
+  # @return number of same interests between mentee and mentor
+  def match_factor(mentor)
+    mentee_fields = self[:interest_areas].split(',')
+    mentor_fields = mentor[:interest_areas].split(',')
+    same_fields = (mentee_fields & mentor_fields).length
+    return same_fields
+  end
 end
-
-

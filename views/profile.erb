@@ -3,7 +3,6 @@
   <% userName = @user[:name]%>
   <% puts userName%>
 <% end %>
-<%= javascript_tag "alert('Passwords do not match')" if @validation['errors']['re-pass'] == 'Passwords do not match'%>
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,7 +13,7 @@
   <link rel="stylesheet" href="css/userInfo.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-  <script src="js/userInfo.js" defer="defer"></script>
+  <script src="/js/userInfo.js"></script>
   <script src="/js/frontendValidation.js"></script>
   <title><%= userName %></title>
 </head>
@@ -31,7 +30,7 @@ we can separate it to profile page and profile edit page or use other way, so js
 <%= erb :"common/nav" %>
 <div class="container">
   <div class="content">
-    <form method="post" class="row">
+    <form method="post" class="row needs-validation" novalidate>
       <div class="mb-3">
         <% unless @validation.nil? || @validation.empty? %>
         <div class="alert alert-danger" role="alert">
@@ -60,12 +59,8 @@ we can separate it to profile page and profile edit page or use other way, so js
           <div id="usernameEdit" class="mb-3 row edit">
             <label for="usernameInput" class="col-sm-2 col-form-label">Username</label>
             <div class="col-sm-10">
-              <input id="usernameInput" type="text" name="username" class="form-control <%= @validation['errors']['username'] ? 'is-invalid': '' %>" pattern="/^([A-Za-z]+\s?)*[A-Za-z]$/" placeholder="<%= userName %>">
-              <% unless @validation['errors']['username'].nil? %>
-                <div class="invalid-feedback">
-                  <%= @validation['errors']['username'] %>
-                </div>
-              <% end %>      
+              <input id="usernameInput" type="text" name="username" class="form-control" pattern="/^([A-Za-z]+\s?)*[A-Za-z]$/" placeholder="<%= userName %>">
+              
             </div>
           </div>
         </div>
@@ -79,12 +74,8 @@ we can separate it to profile page and profile edit page or use other way, so js
                 </svg>
               </button>
               <div class="col-sm-10">
-                <input id="emailEdit" type="email" name="email" class="form-control edit <%= @validation['errors']['email'] ? 'is-invalid': '' %>" placeholder="<%= @user[:email] %>">
-                <% unless @validation['errors']['email'].nil? %>
-                  <div class="invalid-feedback">
-                    <%= @validation['errors']['email'] %>
-                  </div>
-                <% end %>
+                <input id="emailEdit" type="email" name="email" class="form-control edit" placeholder="<%= @user[:email] %>">
+                
               </div>
             </div>
           </div>
@@ -188,5 +179,5 @@ we can separate it to profile page and profile edit page or use other way, so js
 <%= erb :"common/footer" %>
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </html>

@@ -16,7 +16,7 @@
           <div class="col-8">
             <div class="row mlFirstDes">
               <div class="col">
-                  <button id="<%= i[:id] %>" type="submit" class="showDetail"><%= i[:name] %></button>
+                  <a href="/profile/<%= i[:id] %>" id="<%= i[:id] %>" class="showDetail"><%= i[:name] %></a>
               </div>
               <div class="col-7">
                 <label><%= i[:department] %></label>

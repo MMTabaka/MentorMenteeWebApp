@@ -79,8 +79,10 @@
         <div class="row <%= show %>">
           <div class="mb-3 row">
             <div class="col-sm-10">
-              <button id="request" type="submit" onclick="return confirm ('Request this mentor?')" class="btn btn-primary btn-lg btnC">Request
-              </button>
+              <form method="post" action="/request-mentee">
+                <input type="hidden" name="mentor_id" value="<%= @user[:id] %>">
+                <button id="request<%= @user[:id] %>" type="submit" onclick="return confirm ('Request this mentor?')" class="btn btn-primary btn-lg btnC">Request</button>
+              </form>
             </div>
           </div>
         </div>

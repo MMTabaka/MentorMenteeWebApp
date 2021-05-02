@@ -45,6 +45,8 @@
   border-radius: 50%;
 }
 .showDetail{
+  text-decoration: none;
+  color: #1c2324;
   font-weight: bold;
   border-style: none none solid none;
   background-color: transparent;

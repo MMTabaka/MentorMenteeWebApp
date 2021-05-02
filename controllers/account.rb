@@ -12,16 +12,25 @@ end
 
 post '/account' do
   authenticated
+  return delete_account if params['delete'] == 'delete'
+
   user = User[session[:user]]
   user_hash = {}
-  params.each do |k,v|
+  params.each do |k, v|
     user_hash[k.to_sym] = v unless k == 're-pass' || k == 'pic' || v.empty?
   end
   puts user_hash
-  begin 
+  begin
     user.update(user_hash)
   rescue Sequel::ValidationFailed => e
-    session[:validation] = {'email' => [e.message]}
+    session[:validation] = { 'email' => [e.message] }
   end
-  redirect "/account"
+  redirect '/account'
+end
+
+def delete_account
+  user = User[session[:user]]
+  user.delete
+  session.delete(:user)
+  redirect '/login'
 end

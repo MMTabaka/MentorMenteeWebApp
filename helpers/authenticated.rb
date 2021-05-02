@@ -1,6 +1,6 @@
 require 'sinatra'
 require_relative '../helpers/authenticated'
-require_relative '../helpers/redirect_home.rb'
+require_relative '../helpers/redirect_home'
 
 def authenticated
   redirect '/login' if session[:user].nil?

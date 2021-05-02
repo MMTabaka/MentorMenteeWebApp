@@ -34,19 +34,6 @@ post '/login' do
   redirect '/login'
 end
 
-
-get '/profile' do
-  authenticated
-  user = User[session[:user]]
-  @username = user[:name]
-  @email = user[:email]
-  @department = user[:department]
-  @area = user[:interest_areas]
-  @bio = user[:bio]
-  erb :profile
-end
-
-
 get '/logout' do
   session.clear
   redirect '/login'

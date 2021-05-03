@@ -94,9 +94,9 @@
           <div class="mb-3 row">
             <label class="col-sm-2 col-form-label">Area of Interest</label>
             <div class="col-sm-10">
-              <label id="area" class="text col-form-label"><%= @user[:interest_areas] %></label>
+              <label id="area" class="text col-form-label"><%= @user[:interest_areas].gsub(',', ', ') %></label>
               <div class="col-sm-10">
-                <input id="areaEdit" type="text" name="interest_areas" class="form-control edit" placeholder="<%= @user[:interest_areas] %>">
+                <input id="areaEdit" type="text" name="interest_areas" class="form-control edit" placeholder="<%= @user[:interest_areas].gsub(',', ', ') %>">
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@
             <div class="col-sm-10">
               <label id="bio" class="text col-form-label"><%= @user[:bio] %></label>
               <div class="mb-3">
-                <textarea id="bioEdit" name="bio" class="form-control edit" rows="4"></textarea>
+                <textarea id="bioEdit" name="bio" class="form-control edit" rows="4" placeholder="<%= @user[:bio] %>"></textarea>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@
           <div class="mb-3 row">
             <div id="editNDelete" class="col-sm-10">
               <button id="edit" type="button" class="btn btn-primary btn-lg btnC" onclick="editU()">Edit</button>
-              <button id="delete" type="submit" onclick="return confirm ('Are you sure?')'" name="delete" value="delete" class="btn btn-secondary btn-lg btnC">Delete Account</button>
+              <button id="delete" type="submit" onclick="return confirm ('Are you sure?')" name="delete" value="delete" class="btn btn-secondary btn-lg btnC">Delete Account</button>
             </div>
             <div id="saveNCancel" class="col-sm-10 edit">
               <button id="save" type="submit" class="btn btn-primary btn-lg btnC">Save</button>

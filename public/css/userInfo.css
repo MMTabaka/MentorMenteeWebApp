@@ -18,8 +18,8 @@
 .form-control{
   width: 60%;
 }
-.edit{
-  display: none;
+.hidden{
+  display: none !important;
 }
 #saveNCancel button{
   margin-right: 2em;

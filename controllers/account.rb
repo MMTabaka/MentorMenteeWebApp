@@ -5,6 +5,8 @@ get '/account' do
   authenticated
   user = User[session[:user]]
   @user = user
+  @interests = Interest.all
+  @departments = Department.all
   session[:validation] = {} if session[:validation].nil?
   @validation = session.delete(:validation)
   erb :profile
@@ -17,9 +19,18 @@ post '/account' do
   user = User[session[:user]]
   user_hash = {}
   params.each do |k, v|
-    user_hash[k.to_sym] = v unless k == 're-pass' || k == 'pic' || v.empty?
+    user_hash[k.to_sym] = v unless k == 're-pass' || v.empty?
   end
   puts user_hash
+  # Prepare interest areas according to DB structure
+  if params['areas']
+    interests_str = Interest.where_all(id: params['areas'])
+                            .map(&:interest)
+                            .sort
+                            .join(',')
+    user_hash.delete(:areas)
+    user_hash[:interest_areas] = interests_str
+  end
   begin
     user.update(user_hash)
   rescue Sequel::ValidationFailed => e

@@ -1,7 +1,8 @@
 <%= erb :"common/header" %>
+  <title>User Detail</title>
+  <base href="/">
   <link rel="stylesheet" href="css/userInfo.css">
   <link rel="stylesheet" href="css/mentorListDetail.css">
-  <title>User Detail</title>
 </header>
 
 <%= erb :"common/nav" %>
@@ -70,13 +71,11 @@
         </div>
         
         <!-----Request botton---->
-        
-        <% if @user[:user_type] == 1 %>
-          <% show = " " %>
-        <% else %>
+        <% display = "nothing" %>
+        <% if @user[:user_type] != 1 %>
           <% show = "show" %>
         <% end %>
-        <div class="row <%= show %>">
+        <div class="row <%= display %>">
           <div class="mb-3 row">
             <div class="col-sm-10">
               <form method="post" action="/request-mentee">

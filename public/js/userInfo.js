@@ -23,11 +23,3 @@ function cancelEdit(){
   document.getElementById("editNDelete").style.display = "block";
   document.getElementById("saveNCancel").style.display = "none";
 }
-
-function showEdit(btnId){
-  document.getElementById("delete").style.display = "none";
-  document.getElementById(btnId).style.display = "none";
-  document.getElementById(btnId + "Edit").style.display = "flex";
-  //document.getElementById(btnId + "Edit").required = true;
-  document.getElementById("saveNCancel").style.display = "flex";
-}

@@ -4,31 +4,34 @@
   <% title = "Mentee" %>
 <% end %>
 
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+<%= erb :"common/header" %>
   <link rel="stylesheet" href="css/userInfo.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-  <script src="js/userInfo.js" defer="defer"></script>
+  <link rel="stylesheet" href="css/mentorListDetail.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <title>Requesting My <%= title %></title>
 </head>
 
-<body>
 <%= erb :"common/nav" %>
-  <div class="containerSmall">
+<div class="containerMiddle">
   <div class="contentSmall">
-  <h2 class="text-left  ">Requesting <%= title %></h2>
-      <!-----name and department---->
+    <div class="row">
+      <h3 class="text-left">Requesting <%= title %> </h3>
+    </div>
+      <!-----name---->
         <div class="row">
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label title"><%= @username %></label>
             <div class="col-sm-10">
+              <label class="col-sm-2 col-form-label title name"><%= @username %></label>
+            </div>
+          </div>
+        </div>
+      <!-----department---->
+        <div class="row">
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label title">Department: </label>
+            <div class="col-sm-9">
               <label class="form-control-plaintext" id="staticDepartment"><%= @department %></label>
             </div>
           </div>
@@ -36,77 +39,51 @@
       <!-----status---->
         <div class="row">
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label title">Status: </label>
-            <div class="col-sm-10">
-              <label class="form-control-plaintext" id="staticDepartment"><%= @status %></label>
+            <label class="col-sm-3 col-form-label title">Status: </label>
+            <div class="col-sm-9">
+              <label class="form-control-plaintext" id="staticStatus"><%= @status %></label>
             </div>
           </div>
         </div>
       <!----time---->
         <div class="row">
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label title">Time : </label>
-            <div class="col-sm-10">
-              <label class="form-control-plaintext" id="staticDepartment"><%= @time %></label>
+            <label class="col-sm-3 col-form-label title">Time: </label>
+            <div class="col-sm-9">
+              <label class="form-control-plaintext" id="staticTime"><%= @time %></label>
             </div>
           </div>
         </div>
-
-      <div class="jumbotron">
-        
-        
-    <p>
-      <form method="post" <% if @user_type == "Mentee" %> action="/accept-mentee" <% else %> action="/connected" <% end %>>
-    <button class="btn btn-primary btnC" type="submit" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Accept
-  </button>
-     </form>
-        <form method="post" <% if @user_type == "Mentee" %> action="/reject-mentee" <% else %> action="/reject-mentor" <% end %>>
-  <button class="btn btn-primary btnC" type="submit" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Reject
-  </button>
-    </form>
-        
-        
-    </p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-  </div>
-</div>
-   </div>
-    <br/>
-      <% if @user_type == "Mentor" %>
-      <div class="row">
-          <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Reason</label>
-            <div class="col-sm-10">
-              <button id="bio" type="button" class="btn btnText" onclick="showEdit(this.id)"><%= @bio %>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-                  <path d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-                </svg>
-              </button>
-              <div class="mb-3">
-                <textarea id="bioEdit" name="bio" class="form-control edit" rows="4"></textarea>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!----Buttons---->
         <div class="row">
-          <div class="mb-3 row">
-            <div class="col-sm-10">
-               <button id="delete" type="submit" onclick="return confirm ('Are you sure?')" class="btn btn-primary btn-lg btnC">Submit</button>
-            </div>
-            <div id="saveNCancel" class="col-sm-10 edit">
-              <button id="delete" type="submit" onclick="return confirm ('Are you sure?')" class="btn btn-primary btn-lg btnC">Submit</button>
-              <button id="cancel" type="button" class="btn btn-secondary btn-lg btnC" onclick="cancelEdit()">Cancel</button>
+          <div class="mb-3 row onelineForm">
+            <form method="post" class="onelineForm" <% if @user_type == "Mentee" %> action="/accept-mentee" <% else %> action="/connected" <% end %>>
+              <button class="btn btn-primary btnC" type="submit" >
+                Accept
+              </button>
+            </form>
+            <div class="onelineForm">
+              <button class="btn btn-primary btnC" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                Reject
+              </button>
             </div>
           </div>
         </div>
-        <% end %>
+      <!----Rejection Reason---->
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <label class="col-form-label title">Rejection Reason</label>
+            <div class="mb-3">
+              <textarea id="reason" name="reason" class="form-control" rows="4"></textarea>
+            </div>
+            <form method="post" class="onelineForm" <% if @user_type == "Mentee" %> action="/reject-mentee" <% else %> action="/reject-mentor" <% end %>>
+              <button class="btn btn-primary btnC" type="submit">
+                Submit
+              </button>
+            </form>
+        </div>
+      </div>
   </div>
 </div>
 <%= erb :"common/footer" %>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-</body>
 </html>

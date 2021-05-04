@@ -72,11 +72,11 @@
       <!----Rejection Reason---->
         <div class="collapse" id="collapseExample">
           <div class="card card-body">
+            <form method="post" class="onelineForm" <% if @user_type == "Mentee" %> action="/reject-mentee" <% else %> action="/reject-mentor" <% end %>>
             <label class="col-form-label title">Rejection Reason</label>
             <div class="mb-3">
               <textarea id="reason" name="reason" class="form-control" rows="4"></textarea>
             </div>
-            <form method="post" class="onelineForm" <% if @user_type == "Mentee" %> action="/reject-mentee" <% else %> action="/reject-mentor" <% end %>>
               <button class="btn btn-primary btnC" type="submit">
                 Submit
               </button>

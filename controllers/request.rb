@@ -11,6 +11,7 @@ get '/request-mentee' do
   redirect_home(0)
   mentor = get_users[0]
   @username = mentor[:id][:name]
+  @department = mentor[:id][:department]
   @user_type = "Mentee"
   @status = "User #{@username} has received your request. Check your email inbox for a reply.
   After arranged meeting decide if you want to accept the user as your mentor."

@@ -14,7 +14,8 @@ end
 get '/login' do
   redirect '/' if session[:user]
   session[:is_valid] = true if session[:is_valid].nil?
-  @is_valid = session[:is_valid]
+  # Delete and return validity status
+  @is_valid = session.delete(:is_valid)
   @logged_in = false
   erb :login
 end

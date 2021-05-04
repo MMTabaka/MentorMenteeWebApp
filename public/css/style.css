@@ -79,6 +79,9 @@ li{
 .push {
   height: 50px;
 }
+.onelineForm{
+  display: inline;
+}
 
 .ss-main .ss-single-selected, .ss-main .ss-multi-selected {
   min-height: 37px !important;

@@ -71,9 +71,10 @@
         </div>
         
         <!-----Request botton---->
-        <% display = "nothing" %>
-        <% if @user[:user_type] != 1 %>
-          <% show = "show" %>
+        <% if @user[:user_type] == 1 %>
+          <% display = "nothing" %>
+        <% else %>
+          <% display = "disappear" %>
         <% end %>
         <div class="row <%= display %>">
           <div class="mb-3 row">

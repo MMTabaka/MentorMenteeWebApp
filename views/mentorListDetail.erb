@@ -71,7 +71,7 @@
         </div>
         
         <!-----Request botton---->
-        <% if @user[:user_type] == 1 %>
+        <% if User[session[:user]][:user_type] == 1 %>
           <% display = "nothing" %>
         <% else %>
           <% display = "disappear" %>

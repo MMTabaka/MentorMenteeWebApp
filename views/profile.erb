@@ -7,6 +7,7 @@
 <%= erb :"common/header" %>
   <title><%= userName %></title>
   <link rel="stylesheet" href="css/userInfo.css">
+  <link rel="stylesheet" href="css/mentorListDetail.css">
 </header>
     
 <%= erb :"common/nav" %>
@@ -41,7 +42,7 @@
         </div>
         <div class="row">
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Email</label>
+            <label class="col-sm-2 col-form-label title">Email</label>
             <div class="col-sm-10">
               <label id="email" class="text col-form-label"><%= @user[:email] %></label>
               <div class="col-sm-10">
@@ -52,7 +53,7 @@
         </div>
         <div class="row edit hidden">
           <div id="passwordEdit" class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Password</label>
+            <label class="col-sm-2 col-form-label title">Password</label>
             <div class="col-sm-10">
               <input 
                 id="passChange" 
@@ -79,7 +80,7 @@
         </div>
         <div class="row">
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Department</label>
+            <label class="col-sm-2 col-form-label title">Department</label>
             <div class="col-sm-10">
               <label id="department-label" class="text col-form-label"><%= @user[:department] %></label>
               <div class="col-sm-10">
@@ -90,7 +91,7 @@
         </div>
         <div class="row">
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Area of Interest</label>
+            <label class="col-sm-2 col-form-label title">Area of Interest</label>
             <div class="col-sm-10">
               <label id="area" class="text col-form-label"><%= @user[:interest_areas].gsub(',', ', ') %></label>
               <div class="col-sm-10">
@@ -108,7 +109,7 @@
         </div>
         <div class="row">
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Bio</label>
+            <label class="col-sm-2 col-form-label title">Bio</label>
             <div class="col-sm-10">
               <label id="bio" class="text col-form-label"><%= @user[:bio] %></label>
               <div class="mb-3">

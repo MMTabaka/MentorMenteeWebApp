@@ -1,5 +1,6 @@
 require 'sequel'
 
+# Model representing connections between users and possible actions
 class Connection < Sequel::Model
   
   # Function that creates new connection
@@ -18,11 +19,12 @@ class Connection < Sequel::Model
     false
   end
   
-  
+  # Function that returns connection
   def self.get()
     return get_users[2]
   end
   
+  # Funtion that returns all inactive connection in which particular user was involved
   def self.retrieve(user)
     if user[:user_type] == UserType::MENTOR
       return Connection.where(mentor_id: user[:id], active: 0).all

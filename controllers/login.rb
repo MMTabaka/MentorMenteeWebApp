@@ -41,16 +41,13 @@ get '/logout' do
 end
 
 # Hides error pages
-=begin
 disable :raise_errors
 disable :show_exceptions
 
 not_found do
-  "Page was not found"
+  "Sorry, we couldn't find that page. Try https://percent-engine-4567.codio.io/"
 end
-
 
 error do
   "Sorry, we couldn't find that page. Try https://percent-engine-4567.codio.io/"
 end
-=end

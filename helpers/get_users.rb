@@ -1,4 +1,5 @@
-
+# funtion that return returns array of mentor, mentee and just another user instances based 
+# on connection and connection itself
 def get_users()
   user = User[session[:user]]
   

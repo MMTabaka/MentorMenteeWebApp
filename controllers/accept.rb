@@ -35,12 +35,10 @@ end
 
 post '/reject-mentor' do
   @reason = "(Mentor) " + params["reason"]
-  puts @reason
   rejection
 end
   
 post '/reject-mentee' do
   @reason = "(Mentee) " + params["reason"]
-  puts @reason
   rejection
 end

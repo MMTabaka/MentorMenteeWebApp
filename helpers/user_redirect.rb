@@ -1,10 +1,10 @@
 require 'sinatra'
 
+# function that redirects users to relevant views based on connection status
 def user_redirect(user)
   if user[:user_type] == UserType::MENTOR
     if Connection.exist?(UserType::MENTOR, user[:id]) 
       connection = Connection.where(mentor_id: user[:id], active: 1)
-      puts connection[:id][:status]
       case connection[:id][:status]
         when Status::REQUEST 
           redirect '/request-mentor'

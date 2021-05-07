@@ -21,9 +21,9 @@ end
 
 post '/request-mentee' do
   @mentor_id = params['mentor_id']
-  puts @mentor_id
   user = User[session[:user]]
   
+  #creates new connection between mentor and mentee
   connection_details = {
     mentee_id: user[:id],
     mentor_id: @mentor_id,
@@ -36,6 +36,8 @@ post '/request-mentee' do
   
   mentor = get_users[0] 
   mentee = get_users[1]
+  
+  #sends request email to mentor
   begin
     to_mentor = EmailToMentor.new(mentor[:id][:email], mentor[:id][:name], mentee[:email], mentee[:name])
     puts "#{mentor[:id][:email]}"
@@ -48,7 +50,6 @@ post '/request-mentee' do
   
   redirect '/request-mentee'
 end
-
 
 get '/request-mentor' do
   authenticated

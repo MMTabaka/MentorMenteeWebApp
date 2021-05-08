@@ -1,34 +1,25 @@
-function showEdit(btnId){
-  document.getElementById("delete").style.display = "none";
-  document.getElementById(btnId).style.display = "none";
-  document.getElementById(btnId + "Edit").style.display = "flex";
-  //document.getElementById(btnId + "Edit").required = true;
-  document.getElementById("saveNCancel").style.display = "flex";
+/** Adds class .hidden to elements with class specified in hide
+ * and removes that class from elements specified in show
+ * */
+function change(hide, show){
+  for(let element of document.getElementsByClassName(hide)) {
+    element.classList.add("hidden")
+  }
+  for(let element of document.getElementsByClassName(show)) {
+    element.classList.remove("hidden");
+  }
+}
+
+
+function editU(){
+  change("text", "edit");
+  document.getElementById("editNDelete").classList.add("hidden");
+  document.getElementById("saveNCancel").classList.remove("hidden");
 }
 
 function cancelEdit(){
-  document.getElementById("picture").style.display = "block";
-  document.getElementById("pictureEdit").style.display = "none";
-  document.getElementById("username").style.display = "block";
-  document.getElementById("usernameEdit").style.display = "none";
-  document.getElementById("email").style.display = "block";
-  document.getElementById("emailEdit").style.display = "none";
-  document.getElementById("password").style.display = "block";
-  document.getElementById("passwordEdit").style.display = "none";
-  document.getElementById("department").style.display = "block";
-  document.getElementById("departmentEdit").style.display = "none";
-  document.getElementById("area").style.display = "block";
-  document.getElementById("areaEdit").style.display = "none";
-  document.getElementById("bio").style.display = "block";
-  document.getElementById("bioEdit").style.display = "none";
-  document.getElementById("delete").style.display = "block";
-  document.getElementById("saveNCancel").style.display = "none";
-//   document.getElementById("pictureEdit").style.required = false;
-//   document.getElementById("usernameEdit").style.required = false;
-//   document.getElementById("emailEdit").style.required = false;
-//   document.getElementById("passChange").style.required = false;
-//   document.getElementById("passConfirm").style.required = false;
-//   document.getElementById("departmentEdit").style.required = false;
-//   document.getElementById("areaEdit").style.required = false;
-//   document.getElementById("bioEdit").style.required = false;
+  change("edit", "text");
+  document.getElementById("saveNCancel").classList.add("hidden");
+  document.getElementById("editNDelete").classList.remove("hidden");
+
 }

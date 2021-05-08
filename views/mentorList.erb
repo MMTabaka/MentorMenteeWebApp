@@ -1,0 +1,40 @@
+<%= erb :"common/header" %>
+  <link rel="stylesheet" href="css/mentorList.css">
+  <title>Mentor List</title>
+</header>
+
+<%= erb :"common/nav" %>
+  <div class="container">
+    <div class="content">
+      <h3>Mentor List</h3>
+      <% (@mentors).each do |i|%>
+          <% next if Connection.exist?(UserType::MENTOR, i[:id]) %>
+        <div class="row userRow flex-nowrap">
+          <div class="col">
+            <img src="img/defaultPic.jpg" class="picML" alt="user picture">
+          </div>
+          <div class="col-8">
+            <div class="row mlFirstDes">
+              <div class="col">
+                  <a href="/profile/<%= i[:id] %>" id="<%= i[:id] %>" class="showDetail"><%= i[:name] %></a>
+              </div>
+              <div class="col-7">
+                <label><%= i[:department] %></label>
+              </div>  
+            </div>
+            <div class="row">
+                <label><%= i[:interest_areas].gsub(',', ', ') %></label>
+            </div>
+          </div>
+          <div class="col mlButton">
+            <form method="post" action="/request-mentee">
+              <input type="hidden" name="mentor_id" value="<%= i[:id] %>">
+              <button id="request<%= i[:id] %>" type="submit" onclick="return confirm ('Request this mentor?')" class="btn btn-primary btn-lg btnC">Request</button>
+            </form>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<%= erb :"common/footer" %>
+</html>

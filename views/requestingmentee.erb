@@ -1,0 +1,89 @@
+<% if @user_type == "Mentee" %>
+  <% title = "Mentor" %>
+<% else %>
+  <% title = "Mentee" %>
+<% end %>
+
+<%= erb :"common/header" %>
+  <link rel="stylesheet" href="css/userInfo.css">
+  <link rel="stylesheet" href="css/mentorListDetail.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>Requesting My <%= title %></title>
+</head>
+
+<%= erb :"common/nav" %>
+<div class="containerMiddle">
+  <div class="contentSmall">
+    <div class="row">
+      <h3 class="text-left">Requesting <%= title %> </h3>
+    </div>
+      <!-----name---->
+        <div class="row">
+          <div class="mb-3 row">
+            <div class="col-sm-10">
+              <label class="col-sm-2 col-form-label title name"><%= @username %></label>
+            </div>
+          </div>
+        </div>
+      <!-----department---->
+        <div class="row">
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label title">Department: </label>
+            <div class="col-sm-9">
+              <label class="form-control-plaintext" id="staticDepartment"><%= @department %></label>
+            </div>
+          </div>
+        </div>
+      <!-----status---->
+        <div class="row">
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label title">Status: </label>
+            <div class="col-sm-9">
+              <label class="form-control-plaintext" id="staticStatus"><%= @status %></label>
+            </div>
+          </div>
+        </div>
+      <!----time---->
+        <div class="row">
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label title">Time: </label>
+            <div class="col-sm-9">
+              <label class="form-control-plaintext" id="staticTime"><%= @time %></label>
+            </div>
+          </div>
+        </div>
+      <!----Buttons---->
+        <div class="row">
+          <div class="mb-3 row onelineForm">
+            <form method="post" class="onelineForm" <% if @user_type == "Mentee" %> action="/accept-mentee" <% else %> action="/connected" <% end %>>
+              <button class="btn btn-primary btnC" type="submit" >
+                Accept
+              </button>
+            </form>
+            <div class="onelineForm">
+              <button class="btn btn-primary btnC" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                Reject
+              </button>
+            </div>
+          </div>
+        </div>
+      <!----Rejection Reason---->
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <form method="post" class="onelineForm" <% if @user_type == "Mentee" %> action="/reject-mentee" <% else %> action="/reject-mentor" <% end %>>
+            <label class="col-form-label title">Rejection Reason</label>
+            <div class="mb-3">
+              <textarea id="reason" name="reason" class="form-control" rows="4"></textarea>
+            </div>
+              <button class="btn btn-primary btnC" type="submit">
+                Submit
+              </button>
+            </form>
+        </div>
+      </div>
+  </div>
+</div>
+<%= erb :"common/footer" %>
+</html>

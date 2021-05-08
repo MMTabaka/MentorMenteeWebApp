@@ -1,7 +1,21 @@
+require_relative 'rspec_helper'
 require_relative '../db/db'
 require_relative '../models/user'
 
 RSpec.describe 'Login function' do
+  before(:all) do
+    # Insert one user into test DB
+    base_hash = {
+      email: 'email@email.com',
+      password: 'VerySecurePass1337',
+      user_type: '1',
+      name: 'Test Name',
+      department: 'Desc',
+      bio: 'Explanation',
+      interest_areas: 'Area 1,Area 2'
+    }
+    User.create(base_hash)
+  end
   context 'when you call a registered user' do
     it 'returns the user' do
       expect(User.login('email@email.com', 'VerySecurePass1337')).to eq(User.where(email: 'email@email.com').single_record)
@@ -47,6 +61,12 @@ RSpec.describe 'Login function' do
   context 'entries are empty strings' do
     it 'returns nil' do
       expect(User.login('', '')).to eq(nil)
+    end
+  end
+
+  context 'When admin is trying to log in using main page' do
+    it 'returns nil' do
+      expect(User.login('admin@admin.com', 'PassWord123')).to eq(nil)
     end
   end
 end

@@ -1,4 +1,6 @@
 require 'sequel'
+require_relative '../helpers/utils'
+require_relative '../emailing/password_reset_email'
 
 # Model representing user record and its related actions
 class User < Sequel::Model
@@ -11,8 +13,9 @@ class User < Sequel::Model
     validates_format /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/, :email, message: 'Email is not valid'
     validates_format /(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$/, :password,
                      message: 'Must be at least 8 characters long and contain a lowercase, uppercase letter and a number'
-    validates_includes [0, 1, 2], :user_type, message: 'User type is non-existing'
-    validates_unique(:email, message: 'This email is already take')
+    validates_includes [UserType::MENTOR, UserType::MENTEE, UserType::ADMIN], :user_type,
+                       message: 'User type is non-existing'
+    validates_unique(:email, message: 'This email is already taken')
 
   end
 
@@ -20,11 +23,15 @@ class User < Sequel::Model
   # @param email
   # @param password
   # @return boolean true if the credentials are correct
-  def self.login(email, password)
+  def self.login(email, password, admin: false)
     user = where(email: email).single_record
     return nil if user.nil?
-    return user if self[email: email][:password] == password
 
+    if self[email: email][:password] == password
+      return nil if self[email: email][:user_type] == UserType::ADMIN && !admin
+
+      return user
+    end
     nil
   end
 
@@ -47,10 +54,14 @@ class User < Sequel::Model
   # @param mentor_fields An unsplit array of the mentor's interests
   # @param mentee_fields An unsplit array of the mentee's interests
   def self.levenshtein_distance(mentor_fields, mentee_fields)
-    """
+    '''
     Levenshtein distance implementation from Rosetta code:
     https://rosettacode.org/wiki/Levenshtein_distance#Ruby
-    """
+    '''
+    if mentor_fields.nil? || mentee_fields.nil?
+      return nil
+    end
+
     mentor_fields_array = mentor_fields.split(', ')
     mentee_fields_array = mentee_fields.split(', ')
 
@@ -62,5 +73,32 @@ class User < Sequel::Model
       end
     end
     return costs[mentee_fields_array.length]
+  end
+
+  # Toggles user's suspension status
+  def toggle_suspension
+    update(suspension: (Sequel[:suspension] + 1) % 2)
+  end
+
+  def reset_password
+    new_password = Utils.generate_password
+    email = PasswordResetEmail.new(self[:name], self[:email], new_password)
+    begin
+      email.send
+      update(password: new_password)
+      puts 'Email reset complete.'
+    rescue EmailSendError, InvalidEmailError => e
+      puts "Could not reset password: #{e}"
+    end
+  end
+
+  # Returns the number of same interests between mentee and mentor
+  # @param mentor Mentor to be compared against
+  # @return number of same interests between mentee and mentor
+  def match_factor(mentor)
+    mentee_fields = self[:interest_areas].split(',')
+    mentor_fields = mentor[:interest_areas].split(',')
+    same_fields = (mentee_fields & mentor_fields).length
+    return same_fields
   end
 end

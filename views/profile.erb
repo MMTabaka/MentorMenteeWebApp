@@ -1,157 +1,132 @@
-<% userName = @email %>
-<% if !@username.empty? %>
-  <% userName = @username%>
+<% userName = @user[:email] %>
+<% if !@user[:name].empty? %>
+  <% userName = @user[:name]%>
+  <% puts userName%>
 <% end %>
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/userInfo.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-  <script src="js/userInfo.js" defer="defer"></script>
+<%= erb :"common/header" %>
   <title><%= userName %></title>
-</head>
-
-<!-- All input tags are not be set as required, 
-I think if users submit with empty input maybe we can change nothing for them in database, 
-so we don`t need to recognize if users are mentors in frontend and they can`t submit empty info. 
-(Just a suggestion)
-
-Also I used javascript for better effect, if it is not good
-we can separate it to profile page and profile edit page or use other way, so js part can be deleted.-->
+  <link rel="stylesheet" href="css/userInfo.css">
+  <link rel="stylesheet" href="css/mentorListDetail.css">
+</header>
     
-<body>
 <%= erb :"common/nav" %>
 <div class="container">
   <div class="content">
-    <form method="post" class="row">
+    <form method="post" class="row needs-validation" novalidate>
+      <div class="mb-3">
+        <% unless @validation.nil? || @validation.empty? %>
+        <div class="alert alert-danger" role="alert">
+          Encountered errors:
+          <ul>
+          <% @validation.each do |k, v| %>
+              <li> <%= v.join(', ') %></li>
+          <% end %>
+          </ul>
+        </div>
+          <% end %>
+      </div>
+
       <div class="col-sm">
-        <img src="<%= @pic %>" class="img-thumbnail float-start picProfile" alt="User Picture">
-        <button id="picture" type="button" class="btn btn-primary btn-lg btnC pic" onclick="showEdit(this.id)">Edit</button>
-        <input id="pictureEdit" class="form-control edit" type="file" accept="image/gif,image/jpeg,image/jpg,image/png" name="pic">
+        <img src="img/defaultPic.jpg" class="img-thumbnail float-start picProfile" alt="User Picture">
       </div>
       <div class="col-9">
         <div class="row">
-          <button id="username" type="button" class="btnHeader btn" onclick="showEdit(this.id)"><%= userName %>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-              <path d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-            </svg>
-          </button>
-          <div id="usernameEdit" class="mb-3 row edit">
+          <label id="username" class="btnHeader text"><%= userName %></label>
+          <div id="usernameEdit" class="mb-3 row edit hidden">
             <label for="usernameInput" class="col-sm-2 col-form-label">Username</label>
             <div class="col-sm-10">
-              <input id="usernameInput" type="text" name="username" class="form-control <%= @validation['errors']['username'] ? 'is-invalid': '' %>" pattern="/^([A-Za-z]+\s?)*[A-Za-z]$/" placeholder="<%= userName %>">
-              <% unless @validation['errors']['username'].nil? %>
-                <div class="invalid-feedback">
-                  <%= @validation['errors']['username'] %>
-                </div>
-              <% end %>      
+              <input id="usernameInput" type="text" name="name" class="form-control" pattern="/^([A-Za-z]+\s?)*[A-Za-z]$/" placeholder="<%= userName %>">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Email</label>
+            <label class="col-sm-2 col-form-label title">Email</label>
             <div class="col-sm-10">
-              <button id="email" type="button" class="btn btnText" onclick="showEdit(this.id)"><%= @email %>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-                  <path d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-                </svg>
-              </button>
+              <label id="email" class="text col-form-label"><%= @user[:email] %></label>
               <div class="col-sm-10">
-                <input id="emailEdit" type="email" name="email" class="form-control edit <%= @validation['errors']['email'] ? 'is-invalid': '' %>" placeholder="<%= @email %>">
-                <% unless @validation['errors']['email'].nil? %>
-                  <div class="invalid-feedback">
-                    <%= @validation['errors']['email'] %>
-                  </div>
-                <% end %>
+                <input id="emailEdit" type="email" name="email" class="form-control edit hidden" placeholder="<%= @user[:email] %>">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row edit hidden">
+          <div id="passwordEdit" class="mb-3 row">
+            <label class="col-sm-2 col-form-label title">Password</label>
+            <div class="col-sm-10">
+              <input 
+                id="passChange" 
+                type="password" 
+                name="password" 
+                class="form-control val-psw" 
+                pattern="(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$"    
+                placeholder="New Password">
+              <div class="invalid-feedback">
+                Password must contain at least 8 characters and include an uppercase, lowercase letter and a number
+              </div>
+              <br/>
+              <input 
+                id="passConfirm" 
+                type="password" 
+                name="re-pass" 
+                class="form-control val-re-psw"
+                placeholder="Confirm New Password">
+              <div class="invalid-feedback">
+                Passwords do not match
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label title">Department</label>
             <div class="col-sm-10">
-              <button id="password" type="button" class="btn btn-primary mb-3 btnC" onclick="showEdit(this.id)">Change Password</button>
-            </div>
-            <div id="passwordEdit" class="mb-3 row edit">
-              <label class="col-sm-2 col-form-label">Password</label>
+              <label id="department-label" class="text col-form-label"><%= @user[:department] %></label>
               <div class="col-sm-10">
-                <input id="passChange" type="password" name="pass" class="form-control <%= @validation['errors']['pass'] ? 'is-invalid': '' %>" placeholder="New Password">
-                <% unless @validation['errors']['pass'].nil? %>
-                  <div class="invalid-feedback">
-                    <%= @validation['errors']['pass'] %>
-                  </div>
-                <% end %>
-                <br/>
-                <input id="passConfirm" type="password" name="re-pass" class="form-control <%= @validation['errors']['re-pass'] ? 'is-invalid': '' %>" placeholder="Confirm New Password">
-                <% unless @validation['errors']['re-pass'].nil? %>
-                  <div class="invalid-feedback">
-                    <%= @validation['errors']['re-pass'] %>
-                  </div>
-                <% end %>
+                <input id="departmentEdit" type="text" class="form-control edit hidden" name="department" placeholder="<%= @user[:department] %>">
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Department</label>
+            <label class="col-sm-2 col-form-label title">Area of Interest</label>
             <div class="col-sm-10">
-              <button id="department" type="button" class="btn btnText" onclick="showEdit(this.id)"><%= @department %>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-                  <path d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-                </svg>
-              </button>
+              <label id="area" class="text col-form-label"><%= @user[:interest_areas].gsub(',', ', ') %></label>
               <div class="col-sm-10">
-                <input id="departmentEdit" type="text" class="form-control edit" name="department" placeholder="<%= @department %>">
+<!--                <input id="areaEdit" type="text" name="interest_areas" class="form-control edit" placeholder="<%#= @user[:interest_areas].gsub(',', ', ') %>">-->
+                <select id="areas" name="areas[]" class=" edit hidden custom-select" multiple>
+                  <% @interests.each do |interest| %>
+                    <option value=<%= interest.id %> <%= 'selected' if @user[:interest_areas].split(',').include? interest.interest %>>
+                      <%= interest.interest %>
+                    </option>
+                  <% end %>
+                </select>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Area of Interest</label>
+            <label class="col-sm-2 col-form-label title">Bio</label>
             <div class="col-sm-10">
-              <button id="area" type="button" class="btn btnText" onclick="showEdit(this.id)"><%= @area %>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-                  <path d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-                </svg>
-              </button>
-              <div class="col-sm-10">
-                <input id="areaEdit" type="text" name="area" class="form-control edit" placeholder="<%= @area %>">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Bio</label>
-            <div class="col-sm-10">
-              <button id="bio" type="button" class="btn btnText" onclick="showEdit(this.id)"><%= @bio %>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-                  <path d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-                </svg>
-              </button>
+              <label id="bio" class="text col-form-label"><%= @user[:bio] %></label>
               <div class="mb-3">
-                <textarea id="bioEdit" name="bio" class="form-control edit" rows="4"></textarea>
+                <textarea id="bioEdit" name="bio" class="form-control edit hidden" rows="4" placeholder="<%= @user[:bio] %>"></textarea>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="mb-3 row">
-            <div class="col-sm-10">
-              <button id="delete" type="submit" onclick="return confirm ('Are you sure?')'" class="btn btn-primary btn-lg btnC">Delete Account</button>
+            <div id="editNDelete" class="col-sm-10">
+              <button id="edit" type="button" class="btn btn-primary btn-lg btnC" onclick="editU()">Edit</button>
+              <button id="delete" type="submit" onclick="return confirm ('Are you sure?')" name="delete" value="delete" class="btn btn-secondary btn-lg btnC">Delete Account</button>
             </div>
-            <div id="saveNCancel" class="col-sm-10 edit">
-              <button id="save" type="submit" class="btn btn-primary btn-lg btnC">Save</button>
+            <div id="saveNCancel" class="col-sm-10 edit hidden">
               <button id="cancel" type="button" class="btn btn-secondary btn-lg btnC" onclick="cancelEdit()">Cancel</button>
+              <button id="save" type="submit" class="btn btn-primary btn-lg btnC">Save</button>
             </div>
           </div>
         </div>
@@ -160,7 +135,9 @@ we can separate it to profile page and profile edit page or use other way, so js
   </div>
 </div>
 <%= erb :"common/footer" %>
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"/>
+<script src="/js/frontendValidation.js"></script>
+<script src="js/userInfo.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet"></link>
+<script src="/js/select.js"></script>
 </html>

@@ -17,9 +17,9 @@ RSpec.describe 'Login function' do
     User.create(base_hash)
     User.login('email@email.com', 'VerySecurePass1337')
   end
-  context 'TODO' do
-    it 'blank' do
+  #context 'TODO' do
+    #it 'blank' do
       
-    end
-  end
+    #end
+  #end
 end

@@ -38,14 +38,3 @@ CREATE TABLE connections (
      end_time TEXT,
      rejection_reason TEXT
 );
-
-INSERT INTO users (user_type, email, password, name, department, bio, suspension, interest_areas)
-VALUES (1, 'email@email.com', 'VerySecurePass1337', 'Mentee John', 'Department of Computer Science', 'Random bio text',
-         0, 'field1,field2,field3');
-
-INSERT INTO users (user_type, email, password, name, department, bio, suspension, interest_areas)
-VALUES (0, 'email2@email.com', 'SecurePass123', 'Mentor Paul', 'Department of Nothing', 'Random bio text', 0, 'field1,field5,field6');
-
-INSERT INTO users (user_type, email, password, name, department, bio, suspension, interest_areas)
-VALUES (0, 'email3@email.com', 'VerySecurePass1337', 'Mentor Ringo', 'Department of Computer Science', 'Random bio text',
-        0, 'field1,field2,field3');

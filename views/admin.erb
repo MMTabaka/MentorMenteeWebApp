@@ -28,7 +28,7 @@
             <th scope="col">Name</th>
             <th scope="col">Email</th>
             <th scope="col">Type</th>
-            <th scope="col">Status</th>
+            <th scope="col">Suspension</th>
             <th scope="col"></th>
           </tr>
         </thead>
@@ -39,7 +39,7 @@
               <td id="<%= i[:id] %>Username"><%= i[:name] %></td>
               <td id="<%= i[:id] %>Email"><%= i[:email] %></td>
               <td id="<%= i[:id] %>Type"><%= i[:user_type] %></td>
-              <td id="<%= i[:id] %>Status"><%= i[:status] %></td>
+              <td id="<%= i[:id] %>Suspension"><%= i[:suspension] %></td>
               <td>
                 <a href="/profile/<%= i[:id] %>" id="<%= i[:id] %>Profile Details" type="submit" class="btn btn-primary btn-lg btnC">Detail</a>
                 <button id="<%= i[:id] %>-reset-pass" data-id="<%= i[:id] %>" type="submit" class="btn btn-primary btn-lg btnC reset-btn">Reset Password</button>

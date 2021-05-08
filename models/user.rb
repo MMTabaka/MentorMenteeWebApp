@@ -26,10 +26,13 @@ class User < Sequel::Model
   def self.login(email, password, admin: false)
     user = where(email: email).single_record
     return nil if user.nil?
+    
+    if self[email: email][:suspension] == 1
+      return nil
+    end
 
     if self[email: email][:password] == password
       return nil if self[email: email][:user_type] == UserType::ADMIN && !admin
-
       return user
     end
     nil

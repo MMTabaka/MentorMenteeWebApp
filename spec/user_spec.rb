@@ -1,7 +1,7 @@
 require_relative 'rspec_helper'
 require_relative '../db/db'
 require_relative '../models/user'
-require_relative '../helpers/user_type.rb'
+require_relative '../helpers/user_type'
 
 RSpec.describe User do
   after(:each) do
@@ -50,16 +50,41 @@ RSpec.describe User do
   describe 'Mentee / Mentor comparison' do
     context 'when you compare two users with the same interests' do
       it 'returns an integer value of interests that are the same (3)' do
-        mentee = User.create(email: 'user0@email.com', password: 'SecurePass123', user_type: UserType::MENTEE, interest_areas: "field1,field2,field3")
-        mentor = User.create(email: 'user1@email.com', password: 'SecurePass123', user_type: UserType::MENTOR, interest_areas: "field1,field2,field3")
+        mentee = User.create(email: 'user0@email.com', password: 'SecurePass123', user_type: UserType::MENTEE, interest_areas: 'field1,field2,field3')
+        mentor = User.create(email: 'user1@email.com', password: 'SecurePass123', user_type: UserType::MENTOR, interest_areas: 'field1,field2,field3')
         expect(mentee.match_factor(mentor)).to be == 3
       end
     end
     context 'when you compare two users with different interests' do
       it 'returns an integer value of interests that are the same (2)' do
-        mentee = User.create(email: 'user0@email.com', password: 'SecurePass123', user_type: UserType::MENTEE, interest_areas: "field1,field2,field3")
-        mentor = User.create(email: 'user1@email.com', password: 'SecurePass123', user_type: UserType::MENTOR, interest_areas: "field1,field2,not field")
+        mentee = User.create(email: 'user0@email.com', password: 'SecurePass123', user_type: UserType::MENTEE, interest_areas: 'field1,field2,field3')
+        mentor = User.create(email: 'user1@email.com', password: 'SecurePass123', user_type: UserType::MENTOR, interest_areas: 'field1,field2,not field')
         expect(mentee.match_factor(mentor)).to be == 2
+      end
+    end
+  end
+  describe '#toggle_suspension' do
+    context 'when you call #toggle_suspension' do
+      it 'not suspended user gets suspended' do
+        user = User.create(base_hash)
+        user.toggle_suspension
+        expect(user[:suspension]).to be 1
+      end
+      it 'not suspended user gets suspended' do
+        user = User.create(base_hash)
+        user.update(suspension: 1)
+        user.toggle_suspension
+        expect(user[:suspension]).to be 0
+      end
+    end
+  end
+  describe '#reset_password' do
+    context 'when you reset password for the user' do
+      it 'gets a new password' do
+        user = User.create(base_hash)
+        old_pass = user[:password]
+        user.reset_password
+        expect(user[:password]).not_to be old_pass
       end
     end
   end

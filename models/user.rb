@@ -9,14 +9,13 @@ class User < Sequel::Model
   # Regex from https://digitalfortress.tech/tricks/top-15-commonly-used-regex/
   def validate
     super
-    validates_presence [:email, :password, :user_type], message: 'Field cannot be empty'
-    validates_format /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/, :email, message: 'Email is not valid'
-    validates_format /(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$/, :password,
-                     message: 'Must be at least 8 characters long and contain a lowercase, uppercase letter and a number'
+    validates_presence %i[email password user_type], message: 'Field cannot be empty'
+    validates_format(/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/, :email, message: 'Email is not valid')
+    validates_format(/(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$/, :password,
+                     message: 'Must be at least 8 characters long and contain a lowercase, uppercase letter and a number')
     validates_includes [UserType::MENTOR, UserType::MENTEE, UserType::ADMIN], :user_type,
                        message: 'User type is non-existing'
     validates_unique(:email, message: 'This email is already taken')
-
   end
 
   # Checks if the user exists and then checks if the password is correct
@@ -26,13 +25,12 @@ class User < Sequel::Model
   def self.login(email, password, admin: false)
     user = where(email: email).single_record
     return nil if user.nil?
-    
-    if self[email: email][:suspension] == 1
-      return nil
-    end
+
+    return nil if self[email: email][:suspension] == 1
 
     if self[email: email][:password] == password
       return nil if self[email: email][:user_type] == UserType::ADMIN && !admin
+
       return user
     end
     nil
@@ -55,7 +53,7 @@ class User < Sequel::Model
 
   # Toggles user's suspension status
   def toggle_suspension
-    update(suspension: (Sequel[:suspension] + 1) % 2)
+    update(suspension: (self[:suspension] + 1) % 2)
   end
 
   def reset_password
@@ -76,7 +74,6 @@ class User < Sequel::Model
   def match_factor(mentor)
     mentee_fields = self[:interest_areas].split(',')
     mentor_fields = mentor[:interest_areas].split(',')
-    same_fields = (mentee_fields & mentor_fields).length
-    return same_fields
+    (mentee_fields & mentor_fields).length
   end
 end

@@ -11,7 +11,7 @@ def populate_tables
     String :department
     String :bio
     String :interest_areas
-    Integer :suspension
+    Integer :suspension, default: 0
   end
   DB.create_table(:connections) do
     primary_key :id, auto_increment: true

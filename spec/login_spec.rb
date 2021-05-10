@@ -8,7 +8,7 @@ RSpec.describe 'Login function' do
     base_hash = {
       email: 'email@email.com',
       password: 'VerySecurePass1337',
-      user_type: '1',
+      user_type: UserType::MENTEE,
       name: 'Test Name',
       department: 'Desc',
       bio: 'Explanation',

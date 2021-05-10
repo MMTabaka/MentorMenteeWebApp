@@ -14,4 +14,5 @@ source 'https://rubygems.org' do
   gem 'sinatra-contrib'
   gem 'sqlite3'
   gem 'thin'
+  gem 'webmock', require: false
 end

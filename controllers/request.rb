@@ -65,9 +65,5 @@ get '/request-history' do
   authenticated
   @user = User[session[:user]]
   @history = Connection.retrieve(@user)
-  @department = 'empty'
-  @sTime = 'empty'
-  @eTime = 'empty'
-  @reason = 'empty'
   erb :requestHistory
 end

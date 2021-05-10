@@ -45,9 +45,9 @@ disable :raise_errors
 disable :show_exceptions
 
 not_found do
-  "Sorry, we couldn't find that page. Try https://percent-engine-4567.codio.io/"
+  "Sorry, we couldn't find that page."
 end
 
 error do
-  "Sorry, we couldn't find that page. Try https://percent-engine-4567.codio.io/"
+  "Ups, something did wrong."
 end

@@ -1,5 +1,5 @@
-# funtion that return returns array of mentor, mentee and just another user instances based
-# on connection and connection itself
+# funtion that return returns array of mentor, mentee, connected user in connection instance 
+# and the connection instance itself
 def get_users
   user = User[session[:user]]
   case user[:user_type]

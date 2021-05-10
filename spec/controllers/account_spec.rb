@@ -38,36 +38,32 @@ RSpec.describe 'Account Tests', type: :controller do
     context 'when we try and change the email' do
       it 'changes profile details' do
         post '/login', { 'email' => 'test4@email.com', 'pass' => 'VerySecurePass1337' }
-        cookie = last_response.cookies['rack.session']
         post '/account', { email: 'TEST@email.com' }
-        get '/account', headers: cookie
+        get '/account'
         expect(last_response.body).to include('TEST@email.com')
       end
     end
     context 'when we try and change the bio' do
       it 'changes profile details' do
         post '/login', { 'email' => 'test4@email.com', 'pass' => 'VerySecurePass1337' }
-        cookie = last_response.cookies['rack.session']
         post '/account', { bio: 'Example Bio' }
-        get '/account', headers: cookie
+        get '/account'
         expect(last_response.body).to include('Example Bio')
       end
     end
     context 'when we try and change the department' do
       it 'changes profile details' do
         post '/login', { 'email' => 'test4@email.com', 'pass' => 'VerySecurePass1337' }
-        cookie = last_response.cookies['rack.session']
         post '/account', { department: 'Example Department' }
-        get '/account', headers: cookie
+        get '/account'
         expect(last_response.body).to include('Example Department')
       end
     end
     context 'when we try and change the name' do
       it 'changes profile details' do
         post '/login', { 'email' => 'test4@email.com', 'pass' => 'VerySecurePass1337' }
-        cookie = last_response.cookies['rack.session']
         post '/account', { name: 'Example Name' }
-        get '/account', headers: cookie
+        get '/account'
         expect(last_response.body).to include('Example Name')
       end
     end

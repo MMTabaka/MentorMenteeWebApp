@@ -8,7 +8,7 @@ require_relative '../../controllers/registration'
 require_relative '../../controllers/login'
 require_relative '../../controllers/account'
 
-RSpec.describe "Account Tests", type: :controller do
+RSpec.describe 'Account Tests', type: :controller do
   include Rack::Test::Methods
 
   def app
@@ -26,7 +26,7 @@ RSpec.describe "Account Tests", type: :controller do
       bio: 'Explanation',
       interest_areas: 'Area 1,Area 2'
     }
-    
+
     # Example param hash
     # params = {
     #   "name"=>"",
@@ -37,21 +37,20 @@ RSpec.describe "Account Tests", type: :controller do
     #   "bio"=>" "}
 
     User.create(base_hash)
-    
   end
   # after(:each) do
   #   User.destroy
   # end
-  describe 'GET /account', :type => :controller do
+  describe 'GET /account', type: :controller do
     it 'changes profile details' do
       params = {
         'email' => 'TEST@email.com'
       }
-      
+
       # cookies['rack.session'] = cookie
-      post '/login', {'email'=>"test4@email.com", 'pass'=>"VerySecurePass1337"}
+      post '/login', { 'email' => 'test4@email.com', 'pass' => 'VerySecurePass1337' }
       cookie = last_response.cookies['rack.session']
-      post '/account', params: {:email => 'TEST@email.com'}, headers: cookie
+      post '/account', { email: 'TEST@email.com' }
       get '/account', headers: cookie
       expect(last_response.body).to include(params['email'])
 

@@ -102,6 +102,7 @@ RSpec.describe 'Connection' do
       expect(Connection.retrieve(mentee).count).to be == 2
     end
   end
+=begin
   context 'when you call want to get the connection of logged in user' do
     it 'returns the connection' do
       get '/'
@@ -110,4 +111,5 @@ RSpec.describe 'Connection' do
       expect(conn).to eq orig_conn
     end
   end
+=end
 end

@@ -22,6 +22,7 @@ post '/account' do
     user_hash[k.to_sym] = v unless k == 're-pass' || v.empty?
   end
   # Prepare interest areas according to DB structure
+
   if params['areas']
     interests_str = Interest.where_all(id: params['areas'])
                             .map(&:interest)

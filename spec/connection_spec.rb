@@ -7,10 +7,6 @@ require 'rack/test'
 
 
 RSpec.describe 'Connection' do
-  include Rack::Test::Methods
-
-  let(:app) { Sinatra::Application }
-
   after(:each) do
     #  Clean up the database after each test
     cleanup
@@ -102,14 +98,4 @@ RSpec.describe 'Connection' do
       expect(Connection.retrieve(mentee).count).to be == 2
     end
   end
-=begin
-  context 'when you call want to get the connection of logged in user' do
-    it 'returns the connection' do
-      get '/'
-      orig_conn = Connection.create(connection_hash)
-      conn = Connection.get
-      expect(conn).to eq orig_conn
-    end
-  end
-=end
 end

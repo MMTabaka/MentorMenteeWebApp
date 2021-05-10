@@ -1,6 +1,7 @@
 require 'sinatra'
 require_relative '../helpers/authenticated'
-require_relative '../helpers/redirect_home.rb'
+require_relative '../helpers/user_type'
+require_relative '../helpers/redirect_home'
 
 get '/admin/?' do
   authenticated_as_admin
@@ -22,7 +23,7 @@ post '/admin/login/?' do
   @email = params['email']
   @password = params['pass']
   user = User.login(@email, @password, admin: true)
-  if user.nil?
+  if user.nil? || user.user_type != UserType::ADMIN
     session[:is_valid] = false
   else
     # Setting user id to access logged in user later

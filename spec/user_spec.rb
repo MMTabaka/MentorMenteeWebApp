@@ -78,7 +78,6 @@ RSpec.describe User do
       end
     end
   end
-=begin
   describe '#reset_password' do
     context 'when you reset password for the user' do
       it 'gets a new password' do
@@ -89,6 +88,5 @@ RSpec.describe User do
       end
     end
   end
-=end
 end
 

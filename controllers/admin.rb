@@ -30,7 +30,7 @@ post '/admin/login/?' do
     session[:is_valid] = nil
     redirect '/admin'
   end
-  redirect '/login'
+  redirect '/admin/login'
 end
 
 post '/admin/suspend/?' do

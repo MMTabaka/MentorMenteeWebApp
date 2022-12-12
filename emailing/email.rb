@@ -5,7 +5,7 @@ require_relative 'errors'
 class Email
   attr_reader :contact_to, :contact_from, :contact_reply_to, :subject, :body
 
-  API_KEY = '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'.freeze
+  API_KEY = "".freeze
 
   # Creates a new email. For now parametrs cannot be changed later.
   # @param [EmailContact] contact_to name and email of recipient
